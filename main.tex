@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage{xltxtra, fontspec, graphicx, adjustbox, fixltx2e}
+\usepackage{expex, epltxfn, avm}
+%\usepackage{tikz, tikz-qtree}
+%\usetikzlibrary{trees}
+\usepackage[linguistics]{forest}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{enumitem}
+\usepackage{caption, scrextend, verbatim, multicol, array, url}
+\usepackage{multirow, rotating}
+\usepackage{indentfirst, titling}
+\usepackage{csquotes}
+\usepackage{natbib, multibib, filecontents}
+\usepackage{cleveref}
+\usepackage[multiple]{footmisc}
+\usepackage[hmargin={1in}, vmargin={1in}]{geometry}
+%\usepackage[polutonikogreek,english]{babel}
+%\usepackage{standalone}
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+%\defaultfontfeatures{Ligatures=TeX}
+\setcitestyle{aysep={},notesep={:}}
+
+%\avmfont{\sc}
+\avmsortfont{\scriptsize\it}
+\begin{document}
+
+\lingset{belowglpreambleskip=0ex, aboveglftskip=0ex, everygla={\upshape}}
+
+\avmsortfont{\it}
+\avmfont{\sc}
+\avmvalfont{\rm}
+
+\setmainfont{Brill}
+\title{The ``Serial Verb" Constructions in Nuuchahnulth}
+
+\date{}
+
+%\maketitle{}
+
+\tableofcontents
+
+%\section{Introduction}
+%\input{introduction}
+
+%\section{Background}
+%\input{background}
+
+\section{The Basic Clause}
+\input{clause}
+
+\section{The Linker}
+\input{linker}
+
+\section{Serial Verbs}
+\input{serialverb}
+
+\bibliographystyle{apalike2}
+\bibliography{../bib/ncnbib}
+
+
+\end{document}
