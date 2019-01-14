@@ -1,5 +1,5 @@
 \documentclass[12pt]{article}
-\usepackage{xltxtra, fontspec, graphicx, adjustbox, fixltx2e}
+\usepackage{xltxtra, fontspec, graphicx, adjustbox}
 \usepackage{expex, epltxfn, avm}
 %\usepackage{tikz, tikz-qtree}
 %\usetikzlibrary{trees}
@@ -17,6 +17,7 @@
 %\usepackage[polutonikogreek,english]{babel}
 %\usepackage{standalone}
 \usepackage{titlesec}
+\usepackage{fixltx2e}
 \setcounter{secnumdepth}{4}
 %\defaultfontfeatures{Ligatures=TeX}
 \setcitestyle{aysep={},notesep={:}}
@@ -32,31 +33,39 @@
 \avmvalfont{\rm}
 
 \setmainfont{Brill}
-\title{The ``Serial Verb" Constructions in Nuuchahnulth}
-
+\title{Multi-predicate constructions in Nuuchahnulth}
+\author{David Inman}
 \date{}
 
-%\maketitle{}
+\maketitle{}
 
 \tableofcontents
 
 %\section{Introduction}
-%\input{introduction}
+%\input{clause}
 
 %\section{Background}
 %\input{background}
 
-\section{The Basic Clause}
+\section{The Basic Clause} \label{sec:clause}
 \input{clause}
 
-\section{The Linker}
-\input{linker}
+\section{Methodology} \label{sec:methodology}
+\input{methodology}
 
-\section{Serial Verbs}
+\section{Serial Verbs} \label{sec:sv}
 \input{serialverb}
+
+\section{The Linker} \label{sec:link}
+\input{linker}
 
 \bibliographystyle{apalike2}
 \bibliography{../bib/ncnbib}
 
+\appendix{Orthography}
+\input{orthography}
+
+\appendix{Glossing Conventions}
+\input{glossing}
 
 \end{document}
