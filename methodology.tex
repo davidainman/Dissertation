@@ -1,18 +1,21 @@
+\chapter{Methodology}
+\label{sec:methodology}
+
 This work has proceeded along two parallel tracks. The first has been gathering primary data through field work as well as using published corpora in the language to uncover grammatical facts. The second is the implementation of the analysis of these grammatical facts through a computational syntactic framework. I will address my methods for each part of this separately.
 
-\subsection{Gathering data in Nuuchahnulth} \label{sec:method:ncn}
+\section{Gathering data in Nuuchahnulth} \label{sec:method:ncn}
 
 Before I began my project on serial verbs and the linker, I first had to learn enough Nuuchahnulth to become at least conversant in the language. I did this by reading the published literature (especially \citealt{sapir1939}), attending language learning classes in Port Alberni (many of them with my colleague, Amie DeJong), and direct study with Adam Werle, some of which was funded through summer Foreign Language Acquisition Scholarships (FLAS). The language lessons I participated in were taught by Adam Werle and often included elders and native speakers who would assist, correct, and aid in teaching. It was through this venue that I first met fluent Nuuchahnulth elders.
 
 In the summer of 2016, Adam and I traveled to Hot Springs Cove and collected texts from some Hesquiaht elders. On request, that data is not presented in this dissertation, but some of that work has informed my analysis, which I have confirmed with other speakers.
 
-\subsubsection{Data sources} \label{sec:method:sources}
+\section{Data sources} \label{sec:method:sources}
 
 I began learning and working with Nuuchahnulth at the start of 2015. Before I collected my own data, I looked at data from a variety of sources to generate appropriate questions. My sources were previous syntactic work on the language, especially \cite{jacobsen1993}, \cite{nakayama2001}, \cite{wojdak2003}, \cite{waldie2004}, and \cite{woo2007b}. I also relied on corpora published by linguists, especially the Nootka Texts \citep{sapir1924, sapir1939, sapir1955, whalingindians2000, whalingindians2004, whalingindians2009}.
 
 In addition to these resources, I looked at community-produced texts such as ``Son of Thunderbird" and texts I received from linguists Adam Werle and Henry Kammler. The largest of these were an in-progress Bible translation Adam Werle and Sophie Billy were working on and several recordings Henry Kammler made with the late Barbara Touchie. I looked through these sources for examples of the phenomena I was looking for, annotated and cataloged them, and used some of these examples as prompts for speakers.
 
-\subsubsection{Elicitation methods} \label{sec:method:elicitation}
+\section{Elicitation methods} \label{sec:method:elicitation}
 
 I spent January, February, and part of March of 2018 in Port Alberni working with native speakers and gathering data specifically for this dissertation. In that period of time I worked with Julia Lucas (Nuuchahnulth name \textit{tupaat}, Ahousaht tribe, central dialect), Bob Mundy (Uclueleht tribe, Barkley Sound dialect), Marjorie Touchie (Uclueleht tribe, Barkley Sound dialect), Fidelia Haiyupis (Ehattesaht tribe, northern dialect), and Sophie Billy (Checkleseht, Kyuquot-Checkleseht dialect). I also present data I gathered from Simon Lucas (Nuuchahnulth name \textit{yuułnaak}, Heshquiaht tribe, northern dialect), the late husband of Julia Lucas.
 
@@ -20,7 +23,7 @@ I have made an effort to make my work, and at the very least my recordings and t
 
 When working with speakers, I tended to work two to four hours at a time and tried to structure sections in three parts: grammatical questions and elicitations, vocabulary questions and clarification questions on existing texts, and text elicitation. The purpose of this was to avoid wearing speakers out with too many grammatical questions in a row, and to collect other important data. While there has been good primary linguistic documentation in Nuuchahnulth, particularly in \cite{sapir1939} and \cite{rose1981}, there are many differences across the language's wide spread of dialects that remain undocumented and unknown. Although one of my speakers did not like giving lengthy texts, I was able to collect connected, fluent texts from other speakers, which is a lasting artifact and can be used to answer questions beyond the narrow scope of my dissertation. I have approximately six hours of fluent Nuuchahnulth from that period, about two-thirds of which is currently transcribed. I have since visited my consultants again and asked follow up questions as well as collected more texts.
 
-\subsubsection{Methods of Elicitation}
+\section{Methods of Elicitation}
 
 I used six methods of elicitation, which I will describe below. The aim of all these methods is to obtain the most natural Nuuchahnulth examples or grammatical judgments that are relevant to the phenomenon under investigation. Some methods worked better than others. Only one of my consultants was literate in the language, and while she would correct my pronunciation sometimes by writing out a word, she preferred to work in an oral environment and have me read my notes back to her. That is to say, these elicitation sessions occurred in either a completely or nearly-completely oral context. All Nuuchahnulth speakers I worked with were bilingual in English.
 
@@ -119,11 +122,11 @@ There were many instances where I would ask speakers, ``Can you think of a case 
 
 None of these methods worked all of the time. Anecdotally, I found that staying in Nuuchahnulth for longer periods of time helped more than anything else, although this was quite difficult to do.
 
-\subsubsection{Data Collation} \label{sec:method:collation}
+\section{Data Collation} \label{sec:method:collation}
 
 I collated the examples of the grammatical phenomena I was interested in. These came from a set of stories I had previously interlinearized, from a randomly-selected subset of Nootka Texts stories, from my elicitation sessions with consultants, and from my transcriptions of elicited texts. I entered these examples into a spreadsheet that was tagged with the phenomenon that the example illustrated, and used this to help me find patterns in the grammatical data. To port this data to a test suite that the implemented grammar can run on, I simply had to export it to a comma-separated value file format and run a script that would generate a format readable by the implemented grammar (see \S\ref{sec:method:delphin}).
 
-\subsection{Implementation through the DELPH-IN framework} \label{sec:method:delphin}
+\section{Implementation through the DELPH-IN framework} \label{sec:method:delphin}
 
 My grammatical analysis has been through the DELPH-IN\footnote{\url{http://www.delph-in.net}} framework, which is a computationally-implemented formalism of the head-driven phrase structure grammar (HPSG, \citealt{pollardsag1994}) using Minimal Recursion Semantics (MRS, \citealt{copestake2005}). My implementation is built on a base that uses the Grammar Matrix \citep{bender2002, benderetal2010}.
 

@@ -1,8 +1,11 @@
+\chapter{Serial Verbs}
+\label{sec:sv}
+
 In this section I will introduce what I mean when I refer to serial verb constructions (SVCs) in Nuuchahnulth (\S\ref{sec:sv:def}), give the data on the construction (\S\ref{sec:sv:data}), and finally my analysis as implemented in my grammar (\S\ref{sec:sv:analysis}).
 
-\subsection{Serial Verb Definition} \label{sec:sv:def}
+\section{Serial Verb Definition} \label{sec:sv:def}
 
-The definition of serial verb is somewhat contested. In their typological survey, \cite{aikhenvalddixon2006} give several definitions, some of which conflict or overlap. Among their key proposed criteria is multiple verbs that (i) are monoclausal; (ii) from a ``single predicate"; (iii) form a ``single event"; (iv) form one unit phonologically; (v) are negated singly.
+The definition of a serial verb is somewhat contested. In their typological survey, \cite{aikhenvalddixon2006} give several definitions, some of which conflict or overlap. Among their key proposed criteria is multiple verbs that (i) are monoclausal; (ii) from a ``single predicate"; (iii) form a ``single event"; (iv) form one unit phonologically; (v) are negated singly.
 
 Most of these definitions are problematic, however. \citeauthor{aikhenvalddixon2006} give no clear definition for a single predicate or a single event. Without a formal semantic representation, these are left vague, and for the most part a single predicate (when it is not synonymous with a single event) seems to come down to monoclausality. While serial verbs may be phonologically connected, they give several examples where the serial verbs are separated by intervening words (such as a direct object), and give instances of (what they term) serial verbs where one verb is negated while the other is not.
 
@@ -24,19 +27,78 @@ In LFG, the elementary predication of a word is linked to the number of its argu
 
 In this way, it is possible to separately alter the number of arguments of the predication \textsc{write} without having to create a new predication. This is something the formalism shares with Neodavidsonian representations \citep{parsons1990}. This difference between the representation \citeauthor{butt1995} uses and and MRS semantic representations will allow me to maintain strict semantic compositionality in my analysis of serial verbs in Nuuchahnulth.
 
-Serial verbs are not clearly defined in the literature, and attempts to generate cross-linguistic definitions quickly run into problems. Even monoclausality, so central to \cite{aikhenvalddixon2006}, is thrown out in \cite{butt1995}, who gives good reasons for syntactic subordination in a structure that otherwise falls into the umbrella of a serialization construction. I will use a very narrow definition of a serial verb construction for Nuuchahnulth. Any clause containing two verbs without an overt coordinator is a clause containing a ``serial verb construction." The structure of Nuuchahnulth is such that determining the boundaries of a clause is relatively straightforward. Each matrix and dependent clause is marked with a second-position clitic, and so the boundaries of a clause are fairly easy to determine.\footnote{The one exception to this is that the third-person neutral mood is null-marked. For this reason, I will use examples that are not in this person-mood combination.} Because of the restriction that serial verb constructions lack an overt coordinator, constructions containing a linker morpheme (\S\ref{sec:link}) do not count as SVCs. I am strictly defining SVCs in Nuuchahnulth on syntactic grounds, and do not involve semantics in any way.
+As stated, serial verbs are not clearly defined in the literature, and attempts to generate cross-linguistic definitions quickly run into problems. Even monoclausality, so central to \cite{aikhenvalddixon2006}, is thrown out in \cite{butt1995}, who gives good reasons for syntactic subordination in a structure that otherwise falls into the umbrella of a serialization construction. I will use a very narrow definition of a serial verb construction for Nuuchahnulth. Any clause containing two verbs without an overt coordinator and where the verbs share the semantics of the second position inflectional complex is a clause containing a ``serial verb construction." Each matrix and dependent clause is marked with a second-position clitic, and so the boundaries of a clause are fairly easy to determine.\footnote{The one exception to this is that the third-person neutral mood is null-marked. For this reason, I will use examples that are not in this person-mood combination.} Because of the restriction that serial verb constructions lack an overt coordinator, constructions containing a linker morpheme (\S\ref{sec:link}) do not count as SVCs.
 
-This definition is also restricted to verbs, and not other kinds of multi-predicate constructions. Non-verbs do not participate in the kinds of constructions listed below, and non-verbal multi-predicate constructions are fairly limited in type: quantifier fronting (which can be analyzed as a form of multi-predicate construction) and linker constructions. The former is outside the scope of this dissertation, and the latter will be addressed in \S\ref{sec:link}.
+This definition is also restricted to verbs, and not other kinds of multi-predicate constructions. Non-verbs do not participate in the kinds of constructions I will investigate here, and non-verbal multi-predicate constructions are fairly limited in type: they require overt coordination through a coordinand or through a linker construction. The former is outside the scope of this dissertation, and the latter will be addressed in \S\ref{sec:link}.
 
-\subsection{Data} \label{sec:sv:data}
+\subsection{Non-SVCs}
 
-\subsubsection{Semantic Types of Serial Verb Constructions}
+I will give a few examples of common constructions which fall outside my definition of a serial verb construction, although there may be some similarities. The first is juxtaposed clauses (\ref{ex:juxtaposedclauses}).
+
+\ex \label{ex:juxtaposedclauses}
+\begingl
+\glpreamble hač̓a pawałšiƛ [pause] ʔuušp̓iq [pause] ʔuušp̓iqqač̓a wawaa. //
+\gla hač̓a pawał-šiƛ ʔuuš-p̓iq ʔuuš-p̓iq=qač̓a wawaa. //
+\glb maybe lost-\textsc{mo} some-do.slightly.\textsc{mo} some-do.slightly.\textsc{mo}=\textsc{infr} say.\textsc{ct} //
+\glft ` ``Maybe he got lost... something happened... perhaps something happened," they said.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+
+(\ref{ex:juxtaposedclauses}) comes from a text about a man who was lost at sea and returns. Although one could claim that the first two verbs, \textit{pawałšiƛ} and \textit{ʔuušp̓iq}, are in a SVC, the prosody used in the utterance indicates something else. The repeated \textit{ʔuušp̓iq}, complete with a second position clitic, suggests that these are clauses (the first two under null-marked third person neutral mood) that are adjacent. This kind of structure occurs in speech as people are rephrasing or redescribing an event. (\ref{ex:juxtaposedclauses2}) has the same structure, and is from a description of Raven in a narrative text.
+
+\ex \label{ex:juxtaposedclauses2}
+\begingl
+\glpreamble ʔayiisšiƛ, hiy̓iisšiƛ haʔumukʔi. //
+\gla ʔaya-!iis-šiƛ hiš-!iis-šiƛ haʔum=uk=ʔiˑ //
+\glb many-consume-\textsc{mo} all-consume-\textsc{mo} food=\textsc{poss}=\textsc{art} //
+\glft `He ate a lot, he ate all of the food.' (\textbf{B}, Marjorie Touchie) //
+\endgl
+\xe
+
+Like (\ref{ex:juxtaposedclauses}), (\ref{ex:juxtaposedclauses2}) is in the third person, and I believe this is two separate clauses, and not a serialization structure. When these sorts of constructions occur outside the third person, the adjacent clauses require an overt morpheme, and so this apparent ambiguity (serialization vs adjacent clause) does not occur.
+
+The second kind of construction that falls outside my definition of a SVC is Nuuchahnulth temporal expressions. The way to express a duration of time is to juxtapose the time period with the rest of the clause. If the time expression is in the durative aspect, the interpretation is `for \textit{x} time' (\ref{ex:inportforfivedays}). If the time expression is in a perfective aspect, the interpretation is `after \textit{x} time' or `at the end of \textit{x} time' (\ref{ex:afterayear}).
+
+\ex \label{ex:inportforfivedays}
+\begingl
+\glpreamble suč̓ačłintiis hił c̓uumaʕaas. //
+\gla suč̓a-čiˑł=int=(y)iis hił c̓uumaʕaas //
+\glb five-day.\textsc{dr}=\textsc{pst}=\textsc{weak.1sg} be.at port.alberni //
+\glft `I was in Port Alberni for five days.' (\textbf{Q}, Sophie Billy) //
+\endgl
+\xe
+
+\ex~ \label{ex:afterayear}
+\begingl
+\glpreamble ʔaḥʔaaʔaƛqač̓a n̓upqʔičḥšiʔeƛ n̓aacsaaƛ ḥiškʷiiʔatḥ č̓apac hintšiƛ ʔuucayu̓k ḥiškʷiiʔatḥ. //
+\gla ʔaḥʔaaʔaƛ=qač̓a n̓up-qʔičḥ-šiƛ=!aƛ n̓aacsa=!aƛ ḥiškʷiiʔatḥ č̓apac hint-šiƛ ʔu-L.cayu̓k ḥiškʷiiʔatḥ //
+\glb and=\textsc{infr} one-year.\textsc{dr}-\textsc{mo}=\textsc{now} see=\textsc{now} Hesquiaht canoe arrive-\textsc{mo} \textsc{x}-go.\textsc{dr} Hesquiaht //
+\glft `And one year later the Hesquiahts saw a boat arriving toward Hesquiaht.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+
+Although these two types of temporal expression are distinct, it is possible to use the second construction, which uses a perfective form, to express a duration, i.e. \textit{it has become X length of time that Y has been done}, as in \ref{ex:forfourdays}. The opposite (interpreting the durative form to mean `after') is not possible to my knowledge.
+
+\ex \label{ex:forfourdays}
+\begingl
+\glpreamble ʔaḥʔaaʔaƛ muučiiłšiƛna hił siy̓a ʔaḥʔaaʔaƛ ḥaakʷaaƛuk Matthew, kʷaaʔuucukqs. //
+\gla ʔaḥʔaaʔaƛ muu-čiił-šiƛ=naˑ hił siy̓a ʔaḥʔaaʔaƛ ḥaakʷaaƛ=uk Matthew kʷaaʔuuc=uk=qs //
+\glb and four-day.\textsc{dr}-\textsc{mo}=\textsc{neut.1pl} be.at \textsc{1sg} and young.girl=\textsc{poss} Matthew grandchild=\textsc{poss}=\textsc{defn.1sg} //
+\glft `We were there for four days, me and Matthew's daughter, my granddaughter.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+
+What differentiates these expressions from serial verb constructions, as well as linker constructions (see \S\ref{sec:link}) is the interpretation of the subject. While the temporal component can take the subject-mood portmanteau (\ref{ex:inportforfivedays}, \ref{ex:forfourdays}), the person expressed in the subject clitic is not in any way the subject of the temporal expression. In (\ref{ex:inportforfivedays}), `I' is not the subject of `five days.' This is also the case for the subjects of the verbs in (\ref{ex:afterayear}, \ref{ex:forfourdays}). Instead, the time expression seems to be opaque to the subject information present in the clause. This is not the case for serial verbs, as I will show below.
+
+\section{Data} \label{sec:sv:data}
+
+\subsection{Semantic Types of Serial Verb Constructions}
 
 Descriptively, I categorize observed serial verb constructions into five broad semantic types. These types are not motivated a priori by any external typological theories or a commitment to these categories, but an attempt to make sense of my data. I grouped constructions by words with identical syntactic behavior and tried to create groupings with broad semantic similarities.
 
 \vspace{10pt}
 
-\noindent \textbf{I. Manner and Action}
+\subsubsection{I. Manner and Action} \label{sec:svc:mannerandaction}
 
 \vspace{10pt}
 
@@ -44,7 +106,7 @@ The broadest semantic type of SVC links actions and manner. By ``manner" what I 
 
 \ex \label{ex:walktoalberni}
 \begingl
-\glpreamble \textbf{ʔuucuy̓uk}w̓it̓asaḥ \textbf{yaacuk} c̓uumaʕas . //
+\glpreamble \textbf{ʔuucuy̓uk}w̓it̓asaḥ \textbf{yaacuk} c̓uumaʕas. //
 \gla \textbf{ʔuucuy̓uk}-w̓it̓as=(m)aḥ \textbf{yaacuk} c̓uumaʕas //
 \glb \textbf{go.to.\textsc{dr}}-going.to=\textsc{real.1sg} \textbf{walk.\textsc{dr}} Port.Alberni //
 \glft `I'm going to walk to Port Alberni.' (\textbf{B}, Bob Mundy) //
@@ -127,9 +189,9 @@ It is possible for one of the verbs and its object (that is, the full VP of one 
 \endgl
 \xe
 
-The verbs in this type of SVC, for most speakers, must agree in perfectiveness. Nuuchahnulth has a great many verbal aspect markers which follow the root, but they can be broken into two categories: perfective aspect (momentaneous and inceptive) and imperfective aspect (continuative, durative, repetitive, iterative, and graduative). The derivations in (\ref{ex:aspect}) give a simplified view of my understanding of how these aspects are related to each other. Much of this is taken from \cite{davidson2002}, as well as personal correspondence with Davidson, who deserves much credit for working out this system. My understanding of the inceptive as underlyingly continuative + perfective is indebted to Werle.\footnote{Note that this means that the morphology for the continuative and inceptive do not ``stack," unlike the other aspect forms. So momentaneous + graduative is realized as \textit{-šiƛ} and also a long-short template. However continuative + inceptive is simply \textit{-°iˑčiƛ}, not *\textit{-aˑ-°iˑčiƛ}.} To simplify the graph, I have combined repetitive-perfective, graduative-perfective, and iterative-perfective into a single node, since verbs in this form cannot undergo further aspectual change.
+The verbs in this type of SVC, for most speakers, must agree in perfectiveness. Nuuchahnulth has a great many verbal aspect markers which follow the root, but they can be broken into two categories: perfective aspect (momentaneous and inceptive) and imperfective aspect (continuative, durative, repetitive, iterative, and graduative). The derivations in (\ref{aspect}) give a simplified view of my understanding of how these aspects are related to each other. Much of this is taken from \cite{davidson2002}, as well as personal correspondence with Davidson, who deserves much credit for working out this system. My understanding of the inceptive as underlyingly continuative + perfective is indebted to Werle.\footnote{Note that this means that the morphology for the continuative and inceptive do not ``stack," unlike the other aspect forms. So momentaneous + graduative is realized as \textit{-šiƛ} and also a long-short template. However continuative + inceptive is simply \textit{-°iˑčiƛ}, not *\textit{-aˑ-°iˑčiƛ}.} To simplify the graph, I have combined repetitive-perfective, graduative-perfective, and iterative-perfective into a single node, since verbs in this form cannot undergo further aspectual change.
 
-\ex \label{ex:aspect}
+\ex \label{aspect}
 \vspace{-20pt}
 \xe
 \begin{tikzpicture}[sibling distance=10em,
@@ -161,6 +223,7 @@ The verbs in this type of SVC, for most speakers, must agree in perfectiveness. 
 \node[below right] at (perf.north west) {\textit{perfective aspect}};
 \draw[->] (rp) -- (pf);
 \draw[->] (it) -- (pf);
+%\draw[->] (it) to [out=150,in=30] (pf);
 \draw[->] (dr) -- (pf);
 \end{scope}
 \end{tikzpicture}
@@ -248,7 +311,7 @@ waałšiʔaƛs. ƛiiƛiiḥataḥʔaƛs.
 
 \vspace{10pt}
 
-\noindent \textbf{II. Location and Action}
+\subsubsection{II. Location and Action}
 
 \vspace{10pt}
 
@@ -359,7 +422,7 @@ This ``interruption" can occur the other way around, when the location word is i
 \footnotetext{In this dependent construction, `gasoline' is the participant of the predicative relativizer \textit{yaq} `who'. The bracketing is [ḥuqšiƛ ʔucačiƛ]\textsubscript{pred} [ḥaa [yaqʔiitq hiiłsʔat̓uus gasoline] ]\textsubscript{part}}
 \end{comment}
 
-Unlike Type I SVCs, there is no requirement that the verbs match in their aspect. This is partly because most locatives do not inflect for aspect. For the basic verb \textit{hił} `be at' there is no perfective form of \textit{hiłšiƛ}, and \textit{hił} can serialize with both perfective (\ref{ex:stopthere}) and imperfective verbs (\ref{ex:restonmountains}). There exist perfective forms for some of the other location words, for instance \textit{hitinqsaƛ} `go to the beach' from \textit{hitinqis} `be at the beach.' However, there is no requirement for aspectual agreement here, as these location verbs can serialize with both perfective (\ref{sawbearonmountain}) and imperfective verbs (\ref{ex:speakoutside}).
+Unlike Type I SVCs, there is no requirement that the verbs match in their aspect. This is partly because most locatives do not inflect for aspect. For the basic verb \textit{hił} `be at' there is no perfective form of \textit{hiłšiƛ}, and \textit{hił} can serialize with both perfective (\ref{ex:stopthere}) and imperfective verbs (\ref{ex:restonmountains}). There exist perfective forms for some of the other location words, for instance \textit{hitinqsaƛ} `go to the beach' from \textit{hitinqis} `be at the beach.' However, there is no requirement for aspectual agreement here, as these location verbs can serialize with both perfective (\ref{ex:sawbearonmountain}) and imperfective verbs (\ref{ex:speakoutside}).
 
 Unlike Type I verbs, there is a strict ordering requirement. The location verb must always come before the action verb (\ref{ex:outsidespeaking}, \ref{ex:*outsidespeaking}). 
 
@@ -428,7 +491,7 @@ This restriction on location-action serialization can be interpreted as a gramma
 
 \vspace{10pt}
 
-\noindent \textbf{III. Adpositive-like verbs}
+\subsubsection{III. Adpositive-like verbs}
 
 \vspace{10pt}
 
@@ -486,7 +549,7 @@ None of the adpositive-like verbs inflect for aspect, and in this way are simila
 
 \vspace{10pt}
 
-\noindent \textbf{IV. Transitive-Intransitive Repetition}
+\subsubsection{IV. Transitive-Intransitive Repetition}
 
 \vspace{10pt}
 
@@ -572,7 +635,7 @@ As with Type I serialization, aspectual agreement is required (\ref{ex:eateat3}-
 
 \vspace{10pt}
 
-\noindent \textbf{V. Sequential or Separable Action}
+\subsubsection{V. Sequential or Separable Action}
 
 \vspace{10pt}
 
@@ -720,7 +783,7 @@ The context for (\ref{ex:chasedog1}--\ref{ex:chasedog3}) is sitting outside, eat
 
 Although it confused me at the time, I now understand the VP adjacency constraint on Type V SVCs to explain the ungrammaticality of (\ref{ex:chasedog3}). There is an aspectual mismatch in the verbs, so this sentence is not of Type I (manner + action), and it does not match the lexical types for II-IV, containing no location word, no adpositive-like verb, and no transitive-intransitive semantic doubling. The only difference in (\ref{ex:chasedog3}) from the previous examples is that \textit{cassaap} is separated from its object \textit{ʕiniiƛ}. That is not allowed under this construction.
 
-I tested this theory with another speaker from another dialect region, Sophie Billie. (\ref{{ex:packgo}) and (\ref{ex:*packgo}) show a minimal pair where in (\ref{ex:*packgo}) there is the ``typical" V1 VP2 Obj1 structure of other SVCs. Despite the verb of motion `go' and the action `carry', this is not a Type 1 motion + manner construction. Sophie consistently translated \textit{hiniic p̓atqukkʷqs} as `pack my belongings' or `get my luggage,' as a preparatory step for moving to Vancouver. The interpretation of (\ref{ex:packgo}) is sequential action: First pack/carry one's things, then go to Vancouver.
+I tested this theory with another speaker from another dialect region, Sophie Billie. (\ref{ex:packgo}) and (\ref{ex:*packgo}) show a minimal pair where in (\ref{ex:*packgo}) there is the ``typical" V1 VP2 Obj1 structure of other SVCs. Despite the verb of motion `go' and the action `carry', this is not a Type 1 motion + manner construction. Sophie consistently translated \textit{hiniic p̓atqukkʷqs} as `pack my belongings' or `get my luggage,' as a preparatory step for moving to Vancouver. The interpretation of (\ref{ex:packgo}) is sequential action: First pack/carry one's things, then go to Vancouver.
 
 \ex \label{ex:packgo}
 \begingl
@@ -824,7 +887,7 @@ Multiple types of serialization can cooccur in a clause. (\ref{ex:packcarryforyo
 \endgl
 \xe
 
-\subsubsection{Interaction with Valency Changing Operations}
+\subsection{Interaction with Valency Changing Operations}
 
 These serialization strategies can all interact with operations that change the verb's valency: in Nuuchahnulth the most common of these are the causative, the passive, and the possessor (under ``possessor raising," \citealt{braithwaite2003}). What is unique about these three morphemes in Nuuchahnulth is that they are all part of the second position clausal clitic complex, which normally attaches to the first word of a clause and scopes over the clause as a whole. This makes their interaction with SVCs interesting and not a priori predictable. Does the valency operation affect both verbs in the SVC, or does it target just one? Leaving the possessor construction aside, I now look at how these operations interact with serial verb constructions.
 
@@ -911,7 +974,7 @@ In a construction that is unique to the passive, as far as I know, it is also po
 
 Causative and passive morphemes in SVCs may scope over the entire construction or just the verb they attach to. In the case where the morpheme appears on the first word in the construction, the proper interpretation is constrained only by context. In the case of the passive, the passive may ``copy" onto a later verb without affecting its argument structure.
 
-\subsubsection{Summary}
+\subsection{Summary}
 
 I have used a very narrow definition of serial verb constructions (SVCs) in Nuuchahnulth: Any clause that contains two verbs without a coordinator, and where one verb is not clearly subordinating the other, is a serial verb construction. I have further broken this construction type into five semantic subtypes: (I) manner and action, (II) location and action, (III) adpositive-like verb and main verb, (IV) transitive-intransitive repetition, and (V) separable or sequential events.
 
@@ -919,4 +982,4 @@ For most speakers, Type I requires aspectual agreement of the verbs involved. Ty
 
 As I turn to analysis, I will model these facts with three grammatical serial verb constructions: One which covers Types I and requires aspectual matching, one for Types I-IV, and one which covers Type V. I will model the semantics of Types I-IV as necessarily simultaneous, and account for the aspectual mismatching of Types II and III by underspecifying locatives and adpositives for aspect. Type V will be underspecified temporally, allowing the semantics of \textsc{and} to give rise to sequential interpretations. [[TODO: There has definitely been work on the temporal pragmatics of and, cite that here.]]
 
-\subsection{HPSG Analysis} \label{sec:sv:analysis}
+\section{HPSG Analysis} \label{sec:sv:analysis}

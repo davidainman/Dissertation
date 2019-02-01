@@ -1,0 +1,146 @@
+
+% \usepackage{natbib}
+% \def\bibpreamble{\protect\addcontentsline{toc}{chapter}{Bibliography}}
+% \usepackage{alltt}  % 
+% \newenvironment{demo}
+%   {\begin{alltt}\leftskip3em
+%      \def\\{\ttfamily\char`\\}%
+%      \def\{{\ttfamily\char`\{}%
+%      \def\}{\ttfamily\char`\}
+%   }}
+%   {\end{alltt}}
+ 
+% metafont font.  If logo not available, use the second form
+%
+% \font\mffont=logosl10 scaled\magstep1
+\let\mffont=\sf
+% --- end-of-sample-stuff ---
+
+%\usepackage{xcolor}
+%\usepackage{subfig}
+%\usepackage{hyperref}
+\usepackage{float}
+\usepackage{paralist}
+\usepackage{tikz}
+\usetikzlibrary{arrows,calc,shapes,positioning,matrix,chains,fit}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepgfplotslibrary{groupplots}
+
+\setcitestyle{round}  % use natbib citation style (...), not [..]
+
+\def\bibpreamble{\protect\addcontentsline{toc}{chapter}{Bibliography}}
+
+\usepackage{fontspec}
+\usepackage{xeCJK}
+%\setCJKmainfont{Noto Serif CJK JP}
+%\setCJKmainfont{AR PL UMing TW MBE}
+%\setCJKsansfont{AR PL UMing TW MBE}
+%\setCJKmonofont{AR PL UMing TW MBE}
+
+\usepackage{setspace} % for \singlespacing in gb4e examples
+%\usepackage{tikz-dependency}
+%\usepackage{forest}  % for tree drawing
+\usepackage{relsize}  % needed for \smaller in mrs.sty
+\usepackage{\basedir/mrs}
+%\usepackage{gb4e}  % for linguistic examples
+%\noautomath  % prevent gb4e from hijacking _ and ^ outside of math mode
+% thanks: https://tex.stackexchange.com/a/244099/120598
+%\makeatletter
+%\apptocmd{\@exe}{\singlespacing}{}{}
+%\makeatother
+% thanks: https://tex.stackexchange.com/a/288127/120598
+%\makeatletter
+%\patchcmd{\@subex}{\itemsep3}{\itemsep1}{}{}  
+%\makeatother
+% italicize transliteration
+%\let\eachwordtwo=\textit
+% numbering in footnotes; thanks: https://tex.stackexchange.com/a/375428/120598
+%\makeatletter
+%\patchcmd{\@footnotetext}{\setcounter{fnx}{0}}{\renewcommand{\thexnumi}{\roman{xnumi}}}{}{}
+%\apptocmd{\@footnotetext}{
+%    \@noftnotetrue
+%    \renewcommand{\thexnumi}{\arabic{xnumi}}%
+%}{}{}
+%\makeatother
+
+\usepackage{listings}  % for code
+% the following fixes hyphens in listings
+% thanks: https://tex.stackexchange.com/a/33188/120598
+\makeatletter
+\lst@CCPutMacro\lst@ProcessOther {"2D}{\lst@ttfamily{-{}}{-{}}}
+\@empty\z@\@empty
+\makeatother
+\usepackage[listings,skins]{tcolorbox}  % color boxes for code
+\tcbsetforeverylayer{
+  colback=white,
+  colframe=black,
+  size=small,
+  enhanced
+}
+
+% algorithms (thanks: https://tex.stackexchange.com/a/1376/120598)
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\renewcommand{\listalgorithmname}{LIST OF ALGORITHMS} % typesetting hack (otherwise displayed as LIST OF AlgorithmS)
+\newcommand*\Let[2]{\State #1 $\gets$ #2}
+%\algrenewcommand\alglinenumber[1]{
+%    {\sf\footnotesize\addfontfeature{Color=888888,Numbers=Monospaced}#1}}
+\algrenewcommand\alglinenumber[1]{
+    \textsf{\footnotesize\color{black!60} #1}}
+\algrenewcommand\algorithmicrequire{\textbf{Input:}}
+\algrenewcommand\algorithmicensure{\textbf{Output:}}
+% thanks: https://tex.stackexchange.com/a/16060
+\MakeRobust{\Call}
+
+\usepackage{ctable}  % fancy tables with footnotes
+%\usepackage{dingbat}  % for, e.g., \checkmark
+\usepackage{mathtools}  % \DeclareMathOperator
+\usepackage{amssymb}  % for \diagup
+
+\usepackage{adjustbox}
+\usepackage{array}
+%\usepackage{subcaption}  % for side-by-side tikz pictures
+
+% \usepackage{xparse}
+% \usepackage{glossaries}
+% \renewcommand*{\glsnamefont}[1]{\footnotesize\textuppercase{#1}\hfill\uwsinglespace}
+% \DeclareDocumentCommand{\newdualentry}{ O{} O{} m m m m } {
+%   \newglossaryentry{gls-#3}{name={#5},text={#5\glsadd{#3}},
+%     description={#6},#1
+%   }
+%   \makeglossaries
+%   \newacronym[see={[Glossary:]{gls-#3}},#2]{#3}{#4}{#5\glsadd{gls-#3}}
+% }
+
+\usepackage[capitalize]{cleveref}
+% thanks: https://tex.stackexchange.com/a/161340/120598
+%\newcommand{\creflastconjunction}{, and\nobreakspace}  % oxford comma
+
+\usepackage{xltxtra, fontspec, graphicx, adjustbox}
+\usepackage{expex, epltxfn, avm}
+%\usepackage{tikz, tikz-qtree}
+%\usetikzlibrary{trees}
+\usepackage[linguistics]{forest}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{enumitem}
+\usepackage{caption, scrextend, verbatim, multicol, array, url}
+\usepackage{multirow, rotating}
+\usepackage{indentfirst, titling}
+\usepackage{csquotes}
+%\usepackage{natbib, multibib, filecontents}
+\usepackage{cleveref}
+\usepackage[multiple]{footmisc}
+%\usepackage[hmargin={1in}, vmargin={1in}]{geometry}
+%\usepackage[polutonikogreek,english]{babel}
+%\usepackage{standalone}
+%\usepackage{titlesec}
+\usepackage{tipa}
+\usepackage{fixltx2e}
+\usetikzlibrary{backgrounds}
+\tikzstyle{bigbox}=[draw, inner sep=18pt]
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "dissertation"
+%%% End:

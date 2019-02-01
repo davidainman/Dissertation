@@ -1,16 +1,129 @@
+\chapter{The Linker}
+\label{sec:link}
+
 The linker morpheme in Nuuchahnulth \textit{-(q)ḥ}, like serial verb constructions (\S\ref{sec:sv}, is a method by which the language can combine multiple verbs into a single clause. In this section I will examine how this construction behaves and its differences from serialization.
 
-\subsection{Data} \label{sec:link:data}
+\section{Data} \label{sec:link:data}
 
 In this section I give my collected data on the linker morpheme. I present how the construction is used and draw some conclusions about how it behaves. Like with serial verbs, I will try to keep this section fairly theory-neutral, saving the specifics of an HPSG analysis for \S\ref{sec:link:analysis}.
 
 The morpheme \textit{-(q)ḥ} is the last possible suffix on a word. It is typically pronounced as the sequence \textit{qḥ} following a vowel or nasal, and otherwise as \textit{ḥ}. The Central Ahousaht elder \textit{tupaat} Julia Lucas almost always pronounces the linker as the full \textit{qḥ} regardless of the phonological environment, with the exception of certain light verbs. I do not know if this reflects a sub-dialect of Ahousaht, or if this pronunciation is unique to her, but I transcribe her speech faithfully.
 
-The suffix is translated as `meanwhile' in \cite{sapir1939}, and was first dubbed the ``linker" by Adam Werle (\textit{p.c.}), on the understanding that it ``links" two predicates together. In some sense, it is coordinating two elements with each other, below the syntactic scope of the second position clitics. I will first look at the morphologicla attachment properties of this special coordinator (\S\ref{sec:link:attach}), followed by its syntactic properties (\S\ref{sec:link:clause}--\ref{sec:link:dangling}).
+The suffix is translated as `meanwhile' in \cite{sapir1939}, and was first dubbed the ``linker" by Adam Werle (\textit{p.c.}), on the understanding that it ``links" two predicates together. In some sense, it is coordinating two elements with each other, below the syntactic scope of the second position clitics. I will first look at the morphological attachment properties of this special coordinator (\S\ref{sec:link:attach}), followed by its syntactic properties (\S\ref{sec:link:clause}--\ref{sec:link:dangling}).
 
-\subsubsection{Attachment properties} \label{sec:link:attach}
+\subsection{Comparison with other coordination}
 
-The linker shows considerable flexibility in the stems it attaches to, attaching to nouns (\ref{ex:womangossiping}), adjectives (\ref{ex:strongbear}), verbs (\ref{ex:talkdriving}), and adverbs (\ref{ex:alsobald}), but not complementizers (\ref{ex:hardsmall1}, \ref{ex:hardsmall2}).
+The linker differs from the other coordinators in the language. Various types of `and' coordination are done with the word \textit{ʔaḥʔaaʔaƛ} and participant coordination with \textit{ʔuḥʔi(i)š}. These words coordinate clauses, VPs, and participant phrases, while I will claim that the linker coordinates predicates.
+
+Much like English \textit{and}, the coordinator \textit{ʔaḥʔaaʔaƛ} may occur at the beginning or middle of a sentence. I distinguish sentence-initial and sentence-medial \textit{ʔaḥʔaaʔaƛ} by prosody, pause, and the presence of clausal clitics.
+
+In its most common use at the beginning of a sentence, \textit{ʔaḥʔaaʔaƛ} can host the clausal clitics (\ref{ex:sentinitandclitics}, \ref{ex:sentinitandclitics2}) or that can be deferred to the predicate (\ref{ex:sentinitandnoclitics}).
+
+\begin{comment}
+Context for (): Describing a picture-story.
+
+ʔaanamtqač̓a ʔuusuqtack̓in.
+And then he got hurt a little bit.
+
+ʔaḥʔaaʔaƛƛa ƛakišiʔeƛƛa.
+And then he stands back up.
+BM
+\end{comment}
+
+\ex \label{ex:sentinitandclitics}
+\begingl
+\glpreamble ʔaḥʔaaʔaƛitweʔinʔaała wiinapi haʔukw̓it̓asin waaʔat, nay̓iiʔak̓aƛquuč t̓iqsčiił haʔumʔi. //
+\gla ʔaḥʔaaʔaƛ=(m)it=weˑʔin=ʔaała wiinapi haʔuk-w̓it̓as=(m)in waa=!at nay̓iiʔak=!aƛ=quu=č t̓iq-sčiˑł haʔum=ʔiˑ //
+\glb and=\textsc{pst}=\textsc{hrsy.3}=\textsc{habit} stop eat-going.to=\textsc{strg.1pl} say=\textsc{pass} immediately=\textsc{now}=\textsc{pssb.3}=\textsc{hrsy} sit-beside.\textsc{dr} food=\textsc{art} //
+\glft `Then he would stop and wait for someone to say ``We are going to eat," and immediately he would sit down by the food.' (\textbf{B}, Marjorie Touchie) //
+\endgl
+\xe
+
+
+\ex~ \label{ex:sentinitandclitics2}
+\begingl
+\glpreamble ʔaḥʔaaʔaƛsa huʔaas n̓aacsiičiƛ naani ʔuuḥw̓ałʔat naaniiłqḥ. //
+\gla ʔaḥʔaaʔaƛ=sa huʔaas n̓aacs-°iˑčiƛ naani ʔu-L.ḥw̓ał=!at naani-(č)iił-(q)ḥ //
+\glb and=\textsc{neut.1sg} again see-\textsc{incep} grizzly.bear \textsc{x}-use=\textsc{pass} grizzly.bear-make-\textsc{link} //
+\glft `And then I also saw a grizzly bear used, grizzly-bear-made.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+
+
+\ex~ \label{ex:sentinitandnoclitics}
+\begingl
+\glpreamble ʔaḥʔaaʔaƛ ʔuk̓ʷič̓ap̓aƛsuuk ʔiiḥ ciyapuxs. //
+\gla ʔaḥʔaaʔaƛ ʔu-k̓ʷič=!ap=!aƛ=suuk ʔiiḥ ciyapuxs //
+\glb and \textsc{x}-wear=\textsc{caus}=\textsc{now}=\textsc{neut.2sg} big hat //
+\glft `And you wear a big hat.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+
+%ʔaḥʔaaʔaƛ always permits a change of subject, so it coordinates two clauses
+%ʔaḥʔaaʔaƛ muučiiłšiƛna hił siy̓a ʔaḥʔaaʔaƛ ḥaakʷaaƛuk Matthew, kʷaaʔuucukqs.
+%We were there for four days, me and Matthew's daughter, my granddaughter.
+%JL
+
+Sentence-intermediate \textit{ʔaḥʔaaʔaƛ} can coordinate two VPs, which share the clitic subjects (\ref{ex:intermediateand}, \ref{ex:intermediateand2}).
+
+\ex \label{ex:intermediateand}
+\begingl
+\glpreamble ʔaa nunuukšiƛnišʔaał ʔaḥʔaaʔaƛ huułhuuła ḥuuuu tuupkšiʔeƛquu. //
+\gla ʔaa nunuuk-šiƛ=niˑš=ʔaał ʔaḥʔaaʔaƛ huuł-LR2L.a ḥuuuu tupk-šiƛ-LS=!aƛ=quu //
+\glb oh sing.\textsc{dr}-\textsc{mo}=\textsc{strg.1pl}=\textsc{habit} and dance-\textsc{rp} whoa.long.time dark-\textsc{mo}-\textsc{gr}=\textsc{now}=\textsc{pssb.3} //
+\glft `Oh, we sing and dance, hey for a long time, when it gets dark.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+
+%ʔuʔatup̓aƛin nunuuk ʔaḥʔaaʔaƛ huyaał. BM
+
+\ex~ \label{ex:intermediateand2}
+\begingl
+\glpreamble ʔaƛa čaakupiiḥ čaaniʔišʔaałʔał t̓aaqyiił ʔaḥʔaaʔaƛ ʕapkšiƛ ʔuukʷił. //
+\gla ʔaƛa čakup-L.iiḥ čaani=ʔiˑš=ʔaał=ʔał t̓aaqyiił ʔaḥʔaaʔaƛ ʕapk-šiƛ ʔu-L.(č)ił //
+\glb two man-\textsc{pl} little.while=\textsc{strg.3}=\textsc{habit}=\textsc{pl} stand.inside.\textsc{dr} and grapple-\textsc{mo} \textsc{x}-do.to //
+\glft `Two men stand inside for a little while and try to grapple each other [in wrestling games].' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+
+As with English \textit{and}, \textit{ʔaḥʔaaʔaƛ} can be used in this way to imply order (\ref{ex:firstandthen}).
+
+\ex \label{ex:firstandthen}
+\begingl
+\glpreamble ʔutwiiʔaaqƛ̓in nanuuk ʔaḥʔaaʔaƛ haʔukšiƛ. //
+\gla ʔu-(t)wii=ʔaaqƛ=(y)in nanuuk ʔaḥʔaaʔaƛ haʔuk-šiƛ //
+\glb \textsc{x}-first=\textsc{fut}=\textsc{weak.1pl} sing.\textsc{dr} and eat.\textsc{dr}-\textsc{mo} //
+\glft `First we will sing and then eat.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+
+Though less common, \textit{ʔaḥʔaaʔaƛ} can also be used to coordinate participants (\ref{ex:andnp}).
+
+\ex \label{ex:andnp}
+\begingl
+\glpreamble ʔaƛamitʔišʔaałʔał ʕaaḥuusʔatḥ ʔaḥʔaaʔaƛ ḥiškʷiiʔatḥ. //
+\gla ʔaƛa=(m)it=ʔiˑš=ʔaał=ʔał ʕaaḥuusʔatḥ ʔaḥʔaaʔaƛ ḥiškʷiiʔatḥ //
+\glb two=\textsc{pst}=\textsc{strg.3}=\textsc{habit}=\textsc{pl} Ahousaht and Hesquiaht //
+\glft `There were two, the Ahousahts and the Hesquiahts.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+
+The coordinator \textit{ʔuḥʔi(i)š} is more constrained. It only coordinates participants (\ref{ex:7uh7is1}).
+
+\ex \label{ex:7uh7is1}
+\begingl
+\glpreamble ʔuḥintin ʔukʷiił n̓uw̓iiqsknaqs ʔuuḥw̓ał ḥumiis ʔuḥʔiiš c̓istuup.. //
+\gla ʔuḥ=int=in ʔu-(č)iił n̓uw̓iiqsu=ʔak=naqs ʔu-L.ḥw̓ał ḥumiis ʔuḥʔiiš c̓istuup //
+\glb be=\textsc{pst}=\textsc{weak.1pl} \textsc{x}-make father=\textsc{poss}=\textsc{pst.defn.1sg} \textsc{x}-use red.cedar and rope //
+\glft `It was my dad that made it using red cedar and rope.' (\textbf{Q}, Sophie Billy) //
+\endgl
+\xe
+
+\textit{ʔaḥʔaaʔaƛ} coordinates clauses (which differ in subject), VPs (which share a subject), and participants. \textit{ʔuḥʔi(i)š} coordinates only participants. The linker, as I will argue below, coordinates a different syntactic category: predicates. As a suffix, it has a greater degree of freedom in its sites of attachment, and its scope of coordination differs from the free morpheme coordinators.
+
+\subsection{Attachment properties} \label{sec:link:attach}
+
+The linker shows considerable flexibility in the stems it attaches to, attaching to nouns (\ref{ex:womangossiping}), adjectives (\ref{ex:strongbear}), verbs (\ref{ex:talkdriving}), and adverbs (\ref{ex:alsobald}).
 
 \ex \label{ex:womangossiping}
 \begingl
@@ -39,7 +152,7 @@ The linker shows considerable flexibility in the stems it attaches to, attaching
 \endgl
 \xe
 
-\noindent Context for (\ref{ex:alsobald}): My friend is going bald. I'm also going bald but I don't look in the mirror much and haven't noticed.\footnote{This scenario was constructed to mirror an example present in \cite{sapir1939}.}
+
 
 \vspace{5pt}
 
@@ -48,9 +161,15 @@ The linker shows considerable flexibility in the stems it attaches to, attaching
 \glpreamble y̓uuqʷaaqḥs ʕasqii ʔaanaḥi wik hinʔałšiƛ. //
 \gla y̓uuqʷaa-(q)ḥ=s ʕasqii ʔaanaḥi wik hinʔał-šiƛ //
 \glb also-\textsc{link}=\textsc{strg.1sg} bald only \textsc{neg} realize-\textsc{mo} //
-\glft `I'm also bald but I don't know it.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\glft `I'm also bald but I don't know it.' (\textbf{C}, \textit{tupaat} Julia Lucas) 
+
+[Context: My friend is going bald. I'm also going bald but I don't look in the mirror much and haven't noticed.\footnotemark] //
 \endgl
 \xe
+
+\footnotetext{This scenario was constructed to mirror an example present in \cite{sapir1939}.}
+
+However, the linker cannot attach complementizers (\ref{ex:hardsmall1}, \ref{ex:hardsmall2}).
 
 \ex~ \label{ex:hardsmall1}
 \begingl
@@ -72,9 +191,9 @@ The linker shows considerable flexibility in the stems it attaches to, attaching
 
 From only this data, the linker appears to distinguish morphologically between content and function categories. Another way of expressing this content/function division is by appealing to what can serve as a syntactic predicate in Nuuchahnulth (see \ref{sec:clause}). Nouns, adjectives, and verbs may all be predicative, and while adverbs are not syntactic predicates themselves, they along with their verb create a main predicate. I will return to the matter of adverbs in \S\ref{sec:link:2p}. Complementizers, on the other hand, are only connective material and cannot be the main predicate of a clause, nor can they be part of the predicative phrase. In following sections, I will refer to the predicate in linker constructions that hosts the linker as the ``linked predicate" and the predicate that lacks it as the ``unlinked" or ``non-linked" predicate.
 
-%\subsubsection{Syntactic properties of linked predicates} \label{sec:link:syn}
+%\subsection{Syntactic properties of linked predicates} \label{sec:link:syn}
 
-\subsubsection{Clause Heading} \label{sec:link:clause}
+\subsection{Clause Heading} \label{sec:link:clause}
 
 A predicate with a linker attached may not head a matrix or dependent clause. I first give some evidence on the flexibility of the relative ordering of the linker, and then examine when they are and are not allowed in matrix and dependent clauses.
 
@@ -182,9 +301,9 @@ Although the word \textit{hił} `be at' frequently takes the linker in texts, it
 
 From these examples, I conclude that the linker requires two predicates to coordinate. This means that the syntactic head of a clause cannot be a predicate with linker morphology. The head must either be the linker itself, or the predicate without linker morphology.
 
-\subsubsection{Sharing second position suffixes and clitics} \label{sec:link:second}
+\subsection{Sharing second position suffixes and clitics} \label{sec:link:second}
 
-Nuuchahnulth has a series of clausal second-position ebclitics, which include tense and subject-mood portmanteaus. In a linker construction, both prediccates share the same subject, mood, and tense.
+Nuuchahnulth has a series of clausal second-position enclitics, which include tense and subject-mood portmanteaus. In a linker construction, both predicates share the same subject, mood, and tense.
 
 \ex \label{ex:stopatmyhouse}
 \begingl
@@ -195,7 +314,7 @@ Nuuchahnulth has a series of clausal second-position ebclitics, which include te
 \endgl
 \xe
 
-The command portmanteau \textit{=!um} in (\ref{ex:stopatmyhouse}) syntactically scopes\footnote{Because of the utility of the concept of scoping in this discussion, I will use the word ``scope" from here on to refer to a syntactic element that has an effect over another syntactic element. This should not be confused with scopal semantics.} over both predicates. My consultant did not accept this utterance as possibly meaning that someone else was stopping. If these clitics belong to the clause as a whole, which there is good independent reason to believe (\citealt[35--36]{rose1981}, \citealt[42--50]{woo2007b}), the linker coordinates predicates below the level of the clause.
+The command portmanteau \textit{=!um} in (\ref{ex:stopatmyhouse}) syntactically scopes\footnote{Because of the utility of the concept of scoping in this discussion, I will use the word ``scope" from here on to refer to a syntactic element that has an effect over another syntactic element. This should not be confused with scopal semantics.} over both predicates. My consultant did not accept this as possibly meaning that someone else was stopping. If these clitics belong to the clause as a whole, which there is good independent reason to believe (\citealt[35--36]{rose1981}, \citealt[42--50]{woo2007b}), the linker coordinates predicates below the level of the clause.
 
 In addition to the clausal second-positions, there are some suffixes which I claim appear in a predicative second position \citep{inman2018}. [[TODO: Regurgitate a summary of the ``predicate position" argument in the clause chapter!]] These include modals and, importantly, the linker itself. The modals in this predicative second position seem to be shared across linked predicates, in a similar fashion to the clitics.
 
@@ -260,7 +379,7 @@ Both predicates in a linker construction share the semantics of the second-posit
 
 %The above examples suggest that the predicate the linker attaches to (along with its complements) may not be a complete sentence, and is dependent on another clause.
 
-\subsubsection{Linkers on non-verbs} \label{sec:link:nonverb}
+\subsection{Linkers on non-verbs} \label{sec:link:nonverb}
 
 The examples so far have focused on linkers attached to verbs. For English speakers, verbal coordination is perhaps the easiest example of syntactic predicates sharing inflectional properties. However, as detailed in \S\ref{sec:link:attach}, it is possible for the linker to attach to a wide variety of non-verbs. The properties of the linker are identical on non-verbs, but it is worthwhile to look at how this works.
 
@@ -434,7 +553,7 @@ Although the one predicate is
 
 \end{comment}
 
-\subsubsection{Ordering in linker constructions} \label{sec:link:participants}
+\subsection{Ordering in linker constructions} \label{sec:link:participants}
 
 I have already demonstrated that the non-linked predicate may be separated from its complement by an intervening linked predicate (\ref{ex:canoesink4}, \ref{ex:canoesink6}, \ref{ex:canoesink6.2}). The reverse ordering is also possible. The linked predicate may be separated from its direct object by the non-linked predicate. In (\ref{ex:workathome}) the verb \textit{hił} `be at' and its object `my house' are contiguous, but in (\ref{ex:workathome2}) they are separated by the non-linked predicate \textit{mamuuk} `work'.
 
@@ -456,7 +575,7 @@ I have already demonstrated that the non-linked predicate may be separated from 
 \endgl
 \xe
 
-Not only is (\ref{ex:workathome2}) grammatical but this is often the structure speakers prefer. For one of my consultants, Northern dialect speaker Fidelia Haiyupis, this kind of object separation was acceptable when the linked predicate was separated from its object (\ref{ex:fhhil}) but not when it the non-linked predicate was separated from its object (\ref{ex:fhqc}, \ref{*ex:fhqc}). I can only note that this may be a feature of Northern dialects, but it is unclear from the small amount of data that I have. %In the above examples, the linked predicate is the one separated from its direct object, but it can also be the non-linked predicate that is separated from its object, as already seen in (\ref{ex:canoesink4}, \ref{ex:canoesink6}).
+Not only is (\ref{ex:workathome2}) grammatical but this is often the structure speakers prefer. For one of my consultants, Northern dialect speaker Fidelia Haiyupis, this kind of object separation was acceptable when the linked predicate was separated from its object (\ref{ex:fhhil}) but not when the non-linked predicate was separated from its object (\ref{ex:fhqc}, \ref{*ex:fhqc}). I can only note that this may be a feature of Northern dialects, but it is unclear from the small amount of data that I have. %In the above examples, the linked predicate is the one separated from its direct object, but it can also be the non-linked predicate that is separated from its object, as already seen in (\ref{ex:canoesink4}, \ref{ex:canoesink6}).
 
 \ex \label{ex:fhhil}
 \begingl
@@ -487,7 +606,7 @@ Not only is (\ref{ex:workathome2}) grammatical but this is often the structure s
 
 \noindent For most speakers, however, both types of ``interruption" are possible.
 
-\subsubsection{The linker and the predicate complex} \label{sec:link:2p}
+\subsection{The linker and the predicate complex} \label{sec:link:2p}
 
 Like many bound morphemes in Nuuchahnulth, the linker appears to attach to the first word in some clause. This has already been seen in (\ref{ex:alsobald}), repeated as (\ref{ex:alsobald2}) below.
 
@@ -526,9 +645,9 @@ In (\ref{stillatwar}), the linker again attaches to an adverb \textit{ʔiiqḥii
 
 These examples, as well the case of modal suffix scoping have led me to believe there is a phrasal unit between the clause (where the second position clitics scope) and the main predicate. I have dubbed this the ``predicate phrase." This phrase consists maximally of the predicate word and preceding adverbs. The predicate linker will attach to the first word in the predicate phrase, whether that is the predicate word itself or a preceding adverb. [[TODO: Move the main arguments up to the clause section]]
 
-\subsubsection{Dangling linkers} \label{sec:link:dangling}
+\subsection{Dangling linkers} \label{sec:link:dangling}
 
-There are a small number of cases where the linker does not appear to be linking its predicate to anything. I believe that the interpretation of these cases shows that there is an elided phrase. The most common is in a formulaic farewell (\ref{takecare}).
+There is one case I know of where the linker does not appear to be linking its predicate to anything. I believe that the interpretation shows that there is an elided phrase (\ref{takecare}).
 
 \ex \label{takecare}
 \begingl
@@ -539,9 +658,9 @@ There are a small number of cases where the linker does not appear to be linking
 \endgl
 \xe
 
-The meaning of (\ref{takecare}) is ``Farewell, look after yourself in whatever you're doing." But ``whatever you're doing" is dropped from the sentence. I think that the linker is a leftover from the elided phrase. These kinds of ``dangling" linkers are uncommon, and in my experience speakers won't accept them out of the blue unless it is a formulaic expression.
+The meaning of (\ref{takecare}) is ``Farewell, look after yourself in whatever you're doing." But ``whatever you're doing" is dropped from the sentence. I think that the linker is a leftover from the elided phrase. %These kinds of ``dangling" linkers are uncommon, and in my experience speakers won't accept them out of the blue unless it is a formulaic expression.
 
-\subsubsection{Semantic and ordering preferences} \label{sec:link:preferences}
+\subsection{Semantic and ordering preferences} \label{sec:link:preferences}
 
 Despite the relative flexibility of which predicate in a construction gets the linker (\S\ref{sec:link:clause}), there are some cases where speakers strongly prefer the linker to go on one or the other predicate.
 
@@ -613,7 +732,7 @@ While Bob was adamant about his ungrammatical judgment, I think the context of r
 
 Both the rephrasing data from Bob and the restricted use of the linker by Sophie suggests some general preferences: all else being equal, a location word should not be the one linked, and the first word should be the one with the linker. [[TODO: Get some numbers over the example sentences collected so far]]
 
-\subsubsection{Data Summary}
+\subsection{Data Summary}
 
 The data presented so far leads to the following conclusions:
 
@@ -630,15 +749,15 @@ The data presented so far leads to the following conclusions:
 	\item There seems to be a preference for linked predicates to occur first and on location words (\S\ref{sec:link:preferences}).
 \end{enumerate}
 
-\subsection{Application of the linker to categoricity questions} \label{sec:link:application}
+\section{Application of the linker to categoricity questions} \label{sec:link:application}
 
 There are some words in Nuuchahnulth whose part of speech properties are not entirely clear. \cite{woo2007b} examines Nuuchahnulth's large (but closed) set of adpositive-like words, and ends up categorizing them as special types of verbs (some of them little-\textit{v}, from a Minimalist perspective). There are other words whose status is somewhat unclear, such as \textit{ʔuunuuƛ}/\textit{ʔunw̓iiƛ} `because of an event', \textit{ʔuusaḥi} `because of a thing', and \textit{ʔuyi} `at a time'. Some of these words accept the linker and others do not. Recall that the linker typically occurs freely on content words such as verbs (\ref{sec:link:attach}), so if these words are verbs, or at least normal verbs, the linker should be able to attach.
 
-Briefly, I show here that \textit{ʔuunuuƛ}/\textit{ʔunw̓iiƛ} `because of an event' do accept the linker, while \textit{ʔuusaḥi} `because of a thing' may not (\ref{sec:link:because}). Similarly, \textit{ʔuyi} `at the time' only accepts the linker marginally (\ref{sec:link:uyi}). Most of the adpositive-like verbs can also accept the linker (\ref{sec:link:adpositive}), but not the special non-subject marking\footnote{The marking properties of these words and are somewhat more complex than this simple story. [[TODO: Put this in the clause section -- It's just non-ARG1, cite Woo.]]} adpositives \textit{ʔuukʷił} and \textit{ʔuḥta}. This aligns with \citeauthor{woo2007b}'s findings.
+Briefly, I show here that \textit{ʔuunuuƛ}/\textit{ʔunw̓iiƛ} `because of an event' do accept the linker, while \textit{ʔuusaḥi} `because of a thing' may not (\ref{sec:link:because}). Similarly, \textit{ʔuyi} `at the time' only accepts the linker marginally (\ref{sec:link:uyi}). Most of the adpositive-like verbs can also accept the linker (\ref{sec:link:adpositive}), but not the special non-subject marking\footnote{The marking properties of these words and are somewhat more complex than this simple story. [[TODO: Put this in the clause section -- It's just non-ARG1, cite Woo.]]} adpositives \textit{ʔuukʷił} and \textit{ʔuḥta}. This aligns with \citeauthor{woo2007b}'s findings, where these words are functional and non-predicative.
 
 The marginal cases of \textit{ʔuusaḥi} and \textit{ʔuyi} suggest words moving from a simple verb to another category, either a restricted verb type or an incipient category of prepositions. On the other hand, evidence from the linker suggests that \textit{ʔuukʷił} and \textit{ʔuḥta} are members of a special syntactic category, either a very small class of prepositions or little-\textit{v}, depending on one's syntactic framework.
 
-\subsubsection{`Because' words} \label{sec:link:because}
+\subsection{`Because' words} \label{sec:link:because}
 
 There are three words in Nuuchahnulth that roughly translate to English `because': \textit{ʔuusaḥi} (all dialects), \textit{ʔuunuuƛ}\footnote{Elder \textit{tupaat} Julia Lucas, who is an Ahousaht speaker, consistently pronounces this word as \textit{ʔunʔuuƛ}. I do not know whether this is a feature of her particular idiolect or a sub-Ahousaht dialect feature of which she is the only known (to me) speaker. I transcribe the word as she pronounces it.} (Barkley and Central, recognized but rare in Northern and Kyuquot-Checleseht) and \textit{ʔunw̓iiƛ} (Northern and Kyuquot-Checleseht only).
 
@@ -666,7 +785,7 @@ To lay some terminological groundwork, I will be using the technical terms \text
 \endgl
 \xe
 
-The apodosis can be introduced with a complementizer, as in ({ex:unwiitl2}) above and (\ref{ex:uunuutl5}) below. The complementizer may not be used to introduce the protasis (\ref{ex:uunuutl6}, \ref{ex:uunuutl7}).
+The apodosis can be introduced with a complementizer, as in (\ref{ex:unwiitl2}) above and (\ref{ex:uunuutl5}) below. The complementizer may not be used to introduce the protasis (\ref{ex:uunuutl6}, \ref{ex:uunuutl7}).
 
 \ex \label{ex:uunuutl5}
 \begingl
@@ -699,7 +818,7 @@ Context for (\ref{ex:uunuutl6}, \ref{ex:uunuutl7}): There are two teams playing 
 \endgl
 \xe
 
-\footnotetext{This actual meaning of (\ref{ex:uunuutl7}) would be the opposite of what makes sense in the story. ``It's backwards," in my consultant's words.}
+\footnotetext{The actual meaning of (\ref{ex:uunuutl7}), `they had medicine because they won' would be the opposite of what makes sense in the story. ``It's backwards," in my consultant's words.}
 
 As demonstrated in (\ref{ex:uunuutl6}, \ref{ex:uunuutl7}), the becausative can have a linker attached, in which case the linker must be linking the becausative to the following apodosis, since the protasis is explicitly subordinated by the complementizer. The complementizer is optional in this linker construction, and the order of becausative and apodosis is flexible (\ref{ex:unwiitllink1}).
 
@@ -716,13 +835,15 @@ One of my consultants, Bob Mundy (Ucluelet), translated the linker attachment in
 
 So far, the evidence suggests that these becausatives have at least one argument, the protasis, which can optionally be introduced with a complementizer. The apodosis is more complicated since it is the argument that the linker morpheme ``links" the becausative to (\ref{ex:unwiitllink1}). If the linker is behaving here as it has in other constructions, that would mean that the apodosis is not an argument of the becausative in those constructions. So is the apodosis an argument in the because constructions without the linker in (\ref{ex:uunuutl1}--\ref{ex:uunuutl5})?
 
-The answer appears to be no, the apodosis is never an argument of the becausative. This can be seen in (\ref{ex:uunuutl3}--\ref{ex:uunuutl3}), where the ordering of the clause is reversed from what has been seen so far: the apodosis precedes the becausative. These constructions are highly analogous to the SVCs of adpositive-like verbs (\S\ref{sec:sv:data}).
+I believe the answer is no: The apodosis is never an argument of the becausative. (\ref{ex:uunuutl1}--\ref{ex:uunuutl5}) have the same argument ordering as in (\ref{ex:unwiitllink1}), but without a linker attached. The protasis is also explicitly subordinated with a subordinate subject-mood portmanteau (the definite and the weak moods, respectively). The apodosis is the main predicate of the sentence and takes the main clause's subject-mood portmanteau. If the becausative is a verb, the structure in (\ref{ex:uunuutl1}--\ref{ex:uunuutl5}) is very like the SVCs of adpositive-like verbs (\S\ref{sec:sv:data}).
+
+ %This can be seen in (\ref{ex:uunuutl3}--\ref{ex:unwiitl1}), where the ordering of the clause is reversed from (\ref{ex:uunuutl1}--\ref{ex:uunuutl5}). In (\ref{ex:uunuutl1}--\ref{ex:uunuutl5}), the becausative is the first word, followed by the apodosis, then the protasis. These constructions are highly analogous to the SVCs of adpositive-like verbs (\S\ref{sec:sv:data}).
 
 \vspace{5pt}
 
 \noindent Context for (\ref{ex:uunuutl3}, \ref{ex:unwiitl1}): Two teams are playing tug of war. Our team is strongest and we won.
 
-\ex~ \label{ex:uunuutl3}
+\ex \label{ex:uunuutl3}
 \begingl
 \glpreamble hiteʔitapin ʔuunuuƛ našukqin. //
 \gla hiteʔitap=(m)in ʔuunuuƛ našuk=qin //
@@ -740,11 +861,11 @@ The answer appears to be no, the apodosis is never an argument of the becausativ
 \endgl
 \xe
 
-Examples like (\ref{ex:uunuutl3}) and (\ref{ex:uunuutl1}) are in some ways the rarest form of the because construction. My consultant Marjorie Touchie (Ucluelet) freely and frequently produced constructions like this, but Fidelia Haiyupis (Ehatesaht) and Julia Lucas (Ahousaht) rejected examples like this, insisting that these cases needed to contain a linker. However, both Fidelia and Julia produced such a sentence in fluent speech. If I had to make a guess about why these sentences sounded strange out of the blue, it would be that the becausative-first construction is the older and more conservative pattern, while the apodosis-first construction is newer. However, this is speculation.
+Examples like (\ref{ex:uunuutl3}) and (\ref{ex:unwiitl1}) are in some ways the rarest form of the because construction. My consultant Marjorie Touchie (Ucluelet) freely and frequently produced constructions like this, but Fidelia Haiyupis (Ehatesaht) and Julia Lucas (Ahousaht) rejected examples like this, insisting that these cases needed to contain a linker. However, both Fidelia and Julia produced such a sentence in fluent speech. If I had to make a guess about why these sentences sounded strange out of the blue, it would be that the becausative-first construction is the older and more conservative pattern, while the apodosis-first construction is newer, possibly under the influence of the English word order. However, this is speculation.
 
 Finally, \textit{ʔuunuuƛ}/\textit{ʔunw̓iiƛ} must take a protasis that is verbal, not nominal (\ref{ex:uunuutl2}, which is from the same context as \ref{ex:uunuutl1}) or adjectival (\ref{ex:uunuutl4}). This is somewhat unusual, given the language's flexibility around predication (\S\ref{sec:clause}).
 
-\ex~ \label{ex:uunuutl2}
+\ex \label{ex:uunuutl2}
 \begingl
 \glpreamble *wikitaḥ ƛuł weʔič ʔuunuuƛ nay̓aqakʔisʔi. //
 \gla wik=(m)it=(m)aˑḥ ƛuł weʔič ʔuunuuƛ nay̓aqak=ʔis=ʔiˑ //
@@ -915,9 +1036,9 @@ The noun phrase protasis must also occur immediately following \textit{ʔuusaḥ
 ʔuusaqtumtʔiš ʔuusaḥiqḥ wik̓aałukʷint
 \end{comment}
 
-\textit{ʔuusaḥi} does appear to be able to take the linker, although like the use of the complementizer, this changes the part of speech of its complement.
+\textit{ʔuusaḥi} is able to take the linker, although like the use of the complementizer, this changes the syntactic category of its complement, from a noun or participant to a clause.
 
-\ex~ \label{ex:uusahiqh}
+\ex \label{ex:uusahiqh}
 \begingl
 \glpreamble ʔuusaqtumtʔiš ʔuusaḥiqḥ wik̓aałukʷint. //
 \gla ʔuusaqta=umt=ʔiˑš ʔuusaḥi-(q)ḥ wik-!aałuk=int //
@@ -930,7 +1051,7 @@ The noun phrase protasis must also occur immediately following \textit{ʔuusaḥ
 
 Like \textit{ʔuunuuƛ}/\textit{ʔunw̓iiƛ}, \textit{ʔuusaḥi} appears to be a verb taking a single argument, a protasis. This is associated with the apodosis of the \textsc{because} relation via either a serial verb construction with the clausal apodosis, or with a linker. Unlike \textit{ʔuunuuƛ}/\textit{ʔunw̓iiƛ}, \textit{ʔuusaḥi} takes a nominal protasis, but this can be changed into a verbal protasis with either the introduction of the complementizer or by attaching the linker to \textit{ʔuusaḥi}.
 
-\subsubsection{\textit{ʔuyi}} \label{sec:link:uyi}
+\subsection{\textit{ʔuyi}} \label{sec:link:uyi}
 
 Of the possibly-verbal, possibly-adpositional words in Nuuchahnulth, \textit{ʔuyi} and \textit{ʔuukʷił} are perhaps the most ambiguous cases (Adam Werle, \textit{p.c.}). The meaning of \textit{ʔuyi} is `at (a time)' and it typically cooccurs with another predicative word in a sentence. In this case, the clausal clitics scope over both predicates (\ref{ex:uyin}--\ref{ex:uyidrop}). The temporal complement of \textit{ʔuyi} can be a nominal either occurring after (\ref{ex:uyin}) or before (\ref{ex:uyiobj}) \textit{ʔuyi} itself, it can be expressed in a clause with a dependent mood such as the possible mood (\ref{ex:uyipssb}) or the definite mood (\ref{ex:uyidef}), or it can be dropped from the clause entirely (\ref{ex:uyidrop}).
 
@@ -1052,7 +1173,7 @@ I am unable to explain why (\ref{ex:uyiqh3}) is grammatical and (\ref{ex:uyiqh2}
 
 The marginality of linkers on \textit{ʔuyi} -- and its capacity for grammatical doubling -- suggests that there is something special about this word, although it behaves in most other ways like a verb entering into a serial verb construction. Like \textit{ʔuusaḥi} (\S\ref{sec:link:because}), \textit{ʔuyi} may be a change-in-progress, from a verb to something preposition-like.
 
-\subsubsection{Adpositive-like words} \label{sec:link:adpositive}
+\subsection{Adpositive-like words} \label{sec:link:adpositive}
 
 In her dissertation, \cite{woo2007b} examines the syntax of what she terms ``prepositional predicates" and, ultimately, agrees with previous researchers that these words are verbs. The words she considers are: (1) \textit{ʔuuḥw̓ał} `using', (2) \textit{ʔuuʔink} `using', (3) \textit{ʔuucḥin} benefactive, (4) \textit{ʔuʔatup} benefactive/recipient, (5) \textit{ʔuukčamałčiqḥ} `do together with someone', (6) \textit{ʔukʷink} `go with', (7) \textit{ʔuukʷił} `do to', (8) \textit{ʔuḥta} `do to', and (9) \textit{ʔuḥ} subject marker.
 
@@ -1060,7 +1181,7 @@ In her dissertation, \cite{woo2007b} examines the syntax of what she terms ``pre
 
 However, the  latter three words (\textit{ʔuukʷił}, \textit{ʔuḥta}, and \textit{ʔuḥ}) optionally mark arguments already inherent in the main verb. They require a main predicate to form a grammatical sentence (or may only be used alone in special circumstances, like question-answering). These \citeauthor{woo2007b} categorizes as flavors of \textit{v}.
 
-Although I approach my analysis from within a different framework, I agree with \citeauthor{woo2007b}'s broad categorization. I checked speaker's intuitions about attaching the linker \textit{-(q)ḥ} to these adpositive-like words and the judgments I received support \citeauthor{woo2007b}'s bifurcation into two categories, and importantly that the first category are in fact verbs. Not all speakers recognize or use all of these adpositive-like words, so I was only able to test a subset. There is also a morphophonological problem testing \textit{ʔuḥ} (which would be a *?\textit{ʔuḥḥ} with the linker). However, I have collected data on (1) \textit{ʔuuḥw̓ał}, (3) \textit{ʔuucḥin}, (4) \textit{ʔuʔatup}, (not in \citeauthor{woo2007b}'s list) \textit{ʔuupaał}, (7) \textit{ʔuukʷił}, and (8) \textit{ʔuḥta}. In short,the words \citeauthor{woo2007b}'s calls verbs mostly accept the linker, while all of her ``little-\textit{v}" words do not.
+Although I approach my analysis from within a different framework, I agree with \citeauthor{woo2007b}'s broad categorization. I checked speaker's intuitions about attaching the linker \textit{-(q)ḥ} to these adpositive-like words and the judgments I received support \citeauthor{woo2007b}'s bifurcation into two categories, and importantly that the first category are in fact verbs. Not all speakers recognize or use all of these adpositive-like words, so I was only able to test a subset. There is also a morphophonological problem testing \textit{ʔuḥ} (which would be a *?\textit{ʔuḥḥ} with the linker). However, I have collected data on (1) \textit{ʔuuḥw̓ał}, (3) \textit{ʔuucḥin}, (4) \textit{ʔuʔatup}, (not in \citeauthor{woo2007b}'s list) \textit{ʔuupaał}, (7) \textit{ʔuukʷił}, and (8) \textit{ʔuḥta}. In short, the words \citeauthor{woo2007b}'s calls verbs mostly accept the linker, while all of her ``little-\textit{v}" words do not.
 
 \paragraph{\textit{ʔuuḥw̓ał}} \label{sec:link:uuhwal} The adpositive verb \textit{ʔuuḥw̓ał} `using' can accept the linker in a sentence without any change of meaning.
 
@@ -1142,6 +1263,41 @@ Although I approach my analysis from within a different framework, I agree with 
 
 \paragraph{\textit{ʔuupaał}} Though this does not appear in \cite{woo2007b}, it is another adpositive-like verb that appears to have the same meaning as \textit{ʔukʷink} `with'. My consultants familiar with the word used it both with and without the linker.
 
+\ex \label{ex:uupaal1}
+\begingl
+\glpreamble ciiqmałapiw̓it̓asniš ʔuupaał y̓ukʷiiqsakqs. //
+\gla ciq-mał-api-LS-w̓it̓as=niˑš ʔuupaał y̓ukʷiiqsu=ʔak=qs. //
+\glb speak-move.\textsc{dr}-above-\textsc{grad}-going.to=\textsc{strg.1pl} with younger.sibling=\textsc{poss}=\textsc{defn.1sg} //
+\glft `I am going to speak with my younger sister.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+
+\ex~ \label{ex:uupaalqh1}
+\begingl
+\glpreamble ciiqmałapiw̓it̓asniš ʔuupaałqḥ y̓ukʷiiqsakqs. //
+\gla ciq-mał-api-LS-w̓it̓as=niˑš ʔuupaał-(q)ḥ y̓ukʷiiqsu=ʔak=qs. //
+\glb speak-move.\textsc{dr}-above-\textsc{grad}-going.to=\textsc{strg.1pl} with-\textsc{link} younger.sibling=\textsc{poss}=\textsc{defn.1sg} //
+\glft `I am going to speak with my younger sister.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+
+\ex~ \label{ex:uupaal2}
+\begingl
+\glpreamble ʔuupaałw̓it̓asaḥ yaqsčaʕinukqas k̓anisw̓it̓as. //
+\gla ʔuupaał-w̓it̓as=(m)aˑḥ yaq-sčaʕin=uk=qas k̓anis-w̓it̓as. //
+\glb with-going.to=\textsc{real.1sg} who-be.friend=\textsc{poss}=\textsc{defn.1sg} camp-going.to //
+\glft `I'm going camping with my friends.' (\textbf{B}, Marjorie Touchie) //
+\endgl
+\xe
+
+\ex~ \label{ex:uupaalqh2}
+\begingl
+\glpreamble waałakaḥ namint ʔuupaałḥ yaqsčaʕinukqas k̓anisw̓it̓as. //
+\gla wałaak-LS=(m)aˑḥ namint ʔuupaał-(q)ḥ yaq-sčaʕin=uk=qas k̓anis-w̓it̓as. //
+\glb go.\textsc{mo}-\textsc{grad}=\textsc{real.1pl} Namint with-\textsc{link} who-be.friend=\textsc{poss}=\textsc{defn.1sg} camp-going.to //
+\glft `I am going to go with my friends to camp at Namint.' (\textbf{B}, Bob Mundy) //
+\endgl
+\xe
 	
 \paragraph{\textit{ʔuukʷił}} \label{sec:link:uukwil} Unlike the fully predicative verbs above, \textit{ʔuukʷił} `do to' does not accept the linker.
 
@@ -1187,10 +1343,10 @@ Although I approach my analysis from within a different framework, I agree with 
 \endgl
 \xe
 
-\subsubsection{Summary of the linker and class-ambiguous words}
+\subsection{Summary of the linker and class-ambiguous words}
 
 I believe that this data about the attachment of the predicate linker can help shed light on the categoricity of these words. \textit{ʔuunuuƛ} and \textit{ʔunw̓iiƛ} `because' behave like verbs, and I believe they should be treated as such. \textit{ʔuyi} appears verbal but more marginally so, and is possibly in the process of transitioning to a preposition. The adpositive-like words that can accept the linker seem to be clearly verbal, which agrees with \cite{woo2007b}'s categorization. However the argument-marking words \textit{ʔuukʷił} and \textit{ʔuḥta} behave differently, as befitting non-predicative words belonging to a different category.
 
-\subsection{HPSG Analysis and Implementation} \label{sec:link:analysis}
+\section{HPSG Analysis and Implementation} \label{sec:link:analysis}
 
 %\subsection{Implementation} \label{sec:link:implementation}

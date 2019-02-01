@@ -1,26 +1,39 @@
-\documentclass[12pt]{article}
-\usepackage{xltxtra, fontspec, graphicx, adjustbox}
+\documentclass[11pt, proquest, natbib]{uwthesis}
+\usepackage{verbatim}
+\begin{comment}
+%\usepackage{xltxtra}
+\usepackage{fontspec}
+%\usepackage{graphicx}
+\usepackage{adjustbox}
 \usepackage{expex, epltxfn, avm}
 %\usepackage{tikz, tikz-qtree}
 %\usetikzlibrary{trees}
 \usepackage[linguistics]{forest}
 \usepackage{amsmath, amsfonts, amssymb}
 \usepackage{enumitem}
-\usepackage{caption, scrextend, verbatim, multicol, array, url}
+\usepackage{caption}
+%\usepackage{scrextend}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{url}
 \usepackage{multirow, rotating}
-\usepackage{indentfirst, titling}
+%\usepackage{indentfirst, titling}
 \usepackage{csquotes}
 \usepackage{natbib, multibib, filecontents}
 \usepackage{cleveref}
-\usepackage[multiple]{footmisc}
-\usepackage[hmargin={1in}, vmargin={1in}]{geometry}
+%\usepackage[multiple]{footmisc}
+%\usepackage[hmargin={1in}, vmargin={1in}]{geometry}
 %\usepackage[polutonikogreek,english]{babel}
 %\usepackage{standalone}
-\usepackage{titlesec}
+%\usepackage{titlesec}
 \usepackage{fixltx2e}
 \usetikzlibrary{backgrounds}
 \tikzstyle{bigbox}=[draw, inner sep=18pt]
+\end{comment}
 \setcounter{secnumdepth}{4}
+\newcommand{\basedir}{.}
+\input{config}  % package imports and configuration
+%\input{\basedir/macros}  % document-specific macros
 %\defaultfontfeatures{Ligatures=TeX}
 \setcitestyle{aysep={},notesep={:}}
 
@@ -35,39 +48,30 @@
 \avmvalfont{\rm}
 
 \setmainfont{Brill}
-\title{Multi-predicate constructions in Nuuchahnulth}
-\author{David Inman}
-\date{}
 
-\maketitle{}
+\prelimpages
+
+\input{title}
+\input{abstract}
 
 \tableofcontents
+\listoffigures
+\listoftables
 
-%\section{Introduction}
-%\input{clause}
+\textpages
 
-%\section{Background}
-%\input{background}
-
-\section{The Basic Clause} \label{sec:clause}
 \input{clause}
-
-\section{Methodology} \label{sec:methodology}
 \input{methodology}
-
-\section{Serial Verbs} \label{sec:sv}
 \input{serialverb}
-
-\section{The Linker} \label{sec:link}
 \input{linker}
 
 \bibliographystyle{apalike2}
 \bibliography{../bib/ncnbib}
 
-\appendix{Orthography}
-\input{orthography}
 
-\appendix{Glossing Conventions}
+\appendix
+
+\input{orthography}
 \input{glossing}
 
 \end{document}

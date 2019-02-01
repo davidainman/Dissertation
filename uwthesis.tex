@@ -1,0 +1,412 @@
+%  ========================================================================
+%  Copyright (c) 1985 The University of Washington
+%
+%  Licensed under the Apache License, Version 2.0 (the "License");
+%  you may not use this file except in compliance with the License.
+%  You may obtain a copy of the License at
+%
+%      http://www.apache.org/licenses/LICENSE-2.0
+%
+%  Unless required by applicable law or agreed to in writing, software
+%  distributed under the License is distributed on an "AS IS" BASIS,
+%  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+%  See the License for the specific language governing permissions and
+%  limitations under the License.
+%  ========================================================================
+%
+
+% Documentation for University of Washington thesis LaTeX document class
+% by Jim Fox
+% fox@washington.edu
+%
+%    Revised for version 2015/03/03 of uwthesis.cls
+%    Revised, 2016/11/22, for cleanup of sample copyright and title pages
+%
+%    This document is contained in a single file ONLY because
+%    I wanted to be able to distribute it easily.  A real thesis ought
+%    to be contained on many files (e.g., one for each chapter, at least).
+%
+%    To help you identify the files and sections in this large file
+%    I use the string '==========' to identify new files.
+%
+%    To help you ignore the unusual things I do with this sample document
+%    I try to use the notation
+%       
+%    % --- sample stuff only -----
+%    special stuff for my document, but you don't need it in your thesis
+%    % --- end-of-sample-stuff ---
+
+
+%    Printed in twoside style now that that's allowed
+%
+ 
+\documentclass [11pt, proquest] {uwthesis}[2016/11/22]
+
+\usepackage{fontspec}
+
+%\setmainfont[BoldFont={Nimbus Roman No9 L Medium},
+%ItalicFont={Nimbus Roman No9 L Regular Italic},
+%Mapping=tex-text]
+%{Doulos SIL}
+
+% The following line would print the thesis in a postscript font 
+
+% \usepackage{natbib}
+% \def\bibpreamble{\protect\addcontentsline{toc}{chapter}{Bibliography}}
+
+\setcounter{tocdepth}{1}  % Print the chapter and sections to the toc
+ 
+
+% ==========   Local defs and mods
+%
+
+% --- sample stuff only -----
+% These format the sample code in this document
+
+\usepackage{alltt}  % 
+\newenvironment{demo}
+  {\begin{alltt}\leftskip3em
+     \def\\{\ttfamily\char`\\}%
+     \def\{{\ttfamily\char`\{}%
+     \def\}{\ttfamily\char`\}}}
+  {\end{alltt}}
+ 
+% metafont font.  If logo not available, use the second form
+%
+% \font\mffont=logosl10 scaled\magstep1
+\let\mffont=\sf
+% --- end-of-sample-stuff ---
+ 
+% Custom packages (did not come with the UW template originally):
+
+\usepackage{url}
+\usepackage{latexsym}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{environ}
+\usepackage{gb4e}
+\usepackage{avm}
+\usepackage{forest,adjustbox}
+\useforestlibrary{linguistics}
+\forestapplylibrarydefaults{linguistics}
+\usepackage[round]{natbib}
+%\bibliographystyle{myplainnat}
+\usepackage{multirow}
+\usepackage{bibentry}
+\usepackage{rotating}
+
+%\setmainfont{Linux Libertine O} 
+% \usepackage{tablefootnote}
+% \usepackage{setspace}
+% \usepackage{outlines}
+% \usepackage{enumitem}
+% \setenumerate[1]{label=\Roman*.}
+% \setenumerate[2]{label=\Alph*.}
+% \setenumerate[3]{label=\roman*.}
+% \setenumerate[4]{label=\alph*.}
+
+\newcommand{\cf}{cf.}
+\newcommand{\wh}{{\it Wh}}
+\newcommand{\eg}{e.g.}
+\newcommand{\etal}{et al.}
+\newcommand{\etc}{etc.}
+\newcommand{\ie}{i.e.}
+\newcommand{\vs}{vs.}
+\newcommand{\viz}{viz.}
+\newcommand{\wrt}{w.r.t.}
+\newcommand{\sref}[1]{\S\kern 0.5pt\ref{#1}}
+
+\newcommand{\init}{\textsc{init}}
+\newcommand{\extra}{\textsc{extra}}
+
+
+% \hyphenation{analysis}
+
+% \newcolumntype{T}{>{\refstepcounter{tabenum}}X}
+% \newcounter{tabenum}[xnumi]
+% \renewcommand{\thetabenum}{\thexnumi\alph{tabenum}}
+% \newcommand*{\tabex}{\relax\alph{tabenum}.\quad}
+% \NewEnviron{multiexe}{%
+%     \setlength{\extrarowheight}{1ex}
+%     \begin{tabularx}{\linewidth}[t]{@{}TTT@{}}
+%        \BODY
+%     \end{tabularx}
+% }
+ \raggedbottom
+
+
+\begin{document}
+ 
+% ==========   Preliminary pages
+%
+% ( revised 2012 for electronic submission )
+%
+
+\prelimpages
+ 
+%
+% ----- copyright and title pages
+%
+ \Title{Modeling Constituent Questions for the Grammar Matrix}
+ \Author{Olga Zamaraeva}
+ \Year{2018}
+ \Program{Linguistics}
+
+ \Chair{Emily M. Bender}{Professor}{Linguistics}
+ \Signature{Sharon Hargus}
+\Signature{Gina-Anne Levow}
+\Signature{Barbara Citko}
+
+\copyrightpage
+
+\titlepage  
+
+ 
+%
+% ----- signature and quoteslip are gone
+%
+
+%
+% ----- abstract
+%
+
+
+\setcounter{page}{-1}
+\abstract{%
+abstract
+}
+ 
+%
+% ----- contents & etc.
+%
+\tableofcontents
+\listoffigures
+\listoftables  % I have no tables
+ 
+%
+% ----- glossary 
+%
+\chapter*{Glossary}      % starred form omits the `chapter x'
+\addcontentsline{toc}{chapter}{Glossary}
+\thispagestyle{plain}
+%
+ \begin{glossary}
+ \item[argument] replacement text which customizes a \LaTeX\ macro for
+ each particular usage.
+ 
+ \end{glossary}
+ 
+%
+% ----- acknowledgments
+%
+\acknowledgments{% \vskip2pc
+   {\narrower\noindent
+  The author wishes ...
+   \par}
+}
+
+%
+% ----- dedication
+%
+\dedication{\begin{center}to my cat\end{center}}
+
+%
+% end of the preliminary pages
+ 
+ 
+ 
+%
+% ==========      Text pages
+%
+
+\textpages
+ 
+% ========== Chapter 1
+
+\chapter{Introduction}
+
+% ========== Chapter 2
+
+\chapter{Constituent Questions}
+
+\section{Question words}
+\subsection{ERG}
+Question words include quantifiers:
+
+\includegraphics[width=\textwidth]{figures/erg-which-quant}
+
+\subsection{G\&S}
+Question words are not quantifiers.
+
+\subsection{My analysis}
+What is it going to be?
+
+\section{In-situ}
+Is this in scope?
+
+In-situ questions are usually marked by intonation. Abui. 
+
+\section{Role of serial and other verbs, special constructions}
+
+Abui \citep{kratochvil2007grammar}.
+
+\begin{exe}
+\ex \gll  te wi-r=te a enra? \\
+where be.like.{\sc md.cpl.}-reach={\sc incp.c} {\sc 2sg} cry.{\sc cnt} \\
+`Why do you cry?', lit.: where does it make so that you cry?
+\end{exe}
+
+\begin{exe}
+\ex \gll kaai te wi-d-a hu he-l rui nee \\
+dog where be.like.{\sc md.cpl}-hold-{\sc dur} {\sc spc} {\sc 3ii.loc}-give rat eat\\
+`What kind of dog did eat the rat?'
+\end{exe}
+
+\begin{exe}
+\ex \gll ma e-d-o a te=ng yaar-i?\\
+be.{\sc prx} {\sc 2sg.loc}-hold-{\sc pnct} {\sc 2sg} where=see go.{\sc cpl-pfv}\\
+`well, you, where did you go?'
+\label{ex:abz1}
+\end{exe}
+
+
+\section{Morphological Marking}
+In some languages, there is a special interrogative paradigm (\ref{ex:yukaghir1}).
+
+\begin{exe}
+\ex \gll qodo lʔe-t-о̄k?\\
+how be-{\sc fut-interrog.1pl}\\
+`What shall we do?' [yux] \citep[][p. 9]{hagege2008towards}
+\label{ex:yukaghir1}
+\end{exe}
+
+
+\section{Interrogative verbs}
+\label{sec:wh-verbs}
+\citet{hagege2008towards} defines `interrogative verbs' (illustrated by example \ref{ex:cuckchi1} from Chukchee) as words which function as the main or secondary predicate in the sentence and at the same time question the state of affairs denoted by the predicate. \citet{hagege2008towards} clarifies that interrogative verbs do not question their arguments but again, the very state of affairs that they themselves denote.
+{\it Do.what} is a common type of interrogative verb (\ref{ex:cuckchi1})-(\ref{ex:cmn3}); others include {\it be.what, be.where, say.what, go.where} (\ref{ex:tiri1})-(\ref{ex:comox1}).
+
+
+\begin{exe}
+%\ex
+%\begin{xlist}
+\ex \gll req-ərkə n-əm igirkej gə-nin ekək?\\
+do.what-{\sc prog-emph} right.now {\sc 2sg-pos} son.{\sc abs}\\
+`What is your son doing right now?' Chukchee [ckt] \cite[p. 1147]{mackenzie2009content}
+%\end{xlist}
+\label{ex:cuckchi1}
+\end{exe}
+
+ \begin{exe}
+ %\ex
+ %\begin{xlist}
+ \ex \gll n\v{\i} z\`{a} g\`{a}nm\'{a}?\\
+ {\sc 2sg} {\sc prog} do.what\\
+ `What are you doing?' [cmn] \cite[p. 2]{hagege2008towards}
+ %\end{xlist}
+ \label{ex:cmn3}
+ \end{exe}
+
+ \begin{exe}
+ %\ex
+ %\begin{xlist}
+ \ex \gll ke tr\`{o}?\\
+ {\sc 2sg} be.what\\
+ `What is the matter with you?' [cir] \cite[p. 5]{hagege2008towards}
+ %\end{xlist}
+ \label{ex:tiri1}
+ \end{exe}
+
+ \begin{exe}
+ %\ex
+ %\begin{xlist}
+ \ex \gll vasia-m oina?\\
+ be.where-{\sc sg.m} {\sc semiact.med.sg.m}\\
+ `Where is he?' [lvk] \cite[p. 5]{hagege2008towards}
+ %\end{xlist}
+ \label{ex:lavukaleve1}
+ \end{exe}
+
+ \begin{exe}
+ \ex \gll ʔeʔenət-\v{c}xw?\\
+ say.what.{\sc prog-sg.s}\\
+ `What are you saying?' [coo] \cite[p. 5]{hagege2008towards}
+ \ex \gll \v{c}em-\v{s}en-0?\\
+ go.where.{\sc pst}-foot-{\sc 3sg.s}\\
+ `Where did he walk to?' [coo] \cite[p. 5]{hagege2008towards}
+ \label{ex:comox1}
+ \end{exe}
+ 
+Interrogative verbs do not seem to synchronically be incorporation, though the degree to which they are morphologically analyzable is variable \citep{hagege2008towards}; many interrogative verb stems are very simple and in some cases there is clearly a non-compositional meaning, as in  (\ref{ex:kayardild1}):
+
+
+%\begin{exe}
+ %\ex
+ %\begin{xlist}
+ %\ex \gll ŋuru-yanaʔme-n?\\
+ %{\sc 1incl.pl}-do.what-{\sc aux.prs}\\
+ %`What'll we all do?' [nig] \cite[p. 6]{hagege2008towards}
+ %\end{xlist}
+ %\label{ex:ngalakan1}
+ %\end{exe}
+
+\begin{exe}
+ %\ex
+ %\begin{xlist}
+ \ex \gll nyingka ngaaka-watha\\
+ {\sc 2sg.nom} what-{\sc inch}\\
+ `What are you doing?' [gyd] \cite[p. 6]{hagege2008towards}
+ %\end{xlist}
+ \label{ex:kayardild1}
+ \end{exe}
+
+
+Considering languages where verbs have obligatory inflections, \citet{hagege2008towards} only considers interrogative verbs items which inflect accordingly. At the same time, in West Greenlandic, there are items which do not take verb inflection but nonetheless act as predicates, as in (\ref{ex:kal1}-a), which can be compared to (\ref{ex:kal1}-b), where the verb takes inflectional markers that are normal for this language.
+
+ \begin{exe}
+ \ex
+ \begin{xlist}
+ \ex \gll naak savik-ga?\\
+ be.where knife-{\sc 1sg}\\
+ `Where is my knife?' [coo] \cite[p. 9]{hagege2008towards}
+ \ex \gll savik-ga su-mi-it-pa-0?\\
+ knife-{\sc 1sg} what-{\sc loc}-be-{\sc qm-3sg}\\
+ `Where is my knife?' [coo] \cite[p. 9]{hagege2008towards}
+ \end{xlist}
+ \label{ex:kal1}
+ \end{exe}
+
+\section{Semantics of Questions}
+\citet{ginzburg2000interrogative} discuss whether or not {\wh} questions are generalized quantifiers and
+conclude that they are not. Their view of question phrases' role is that they (1) enable a level of abstraction to occur, and
+(2) introduce restrictions over the argument (e.g.\ {\it who} implies personhood). They argue that there is no need in
+the quantificational view for {\wh} phrases and that such a view imposes unnecessary complications. 
+
+\citet{ginzburg2000interrogative} model the semantics of questions using the {\it message} type. This type
+was originally part of the Grammar Matrix and other DELPH-IN grammars but was eliminated from there
+due to FIXME. It was replaced by the SF feature (Sentential Force) which can be e.g.\ {\it prop} for `proposition' 
+or {\it ques} for `question'. The advantages of using SF are FIXME. The main disadvantage from the point of view of
+modeling {\wh} questions for the Grammar Matrix is the inability to link different {\wh} words to different arguments in
+nested (?) clauses (or is it in one clause, too?).
+
+\citet{ginzburg2000interrogative} observe that while some predicates embed ``true'' questions (e.g.\ {\it investigate}),
+other predicates do not (e.g.\ `find out'). Is this important for the Grammar Matrix? See pp. 66-67.
+
+% ========== Chapter 3
+
+\chapter{Background and Related Work}
+
+
+\section{DELPH-IN Grammars}
+
+
+\subsection{Head-driven Phrase Structure Grammar}
+
+
+Head-driven Phrase Structure Grammar \citep[HPSG;][]{Pol:Sag:94} is a theory of syntax and syntax and semantics interface. It is a constraint unification-based theory that relies on a hierarchy of types and on several principles having to do with structure sharing.
+
+
+%\bibliographystyle{myplainnat}
+%\bibliography{master}
+
+\end{document}

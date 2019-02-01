@@ -1,4 +1,6 @@
-\subsection{Syntactic Predication} \label{sec:predp}
+\chapter{The Basic Clause}
+\label{ch:clause}
+\section{Syntactic Predication} \label{sec:predp}
 
 Like many languages of the Pacific Northwest, Nuuchahnulth is predicate-initial and has a great deal of flexibility with respect to what parts of speech can be used predicatively \citep{jacobsen1979}. Because the term ``predicate" (and associated derivations ``predicative" and so on) is often ambiguous between syntactic and semantic concepts, I will use special vocabulary to distinguish syntactic and semantic phenomena.
 
@@ -141,7 +143,7 @@ The way I model this predicate flexibility is by declaring that clauses are head
 \xe
 
 
-\subsection{Participant Phrase} \label{sec:partp}
+\section{Participant Phrase} \label{sec:partp}
 
 Just as verbs, nouns, and adjectives may all be predicates, they may also all be participants. (\ref{ex:adjpred}) has a straightforwardly nominal participant, the noun and article \textit{ḥaakʷaaƛʔi} `the young girl.' However, verbs (\ref{ex:verbpart}) and adjectives (\ref{ex:adjpart}) may also serve as participants.
 
@@ -324,7 +326,7 @@ The event variable \textit{e} is there for sentential tense, aspect, mood, and e
 
 %That is, common nouns are neither specified for [\textsc{pred} +] nor [\textsc{pred} --], so they may happily unify in a predicative position without an article (taking on a -- value) or with the predicative clitics, including the article (taking on a + value). This means that in sentences like (\ref{ex:verbpred}), the participant phrase \textit{hałmiiḥa quuʔas} `drowning person' is in fact an NP. Since it is [\textsc{head} noun], and noun is [\textsc{pred} ?], the NP happily unifies through the head-complement rule that is expecting a [\textsc{pred} --] complement. In the same way, NPs may be selected for by the article \textsc{=ʔiˑ}, and so the PartP \textit{ḥaakʷaaƛ=ʔiˑ} `the young woman' in (\ref{ex:adjpred}) may be built up in the same way as in (\ref{ex:verbparttree}, \ref{ex:adjparttree}) above. Common nouns are unique in this way.
 
-\subsection{Participant Ordering}
+\section{Participant Ordering}
 
 There is a strong tendency in Nuuchahnulth for each clause to have one overtly-expressed participant,\footnote{TODO: is there a good canonical citation for this? \cite{rose1981} mentions it.} but if there are two participants expressed, they can come in any order. There is a preference in the southernmost dialects (Barkley sound and Central) for VSO ordering, and a preference in the northern dialects (Northern and Kyuquot) for VOS ordering.\footnote{Again, \cite{rose1981} mentions this for Kyuquot but this is a novel claim about Northern. Is there a good citation?} This preference is not absolute, and to make the sentence unambiguous, speakers can use \textit{ʔuukʷił} to mark any non-highest argument \citep{woo2007b}.
 
@@ -386,7 +388,7 @@ One model for this phenomenon is a gap-filler construction \citep{pollardsag1994
 
 %TODO: Adam believes that participant-predicate ordering is possible in dependent clauses, citing ʔuyi. I believe that ʔuyi is an incipient adposition, and this is a postposition structure in these cases. It is extremely hard (impossible?) to find clear dependent clause participant-predicate ordering outside of ʔuyi. Ask Adam if he knows of non-ʔuyi examples.
 
-\subsection{Second-position clitics} \label{sec:cliticnormal}
+\section{Second-position clitics} \label{sec:cliticnormal}
 
 The majority of clausal inflection in Nuuchahnulth is in a complex of second position enclitics which fall on the first word of the clause. Table \ref{table:2pclitics} shows the ordering of the clitic complex, and is adapted and expanded from Adam Werle's grammar reference.
 
@@ -424,7 +426,7 @@ The inflection unifies its complement's subject with its own, and adds its compl
 
 This type of lexical item can only work syntactically for one element in the second position clitic complex, which in Nuuchahnulth includes the subject-mood portmanteau, as well as tense, possession, causative, the ``now" morpheme, and others. I model the subject-mood portmanteau as the head of the complex, and attach the other elements of the complex as ``prefixes" or ``suffixes" that attach to the clausal inflectional element. The work of attaching this complex to the preceding element is left for further development of the morphophonological system.
 
-\subsection{Clitics attaching to modifiers} \label{sec:cliticmodifier}
+\section{Clitics attaching to modifiers} \label{sec:cliticmodifier}
 
 The examples so far have shown clitics attaching directly to the sentential predicate. However, as second-position elements, these clitics may also attach to a preceding modifier of that predicate. In the case of the main clause predicates, they may attach to preceding adverbs (\ref{ex:2padvpred}), conjunctions (\ref{ex:2pconjpred}), and adpositives (\ref{ex:2padppred}),\footnote{The claim that (\ref{ex:2padppred}) is an adpositive is somewhat controversial. \cite{woo2007b} analyzes these as little-\textit{v}, a category which does not exist in HPSG analyses. What this unit does is mark participants that fulfill a certain role with respect to the verb, similar to case-marking. An analysis that treats this particle as an adposition can generate the same set of sentences as a little-\textit{v} analysis. In this model, non-agentive arguments may be realized by a Participant Phrase or an Adposition Phrase headed by \textit{-L.(č)ił}. This means that in (\ref{ex:2padppred}), the word \textit{hiišił} is an adpositive phrase modifying the following verb \textit{ʔiiqḥuk}.} and the participant article may attach to a modifying adjective (\ref{ex:2padjpart}).
 
@@ -485,10 +487,11 @@ One way to create structures like that in (\ref{ex:2pmodavm}) is to have differe
 
 \noindent (TODO: Actually implement this and give a summary of the lexical rule type. There's going to be some complications with list modifications and quantification.)
 
-\subsection{Summary}
+\section{Summary}
 
 Because of the predicate flexibility in Nuuchahnulth grammar, I have defined special terminology to distinguish between semantic and syntactic phenomenon. I use \textit{predication} to refer to atomic semantic units and \textit{argument} to refer to the variables that those semantic units relate. I refer to syntactic \textit{predicates}, which are the position in the clause where semantic arguments may be filled. \textit{Participants} are the syntactic units that fulfill a predicate's semantic arguments.
 
 I model syntactic predicates and participants as a boolean-valued feature [\textsc{pred} +|--]. Predicate phrases and participant phrases are defined as units that are [\textsc{pred} +] and [\textsc{pred} --] respectively. The clausal clitics, including the article, select for [\textsc{pred} +], while the head-complement and head-subject rules select for [\textsc{pred} --]. Verbs, adjectives, and common nouns are [\textsc{pred} +]. Proper nouns are [\textsc{pred} --] and so may not be predicates.
 
 When participants occur to the left of the verb, they fall outside the second position of the clausal clitic complex. I model this as a gap-filler rule that focuses the left-dislocated element.
+\
