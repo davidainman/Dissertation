@@ -189,8 +189,9 @@ It is possible for one of the verbs and its object (that is, the full VP of one 
 \endgl
 \xe
 
-The verbs in this type of SVC, for most speakers, must agree in perfectiveness. Nuuchahnulth has a great many verbal aspect markers which follow the root, but they can be broken into two categories: perfective aspect (momentaneous and inceptive) and imperfective aspect (continuative, durative, repetitive, iterative, and graduative). The derivations in (\ref{aspect}) give a simplified view of my understanding of how these aspects are related to each other. Much of this is taken from \cite{davidson2002}, as well as personal correspondence with Davidson, who deserves much credit for working out this system. My understanding of the inceptive as underlyingly continuative + perfective is indebted to Werle.\footnote{Note that this means that the morphology for the continuative and inceptive do not ``stack," unlike the other aspect forms. So momentaneous + graduative is realized as \textit{-šiƛ} and also a long-short template. However continuative + inceptive is simply \textit{-°iˑčiƛ}, not *\textit{-aˑ-°iˑčiƛ}.} To simplify the graph, I have combined repetitive-perfective, graduative-perfective, and iterative-perfective into a single node, since verbs in this form cannot undergo further aspectual change.
+The verbs in this type of SVC, for most speakers, must agree in perfectiveness. Nuuchahnulth has a great many verbal aspect markers which follow the root, but they can be broken into two categories: perfective aspect (momentaneous and inceptive) and imperfective aspect (continuative, durative, repetitive, iterative, and graduative). The derivations in (\ref{aspect}) give a simplified view of my understanding of how these aspects are related to each other. Much of this is taken from \cite{davidson2002}, as well as personal correspondence with Davidson, who deserves much credit for working out this system. My understanding of the inceptive as underlyingly continuative + perfective is indebted to Werle.\footnote{Note that this means that the morphology for the continuative and inceptive do not ``stack," unlike the other aspect forms. So momentaneous + graduative is realized as \textit{-šiƛ} and also a long-short template. However continuative + inceptive is simply \textit{-°iˑčiƛ}, not *\textit{-aˑ-°iˑčiƛ}. In my implementation, I treat the inceptive as a fully separate aspect, although I believe it is conceptually continuous + perfective.} To simplify the graph, I have combined repetitive-perfective, graduative-perfective, and iterative-perfective into a single node, since verbs in this form cannot undergo further aspectual change.
 
+\begin{comment}
 \ex \label{aspect}
 \vspace{-20pt}
 \xe
@@ -227,9 +228,99 @@ The verbs in this type of SVC, for most speakers, must agree in perfectiveness. 
 \draw[->] (dr) -- (pf);
 \end{scope}
 \end{tikzpicture}
+\end{comment}
 
-[[TODO: Clean up arrows for durative -> perfective]]
+\ex \label{aspect}
+\vspace{-20pt}
+\xe
+\begin{tikzpicture}[sibling distance=10em,
+  every node/.style = {shape=rectangle, align=center}]
+\node (root) at (8,4.5) {Root};
+\node (mo) at (2,2) {Momentaneous};
+\node (ct) at (8,2) {Continuative};
+\node (dr) at (10.5,2) {Durative};
+\node (rp) at (13,2) {Repetitive};
+\node (it) at (15,2) {Iterative};
+\node (in) at (4.5,2) {Inceptive};
+\node (mo-grad) at (2,0) {moment.-grad.};
+\node (in-grad) at (4.5,0) {incept.-grad.};
+\node (dr-grad) at (10.5,0) {durative-grad.};
+\node (mo-grad-pf) at (2,-2) {mom.-grad.-perf.};
+\node (in-grad-pf) at (4.5,-2) {inc.-grad.-perf.};
+\node (dr-pf) at (7,-2) {durative-grad.};
+\node (dr-grad-pf) at (10.5,-2) {dur.-grad.-perf.};
+\node (rp-pf) at (13,-2) {repet.-perf.};
+\node (it-pf) at (15,-2) {iter.-perf.};
+\draw[->] (root) -- (mo) node[midway,fill=white] {-šiƛ};
+\draw[->] (root) -- (ct) node[midway,fill=white] {-aˑ};
+\draw[dashed,->] (root) -- (in) node[midway, fill=white] {-°iˑčiƛ};
+\draw[->] (ct) -- (in);
+\draw[->] (root) -- (dr) node[midway,fill=white] {-uk};
+\draw[->] (root) -- (rp) node[midway,fill=white] {-LR2L.a};
+\draw[->] (root) -- (it) node[midway,fill=white, right] {-LR2L.š};
+\draw[->] (mo) -- (mo-grad) node[near start,fill=lightgray] {-LS};
+\draw[->] (in) -- (in-grad) node[near start,fill=lightgray] {-LS};
+\draw[->] (dr) -- (dr-grad) node[midway,fill=white] {-LS};
+\draw[->] (mo-grad) -- (mo-grad-pf) node[near start,fill=white] {-šiƛ};
+\draw[->] (in-grad) -- (in-grad-pf) node[near start,fill=white] {-šiƛ};
+\draw[->] (dr) -- (dr-pf) node[midway,fill=white] {-šiƛ};
+\draw[->] (dr-grad) -- (dr-grad-pf) node[near start,fill=white] {-šiƛ};
+\draw[->] (rp) -- (rp-pf) node[midway,fill=white] {-šiƛ};
+\draw[->] (it) -- (it-pf) node[midway,fill=white] {-šiƛ};
+\begin{scope}[on background layer]
+\node[draw=none, fit=(ct)(dr)(it)(dr-grad), fill=white] (impf) {};
+\node[above left] at (impf.north east) {\textit{imperfective}};
+\node[bigbox, fit=(mo)(in), fill=lightgray] (perf) {};
+\node[below right] at (perf.north west) {\textit{perfective}};
+\node[bigbox, fit=(mo-grad-pf)(it-pf), fill=lightgray] (perf2) {};
+\node[below right] at (perf2.north west) {\textit{perfective}};
+%\draw[->] (rp) -- (pf);
+%\draw[->] (it) -- (pf);
+%\draw[->] (it) to [out=150,in=30] (pf);
+%\draw[->] (dr) -- (pf);
+\end{scope}
+\end{tikzpicture}
 
+\begin{comment}
+\begin{tikzpicture}[sibling distance=10em,
+  every node/.style = {shape=rectangle, align=center}]
+\node (aspect) at (0,10) {aspect};
+\node (pf) at (1,15) {perfective};
+\node (impf) at (1,5) {imperfective};
+\node (mo) at (8,15) {momentaneous};
+\node (in) at (8,14) {inceptive};
+\node (mo-grad-pf) at (8,13) {momentaneous-graduative-perf};
+\node (in-grad-pf) at (8,12) {incep-grad-perf};
+\node (dr-pf) at (8,11) {durative-perf};
+\node (dr-grad-pf) at (8,10) {durative-grad-pf};
+\node (rp-pf) at (8,9) {repet-perf};
+\node (it-pf) at (8,8) {iter-perf};
+\node (ct) at (5,6) {continuative};
+\node (dr) at (5,5) {durative};
+\node (rp) at (5,4) {repetative};
+\node (it) at (5,3) {iterative};
+\node (mo-grad) at (5,2) {mo-grad-pf};
+\node (in-grad) at (5,1) {in-grad-pf};
+\node (dr-grad) at (5,0) {dr-grad-pf};
+\draw[->] (aspect) -- (pf);
+\draw[->] (aspect) -- (impf);
+\draw[->] (pf) -- (mo);
+\draw[->] (pf) -- (in);
+\draw[->] (pf) -- (mo-grad-pf);
+\draw[->] (pf) -- (in-grad-pf);
+\draw[->] (pf) -- (dr-pf);
+\draw[->] (pf) -- (dr-grad-pf);
+\draw[->] (pf) -- (rp-pf);
+\draw[->] (pf) -- (it-pf);
+\draw[->] (impf) -- (ct);
+\draw[->] (impf) -- (dr);
+\draw[->] (impf) -- (rp);
+\draw[->] (impf) -- (it);
+\draw[->] (impf) -- (mo-grad);
+\draw[->] (impf) -- (in-grad);
+\draw[->] (impf) -- (dr-grad);
+\end{tikzpicture}
+\end{comment}
 
 \vspace{10pt}
 
@@ -541,7 +632,7 @@ None of the adpositive-like verbs inflect for aspect, and in this way are simila
 \glpreamble *ʔukʷink̓aƛukʷitaḥ ʔucačiƛ t̓an̓eʔis yaqsčaʕinʔitq. //
 \gla ʔu-(č)ink=!aƛ=uk=(m)it=(m)aḥ ʔu-ca-čiƛ t̓an̓a=ʔis yaq-sčaʕin=ʔiˑtq //
 \glb \textsc{x}-with=\textsc{now}=\textsc{poss}=\textsc{pst}=\textsc{real.1sg} \textsc{x}-go-\textsc{mo} child=\textsc{dimin} who-friendly=\textsc{defn.3} //
-\glft Intended: `My child is going with his friend.' (\textbf{B}, Bob Mundy) //
+\glft Intended: `My child went with his friend.' (\textbf{B}, Bob Mundy) //
 \endgl
 \xe
 
