@@ -3,27 +3,27 @@
 
 Before I turn to the meat of this dissertation, the multi-predicate constructions present in Nuuchahnulth, I will first give an overview of the language's basic clause structure and define some important terminology and lexical-syntactic distinctions present in the language. I will begin with the predicate/participant distinction (\S\ref{sec:clause:predp}, \S\ref{sec:clause:partp}), an important syntactic split which roughly maps to how verbs and nouns are used in English, but subsumes many lexical categories in Nuuchahnulth. I will then describe some special cases in which participant ordering is altered (\S\ref{sec:clause:partorder}). Finally I will look at second-position clausal clitics (\S\ref{sec:clause:cliticnormal}), and how the syntactic properties of Nuuchahnulth require special attention when modeling in HPSG (\S\ref{sec:clause:cliticmodifier}). I will interleave HPSG-style analyses with the data, but the descriptive facts should be available to linguists working in other formalisms.
 
-\section{Syntactic Predication} \label{sec:clause:predp}
+\section{Syntactic Predicates} \label{sec:clause:predp}
 
 Like many languages of the Pacific Northwest, Nuuchahnulth is predicate-initial and has a great deal of flexibility with respect to what parts of speech can be used predicatively \citep{jacobsen1979}. Because the term ``predicate" and its associated derivations (``predicative" and so on) are often ambiguous between syntactic and semantic concepts, I have found that linguists often talk past each other when trying to describe the syntax of the languages of South Wakashan. Throughout this work I will use special vocabulary to try to reduce this confusion.
 
-I will reserve the word \textit{predicate} to refer to the syntactic unit that connects other units like subject and object and other complements to one another. In English, a syntactic predicate must be verbal, as in (\ref{ex:dogbarks},\ref{ex:grassgreen}). The verb `barks' serves as the predicate of (\ref{ex:dogbarks}), connecting it to the subject `the dog.' In (\ref{ex:grassgreen}), `is' serves as the sentential predicate, connecting its subject `the grass' to the complement `green.' I will refer also refer to the units that predicates connect as \textit{participants}---this term encompasses both subject and complements. The sole participant of (\ref{ex:dogbarks}) is `the dog', and the participants of (\ref{ex:grassgreen}) are `the grass' and `green'.
+I will reserve the word \textit{predicate} to refer to the syntactic component that heads a clause and connects components like subject and object to one another. In English, a syntactic predicate must be verbal, as in (\ref{ex:dogbarks},\ref{ex:grassgreen}). The verb `barks' serves as the predicate of (\ref{ex:dogbarks}), connecting it to the subject `the dog.' In (\ref{ex:grassgreen}), `is' serves as the sentential predicate, connecting its subject `the grass' to the complement `green.' I will refer to the units that predicates connect as \textit{participants}---this term encompasses both subject and complements. The sole participant of (\ref{ex:dogbarks}) is `the dog', and the participants of (\ref{ex:grassgreen}) are `the grass' and `green'.
 
 \ex \label{ex:dogbarks}
-[The dog]\textsubscript{part} [barks]\textsubscript{pred}.
+[The dog]\textsubscript{participant} [barks]\textsubscript{predicate}.
 \xe
 
 \ex~ \label{ex:grassgreen}
-[The grass]\textsubscript{part} [is]\textsubscript{pred} [green]\textsubscript{part}.
+[The grass]\textsubscript{participant} [is]\textsubscript{predicate} [green]\textsubscript{participant}.
 \xe
 
 In contrast to \textit{predicate} and \textit{participant}, which are syntactic concepts, I will use \textit{relation} and \textit{argument} to refer to their correlates in compositional semantics. The \textit{relation} is the atomic semantic unit that relates arguments to each other, typically represented with capital letters. For example, in (\ref{ex:dogbarks}), the English word \textit{barks} has the relation \textsc{bark}. Every semantically contentful morpheme has a relation, including syntactic participants (\textsc{dog}, \textsc{grass}, \textsc{green}).
 
-Relations have some number of semantic \textit{arguments}. For example, \textsc{bark} can be modeled with two arguments: the event of barking, and the barker. This could be represented in a Neodavidsonian semantics as \textsc{bark}(\textit{e}, \textit{x}). Note that the relation itself \textsc{bark} is at least conceptually separate from the number and type of its arguments. When I find it important to highlight the separation between the semantic relation and the number of its arguments, I may also refer to the relation as a \textit{predicate symbol}.\footnote{From terminology used by the DELPH-IN consortium. \url{http://moin.delph-in.net/ErgSemantics/Basics}} This semantic scheme is a simplification of the fuller semantic model that I will use later, Minimal Recursion Semantics \citep{copestake2005}.
+Relations have some number of semantic \textit{arguments}. For example, \textsc{bark} can be modeled with two arguments: the event of barking, and the barker. This could be represented in a Neodavidsonian manner as \textsc{bark}(\textit{e}, \textit{x}). Note that the relation itself \textsc{bark} is at least conceptually separate from the number and type of its arguments. When I find it important to highlight the separation between the semantic relation and the number of its arguments, I may also refer to the relation as a \textit{predicate symbol}.\footnote{From terminology used by the DELPH-IN consortium. \url{http://moin.delph-in.net/ErgSemantics/Basics}} This semantic scheme is a simplification of the fuller semantic model that I will use later, Minimal Recursion Semantics \citep{copestake2005}.
 
 It is important to keep in mind that the number of arguments that a semantic relation has is separate from its syntactic properties. The English predicate \textit{barks} may be represented as a semantic relation with two arguments \textsc{bark}(\textit{e}, \textit{x}). However, the syntactic non-predicate \textit{green} can be modeled in the same way: \textsc{green}(\textit{e}, \textit{x}). The syntactic properties of \textit{barks} and \textit{green}---predicate vs participant, which in English is straightforwardly subsumed into the verb vs adjective distinction---is separable from their semantic properties.
 
-While this divide seems superfluous in English, it was motivated by the syntactic flexibility of Nuuchahnulth, where it is not superfluous. While Nuuchahnulth has syntactic categories like verb, noun, and adjective, any of these may function as syntactic predicate or participant depending on where they fall in the sentence. The terms ``verb phrase," ``noun phrase," and ``adjective phrase" are valid insofar as they refer to a phrase headed by a verb, noun, or adjective, but they are not illuminating for determining syntactic roles, as any of these categories may be predicates.
+Though Nuuchahnulth has syntactic categories like verb, noun, and adjective, any of these may function as syntactic predicate or participant depending on where they fall in the sentence. The terms ``verb phrase," ``noun phrase," and ``adjective phrase" are valid insofar as they refer to a phrase headed by a verb, noun, or adjective, but they are not illuminating for determining syntactic roles, as any of these categories may be predicates.
 
 In (\ref{ex:verbpred}), the verb \textit{n̓aacsiičiƛ} `see' is serving as the clausal predicate, while the clause \textit{hałmiiḥa quuʔas} `drowning person' is serving as the participant. In (\ref{ex:adjpred}), the adjective \textit{qʷac̓ał} `beautiful' is the predicate of the sentence, while the noun \textit{ḥaakʷaaƛ} `young girl' is the participant. In (\ref{ex:nounpred}) the noun \textit{pisatuwił} `gym' is the predicate and there are no participants. In this case, postposed \textit{ʔaanaḥi} `only' is a predicate-modifying adverb and not fulfilling any argument role of the relation \textsc{gym}.
 
@@ -58,7 +58,316 @@ While all three words have semantic relations (\textsc{see}, \textsc{drown}, \te
 \endgl
 \xe
 
-From a descriptive perspective, it is sufficient to say that nouns, verbs, and adjectives may all be clausal predicates in Nuuchahnulth, in the same way that English requires clausal predicates to be verbs. I am using a computational implementation of HPSG to model Nuuchahnulth, and will now show how I model this flexibility within that framework.
+Descriptively, it is sufficient to say that nouns, verbs, and adjectives may all be clausal predicates in Nuuchahnulth, in the same way that English requires clausal predicates to be verbs. Importantly, this data (including the modifying adverb in (\ref{ex:nounpred})), along with evidence from participant clauses (\S\ref{sec:clause:partp}), is sufficient to claim that nouns are events in Nuuchahnulth \citep{inman2018}. I will give my method for modeling this in (\S\ref{sec:clause:implementation}).
+
+\section{Syntactic Participants} \label{sec:clause:partp}
+
+Just as verbs, nouns, and adjectives may all be predicates, they may also all be participants. Example (\ref{ex:adjpred}) showed a straightforwardly nominal participant, the noun and article \textit{ḥaakʷaaƛʔi} `the young girl.' However, verbs (\ref{ex:verbpart}) and adjectives (\ref{ex:adjpart}) may also serve as participants.
+
+\ex \label{ex:verbpart}
+\begingl
+\glpreamble ʔuḥʔiiš ʕiḥak kamatqukʔi. //
+\gla ʔuḥ=ʔiˑš ʕiḥak kamatq-uk=ʔiˑ //
+\glb be=\textsc{strg.3} cry.\textsc{dr} run-\textsc{dr}=\textsc{art} //
+\glft `The running one is crying.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+
+\ex~ \label{ex:adjpart}
+\begingl
+\glpreamble wik̓iičʔaał ƛ̓iixc̓us ƛaƛuuʔi. //
+\gla wik=!iˑč=ʔaał ƛ̓iixc̓us ƛaƛuu=ʔiˑ //
+\glb \textsc{neg}=\textsc{cmmd.2pl}=\textsc{habit} laugh.at.\textsc{dr} other.\textsc{pl}=\textsc{art} //
+\glft `Don't laugh at others.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+
+%\noindent TODO: confirm that (\ref{ex:adjpart}) is okay for sharing permissions, from a version of the Only Teachings.
+
+As detailed in \cite{jacobsen1979} and \cite{wojdak2001}, when an adjective or verb is used as a participant, as in (\ref{ex:verbpart}, \ref{ex:adjpart}), the article \textit{=ʔiˑ} is required to make the sentence grammatical. When the participant is headed by a common noun, as in (\ref{ex:verbpred}), the article is optional. Proper nouns differentiate themselves from common nouns in that they may never take the article \citep{inman2018}. They are also never in predicate position.
+
+My analysis of these facts is that the article \textit{=ʔiˑ} is in fact a relativizer that creates a participant from a notional predicate \cite{inman2018}.\footnote{This ultimately is original to Werle, \textit{p.c.}, who has also documented that \textit{=ʔiˑ} is morphologically in the same position as mood portmanteaus, and has supplanted the third person definite mood in some dialects.} Noun phrases may be relativized without the article, but other predicate phrases must be headed by the relativizing second position article \textit{=ʔiˑ}. That is, the semantics of the verb \textit{kamatquk} `run' and the noun \textit{pisatuwił} `gym' look like:
+
+\ex~
+\textsc{run}(\textit{e}, \textit{x})
+
+\textsc{gym}(\textit{e}, \textit{x})
+\xe
+
+The event variable \textit{e} allows for tense, aspect, mood, and evidentiality values (TAME). This \textit{e} is also necessary for adverbial modification, which both verbs and nouns can undergo. However, when either type of word is used as a participant in the syntax, it is the variable (\textit{x}) that is needed by the semantics. \textit{=ʔiˑ} provides the relativizing function to accomplish this for all predicate types, and common nouns may undergo this process without an overt \textit{=ʔiˑ} attached. The analytical mechanisms for this will be addressed more fully in \S\ref{sec:clause:implementation}
+
+%\section{Participant Ordering} \label{sec:clause:partorder}
+
+There is a strong tendency in Nuuchahnulth for each clause to have one overtly-expressed participant \citep[38]{rose1981} but if there are two participants expressed, they can come in any order. There is a preference in the southernmost dialects (Barkley sound and Central) for VSO ordering \citep[267]{jacobsen1993}, and a preference in the northern dialects (Northern and Kyuquot) for VOS ordering (Werle, \textit{p.c.}). This preference is not absolute, and to make the sentence unambiguous, speakers can use \textit{ʔuukʷił} to mark any non-highest argument \citep{woo2007b}.
+
+\subsection{Participant Fronting}
+
+It is possible for speakers to move a participant in front of the predicate for focus, as in (\ref{ex:focus}). This left-dislocated participant is notably outside the calculation for second position inflection (\S\ref{sec:clause:cliticnormal}).
+
+\ex \label{ex:focus}
+\begingl
+\glpreamble ƛ̓aaq ʔuʔaatamin, waaʔaƛweʔin quʔušin. //
+\gla ƛ̓aaq ʔu-ʔaˑta=(m)in waa=!aƛ=weˑʔin quʔušin //
+\glb oil \textsc{x}-lack=\textsc{real.1pl} say=\textsc{now}=\textsc{hrsy.3} raven //
+\glft ` ``We need oil," said Raven.' (\textbf{B}, Marjorie Touchie) //
+\endgl
+\xe
+
+Wh-words and phrases also front, obligatorily, as in (\ref{ex:howmanydays}). In this case, the second position enclitics attach to the wh-word, so this fronting is ``inside" the second position calculation.
+
+\ex \label{ex:howmanydays}
+\begingl
+\glpreamble qum̓aačłink hił c̓uumaʕaas. //
+\gla qum̓aa-čił=int=k hił c̓uumaʕaas //
+\glb how.many-day=\textsc{pst}=\textsc{ques.2sg} be.at Port.Alberni //
+\glft `How many days were you in Port Alberni?' (\textbf{Q}, Sophie Billy) //
+\endgl
+\xe
+
+In addition to wh-words and focused participants, quantifiers tend to front as well (\ref{ex:uushilnofront}, \ref{ex:uushilfront}). It is possible in this case for the fronted quantifier to be either outside the syntactic scope of the second position enclitics (\ref{ex:uushilfront}) or inside it (\ref{ex:hishukfront}).
+
+\ex \label{ex:uushilnofront}
+\begingl
+\glpreamble haʔukquuʔaała ʔuušił haʔum. //
+\gla haʔuk=quu=ʔaała ʔuuš-L.(č)ił haʔum //
+\glb eat.\textsc{dr}=\textsc{pssb.3}=\textsc{habit} some-\textsc{do.to} food //
+\glft `He would only eat some things.' (\textbf{B}, Bob Mundy) //
+\endgl
+\xe
+
+\ex~ \label{ex:uushilfront}
+\begingl
+\glpreamble ʔuušił haʔukquuʔaała. //
+\gla ʔuuš-L.(č)ił haʔuk=quu=ʔaała  //
+\glb some-\textsc{do.to} eat.\textsc{dr}=\textsc{pssb.3}=\textsc{habit} //
+\glft `He would only eat some things.' (\textbf{B}, Bob Mundy) //
+\endgl
+\xe
+
+\ex~ \label{ex:hishukfront}
+\begingl
+\glpreamble hišuk̓ʷaƛʔišʔał kamitquk. //
+\gla hišuk=!aƛ=ʔiˑš=ʔał kamitq-uk  //
+\glb all-\textsc{now}=\textsc{strg.3}=\textsc{pl} run-\textsc{dr} //
+\glft `Everyone is running.' (\textbf{N}, Fidelia Haiyupis) //
+\endgl
+\xe
+
+I have not done a deep investigation into the conditions that determine whether the second position complex falls on the fronted quantifier or on the following predicate. In fact, this may vary by quantifier type. I have examples in my data of the fronted quantifier \textit{ʔuuš} taking the clitics (\ref{ex:uushfrontclitic}) or not (\ref{ex:uushfrontnoclitic}).
+
+\ex \label{ex:uushfrontclitic}
+\begingl
+\glpreamble k̓umaaw̓it̓asʔaƛquu, n̓aačukitʔišʔaałʔał ʔin hiłʔapitʔaałʔał suč̓as, \textbf{ʔuušʔaƛquu wiikapuƛ}. //
+\gla k̓um-aˑ-w̓it̓as=!aƛ=quu, n̓aačuk=(m)it=ʔiˑš=ʔaał=ʔał ʔin hił=!ap=(m)it=ʔaał=ʔał suč̓as, \textbf{ʔuuš=ʔaƛ=quu wiikapuƛ}  //
+\glb point-\textsc{ct}-going.to=\textsc{now}=\textsc{pssb.3} look.\textsc{dr}=\textsc{pst}=\textsc{strg.3}=\textsc{habit}=\textsc{pl} \textsc{comp} be.at=\textsc{caus}=\textsc{pst}=\textsc{habit}=\textsc{pl} tree, \textbf{some=\textsc{now}=\textsc{pssb.3} pass.away.\textsc{mo}} //
+\glft `If he is going to be pointer, they look to see if they put (someone) in a tree, if someone has passed away.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+
+\ex~ \label{ex:uushfrontnoclitic}
+\begingl
+\glpreamble ʔuuš n̓aacsamitsƛa hiłqḥ n̓ačiqs. //
+\gla ʔuuš n̓aacsa=(m)it=s=ƛaˑ hił-(q)ḥ n̓ačiqs  //
+\glb some see.\textsc{ct}=\textsc{pst}=\textsc{strg.1sg}=also be.at-\textsc{link} Tofino //
+\glft `I also saw some at Tofino.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+
+This same pattern with respect to \textit{ʔuuš} is present in Sapir's original data.\footnotemark{} The same pattern holds in my data for the form \textit{ʔuušił}, which is \textit{ʔuuš} `some' with the object marking \textit{-L.(č)ił} attached. \textit{ʔuušił} may be fronted without the second position enclitics, as already seen in (\ref{ex:uushilfront}), or it may then take the enclitics, as in (\ref{ex:uushilfrontclitic}) below. I could not find any \textit{ʔuušił} fronting in the Nootka Texts, so \textit{ʔuušił} fronting may represent a change in the language in the intervening generations.
+
+\footnotetext{\noindent With the clitic complex:
+
+\ex~ \label{ex:uushfrontcliticNT}
+\begingl
+\glpreamble ʔuušʔaƛ maqw̓in. //
+\gla ʔuuš=!aƛ maq-w̓in  //
+\glb some=\textsc{now} tie-middle //
+\glft `Some are tied about the middle.' \citep[70]{sapir1955} //
+\endgl
+\xe
+
+\noindent Without the clitic complex:
+
+\ex~ \label{ex:uushfrontnocliticNT}
+\begingl
+\glpreamble ʔuuš saac̓inłšiʔaƛƛaa ʔaḥʔaa ƛ̓acʔii ƛ̓isitʔi sac̓up. //
+\gla ʔuuš saac̓inł-šiƛ=!aƛ=ƛaˑ ʔaḥʔaa ƛ̓ac=ʔiˑ ƛ̓isit=ʔiˑ sac̓up  //
+\glb some seafood.feast(?)-\textsc{mo}=\textsc{now}=also \textsc{ddyn} fat=\textsc{art} white=\textsc{art} spring.salmon //
+\glft `Some would start feasting with the fat, white-bodied tyee salmon.' \citep[22]{sapir1955} //
+\endgl
+\xe
+}
+
+\ex \label{ex:uushilfrontclitic}
+\begingl
+\glpreamble ʔuušiłqač̓a n̓aacsa. //
+\gla ʔuuš-L.(č)ił=qač̓a n̓aacsa  //
+\glb some-\textsc{do.to}=\textsc{infr.3} see.\textsc{ct} //
+\glft `He must've seen something.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+
+I have no examples of the strong quantifier \textit{hišuk} `all' fronting without the second position complex, and it is possibly ungrammatical. The version of the strong quantifier in the Nootka texts, \textit{č̓uučk}, does not occur in a fronting environment where the enclitics unambiguously fall on the following predicate. (That is, in a case where the enclitic could not be a singly null-marked third person morpheme.)
+
+My provisional analysis of these facts is to describe two types of fronting: (i) focus-fronting, which falls outside the calculation for second position enclitics and adds focus information to a word; and (ii) non-focus fronting, which falls inside the second position calculation and does not add focus. Non-focus fronting does not mean that the word is necessarily not focused, only that its left-extracted position is not giving it focus. This is significant as, according to many analyses, wh-words must be focused \citep[Chapter 5]{lambrecht1996}. Table \ref{table:fronting} gives the parts of speech that are compatible with each type of fronting.
+
+\begin{table}[h]
+\caption{Fronting properties of different words}
+\begin{tabular}{l|l|l|l|l|} 
+\cline{2-5}
+                                         & nouns                & weak quantifiers      & strong quantifiers    & wh-words              \\ \hline
+\multicolumn{1}{|l|}{Focus fronting}     & \cmark & \cmark & \xmark & \xmark \\ \hline
+\multicolumn{1}{|l|}{Non-focus fronting} & \xmark & \cmark & \cmark & \cmark \\ \hline
+\end{tabular} \label{table:fronting}
+\end{table}
+
+This discussion should not be considered definitive with respect to fronting and quantifier fronting in particular. Notably absent is \textit{ʔaya} `many', which I predict would pattern with \textit{hišuk}, but have not investigated. The claims with respect to the difference between \textit{hišuk} and \textit{ʔuuš} need checking, as well as claims about the status of these elements as having focus or not. For the purpose of this dissertation, I am only attempting to list the exceptions to the general rule that syntactic participants follow their predicate. Each of these cases is a special deviation from that general rule, and only happens under particular circumstances. I will ultimately model these as different types of extraction (\S\ref{sec:clause:implementation}).
+
+%In addition to the special focus construction above, dependent clauses may realize their participants to the left without any special focus.
+
+%TODO: Adam believes that participant-predicate ordering is possible in dependent clauses, citing ʔuyi. I believe that ʔuyi is an incipient adposition, and this is a postposition structure in these cases. It is extremely hard (impossible?) to find clear dependent clause participant-predicate ordering outside of ʔuyi. Ask Adam if he knows of non-ʔuyi examples.
+
+\section{Second-position clitics} \label{sec:clause:cliticnormal}
+
+The majority of clausal inflection in Nuuchahnulth is in a complex of second position enclitics which attach to the first word of the clause, modulo the left extraction seen in \S\ref{sec:clause:partp}. Table \ref{table:2pclitics} shows the ordering of the clitic complex, and is adapted from Adam Werle's grammar reference. A fuller list of these enclitics is given in Appendix \ref{appendix:grams}.
+
+\begin{table}[h]
+\centering
+\caption{Order of second position clitics}
+\label{table:2pclitics}
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|}
+\cline{2-11}
+morph & =ʔaaqƛ & =!ap      & =!aƛ & =!at    & \begin{tabular}[c]{@{}c@{}}=uk\\ =ʔak\end{tabular} & =(m)it & \begin{tabular}[c]{@{}c@{}}=ʔiˑš\\ =maˑ\\ =ḥaˑ\\=$\emptyset$\\ ...\end{tabular} & =ʔaała   & =ʔał   & =ƛaˑ \\ \cline{2-11}
+meaning  & \textsc{fut} & \textsc{caus} & \textsc{now}  & \textsc{pass} & \textsc{poss}  & \textsc{pst} & \begin{tabular}[c]{@{}c@{}}subject-mood\\ portmanteaus\end{tabular} & \textsc{habit} & \textsc{pl} & also \\ \cline{2-11}
+\end{tabular}
+\end{table}
+
+The \textit{=$\emptyset$} morpheme, which indicates the third-person neutral mood, merits some special attention. While there is no phonological element associated with this inflection, all of the other enclitics appear in their typical order around where it would be. A predicate with no enclitic, or with one or more of the non-subject-mood enclitics (such as past, or habitual and plural) is always interpreted as being in the neutral mood with a third person subject. I do not put a \textit{=$\emptyset$} in my gloss lines, except below in (\ref{ex:2padjpart}) to show that it is notionally present. The syntactic information about neutral mood and 3rd person subject has to come from somewhere and this can be modeled as a phonologically empty morpheme providing it. I address this more in the implementation section (\S\ref{sec:clause:implementation}).
+
+The examples I have given so far have all shown this clitic complex attaching directly to the clausal predicate. However, it may also attach to preceding adverbial modifiers (\ref{ex:2padvpred}), conjunctions (\ref{ex:2pconjpred}), and adpositions (\ref{ex:2padppred}).\footnote{The claim that (\ref{ex:2padppred}) is an adposition is somewhat controversial. \cite{woo2007b} analyzes these as little-\textit{v}, a category which does not exist in HPSG analyses. What this unit does is mark participants that fulfill a certain role with respect to the verb, similar to case-marking. An analysis that treats this particle as an adposition can generate the same set of sentences as a little-\textit{v} analysis, and is necessary within the HPSG framework. In this model, non-agentive arguments may be realized by a Participant Phrase or an Adposition Phrase headed by \textit{-L.(č)ił}. This means that in (\ref{ex:2padppred}), the word \textit{hiišił} is an adposition phrase modifying the following verb \textit{ʔiiqḥuk}.} Likewise, the relativizing enclitic article (\S\ref{sec:clause:partp}) may also attach to a preceding modifying adjective (\ref{ex:2padjpart}) and not directly to the head noun, as seen in (\ref{ex:adjpred}).
+
+\ex \label{ex:2padvpred}
+\begingl
+\glpreamble y̓uuqʷaaʔaqƛs n̓aačuk. //
+\gla y̓uuqʷaa=ʔaqƛ=s n̓aačuk  //
+\glb also=\textsc{fut}=\textsc{1sg} look.for.\textsc{dr} //
+\glft `I will also look for it.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+
+\ex~ \label{ex:2pconjpred}
+\begingl
+\glpreamble ʔaḥʔaaʔaƛna huʔacačiƛ ʔaḥkuu. //
+\gla ʔaḥʔaaʔaƛ=naˑ huʔa-ca-čiƛ ʔaḥkuu  //
+\glb and.then=\textsc{strg.1pl} back-go-\textsc{mo} \textsc{d1} //
+\glft `And then we came back here.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+
+%\ex~ \label{ex:2padppred}
+%\begingl
+%\glpreamble hiišiłʔaƛ ʔiiqḥuk, ʔumaḥsiičiƛs ḥaakʷaaƛ. //
+%\gla hiš-L.(č)ił=ʔaƛ ʔiiqḥ-uk ʔumaḥsiičiƛ=s ḥaakʷaaƛ  //
+%\glb all-\textsc{do.to}=\textsc{now} tell-\textsc{dr} want.to.marry.\textsc{mo}=\textsc{strg.1sg} young.woman //
+%\glft `He told everyone, ``I want to marry that young woman." ' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+%\endgl
+%\xe
+
+\ex~ \label{ex:2padppred}
+\begingl
+\glpreamble ʔuukʷiłw̓it̓asaḥ haaʕin čims. //
+\gla ʔu-L.(č)ił-w̓it̓as=(m)aˑḥ haaʕin čims  //
+\glb \textsc{x}-\textsc{do.to}-going.to=\textsc{real.1sg} invite.\textsc{dr} bear //
+\glft `I'm going to invite bear' (\textbf{B}, Marjorie Touchie) //
+\endgl
+\xe
+
+\ex~ \label{ex:2padjpart}
+\begingl
+\glpreamble m̓uyaa ḥaa ƛaʔuuʔi maḥt̓ii. //
+\gla m̓uy-aˑ(=$\emptyset$) ḥaa ƛaʔuu=ʔiˑ maḥt̓iˑ  //
+\glb burn-\textsc{dr}(=\textsc{neut.3}) \textsc{d3} other=\textsc{art} house //
+\glft `The other house was burning.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+
+%[[TODO: Find a two-word analytic \textit{ʔuukʷił} version of (\ref{ex:2padppred}), which only has the suffix version \textit{-L.čił}.]].
+
+Every clause in Nuuchahnulth contains an enclitic, even if it is only the notional =$\emptyset$ third person neutral enclitic. With the exception fo extraction (\S\ref{sec:clause:partp}), the enclitic always appears on the first word of the clause, which is either the predicate or a preceding adverb. Together with the restrictions on syntactic predicates, I use this data to claim that the clitic complex is the syntactic head of the clause in Nuuchahnulth, and the clitic complex then selects for predicates. That is, the second position enclitic complex is the auxiliary head of a clause, and inherits its valence (number of complements) from the predicate, which also provides the main semantic relation of the clause. Because of its second position properties, this analysis of the Nuuchahnulth clitic requires some special attention in HPSG (\S\ref{sec:clause:implementation}), but descriptively I can stop at calling the enclitic complex the head of the Nuuchahnulth clause.
+
+One final fact about the clause worth mentioning is clitic spreading. The presence of a clitic \textit{in situ} within the second position complex is required. If the clause is passive, the passive morpheme must appear within the complex, and so on. However, some of these clitics may appear multiply within a clause: first in the second position enclitic complex, and then later on the predicate or predicates of the sentence. This only occurs in case there are two predicates in the sentence (), or if there is an adverb preceding the main predicate to which the second position enclitic complex attaches (). To my knowledge, the only clitics that ``spread" like this are \textit{=!aƛ} `now' (\ref{ex:doubleatl}, \ref{ex:doubleatl2}) and \textit{=!at} \textsc{passive} ().\footnote{There will be a significant discussion on multiple instances of the causative morpheme in \S\ref{sec:svc:valence}, which I treat differently. All instances of multiple causative morphemes appear to show the causative attaching to and modifying different predicates. This differs from \textit{=!aƛ} `now' and \textit{=!at} \textsc{passive}, where the morphemes are attaching to adpositions (\ref{ex:doubleatl}) or fronted quantifiers (\ref{ex:doubleatpass}).}
+
+\ex \label{ex:doubleatl}
+\begingl
+\glpreamble ʔuyiʔeƛna hawiiʔeƛ kaatḥšiʔeƛquu. //
+\gla ʔuyi=ʔaƛ=naˑ hawiiƛ=!aƛ katḥ-šiƛ-LS=!aƛ=quu  //
+\glb at.a.time=\textsc{now}=\textsc{neut.1pl} finish=\textsc{now} be.light-\textsc{mo}-\textsc{grad}=\textsc{now}=\textsc{pssb.3} //
+\glft `We stop when it starts getting light.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+
+%huʔacačiʔeƛweʔin hiʔiisʔaƛ quʔušin.
+%ʔa-ca-čiƛ=!aƛ=weˑʔin hiłʔiis=!aƛ quʔušin
+%He came back to where Raven was. MT
+
+%ʔuḥʔaƛ tiic̓̌ap̓aƛ hałmiiḥa.
+%ʔuḥ=!aƛ tiic̓=!ap=!aƛ hałmiiḥa
+%He made him alive from drowning. JL
+
+\begin{comment}
+\ex~ \label{ex:doubleap}
+\begingl
+\glpreamble hišuk̓ap̓aƛ witkʷaaʔap ʔin wikmaḥsap̓aƛ, ḥaakʷaaƛsma. //
+\gla hišuk=!ap=!aƛ witkʷaa=!ap ʔin wik-maḥsa=!ap=!aƛ, ḥaakʷaaƛ-sma  //
+\glb all=\textsc{caus}=\textsc{now} destroy=\textsc{caus} \textsc{comp} \textsc{neg}-want.to=\textsc{caus}=\textsc{caus} young.woman-protective.of //
+\glft `Everyone destroyed the wharf because they wanted her to marry, they were stingy of the girl.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+\end{comment}
+
+%saač̓iyapitapsi makułʔi ʔuuʔiʔiłʔap. NT 140
+
+\ex~ \label{ex:doubleatpass}
+\begingl
+\glpreamble ʔuušḥʔatquus n̓aačuk̓ʷat, ʔiiqḥuk̓um ʔanis weʔič. //
+\gla ʔuuš-(q)ḥ=!at=quus n̓aačuk=!at ʔiiqḥ-uk=!um ʔani=s weʔič  //
+\glb some-\textsc{link}=\textsc{pass}=\textsc{pssb.1sg} look=\textsc{pass} tell-\textsc{dr}=\textsc{cmmd.go} \textsc{comp}=\textsc{1sg} sleep //
+\glft `If anyone is looking for me, tell them I'm sleeping.' (\textbf{B}, Marjorie Touchie) //
+\endgl
+\xe
+
+\begin{comment}
+\ex~ \label{ex:doubleatgeneric}
+\begingl
+\glpreamble ʔayaqḥʔatna huḥtak̓at. //
+\gla ʔaya-(q)ḥ=!at=naˑ huḥtak=!at  //
+\glb many-\textsc{link}=\textsc{pass}=\textsc{neut.1pl} learn=\textsc{pass} //
+\glft `Many know.' (\textbf{B}, Marjorie Touchie) //
+\endgl
+\xe
+\end{comment}
+
+
+
+
+That this ``doubling" does not create a second 3rd-neutral marked clause can be seen by where it is disallowed.
+
+t̓apatšiʔaƛs ʔucačiƛ c̓aʔakʔi.
+t̓apat-šiƛ=!aƛ=s ʔu-ca-čiƛ c̓aʔak=ʔiˑ
+I decided to go to the river. FH
+
+*t̓apatšiʔaƛs ʔucačiʔaƛ c̓aʔakʔi.
+*t̓apat-šiƛ=!aƛ=s ʔu-ca-čiƛ=!aƛ c̓aʔak=ʔiˑ
+
+%In serial verb constructions (SVCs), some of these same clitics---especially the causative---may apply separately to different verbs in the SVC. This will be addressed in more depth in \S\ref{sec:svc:valence}.
+
+%\section{Clitics attaching to modifiers} \label{sec:clause:cliticmodifier}
+
+%\noindent (TODO: Actually implement this and give a summary of the lexical rule type. There's going to be some complications with list modifications and quantification.)
+
+\section{HPSG Implementation} \label{sec:clause:implementation}
+
+I will now go over how I have modeled the above syntactic facts about cluases in my HPSG implemented grammar. 
 
 I model clauses as headed by their second-position inflection (\S\ref{sec:clause:cliticnormal}), which selects for a complement to its left that is predicative, or as I have defined it, [\textsc{head.pred} +]. The syntactic categories of Noun, Verb, and Adjective are all [\textsc{head.pred} +] so they may all be the immediate complement of the second position clitic. I call this complex a \textit{predicate phrase} (abbreviated PredP). By design, within a PredP there is no differentiation between `verb,' `adjective,' and `noun,' as the distinction is irrelevant in this context. Syntactic sketches in an HPSG style are given for (\ref{ex:verbpred}, \ref{ex:adjpred}, \ref{ex:nounpred}) in (\ref{ex:verbpredtree}, \ref{ex:adjpredtree}, \ref{ex:nounpredtree}) below.\footnote{Note that here I have used the symbol \textsc{rel} to refer to what I have defined as a semantic \textit{relation}. In the implemented grammar, this is labeled \textsc{pred} for `predicate symbol'. This does not cause a problem with the \textsc{pred} value on \textsc{head}, because the two attributes lie on different paths.} Participant phrases (PartP) appear in these trees, but will be addressed in \S\ref{sec:clause:partp}. 
 
@@ -152,33 +461,7 @@ I model clauses as headed by their second-position inflection (\S\ref{sec:clause
 
 Syntactic predicates are modeled by placing a \textsc{pred} value within the \textsc{head} features of parts of speech. Any part of speech that is [\textsc{pred} +] may behave as a predicate. The predicate phrase in Nuuchahnulth is analogous to a verb phrase in English. Just as a clause in English HPSG analyses is defined as a VP that has empty \textsc{subj} and \textsc{comp} lists, a clause in Nuuchahnulth is a PredP that has empty \textsc{subj} and \textsc{comp} lists. A significant difference between predicates and a PredP in Nuuchahnulth and verbs and a VP in English is that, because of the second position clitics, the PredP is headed by inflectional material while the predicate is its first complement. This is unlike English VPs, where the verbal element is itself the head of the clause. The nature of this second position will be discussed in more detail in \S\ref{sec:clause:cliticnormal} and \S\ref{sec:clause:cliticmodifier}. With the nature of the syntactic predicate sketched out, I now turn to participant phrases (PartP).
 
-\section{Participant Phrase} \label{sec:clause:partp}
-
-Just as verbs, nouns, and adjectives may all be predicates, they may also all be participants. Example (\ref{ex:adjpred}) showed a straightforwardly nominal participant, the noun and article \textit{ḥaakʷaaƛʔi} `the young girl.' However, verbs (\ref{ex:verbpart}) and adjectives (\ref{ex:adjpart}) may also serve as participants.
-
-\ex \label{ex:verbpart}
-\begingl
-\glpreamble ʔuḥʔiiš ʕiḥak kamatqukʔi. //
-\gla ʔuḥ=ʔiˑš ʕiḥak kamatq-uk=ʔiˑ //
-\glb be=\textsc{strg.3} cry.\textsc{dr} run-\textsc{dr}=\textsc{art} //
-\glft `The running one is crying.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
-\endgl
-\xe
-
-\ex~ \label{ex:adjpart}
-\begingl
-\glpreamble wik̓iičʔaał ƛ̓iixc̓us ƛaƛuuʔi. //
-\gla wik=!iˑč=ʔaał ƛ̓iixc̓us ƛaƛuu=ʔiˑ //
-\glb \textsc{neg}=\textsc{cmmd.2pl}=\textsc{habit} laugh.at.\textsc{dr} other.\textsc{pl}=\textsc{art} //
-\glft `Don't laugh at others.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
-\endgl
-\xe
-
-%\noindent TODO: confirm that (\ref{ex:adjpart}) is okay for sharing permissions, from a version of the Only Teachings.
-
-As detailed in \cite{jacobsen1979} and \cite{wojdak2001}, when an adjective or verb is used as a participant, as in (\ref{ex:verbpart}, \ref{ex:adjpart}), the article \textit{=ʔiˑ} is required to make the sentence grammatical. When the participant is headed by a common noun, as in (\ref{ex:verbpred}), the article is optional. Proper nouns differentiate themselves from common nouns in that they may never take the article \citep{inman2018}. They are also never in predicate position.
-
-My analysis of these facts is to treat the article \textit{=ʔiˑ} as a relativizer that creates a participant \cite{inman2018}.\footnote{This ultimately is original to Werle, \textit{p.c.}, who has also documented that \textit{=ʔiˑ} is morphologically in the same position as mood portmanteaus, and has supplanted the third person definite mood in some dialects.} Noun phrases may be relativized without the article, but other predicate phrases must be headed by the relativizing second position article \textit{=ʔiˑ}. I model this by again making use of the \textsc{pred} feature. Like other second position inflection, I model the ``article" (relativizer) as requiring its complement to be [\textsc{pred} +], creating a structure that is [\textsc{pred} --]. Since verbs, nouns, and adjectives are all [\textsc{pred} +], they can all appear with the article attached. I model proper nouns as [\textsc{pred} --], so that they cannot be taken as a complement of the article. I define participants (as opposed to predicates) as necessarily [\textsc{pred} --], which allows article-headed clauses and proper nouns to occur as participants.
+I model this by again making use of the \textsc{pred} feature. Like other second position inflection, I model the ``article" (relativizer) as requiring its complement to be [\textsc{pred} +], creating a structure that is [\textsc{pred} --]. Since verbs, nouns, and adjectives are all [\textsc{pred} +], they can all appear with the article attached. I model proper nouns as [\textsc{pred} --], so that they cannot be taken as a complement of the article. I define participants (as opposed to predicates) as necessarily [\textsc{pred} --], which allows article-headed clauses and proper nouns to occur as participants.
 
 The trees (\ref{ex:verbparttree}, \ref{ex:adjparttree}) sketch my syntactic analysis of the verbal and adjectival participants in (\ref{ex:verbpart}, \ref{ex:adjpart}). In (\ref{ex:adjparttree}) a PartP is serving as a complement of the predicate through a head-complement rule (\citealt{bender2002, pollardsag1994}) while in (\ref{ex:verbparttree}), the PartP is filling a subject role through a head-subject rule (\textit{ibid}). Importantly, both of these rules are selecting for a non-head-daughter that is [\textsc{pred} --]. This guarantees that either the article will appear on the participant, or the participant will be of a category that is non-predicative.
 
@@ -337,21 +620,6 @@ The event variable \textit{e} is there for sentential tense, aspect, mood, and e
 
 %That is, common nouns are neither specified for [\textsc{pred} +] nor [\textsc{pred} --], so they may happily unify in a predicative position without an article (taking on a -- value) or with the predicative clitics, including the article (taking on a + value). This means that in sentences like (\ref{ex:verbpred}), the participant phrase \textit{hałmiiḥa quuʔas} `drowning person' is in fact an NP. Since it is [\textsc{head} noun], and noun is [\textsc{pred} ?], the NP happily unifies through the head-complement rule that is expecting a [\textsc{pred} --] complement. In the same way, NPs may be selected for by the article \textsc{=ʔiˑ}, and so the PartP \textit{ḥaakʷaaƛ=ʔiˑ} `the young woman' in (\ref{ex:adjpred}) may be built up in the same way as in (\ref{ex:verbparttree}, \ref{ex:adjparttree}) above. Common nouns are unique in this way.
 
-\section{Participant Ordering} \label{sec:clause:partorder}
-
-There is a strong tendency in Nuuchahnulth for each clause to have one overtly-expressed participant \citep[38]{rose1981} but if there are two participants expressed, they can come in any order. There is a preference in the southernmost dialects (Barkley sound and Central) for VSO ordering \citep[267]{jacobsen1993}, and a preference in the northern dialects (Northern and Kyuquot) for VOS ordering (Werle, \textit{p.c.}). This preference is not absolute, and to make the sentence unambiguous, speakers can use \textit{ʔuukʷił} to mark any non-highest argument \citep{woo2007b}.
-
-It is possible for speakers to move a participant in front of the predicate for focus. This left-dislocated participant is outside the calculation for second position inflection.
-
-\ex \label{ex:focus}
-\begingl
-\glpreamble ƛ̓aaq ʔuʔaatamin, waaʔaƛweʔin quʔušin. //
-\gla ƛ̓aaq ʔu-ʔaˑta=(m)in waa=!aƛ=weˑʔin quʔušin //
-\glb oil \textsc{x}-lack=\textsc{real.1pl} say=\textsc{now}=\textsc{hrsy.3} raven //
-\glft ‘ ``We need oil," said Raven.’ (\textbf{B}, Marjorie Touchie) //
-\endgl
-\xe
-
 The way I model this phenomenon is via a gap-filler construction \citep[Chapter 4]{pollardsag1994}, which avoids the problem of having to recalculate how the clitics behave in a sentence like (\ref{ex:focus}). A sketch of the tree is given below.
 
 \ex \label{ex:focustree}
@@ -395,48 +663,9 @@ The way I model this phenomenon is via a gap-filler construction \citep[Chapter 
 \end{forest}
 \xe
 
-In addition to focus fronting, bare quantifiers, including wh-words, tend to front. An example can be seen below.
-
-\ex \label{ex:quantfront}
-\begingl
-\glpreamble ʔuušił haʔukquuʔaała. //
-\gla ʔuuš-L.(č)ił haʔuk=quu=ʔaała  //
-\glb some-\textsc{do.to} eat.\textsc{dr}=\textsc{pssb.3}=\textsc{habit} //
-\glft `He would only eat some things.' (\textbf{B}, Bob Mundy) //
-\endgl
-\xe
-
-\ex~ \label{ex:quantnofront}
-\begingl
-\glpreamble haʔukquuʔaała ʔuušił haʔum. //
-\gla haʔuk=quu=ʔaała ʔuuš-L.(č)ił haʔum //
-\glb eat.\textsc{dr}=\textsc{pssb.3}=\textsc{habit} some-\textsc{do.to} food //
-\glft `He would only eat some things.' (\textbf{B}, Bob Mundy) //
-\endgl
-\xe
-
 My analysis for this is the same as that for focus fronting, minus the addition of focused information. I create a similar rule that behaves in the same way, \textit{non-focus-filler-head-rule}. Where the \textit{focus-filler-head-rule} adds focus information to its non-head-daughter, the \textit{non-focus-filler-head-rule} does not, and requires that its non-head-daughter be [\textsc{head} \textit{quantifier}]. Similarly, I add the constraint to \textit{focus-filler-head-rule} that its non-head-daughter be [\textsc{head} \textit{non-quantifier}].
 
-%In addition to the special focus construction above, dependent clauses may realize their participants to the left without any special focus.
-
-%TODO: Adam believes that participant-predicate ordering is possible in dependent clauses, citing ʔuyi. I believe that ʔuyi is an incipient adposition, and this is a postposition structure in these cases. It is extremely hard (impossible?) to find clear dependent clause participant-predicate ordering outside of ʔuyi. Ask Adam if he knows of non-ʔuyi examples.
-
-\section{Second-position clitics} \label{sec:clause:cliticnormal}
-
-The majority of clausal inflection in Nuuchahnulth is in a complex of second position enclitics which attach to the first word of the clause, modulo left-extraction as seen in \S\ref{sec:clause:partorder}. Table \ref{table:2pclitics} shows the ordering of the clitic complex, and is adapted from Adam Werle's grammar reference.
-
-\begin{table}[h]
-\centering
-\caption{Order of second position clitics}
-\label{table:2pclitics}
-\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|}
-\cline{2-11}
-morph & =ʔaaqƛ & =!ap      & =!aƛ & =!at    & \begin{tabular}[c]{@{}c@{}}=uk\\ =ʔak\end{tabular} & =(m)it & \begin{tabular}[c]{@{}c@{}}=ʔiˑš\\ =maˑ\\ =ḥaˑ\\ ...\end{tabular} & =ʔaała   & =ʔał   & =ƛaˑ \\ \cline{2-11}
-meaning  & \textsc{fut} & \textsc{caus} & \textsc{now}  & \textsc{pass} & \textsc{poss}  & \textsc{pst} & \begin{tabular}[c]{@{}c@{}}subject-mood\\ portmanteaus\end{tabular} & \textsc{habit} & \textsc{pl} & also \\ \cline{2-11}
-\end{tabular}
-\end{table}
-
-The examples so far have all shown these clitics attaching directly to the clausal predicate, but anticipating the need for them to attach to modifiers (\S\ref{sec:clause:cliticmodifier}), I assert that the clitics are the syntactic heads of the clause. This analysis requires argument composition, or a word (in this case, the syntactic word of the second position enclitic complex) taking on the arguments of its complement (here, the sentential predicate), an analysis first developed in \cite{millersag1997}. The way I model this in my implementation is by the subject-mood clitics taking their complement's valence properties and making it their own. That is, the generic type for the second-position clitics is:
+I assert that the clitics are the syntactic heads of the clause. This analysis requires argument composition, or a word (in this case, the syntactic word of the second position enclitic complex) taking on the arguments of its complement (here, the sentential predicate), an analysis first developed in \cite{millersag1997}. The way I model this in my implementation is by the subject-mood clitics taking their complement's valence properties and making it their own. That is, the generic type for the second-position clitics is:
 
 \ex \label{ex:2pavm}
 \begin{avm}
@@ -467,47 +696,7 @@ This creates an analytical issue for the third person neutral mood, which is nul
 
 This additional engineering work both exposes the grammar to more potential problems, and necessarily generates additional, meaningless parses. I opt instead for the analysis with a phonologically null element for the third person neutral mood portmanteau, and introduce `=0' into my strings.
 
-\section{Clitics attaching to modifiers} \label{sec:clause:cliticmodifier}
-
-As mentioned, second-position clausal clitics may also attach to the preceding modifier of a predicate. In the case of the main clause predicates, they may attach to preceding adverbs (\ref{ex:2padvpred}), conjunctions (\ref{ex:2pconjpred}), and adpositives (\ref{ex:2padppred}),\footnote{The claim that (\ref{ex:2padppred}) is an adpositive is somewhat controversial. \cite{woo2007b} analyzes these as little-\textit{v}, a category which does not exist in HPSG analyses. What this unit does is mark participants that fulfill a certain role with respect to the verb, similar to case-marking. An analysis that treats this particle as an adposition can generate the same set of sentences as a little-\textit{v} analysis, and is necessary within the HPSG framework. In this model, non-agentive arguments may be realized by a Participant Phrase or an Adposition Phrase headed by \textit{-L.(č)ił}. This means that in (\ref{ex:2padppred}), the word \textit{hiišił} is an adpositive phrase modifying the following verb \textit{ʔiiqḥuk}.} and the participant article may attach to a modifying adjective (\ref{ex:2padjpart}).
-
-\ex \label{ex:2padvpred}
-\begingl
-\glpreamble y̓uuqʷaaʔaqƛs n̓aačuk. //
-\gla y̓uuqʷaa=ʔaqƛ=s n̓aačuk  //
-\glb also=\textsc{fut}=\textsc{1sg} look.for //
-\glft `I will also look for it.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
-\endgl
-\xe
-
-\ex~ \label{ex:2pconjpred}
-\begingl
-\glpreamble ʔaḥʔaaʔaƛna huʔacačiƛ ʔaḥkuu. //
-\gla ʔaḥʔaaʔaƛ=naˑ huʔa-ca-čiƛ ʔaḥkuu  //
-\glb and.then=\textsc{strg.1pl} back-go-\textsc{mo} \textsc{d1} //
-\glft `And then we came back here.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
-\endgl
-\xe
-
-\ex~ \label{ex:2padppred}
-\begingl
-\glpreamble hiišiłʔaƛ ʔiiqḥuk, ʔumaḥsiičiƛs ḥaakʷaaƛ. //
-\gla hiš-L.(č)ił=ʔaƛ ʔiiqḥ-uk ʔumaḥsiičiƛ=s ḥaakʷaaƛ  //
-\glb all-\textsc{do.to}=\textsc{now} tell-\textsc{dr} want.to.marry.\textsc{mo}=\textsc{strg.1sg} young.woman //
-\glft ‘He told everyone, ``I want to marry that young woman." ’ (\textbf{C}, \textit{tupaat} Julia Lucas) //
-\endgl
-\xe
-
-\ex~ \label{ex:2padjpart}
-\begingl
-\glpreamble m̓uyaa ḥaa ƛaʔuuʔi maḥt̓ii. //
-\gla m̓uy-aˑ ḥaa ƛaʔuu=ʔiˑ maḥt̓iˑ  //
-\glb burn-\textsc{dr} \textsc{d3} other=\textsc{art} house //
-\glft `The other house was burning.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
-\endgl
-\xe
-
-[[TODO: Find a two-word analytic \textit{ʔuukʷił} version of (\ref{ex:2padppred}), which only has the suffix version \textit{-L.čił}.]]
+As mentioned, second-position clausal clitics may also attach to the preceding modifier of a predicate. In the case of the main clause predicates, they may attach to preceding adverbs 
 
 Because there is no movement in HPSG, my analysis cannot simply say that the clitics in (\ref{ex:2padvpred}--\ref{ex:2padjpart}) ``move" into position of the leftmost item in the phrase. There are benefits to this design decision (faster computation, fidelity to the ordering of the surface string, bidirectionality of parsing and generation), but second position phenomena is one of the areas that requires extra analytical work in HPSG.
 
@@ -539,9 +728,8 @@ One way to create structures like that in (\ref{ex:2pmodavm}) is to have differe
 \end{avm}
 \xe
 
-%\noindent (TODO: Actually implement this and give a summary of the lexical rule type. There's going to be some complications with list modifications and quantification.)
 
-\section{Summary}
+\section{Summary} \label{sec:clause:summary}
 
 Because of predicate flexibility in Nuuchahnulth, I have defined special terminology to distinguish between semantic and syntactic phenomenon. I use \textit{relation} to refer to atomic semantic units and \textit{argument} to refer to the variables that those semantic units relate. I refer to syntactic \textit{predicates}, which are the position in the clause where semantic arguments may be filled. \textit{Participants} are the syntactic units that fulfill a predicate's semantic arguments, and thus correlate with semantic \textit{arguments}.
 
