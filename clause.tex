@@ -512,14 +512,15 @@ synsem.local & \[ cat & \[ head.prd & -- \\
 \end{avm}
 \xe
 
-The above definitions for second position elements license trees that have simple second position elements. I will give sample trees for the three types of predicates introduced in \S\ref{sec:clause:predp}: verbs (\ref{ex:verbpred}), adjectives (\ref{ex:adjpred}), and nouns (\ref{ex:nounpred}). Trees for each of the sentences are given in (\ref{ex:verbpredtree}), (\ref{ex:adjpredtree}), and (\ref{ex:nounpredtree}) respectively. The attribute-value matrices have been somewhat simplified to fit on the page, and identifying semantic features (through \textsc{hook.index} and \textsc{hook.xarg}) have been elided. Identification of semantic features is shown simply by identifying a slot (e.g., the \textit{x} the relation \textsc{see}(\textit{x}, \textit{y})) with an entire feature structure. In the implemented grammar, this is done through the identification of values with the \textsc{hook} features. %\footnote{Note that here I have used the symbol \textsc{rel} to refer to what I have defined as a semantic \textit{relation}. In the implemented grammar, this is labeled \textsc{pred} for `predicate symbol'. This does not cause a problem with the \textsc{pred} value on \textsc{head}, because the two attributes lie on different paths.} Participant phrases (PartP) appear in these trees, but will be addressed in \S\ref{sec:clause:partp}. 
+The above definitions for second position elements license trees that have simple second position elements. I will give sample trees for the three types of predicates introduced in \S\ref{sec:clause:predp}: verbs (\ref{ex:verbpred}), adjectives (\ref{ex:adjpred}), and nouns (\ref{ex:nounpred}). Trees for each of the sentences are given in (\ref{ex:verbpredtree}), (\ref{ex:adjpredtree}), and (\ref{ex:nounpredtree}) respectively. The attribute-value matrices have been somewhat simplified to fit on the page, and identifying semantic features (through \textsc{hook.index} and \textsc{hook.xarg}) have been elided. Identification of semantic features is shown simply by identifying a slot (e.g., the \textit{x} the relation \textsc{see}(\textit{x}, \textit{y})) with an entire feature structure. In the implemented grammar, this is done through the identification of values with the \textsc{hook} features. Finally, there are some phrase structure rules that have not yet been introduced. They are present to complete the trees. The main points I am illustrating are second position argument composition and the predicate-participant distinction, which is created by the \textsc{head.prd} value at each level of the tree. %\footnote{Note that here I have used the symbol \textsc{rel} to refer to what I have defined as a semantic \textit{relation}. In the implemented grammar, this is labeled \textsc{pred} for `predicate symbol'. This does not cause a problem with the \textsc{pred} value on \textsc{head}, because the two attributes lie on different paths.} Participant phrases (PartP) appear in these trees, but will be addressed in \S\ref{sec:clause:partp}. 
 
 \ex \label{ex:verbpredtree}
 \adjustbox{max width=\textwidth - 0.2in}{
 \begin{forest}
 [PredP \\ \textsc{\textit{head-comp-rule}}
   [PredP \\ \begin{avm}
-            \[ \asort{comp-head-rule} subj & \avmbox{1} \\
+            \[ \asort{comp-head-rule} head.prd & + \\
+               subj & \avmbox{1} \\
                comps & \avmbox{2} \\
                rel & {\textsc{see}(\avmbox{1}, \avmbox{2})} \]
             \end{avm}
@@ -531,7 +532,8 @@ The above definitions for second position elements license trees that have simpl
              \end{avm}
       [n̓aacsiičiƛ]]
     [Inflection \\ \begin{avm}
- 	               \[\asort{2p-mood-lex} subj & \avmbox{1} \[pernum & 3sg \] \\
+ 	               \[\asort{2p-mood-lex} head.prd & + \\
+ 	                  subj & \avmbox{1} \[pernum & 3sg \] \\
  	                  comps & \< {\avmbox{3}\[ head.prd & + \\
  	                             subj & \avmbox{1} \], \avmbox{2}} \>  \]
                    \end{avm}
@@ -574,7 +576,7 @@ The above definitions for second position elements license trees that have simpl
 \begin{forest}
 [PredP
   [PredP \\ \begin{avm}
-            \[ \asort{comp-head-phrase} 
+            \[ \asort{comp-head-phrase} head.prd & + \\
                subj & \avmbox{1} \\
                comps & \< \> \\
                rel & {\textsc{beautiful}(\avmbox{1})} \]
@@ -588,7 +590,8 @@ The above definitions for second position elements license trees that have simpl
       [qʷac̓ał]
     ]
     [Inflection \\ \begin{avm}
- 	               \[\asort{2p-mood-lex} subj & \avmbox{1} \[pernum & 3sg \] \\
+ 	               \[\asort{2p-mood-lex} head.prd & + \\
+ 	                  subj & \avmbox{1} \[pernum & 3sg \] \\
  	                  comps & \< \avmbox{2}\[ head.prd & + \\
  	                             subj & \avmbox{1} \] \> \]
                    \end{avm}
@@ -621,7 +624,8 @@ The above definitions for second position elements license trees that have simpl
 \begin{forest}
 [PredP \\ \textsc{\textit{head-scopal-phrase}}
   [PredP \\ \begin{avm}
-            \avmbox{1} \[ \asort{comp-head-phrase} subj & \avmbox{1} \\
+            \avmbox{1} \[ \asort{comp-head-phrase} head.prd & + \\
+               subj & \avmbox{1} \\
                comps & \< \> \\
                rel & {\textsc{gym}(\avmbox{1})} \]
             \end{avm}
@@ -632,13 +636,14 @@ The above definitions for second position elements license trees that have simpl
              \end{avm}
       [pisatuwił]]
     [Inflection \\ \begin{avm}
- 	               \[\asort{2p-mood-lex} subj & \avmbox{1} \[pernum & 3sg \] \\
+ 	               \[\asort{2p-mood-lex} head.prd & + \\
+ 	                  subj & \avmbox{1} \[pernum & 3sg \] \\
  	                  comps & \< \avmbox{2}\[ head.prd & + \\
  	                             subj & \avmbox{1} \] \> \]
                    \end{avm}
        [{=maˑ}]]
   ]
-  [AdvP \\ \begin{avm}
+  [Adverb \\ \begin{avm}
             \[ head.mod & \< \avmbox{1} \> \\
                rel & \textsc{only}(\avmbox{1}) \]
             \end{avm}
