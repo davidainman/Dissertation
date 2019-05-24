@@ -1043,7 +1043,8 @@ The above definitions for second position elements license trees that have simpl
  	               \[\asort{2p-mood-lex} head.prd & + \\
  	                  subj & \avmbox{1} \[pernum & 3sg \] \\
  	                  comps & \< {\avmbox{3}\[ head.prd & + \\
- 	                             subj & \avmbox{1} \], \avmbox{2}} \>  \]
+ 	                             subj & \avmbox{1} \\
+ 	                             comps & \avmbox{2} \], \avmbox{2}} \>  \]
                    \end{avm}
       [{=ʔiˑš}]]
   ]
@@ -1412,7 +1413,7 @@ In case 2, there is no additional enclitic to overwrite the ``=0" string, so thi
                                val & \[ subj & \< \avmbox{1} \> \\
                                         comps & \avmbox{2} \] \] \] \]
 \end{avm}
-\xe
+\xe	
 
 Finally, the second-position clausal clitics need to be able to attach to a preceding modifier of the predicate. In the case of the main clause predicates, they may attach to preceding adverbs, and for the article it may attach to preceding adjectives. Because there is no movement in HPSG, my analysis cannot simply say that clitics ``move" into position of the leftmost item in the phrase. There are benefits to this design decision (faster computation, fidelity to the ordering of the surface string, bidirectionality of parsing and generation), but second position phenomena is one of the areas that requires extra analytical work in HPSG.
 
@@ -1699,7 +1700,7 @@ The \textit{ʔu-} root is modeled as a special lexeme that has properties that a
 The lexical entry shares many properties with \textit{\textsc{incorporating-lex-rule}} (\ref{incorporating-lex-rule}), since this lexeme will go directly through the \textsc{\textit{-incorporation-}} rules. It associates its complement's index with its own \textsc{xarg}, so that the semantics of the suffix verb's \textsc{arg2} get associated with it. I also have identified it as a supertype of adjectives and adverbs and placed its complement on its modifying list, since I want this lexeme only to go through the adverb and adjective incorporating rules. \textit{ʔu-} forms always have a full list of the suffix verb's complements, which is the identical to what happens with adjectives and adverbs. The difference between adjectives and adverbs and \textit{ʔu} is that \textit{ʔu} has no semantics. Finally, the morpheme \textit{ʔu-} itself, despite being a root form, is defined as the union of a root and a non root. This is a bit strange, but it is so the main predicate incorporating lex rules here (\ref{incorporating-lex-rule}), which require a root form, can accept \textit{ʔu}, but so can the auxiliary predicate incorporation rules below (\ref{pred-incorporation-lex-rule}), which require a non-root form.
 
 
-\subsubsection{Auxiliary predicate suffixes}
+\subsubsection{Auxiliary predicate suffixes} \label{ch:clause:analysis:auxpred}
 
 The strategy I apply to auxiliary predicate suffixes is extremely similar to that for main predicate suffixes. Like main predicate suffixes, incorporation proceeds in two steps: first a lexical rule that moves the needed syntactic properties into place, and then a final inflecting lexical rule that supplies the suffix itself. Because auxiliary predicate suffixes handle all predicates in the same way (\S\ref{ch:clause:2pv:auxiliary}), I only need two ``preparatory" lexical rules: one for predicates (\ref{pred-incorporation-lex-rule}), and one for adverbs (\ref{adv-incorporation-pred-lex-rule}). As with the main predicate suffixes, these lexical types inherit from \textsc{\textit{incorporating-lex-rule}} (\ref{incorporating-lex-rule}).
 
