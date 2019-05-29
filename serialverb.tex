@@ -1461,7 +1461,24 @@ inflected.some-inflection & -- \]
 
 This lexical entry is very similar to the second position lexical entries, defined in (\ref{ex:2p-lex-item}) and (\ref{ex:mood-2p-verb-lex}). The differences are that this lexical entry is defined as not fully inflected, and its form is \textit{nonfinite}. The nonfinite definition prevents phrases headed by this morpheme from forming clauses.
 
-I define special versions of the causative and passive morphemes which are morphologically constrained to only attach to this zero morph. While the syntactic properties of these morphemes are identical to (and inherited from a common type with) the versions used in the main clause enclitic complex (\S\ref{ch:clause:analysis:2p}), I require different morphological properties: These are suffixes rather than prefixes, and the other elements in the enclitic complex (including tense and subject information) cannot be generated here.\footnote{There is room here for a more parsimonious analysis that treats all valence-altering enclitics as one category and clausal enclitics as another, thus avoiding the need for this lexical doubling. Such a reanalysis is beyond the scope of this work.} No additional work needs to be done in cases where verbs do not have valence-changing morphology attached, as these elements will enter into the SVC constructions as they are.
+I define special versions of the causative and passive morphemes which are morphologically constrained to only attach to this zero morph. While the syntactic properties of these morphemes are identical to (and inherited from a common type with) the versions used in the main clause enclitic complex (\S\ref{ch:clause:analysis:2p}), I require different morphological properties: These are suffixes rather than prefixes, and the other elements in the enclitic complex (including tense and subject information) cannot be generated here.\footnote{There is room here for a more parsimonious analysis that treats all valence-altering enclitics as one category and clausal enclitics as another, thus avoiding the need for this lexical doubling. Such a reanalysis is beyond the scope of this work.}
+
+In the case where verbs do not have valence-changing morphology attached, I will need a unary rule that elevates them to a second position auxiliary in much the same way as I did for the third person neutral mood (\ref{neutral-3rd-pred-lex-rule}) in \S\ref{ch:clause:analysis:2p}. This rule is given in (\ref{neutral-non-head-verb-lex-rule}) below. It only modifies a few head features of the verb, and constrains it to not be in the main clause. Constraints not given in (\ref{neutral-non-head-verb-lex-rule}) are left the same. Importantly, the subject is not constrained.
+
+\ex \label{neutral-non-head-verb-lex-rule}
+\begin{avm}
+\[ \asort{neutral-non-head-verb-lex-rule}
+   sysnsem.local.cat & \[ head & \[ aux & + \\
+                                    form & finite \\
+                                    prd & + \] \\
+                          mc & -- \] \\
+
+    daughter & \[ synsem.local.cat.head & \[ aux & -- \\
+                                        form & nonfinite \\
+                                        prd & +  \] \\
+                  inflected & infl-satisfied \] \]
+\end{avm}
+\xe	
 
 \subsection{Coordination rules} \label{ch:sv:analysis:coord}
 
