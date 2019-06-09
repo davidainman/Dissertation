@@ -1,0 +1,386 @@
+\section{Clause Structure}
+
+\begin{frame}{Clause: Terms and definitions}
+Semantics
+\begin{itemize}
+\item \textbf{Relation}: An atomic unit that represents semantic meaning, e.g.\ \textsc{live}, \textsc{yellow}, \textsc{submarine}
+\item \textbf{Argument}: An element that is involved in a relation. Minimally they come in the flavors of an \textit{event} or an \textit{individual}, e.g.,\ \textsc{see}(\textit{e}, \textit{x}, \textit{y})
+\end{itemize}
+Syntax
+\begin{itemize}
+\item \textbf{Predicate}: The unit in the syntax which provides the main semantic relation of a clause, whose semantic arguments are filled through syntactic relations like subject and object
+\item \textbf{Participant}: A unit in the syntax which serves as a subject or object in relation to a predicate
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Clause: Terms and definitions}
+English:
+
+\ex[exno=1] \label{ex:dogbarks}
+[\textcolor{blue}{The dog}]\textsubscript{participant} [\textcolor{red}{barks}]\textsubscript{predicate}
+\xe
+
+\pause
+
+\hspace{20pt} \textsc{bark}(\textit{e}, \textit{x}), \textsc{dog}(\textit{x})
+
+\pause
+
+\ex[exno=2] \label{ex:grassgreen}
+[\textcolor{blue}{The grass}]\textsubscript{participant} [\textcolor{red}{appears}]\textsubscript{predicate} [\textcolor{blue}{green}]\textsubscript{participant}
+\xe
+
+
+\pause
+
+\hspace{20pt} \textsc{appear}(\textit{e}, \textit{x}, \textit{y}), \textsc{grass}(\textit{x}), \textsc{green}(\textit{y})
+
+\end{frame}
+
+\begin{frame}{Clause: Terms and definitions}
+Nuuchahnulth:
+
+\ex[exno=3] 
+\begingl
+\glpreamble $[$\textcolor{red}{n̓aacsiičiƛ}$]$\textsubscript{pred}ʔiš $[$\textcolor{blue}{hałmiiḥa quuʔas}$]$\textsubscript{part} //
+\gla $[$\textcolor{red}{n̓aacsa-iˑčiƛ}$]$\textsubscript{pred}=ʔiˑš $[$\textcolor{blue}{hałmiiḥa quuʔas}$]$\textsubscript{part} //
+\glb $[$\textcolor{red}{see.\textsc{cv}-\textsc{in}}$]$\textsubscript{pred}=\textsc{strg.3sg} $[$\textcolor{blue}{drowning person}$]$\textsubscript{part}	 //
+\glft `He sees a drowning person.' (\textbf{N}, Fidelia Haiyupis) //
+\endgl \label{ex:verbpred}
+\xe
+
+\pause
+
+\ex[exno=4]~
+\begingl
+\glpreamble $[$\textcolor{red}{qʷac̓ał}$]$\textsubscript{pred}ʔiš $[$\textcolor{blue}{ḥaakʷaaƛ}$]$\textsubscript{part}ʔi //
+\gla $[$\textcolor{red}{qʷac̓ał}$]$\textsubscript{pred}=ʔiˑš $[$\textcolor{blue}{ḥaakʷaaƛ}$]$\textsubscript{part}=ʔiˑ //
+\glb $[$\textcolor{red}{beautiful}$]$\textsubscript{pred}=\textsc{strg.3} $[$\textcolor{blue}{young.girl}$]$\textsubscript{part}=\textsc{art} //
+\glft `The young girl is beautiful.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl \label{ex:adjpred}
+\xe
+
+\pause
+
+\ex[exno=5]~
+\begingl
+\glpreamble $[$\textcolor{red}{pisatuwił}$]$\textsubscript{pred}ma ʔaanaḥi //
+\gla $[$\textcolor{red}{pisatuwił}$]$\textsubscript{pred}=maˑ ʔaanaḥi //
+\glb $[$\textcolor{red}{gym}$]$\textsubscript{pred}=\textsc{real.3} only //
+\glft `It's only a gym.' (\textbf{B}, Marjorie Touchie) //
+\endgl \label{ex:nounpred}
+\xe
+
+\begin{textblock*}{5cm}(10cm,3cm) % {block width} (coords) 
+   \textcolor{red}{Verb}
+\end{textblock*}
+
+\only<2->{
+\begin{textblock*}{5cm}(10cm,5.4cm) % {block width} (coords) 
+   \textcolor{red}{Adjective}
+\end{textblock*}}
+
+\only<3->{
+\begin{textblock*}{5cm}(10cm,7.8cm) % {block width} (coords) 
+   \textcolor{red}{Noun}
+\end{textblock*}}
+
+\end{frame}
+
+\begin{frame}{Clause: Terms and definitions}
+
+\ex[exno=6]
+\begingl
+\glpreamble $[$\textcolor{red}{ʔuḥ}$]$ʔiiš $[$\textcolor{red}{ʕiḥak}$]$\textsubscript{pred} $[$\textcolor{blue}{kamatquk}$]$\textsubscript{part}ʔi //
+\gla $[$\textcolor{red}{ʔuḥ}$]$=ʔiˑš $[$\textcolor{red}{ʕiḥak}$]$\textsubscript{pred} $[$\textcolor{blue}{kamatq-uk}$]$\textsubscript{part}=ʔiˑ //
+\glb $[$\textcolor{red}{be}$]$=\textsc{strg.3} $[$\textcolor{red}{cry.\textsc{dr}}$]$\textsubscript{pred} $[$\textcolor{blue}{run-\textsc{dr}}$]$\textsubscript{part}=\textsc{art} //
+\glft `The running one is crying.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl \label{ex:verbpart}
+\xe
+
+\pause
+
+\ex[exno=7]~ 
+\begingl
+\glpreamble $[$\textcolor{red}{wik̓}$]$iičʔaał $[$\textcolor{red}{ƛ̓iixc̓us}$]$\textsubscript{pred} $[$\textcolor{blue}{ƛaƛuu}$]$\textsubscript{part}ʔi //
+\gla $[$\textcolor{red}{wik}$]$=!iˑč=ʔaał $[$\textcolor{red}{ƛ̓iixc̓us}$]$\textsubscript{pred} $[$\textcolor{blue}{ƛaƛuu}$]$=\textsubscript{part}ʔiˑ //
+\glb $[$\textcolor{red}{\textsc{neg}}$]$=\textsc{cmmd.2pl}=\textsc{habit} $[$\textcolor{red}{laugh.at.\textsc{dr}}$]$\textsubscript{pred} $[$\textcolor{blue}{other.\textsc{pl}}$]$\textsubscript{part}=\textsc{art} //
+\glft `Don't laugh at others.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl \label{ex:adjpart}
+\xe
+
+\pause
+
+\ex[exno=4]~
+\begingl
+\glpreamble $[$\textcolor{red}{qʷac̓ał}$]$\textsubscript{pred}ʔiš $[$\textcolor{blue}{ḥaakʷaaƛ}$]$\textsubscript{part}ʔi //
+\gla $[$\textcolor{red}{qʷac̓ał}$]$\textsubscript{pred}=ʔiˑš $[$\textcolor{blue}{ḥaakʷaaƛ}$]$\textsubscript{part}=ʔiˑ //
+\glb $[$\textcolor{red}{beautiful}$]$\textsubscript{pred}=\textsc{strg.3} $[$\textcolor{blue}{young.girl}$]$\textsubscript{part}=\textsc{art} //
+\glft `The young girl is beautiful.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl \label{ex:nounpart}
+\xe
+
+\begin{textblock*}{5cm}(10cm,3cm) % {block width} (coords) 
+   \textcolor{blue}{Verb}
+\end{textblock*}
+
+\only<2->{
+\begin{textblock*}{5cm}(10cm,5.4cm) % {block width} (coords) 
+   \textcolor{blue}{Adjective}
+\end{textblock*}}
+
+\only<3->{
+\begin{textblock*}{5cm}(10cm,7.8cm) % {block width} (coords) 
+   \textcolor{blue}{Noun}
+\end{textblock*}}
+
+\end{frame}
+
+\begin{frame}{Clause: Terms and definitions}
+\centering
+\begin{tikzpicture}[sibling distance=5em,
+  every node/.style = {anchor=mid,shape=rectangle,align=center,fill=white}]
+\node (noun) at (0,3) {Noun};
+\node (verb) at (3,3) {Verb};
+\node (adjective) at (6,3) {Adjective};
+\node (adverb) at (8,3) {Adverb};
+\node (predicate) at (3,6) {\textcolor{red}{Syntactic Predicate}};
+\node (participant) at (3,0) {\textcolor{blue}{Syntactic Participant}};
+\draw[->] (noun) -- (predicate);
+\draw[->] (verb) -- (predicate);
+\draw[->] (adjective) -- (predicate);
+\draw[->] (noun) -- (participant) node[midway,fill=white] {(=ʔiˑ)};
+\draw[->] (verb) -- (participant) node[midway,fill=white] {=ʔiˑ};
+\draw[->] (adjective) -- (participant) node[midway,fill=white] {=ʔiˑ};
+\draw[->,out=90,in=0] (adverb) to node[midway]{modifies} (predicate);
+\end{tikzpicture}
+\end{frame}
+
+
+\begin{frame}[noframenumbering]{Clause: Terms and definitions}
+\centering
+\begin{tikzpicture}[sibling distance=5em,
+  every node/.style = {anchor=mid,shape=rectangle,align=center,fill=white}]
+\node (noun) at (0,3) {NP};
+\node (verb) at (3,3) {VP};
+\node (adjective) at (6,3) {AdjP};
+\node (adverb) at (8,3) {Adv(P)};
+\node (predicate) at (3,6) {\textcolor{red}{PredP}};
+\node (participant) at (3,0) {\textcolor{blue}{PartP}};
+\draw[->] (noun) -- (predicate) node[midway, fill=white] {is a};
+\draw[->] (verb) -- (predicate) node[midway, fill=white] {is a};
+\draw[->] (adjective) -- (predicate) node[midway, fill=white] {is a};
+\draw[->] (noun) -- (participant) node[midway, fill=white] {is a\\(+ =ʔiˑ)};
+\draw[->] (verb) -- (participant) node[midway,fill=white] {+ =ʔiˑ};
+\draw[->] (adjective) -- (participant) node[midway,fill=white] {+ =ʔiˑ};
+\draw[->,out=90,in=0] (adverb) to node[midway]{modifies a} (predicate);
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}{Clause: Second position enclitics}
+
+Each clause a second position enclitic complex which falls on the first word, including on preceding modifiers (adverbs) and coordinators.
+
+\ex[exno=8]
+\begingl
+\glpreamble \textcolor{red}{y̓uuqʷaa}ʔaqƛs \textcolor{red}{n̓aačuk}. //
+\gla \textcolor{red}{y̓uuqʷaa}=!aqƛ=s \textcolor{red}{n̓aačuk}  //
+\glb \textcolor{red}{also}=\textsc{fut}=\textsc{1sg} \textcolor{red}{look.for.\textsc{dr}} //
+\glft `I will also look for it.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl \label{ex:2padvpred}
+\xe
+
+\ex[exno=9]~
+\begingl
+\glpreamble \textcolor{red}{ʔaḥʔaaʔaƛ}na \textcolor{red}{huʔacačiƛ} \textcolor{blue}{ʔaḥkuu}. //
+\gla \textcolor{red}{ʔaḥʔaaʔaƛ}=naˑ \textcolor{red}{huʔa-ca-čiƛ} \textcolor{blue}{ʔaḥkuu}  //
+\glb \textcolor{red}{and.then}=\textsc{strg.1pl} \textcolor{red}{back-go-\textsc{pf}} \textcolor{blue}{\textsc{d1}} //
+\glft `And then we came back here.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl \label{ex:2pconjpred}
+\xe
+
+\end{frame}
+
+\begin{frame}{Clause: Second position enclitics}
+
+
+\begin{table}[h]
+\centering
+\label{table:2pclitics}
+\caption{Template for clausal enclitics}
+\adjustbox{max width=\textwidth}{
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|}
+\cline{2-11}
+morph & =ʔaaqƛ & =!ap      & =!aƛ & =!at    & \begin{tabular}[c]{@{}c@{}}=uk\\ =ʔak\end{tabular} & =(m)it & \begin{tabular}[c]{@{}c@{}}=ʔiˑš\\ =maˑ\\ =ḥaˑ\\=$\emptyset$\\ ...\end{tabular} & =ʔaała   & =ʔał   & =ƛaˑ \\ \cline{2-11}
+meaning  & \textsc{fut} & \textsc{caus} & \textsc{now}  & \textsc{pass} & \textsc{poss}  & \textsc{pst} & \begin{tabular}[c]{@{}c@{}}subject-mood\\ portmanteaus\end{tabular} & \textsc{habit} & \textsc{pl} & also \\ \cline{2-11}
+\end{tabular}
+}
+\end{table}
+
+\end{frame}
+
+\begin{frame}{Clause: Second position suffixes}
+
+\begin{itemize}
+\item Transitive verbal suffixes appear in second position with respect to their object.
+\end{itemize}
+
+\pause
+
+\ex[exno=10]
+\begingl
+\glpreamble \textcolor{orange}{nuuk}\textcolor{Purple}{naak}s. //
+\gla \textcolor{orange}{nuuk}-\textcolor{Purple}{naˑk}=s //
+\glb \textcolor{orange}{song}-\textcolor{Purple}{have}=\textsc{strg.1sg} //
+\glft `I have a song/songs.' (\textbf{N}, \textit{yuułnaak} Simon Lucas) //
+\endgl \label{ex:havesong}
+\xe
+
+\ex~[exno=11]
+\begingl
+\glpreamble \textcolor{orange}{ʔaƛa}\textcolor{Purple}{nak}s \textcolor{orange}{nuuk}. //
+\gla \textcolor{orange}{ʔaƛa}-\textcolor{Purple}{naˑk}=s \textcolor{orange}{nuuk} //
+\glb \textcolor{orange}{two}-\textcolor{Purple}{have}=\textsc{strg.1sg} \textcolor{orange}{song} //
+\glft `I have two songs.' (\textbf{N}, \textit{yuułnaak} Simon Lucas) //
+\endgl \label{ex:havetwosongs}
+\xe
+
+%A semantically empty root can serve as an attachment site as well.
+
+\ex~[exno=12]
+\begingl
+\glpreamble \textcolor{orange}{ʔu}\textcolor{Purple}{naak}s \textcolor{orange}{c̓iiqy̓ak}. //
+\gla \textcolor{orange}{ʔu}\textcolor{Purple}{-naˑk}=s \textcolor{orange}{c̓iiq-y̓ak} //
+\glb \textcolor{orange}{\textsc{x}}-have=\textsc{strg.1sg} \textcolor{orange}{chant-for} //
+\glft `I have a chant.' (\textbf{N}, \textit{yuułnaak} Simon Lucas) //
+\endgl  \label{ex:havechant}
+\xe
+
+\end{frame}
+
+
+\begin{frame}{Clause: Second position suffixes}
+
+\begin{itemize}
+\item Some of these suffixes take predicate complements
+\end{itemize}
+
+\ex[exno=13]
+\begingl
+\glpreamble \textcolor{red}{sukʷiƛ}\textcolor{Purple}{maḥsa}niš. //
+\gla \textcolor{red}{su-kʷiƛ}\textcolor{Purple}{-maḥsa}=niˑš //
+\glb {hold-\textsc{pf}}\textcolor{Purple}{-want.to}=\textsc{strg.1pl} //
+\glft `We want to take (her).' (\textbf{N}, \textit{yuułnaak} Simon Lucas) //
+\endgl \label{ex:wanttograb}
+\xe
+
+\ex[exno=14]~
+\begingl
+\glpreamble \textcolor{red}{ʔaani}\textcolor{Purple}{maḥsa}s \textcolor{red}{waa} ʔin ... //
+\gla \textcolor{red}{ʔaani}\textcolor{Purple}{-maḥsa}=s \textcolor{red}{waa} ʔin  ... //
+\glb \textcolor{red}{only}\textcolor{Purple}{-want.to}=\textsc{real.1sg} \textcolor{red}{say} \textsc{comp} ... //
+\glft `I only want to say that ...' (\textbf{N}, \textit{yuułnaak} Simon Lucas) //
+\endgl \label{ex:onlywanttosay}
+\xe
+	
+\end{frame}
+
+\begin{comment}
+\begin{frame}[fragile]{Clause: Summary}
+\begin{itemize}
+\item Clause: Predicate =inflection (participants)
+\item Nouns, verbs, and adjectives can be predicates or participants
+\item Some verbs are second-position suffixes
+\item Modifiers precede what they modify, second position elements move accordingly
+\end{itemize}
+
+\begin{table}[]
+\centering
+\label{tab:2p}
+\caption {Summary of second positions}
+\adjustbox{max width=\textwidth}{
+\begin{tabular}{llll}
+ & \textbf{Syntactic domain} & \textbf{Attaches to} & \textbf{Meaning} \\ \hline
+\textbf{Clausal enclitics} & Clause & First (non-extracted) word & tense, subject, mood \\ \hline
+\textbf{Main predicate suffixes} & VP & First word in object (noun or adj) & transitive verbs \\ \hline
+\textbf{Auxiliary predicate suffixes} & VP & First word in object (pred or adv) & modal-like verbs
+\end{tabular}
+}
+\end{table}
+	
+\end{frame}
+\end{comment}
+
+\begin{frame}{HPSG Analysis}
+\begin{itemize}
+\item HPSG represents grammatical rules through attribute-value matrices and phrase-structure rules
+\item There is no movement: ordering accounted for by altering the matrices
+\item Analysis was implemented computationally
+\end{itemize}
+\end{frame}
+
+\begin{frame}{HPSG Analysis: Clause}
+Predicate vs Participant:
+\begin{itemize}
+\item A \textsc{head} feature \textsc{prd}: + | --
+\item Keeps track of semantic eventiveness
+\item Nouns, adjectives, verbs are \textsc{prd} +
+\end{itemize}
+
+Clausal enclitics:
+\begin{itemize}
+\item Head of the sentence
+\item Select for a predicate complement and inherit its subject and complements
+\item Add subject information and other inflectional material
+\end{itemize}
+\end{frame}
+
+\begin{frame}{HPSG Analysis: Suffix verbs}
+
+I treat suffix verbs as incorporation which occurs in two steps:
+
+\begin{enumerate}
+\item A rule that prepares a root for incorporation
+\item A rule that attaches the contentful suffix	
+\end{enumerate}
+
+\centering
+\adjustbox{max width=\textwidth, max totalheight=2.4in}{
+\begin{forest}
+[ \begin{avm}
+  \[\asort{suffix-attachment} rel & {\textsc{suffix-meaning}(\textnormal{\textit{e2}},\textnormal{\textit{x}},\avmbox{1})} \]
+  \end{avm}
+  [ \begin{avm}
+ 	\[\asort{noun/verb/adj-incorporation} ????? \]
+    \end{avm}
+    [ \begin{avm}
+ 	  \[\asort{noun/verb/adj-root} subj & \< \avmbox{1} \> \\
+ 	     rel & {\textsc{meaning}(\textnormal{\textit{e1}},\avmbox{1})} \]
+       \end{avm}
+    ]
+  ] 
+]
+\end{forest}
+}
+
+\end{frame}
+
+\begin{frame}{HPSG Implementation: Parsing Results}
+
+\begin{itemize}
+\item Hand-crafted set of ``basic" clausal phenomena
+\item Coverage: 83.2\%
+\item Overgeneration: 1.3\%
+\end{itemize}
+
+\begin{table}[]
+\centering
+\label{tab:clause-coverage}
+\begin{tabular}{l|llll}
+ & Total & Parsed & Unparsed & Avg \# of parses \\ \hline
+Grammatical sentences & 167 & 139 & 28 & 1.12 \\ \hline
+Ungrammatical sentences & 79 & 1 & 78 & 2
+\end{tabular}
+\end{table}
+	
+\end{frame}

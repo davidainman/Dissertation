@@ -6,7 +6,7 @@ The linker morpheme in Nuuchahnulth \textit{-(q)ḥ}, like serial verb construct
 
 In this section I will present the data I have collected on the linker morpheme and how the construction is used. As with serial verbs, I will keep this section fairly theory-neutral, saving the specifics of an HPSG analysis for \S\ref{ch:link:analysis}.
 
-The morpheme \textit{-(q)ḥ} is the last possible suffix on a word. It is typically pronounced as the sequence \textit{qḥ} following a vowel or nasal, and otherwise as \textit{ḥ}. The Central Ahousaht elder \textit{tupaat} Julia Lucas almost always pronounces the linker as the full \textit{qḥ} regardless of the phonological environment, with the exception of certain light verbs. I do not know if this reflects a sub-dialect of Ahousaht, or if this pronunciation is unique to her, but I transcribe her speech faithfully.
+The morpheme \textit{-(q)ḥ} is one of the last possible suffixes on a word.\footnote{Exceptions are the auxiliary predicate suffixes, which follow it (\S\ref{ch:clause:2pv:auxiliary}).} It is typically pronounced as the sequence \textit{qḥ} following a vowel or nasal, and otherwise as \textit{ḥ}. The Central Ahousaht elder \textit{tupaat} Julia Lucas almost always pronounces the linker as the full \textit{qḥ} regardless of the phonological environment, with the exception of certain light verbs. I do not know if this reflects a sub-dialect of Ahousaht, or if this pronunciation is unique to her, but I transcribe her speech faithfully.
 
 The suffix is translated as `meanwhile' in \cite{sapir1939}, and was first dubbed the ``linker" by Adam Werle (\textit{p.c.}), on the understanding that it ``links" two predicates together. In some sense, it is coordinating two elements with each other within the syntactic domain of the second position clitics. I will first compare the linker coordination strategy to others (\ref{ch:link:others}), then examine the morphological attachment properties of this special coordinator (\S\ref{ch:link:attach}), and finally look at its syntactic properties (\S\ref{ch:link:clause}--\ref{ch:link:dangling}).
 
@@ -1684,12 +1684,12 @@ I define a predicate linker supertype \textit{\textsc{2p-linker-verb-lex-rule-su
 \adjustbox{max width=\textwidth - 0.2in}{
 \begin{avm}
 \[\asort{2p-linker-verb-lex-rule-super}
- synsem.local & \[ cat & \[ val & \[ subj & \< \avmbox{S}\[ $\ldots$index & \avmbox{1} \] \> \\
+ synsem.local & \[ cat & \[ val & \[ subj & \< \avmbox{S}\[ $\ldots$index & \avmbox{3} \] \> \\
                       comps & \< \[ local & \[ cat.val.comps & \< \> \\
                                                cont.hook & \[ index & \avmbox{2} \\
                                                    xarg & \avmbox{3} \] \] \] \> $\oplus$ \avmbox{C} \] \] \\
-                   cont.hook & \[ index & \avmbox{0} \\
-                                  xarg & \avmbox{1} \] \] \\
+                   cont.hook & \[ index & \avmbox{1} \\
+                                  xarg & \avmbox{3} \] \] \\
  c-cont & \< \[ pred & \textsc{and} \\
                 c-arg & \textit{e} \avmbox{0}\[ mood & \avmbox{4} \\
                                                   tense & \avmbox{5} \] \\

@@ -1,0 +1,179 @@
+\documentclass[xcolor=table,usenames,dvipsnames]{beamer}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{tipa}
+\usepackage{multirow}
+\usepackage{multicol, comment, xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows,calc,shapes,positioning,matrix,chains,fit}
+\usepackage{expex, fontspec, fixltx2e}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{avm}
+\avmsortfont{\it}
+\avmfont{\sc}
+\avmvalfont{\rm}
+\newfontfamily\brill{Brill}
+\lingset{belowglpreambleskip=0ex, aboveglftskip=0ex, everygl=\brill\small, everygla={\upshape}}
+
+\usefonttheme{professionalfonts} % using non standard fonts for beamer
+\usefonttheme{serif} % default family is serif
+\setmainfont{Brill}
+
+
+%\usepackage[compatibility=false]{subcaption}
+
+
+\usepackage{amsmath}
+\usepackage{qtree}
+\usepackage{natbib}
+\usepackage[linguistics]{forest}
+\usepackage{csquotes, pifont}
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+\bibliographystyle{apalike}
+\renewcommand\bibfont{\scriptsize}
+
+\usepackage[table]{xcolor}
+
+%https://tex.stackexchange.com/questions/77998/fitting-tables-into-beamer
+\usepackage{adjustbox}
+
+%https://tex.stackexchange.com/questions/5836/place-bibliography-items-at-bottom-of-frame
+%\usepackage[backend=biber, style=authoryear,natbib=true]{biblatex}
+%\addbibresource{../../../bib/ncnbib.bib}
+
+
+%Format of numbers
+%\usepackage{siunitx}
+%\sisetup{
+%        round-mode = places,
+%        round-precision = 4
+%}
+
+%\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{navigation symbols}{}
+
+%\AtBeginSubsection[]
+%{
+%	\begin{frame}{Table of Contents}
+%    	\tableofcontents[currentsubsection]
+%    \end{frame}
+%}
+
+
+\graphicspath{ {./graphics/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+\title[MPCs in Nuuchahnulth]{Multi-predicate Constructions in Nuuchahnulth} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{David Inman} % Your name
+\institute[UW] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+University of Washington \\ % Your institution for the title page
+\medskip
+\textit{davinman@uw.edu} % Your email address
+}
+\date{\today} % Date, can be changed to a custom date
+
+\AtBeginSection[]
+{
+    \begin{frame}
+        \frametitle{Table of Contents}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage	
+\end{frame}
+
+
+\begin{frame}{Introduction: Table of Contents}
+\tableofcontents
+\end{frame}
+
+\include{intro}
+
+\include{clause}
+
+\include{svc}
+
+\include{linker}
+
+\include{conclusion}
+
+\include{acknowledgements}
+
+%\section{References}
+\include{references}
+
+\include{supplemental}
+	
+\end{document}
+ 

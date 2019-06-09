@@ -1,0 +1,309 @@
+\begin{frame}{Supplemental Slides}
+\begin{enumerate}
+\item Future work
+\item AVMs for clausal enciltics and suffix verbs
+\item AVMs for SVCs
+\item AVMs for the linker
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[noframenumbering]{Supplemental Slides: Future Work}
+\begin{itemize}
+\item Documentation/community work
+\begin{itemize}
+\item Finishing and reviewing transcriptions
+\item Making transcriptions available to learners and archiving
+\item Miniature language lesson sheets \pause
+\end{itemize}
+\item Linguistic work
+\begin{itemize}
+\item Different categories of second position suffix
+\item Adverb scoping in second position suffixes
+\item Incorporation HPSG analysis
+\item Syntactic domain properties for second position enclitics and suffixes \pause
+\end{itemize}
+\item Typological work
+\begin{itemize}
+\item Noun and adjective predication (and eventiveness) in other languages
+\item Generalizability of serial verb definition and coordination assumptions
+\item Comparison of SVC properties with nearby or typologically similar languages
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}[noframenumbering]{Supplemental Slides: Future Work}
+\begin{itemize}
+\item What are the different syntactic domains of the second position enclitics?
+\item \textcolor{blue}{Clause} vs \textcolor{red}{Maximal predicate phrase} (?)
+\item What doubles under quantifier or wh-word fronting?
+\end{itemize}
+
+
+\begin{table}[h]
+\centering
+\label{table:2pclitics}
+\adjustbox{max width=\textwidth}{
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|}
+\cline{2-11}
+morph & \textcolor{blue}{=ʔaaqƛ} & \textcolor{red}{=!ap}      & \textcolor{red}{=!aƛ} & \textcolor{red}{=!at}    & \begin{tabular}[c]{@{}c@{}}\textcolor{red}{=uk}\\ \textcolor{red}{=ʔak}\end{tabular} & \textcolor{blue}{=(m)it} & \begin{tabular}[c]{@{}c@{}}\textcolor{blue}{=ʔiˑš}\\ \textcolor{blue}{=maˑ}\\ \textcolor{blue}{=ḥaˑ}\\\textcolor{blue}{=$\emptyset$}\\ ...\end{tabular} & \textcolor{blue}{=ʔaała}   & \textcolor{blue}{=ʔał}   & \textcolor{blue}{=ƛaˑ} \\ \cline{2-11}
+meaning  & \textcolor{blue}{\textsc{fut}} & \textcolor{red}{\textsc{caus}} & \textcolor{red}{\textsc{now}}  & \textcolor{red}{\textsc{pass}} & \textcolor{red}{\textsc{poss}}  & \textcolor{blue}{\textsc{pst}} & \begin{tabular}[c]{@{}c@{}}\textcolor{blue}{subject-mood}\\ \textcolor{blue}{portmanteaus}\end{tabular} & \textcolor{blue}{\textsc{habit}} & \textcolor{blue}{\textsc{pl}} & \textcolor{blue}{also} \\ \cline{2-11}
+\end{tabular}
+}
+\end{table}
+\end{frame}
+
+
+\begin{frame}[noframenumbering]{Supplemental: Clausal enclitics: AVM}
+
+\adjustbox{max width=\textwidth}{
+\begin{avm}
+\[\asort{mood-2p-verb-lex}
+synsem.local & \[ cat & \[ head.prd & + \\
+   val & \[ subj & \< \avmbox{1} \[ local.cat.head.prd & -- \] \> \\
+      comps & \< \[ opt & -- \\
+          local & \[ cat & \[ head.prd & + \\
+               val & \[ subj & \< \avmbox{1} \> \\
+               comps & \avmbox{2} \] \] \\
+               $\ldots$index & \avmbox{3} \] \] \>\ $\oplus$ \avmbox{2} \] \] \\
+       cont.hook.index & \avmbox{3} \] \]
+\end{avm}
+}
+
+\end{frame}
+
+\begin{frame}[noframenumbering]{Supplemental: Clausal enclitics}
+
+\adjustbox{max width=\textwidth}{
+\begin{avm}
+\[\asort{\textcolor{red}{article-lex}}
+synsem.local & \[ cat & \[ \textcolor{red}{head.prd} & \textcolor{red}{--} \\
+   val & \[ \textcolor{red}{subj} & \<\ \> \\
+      comps & \< \[ opt & -- \\
+          local & \[ cat & \[ head.prd & + \\
+               val & \[ comps & \avmbox{2} \] \] \\
+               \textcolor{red}{$\ldots$xarg} & \avmbox{3} \] \] \>\ $\oplus$ \avmbox{2} \] \] \\
+       \textcolor{red}{cont.hook.index} & \avmbox{3} \] \]
+\end{avm}
+}
+
+\end{frame}
+
+\begin{frame}[noframenumbering]{Supplemental: Clausal enclitics: Tree}
+
+\centering
+\adjustbox{max width=\textwidth, max totalheight=3in}{
+\begin{forest}
+[S \\ \begin{avm}
+ 	      \[ \asort{head-subj-phrase}
+ 	         subj & \< \> \\
+ 	         comps & \< \> \\
+ 	         index & \avmbox{1} \]
+          \end{avm}
+  [PredP \\ \begin{avm}
+            \[ \asort{comp-head-phrase} head.prd & + \\
+               subj & \avmbox{2} \\
+               comps & \< \> \\
+               index & \avmbox{1} \]
+            \end{avm}
+    [Adjective \\ \begin{avm}
+ 	\avmbox{3} \[\asort{adj-lex} head.prd & + \\
+ 	              subj & \avmbox{2} \\
+ 	              index & \avmbox{1} \\
+ 	              rel & {\textsc{beautiful}(\textit{e}\avmbox{1}, \textit{x}\avmbox{2})} \]
+             \end{avm}
+      [qʷac̓ał]
+    ]
+    [\begin{avm}
+ 	  \[\asort{2p-mood-lex} head.prd & + \\
+ 	     subj & \avmbox{2} \[pernum & 3sg \] \\
+ 	     comps & \< \avmbox{3}\[ head.prd & + \\
+ 	                subj & \avmbox{2} \\
+ 	                index & \avmbox{1} \] \> \\
+ 	     index & \avmbox{1} \]
+        \end{avm}
+      [{=ʔiˑš}]]
+  ]
+  [PartP \\ \begin{avm}
+ \avmbox{2} \[\asort{comp-head-phrase} head.prd & -- \\
+              index & \avmbox{2} \]
+            \end{avm}
+    [ Noun \\ \begin{avm}
+ 	    \avmbox{4}\[\asort{common-noun-lex} head.prd & + \\
+ 	      subj & \< \avmbox{2} \> \\
+ 	      rel & {\textsc{young-woman}(\textit{e}, \textit{x}\avmbox{2})} \]
+        \end{avm}
+      [ḥaakʷaaƛ] ]
+    [\begin{avm}
+ 	               \[\asort{article-lex} head.prd & -- \\
+ 	                  comps & \< \avmbox{4}\[ head.prd & + \\
+ 	                             subj & \avmbox{2} \] \> \\
+ 	                  index & \avmbox{2} \]
+                   \end{avm}
+      [{=ʔiˑ}]
+    ]
+  ]
+]	
+\end{forest}}
+\end{frame}
+
+
+\begin{frame}[noframenumbering]{Supplemental: Suffix verbs}
+
+\centering
+\adjustbox{max width=\textwidth, max totalheight=3in}{
+\begin{forest}
+[
+\begin{avm}
+\[\asort{naˑk}
+ phon & ``nuuknaak" \\
+ synsem.local & \[ cat & \[ val & \[ subj & \< \avmbox{3}\[ $\ldots$index & \avmbox{1} \] \> \\
+                      comps & \<\ \> \] \\
+                      head & \avmbox{4} \] \\
+                   cont.hook & \[ index & \avmbox{0} \\
+                                  xarg & \avmbox{1} \] \] \\
+ c-cont & \< {\textsc{have}(\textnormal{\textit{e}}\avmbox{0}, \textnormal{\textit{x}}\avmbox{1}, \textnormal{\textit{x}}\avmbox{2})} \> \\
+ daughter & \avmbox{A} \]
+\end{avm} 
+[
+\begin{avm}
+\avmbox{A}\[\asort{noun-incorporation-lex-rule}
+ phon & ``nuuk" \\
+ synsem & \[ local.cat & \[ val & \[ subj & \< \avmbox{3} \> \\
+                                     comps & \<\ \> \] \] \\
+                            head & \avmbox{4} \[\asort{verb}
+                                     aux & -- \\
+                                     form & non-root-nonfinite \] \\
+                            cont & \avmbox{5} \] \\
+ daughter & \avmbox{B} \]
+\end{avm}
+[
+\begin{avm}
+\avmbox{B}\[ \asort{nuuk-noun-lex}
+   phon & ``nuuk" \\
+   synsem.local & \[ cat & \[ val.subj & \< $\ldots$index \avmbox{1} \> \\
+                              head.form & root \] \\
+                     cont & \avmbox{5} \[ index & \avmbox{6} \\
+                               xarg & \avmbox{2} \] \] \\
+   rels & \< {\textsc{song}(\textnormal{\textit{e}}\avmbox{6}, \textnormal{\textit{x}}\avmbox{2})} \> \]
+\end{avm}
+]
+]
+]
+\end{forest}
+}
+\end{frame}
+
+\begin{frame}[noframenumbering]{Supplemental: SVC AVMs}
+\adjustbox{max width=\textwidth - 0.4in, max totalheight=2.5in}{
+\begin{avm}
+\[\asort{svc-top-coord-phrase}
+synsem.local & \[ cat.val & \[ subj & \< \avmbox{1} \> \\
+                               comps & \avmbox{2} \] \] \\
+lcoord & \[ synsem.local & \[
+                         cat.val & \[ subj & \< \avmbox{1} \> \\
+                                           comps & \avmbox{2} \] \\
+                         cont.hook.e & \[ mood & \avmbox{4} \\
+                                          tense & \avmbox{5} \] \] \] \\
+rcoord & \[ synsem.local & \[
+                         cat.val.subj & \< \avmbox{1} \> \\
+                         cont.hook.index.e & \[ mood & \avmbox{4} \\
+                                          tense & \avmbox{5} \] \] \] \]
+\end{avm}
+}
+\end{frame}
+
+\begin{frame}[noframenumbering]{Supplemental: SVC AVMs}
+\adjustbox{max width=\textwidth - 0.4in}{
+\begin{avm}
+\[\asort{svc-bottom-coord-phrase}
+synsem.local & \[ cat.val.subj & \< \avmbox{1} \> \\
+                     cont.hook.index.e & \[ mood & \avmbox{2} \\
+                                            tense & \avmbox{3} \] \] \\
+nonconj-dtr & \[ synsem.local & \[ cat & \[ head.form & nonfinite \\
+                                           val & \[ subj & \< \avmbox{1} \> \\
+                                                    comps & \<\ \> \] \] \\
+                                        cont.hook.index.e & \[ mood & \avmbox{2} \\
+                                            tense & \avmbox{3} \] \] \]
+ \]
+\end{avm}
+}
+\end{frame}
+
+\begin{frame}[noframenumbering]{HPSG Implementation: SVCs}
+\adjustbox{max width=\textwidth - 0.2in}{
+\begin{forest}
+[ VP \\ \begin{avm}	
+         \[\asort{svc4-top-coord}
+           subj & \avmbox{1} \\
+ 	       lcoord & \avmbox{L} \[ subj & \avmbox{1} \\
+ 	                              head.htype & normal \] \\
+ 	       rcoord & \avmbox{R} \[ subj & \avmbox{1} \] \]
+           \end{avm}
+  [VP \\ \begin{avm}	
+       \avmbox{L} \[\asort{comp-head}
+ 	          subj & \avmbox{1} \\
+ 	          comps & \< \> \]
+           \end{avm}
+    [Verb \\ \begin{avm}
+    	   \avmbox{verb1} \[\asort{verb}
+    	    subj & \avmbox{1} \\
+    	    comps & \avmbox{4} \\
+    	    head.htype & normal \\
+    	    rel & {\textsc{take}(\avmbox{1}, \avmbox{4})} \]
+           \end{avm}
+      [ sukʷiƛ ]
+    ]
+    [Infl \\ \begin{avm}	
+               \[\asort{2p-mood-lex}
+ 	                  subj & \avmbox{1} \[pernum & 2sg \] \\
+ 	                  comps & \< {\avmbox{verb1}\[ subj & \avmbox{1} \\
+ 	                                comps & \avmbox{2} \], \avmbox{2}} \> \\
+ 	                  head.htype & \avmbox{3} \]
+               \end{avm}
+      [ {=!iˑ} ]
+    ]
+  ]
+  [VP \\ \begin{avm}
+ 	   \avmbox{R} \[ \asort{svc4-bottom-coord}
+ 	        subj & \avmbox{1} \\
+ 	        coord-rel.pred & \textsc{and} \\
+ 	        nonconj-dtr & \avmbox{verb2}
+ 	      \]
+          \end{avm}
+    [ Verb \\ \begin{avm}
+    	   \avmbox{verb2} \[\asort{verb}
+    	    subj & \avmbox{1} \\
+    	    comps & \< \avmbox{3} \> \\
+    	    head.htype & normal \\
+    	    rel & {\textsc{caus}(\avmbox{1},\avmbox{2}), \avmbox{2}\textsc{put-away}(\avmbox{3})} \]
+           \end{avm}
+      [ k̓ašsaap ]
+    ]
+  ]
+]
+\end{forest}}
+\end{frame}
+
+\begin{frame}[noframenumbering]{HPSG Implementation: Linker}
+\adjustbox{max width=\textwidth - 0.2in}{
+\begin{avm}
+\[\asort{2p-linker-verb-lex-rule-super}
+ synsem.local & \[ cat & \[ val & \[ subj & \< \avmbox{S}\[ $\ldots$index & \avmbox{3} \] \> \\
+                      comps & \< \[ local & \[ cont.hook & \[ index & \avmbox{2} \\
+                                                   xarg & \avmbox{3} \] \] \] \> $\oplus$ \avmbox{C} \] \] \\
+                   cont.hook & \[ index & \avmbox{1} \\
+                                  xarg & \avmbox{3} \] \] \\
+ c-cont & \< \[ pred & \textsc{and} \\
+                c-arg & \textit{e} \avmbox{0} \\
+                l-index & \textit{e} \avmbox{1} \\
+                r-index & \textit{e} \avmbox{2} \] \> \\
+ daughter & \[ synsem.local & \[ cat & \[ head.prd & + \\
+                                       val & \[ subj & \< \avmbox{S} \> \\
+                                              comps & \avmbox{C} \\ \] \] \\
+                                 cont.hook & \[ index & \avmbox{1} \\
+                                                xarg & \avmbox{3} \] \] \] \]
+\end{avm}
+}	
+\end{frame}

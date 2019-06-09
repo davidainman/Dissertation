@@ -11,7 +11,7 @@ I am only looking at one language, Nuuchahnulth, and will tailor my definition o
 My functional definition of a serial verb construction in Nuuchahnulth is this:
 
 \ex \label{svcdef}
-Any clause containing two or more verbs without an overt coordinator, and where the verbs share the semantic interpretation of the second position clausal inflection\footnote{I will later show that some of the elements in this clausal complex do not scope over the entire clause, but narrowly over a verb. See \S\ref{ch:sv:analysis:valence}.} is a serial verb construction.
+Any clause containing two or more verbs without an overt coordinator and where the verbs share the semantic interpretation of the second position clausal inflection\footnote{I will later show that some of the elements in this clausal complex do not scope over the entire clause, but narrowly over a verb. See \S\ref{ch:sv:analysis:valence}.} is a serial verb construction.
 \xe
 
 Each matrix and dependent clause is marked with a second-position clitic, and so the boundaries of a clause are often easy to determine. The one exception to this is that the third-person neutral mood is null-marked. For this reason, when working with speakers I deliberately elicted examples not in this person-mood combination. However, in running text it is unavoidable that many constructions will have third person subjects. Because of the restriction that serial verb constructions lack an overt coordinator, constructions containing a linker morpheme (\S\ref{ch:link}) do not count as SVCs.
@@ -709,7 +709,7 @@ Unlike Type I verbs, there is a strong ordering preference. When presented with 
 \begingl
 \glpreamble *mamuuk̓aƛniš mačiił. //
 \gla mamuuk=!aƛ=niˑš mačiił //
-\glb work.\textsc{dr}-\textsc{now}=\textsc{real.1pl} inside //
+\glb work.\textsc{dr}=\textsc{now}=\textsc{real.1pl} inside //
 \glft Intended: `I am working inside.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
 \endgl
 \xe
@@ -978,7 +978,7 @@ Like the other SVCs, the transitive verb can be separated from its object.
 
 \vspace{10pt}
 
-In all the above types of serialization, the verbs are describing in some way ``the same action" or something that is at least simultaneous. When \cite{aikhenvalddixon2006} talk about serial verbs describing the ``same event" I believe this is an attempt to capture the sort of unity seen in these (and other) types of serialization. When I model the semantics of these constructions (\S\ref{ch:sv:analysis}) I will preservesemantic compositionality and thus the different verbs will each have separate semantic event variables, and so they are not the ``same event" in this formal way. But in all SVCs Types I--III there is, at minimum, some kind of ``meanwhile" interpretation applied to the two verbs, and this is not insignificant. When I turn to the modeling, I will introduce a separate semantic relation for this ``meanwhile" component.
+In all the above types of serialization, the verbs are describing in some way ``the same action" or something that is at least simultaneous. When \cite{aikhenvalddixon2006} talk about serial verbs describing the ``same event" I believe this is an attempt to capture the sort of unity seen in these (and other) types of serialization. When I model the semantics of these constructions (\S\ref{ch:sv:analysis}) I will preserve semantic compositionality and thus the different verbs will each have separate semantic event variables, and so they are not the ``same event" in this formal way. But in all SVCs Types I--III there is, at minimum, some kind of ``meanwhile" interpretation applied to the two verbs, and this is not insignificant. When I turn to the modeling, I will introduce a separate semantic relation for this ``meanwhile" component.
 
 The sequential/separable action subtype of SVC is different from the other serialization types. In these constructions, there is no interpretation of simultaneity and there is sometimes a (perhaps pragmatic) interpretation of sequentiality. For instance, (\ref{ex:foldputaway1}) is from an exhortative text, and immediately follows the command ``Don't throw your clothes on the floor."
 
@@ -1469,7 +1469,7 @@ In the case where verbs do not have valence-changing morphology attached, I will
 \begin{avm}
 \[ \asort{neutral-non-head-verb-lex-rule}
    sysnsem.local.cat & \[ head & \[ aux & + \\
-                                    form & finite \\
+                                    form & nonfinite \\
                                     prd & + \] \\
                           mc & -- \] \\
 
@@ -1497,7 +1497,7 @@ synsem & \[ local & \[ cat & \[ head & \textit{verb} \\
           non-local & \avmbox{3} \] \\
 nonconj-dtr & \[ synsem & \[ local & \[ cat & \[ head & \[ \asort{verb} form & nonfinite \] \\
                                            val & \[ subj & \< \avmbox{1} \> \\
-                                                    comps & \< \> \] \] \\
+                                                    comps & \<\ \> \] \] \\
                                         cont$\ldots$mood & \avmbox{2} \] \\
                              non-local & \avmbox{3} \] \]
  \]
@@ -1557,7 +1557,8 @@ nonconj-dtr$\ldots$htype & normal \]
 \begin{avm}
 \[\asort{svc1-perf-top-coord-rule}
 synsem.local.coord-strat & ``1-perf" \\
-lcoord-dtr$\ldots$index.e.aspect & perfective \]
+lcoord-dtr.synsem.local & \[ cat.head.htype & normal \\
+                             cont.hook.index.e.aspect & perfective \] \]
 \end{avm}
 \xe
 
@@ -1573,9 +1574,10 @@ nonconj-dtr$\ldots$htype & normal \]
 
 \ex~ \label{ex:svc1-impf-top-coord-rule}
 \begin{avm}
-\[\asort{svc1-perf-top-coord-rule}
+\[\asort{svc1-impf-top-coord-rule}
 synsem.local.coord-strat & ``1-impf" \\
-lcoord-dtr$\ldots$index.e.aspect & imperfective \]
+lcoord-dtr.synsem.local & \[ cat.head.htype & normal \\
+                             cont.hook.index.e.aspect & imperfective \] \]
 \end{avm}
 \xe
 
@@ -1670,7 +1672,7 @@ synsem.local & \[ coord-rel.pred & \textsc{meanwhile} \\
 
 \ex~ \label{ex:svc2-top-coord-rule}
 \begin{avm}
-\[\asort{svc2-bottom-coord-rule}
+\[\asort{svc2-top-coord-rule}
 synsem.local & \[ coord-strat & ``2" \\
                   cat.head.htype & location \] \]
 \end{avm}
