@@ -8,7 +8,7 @@ Semantics
 \end{itemize}
 Syntax
 \begin{itemize}
-\item \textbf{Predicate}: The unit in the syntax which provides the main semantic relation of a clause, whose semantic arguments are filled through syntactic relations like subject and object
+\item \textbf{Predicate}: The unit in the syntax which provides the main semantic relation \textit{and event} of a clause, whose semantic arguments are filled through syntactic relations like subject and object
 \item \textbf{Participant}: A unit in the syntax which serves as a subject or object in relation to a predicate
 \end{itemize}
 \end{frame}
@@ -313,8 +313,8 @@ meaning  & \textsc{fut} & \textsc{caus} & \textsc{now}  & \textsc{pass} & \texts
 
 \begin{frame}{HPSG Analysis}
 \begin{itemize}
-\item HPSG represents grammatical rules through attribute-value matrices and phrase-structure rules
-\item There is no movement: ordering accounted for by altering the matrices
+\item HPSG is a lexicalist framework that represents grammatical rules through unification of constraints
+\item There is no movement: ordering accounted for by altering constraint properties
 \item Analysis was implemented computationally
 \end{itemize}
 \end{frame}
@@ -369,7 +369,7 @@ I treat suffix verbs as incorporation which occurs in two steps:
 
 \begin{itemize}
 \item Hand-crafted set of ``basic" clausal phenomena
-\item Coverage: 83.2\%
+\item Coverage: 84.4\%
 \item Overgeneration: 1.3\%
 \end{itemize}
 
@@ -378,7 +378,7 @@ I treat suffix verbs as incorporation which occurs in two steps:
 \label{tab:clause-coverage}
 \begin{tabular}{l|llll}
  & Total & Parsed & Unparsed & Avg \# of parses \\ \hline
-Grammatical sentences & 167 & 139 & 28 & 1.12 \\ \hline
+Grammatical sentences & 167 & 141 & 26 & 1.12 \\ \hline
 Ungrammatical sentences & 79 & 1 & 78 & 2
 \end{tabular}
 \end{table}

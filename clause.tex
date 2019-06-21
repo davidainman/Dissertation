@@ -8,7 +8,7 @@ Before addressing the main theme of this dissertation, the multi-predicate const
 
 Like many languages of the Pacific Northwest, Nuuchahnulth is predicate-initial and has a great deal of flexibility with respect to what parts of speech can be used predicatively \citep{jacobsen1979}. Because the term ``predicate" and its associated derivations (``predicative" and so on) are often ambiguous between syntactic and semantic concepts, I have found that linguists often talk past each other when trying to describe the syntax of South Wakashan languages. Throughout this work I will use special vocabulary in an attempt to reduce this confusion.
 
-I will reserve the word \textit{predicate} to refer to the syntactic component that provides the main semantic relation of a clause and connects elements like subject and object to one another. In English, a syntactic predicate must be verbal, as in (\ref{ex:dogbarks},\ref{ex:grassgreen}). The verb `barks' serves as the predicate of (\ref{ex:dogbarks}), and has `the dog' as its subject. In (\ref{ex:grassgreen}), `is' serves as the predicate, connecting its subject `the grass' to the complement `green.' I will refer to the units that predicates connect as \textit{participants}---this term encompasses both subject and complements. The sole participant of (\ref{ex:dogbarks}) is `the dog', and the participants of (\ref{ex:grassgreen}) are `the grass' and `green'.
+I will reserve the word \textit{predicate} to refer to the syntactic component that provides the main semantic relation of a clause and connects elements like subject and object to one another. In English, a syntactic predicate must be verbal, as in (\ref{ex:dogbarks},\ref{ex:grassgreen}). The verb `barks' serves as the predicate of (\ref{ex:dogbarks}), and has `the dog' as its subject. In (\ref{ex:grassgreen}), `is' serves as the predicate, connecting its subject `the grass' to the complement `green.' I will refer to the syntactic units that predicates connect as \textit{participants}---this term encompasses both subject and complements. The sole participant of (\ref{ex:dogbarks}) is `the dog', and the participants of (\ref{ex:grassgreen}) are `the grass' and `green'.
 
 \ex \label{ex:dogbarks}
 [The dog]\textsubscript{participant} [barks]\textsubscript{predicate}.
@@ -20,13 +20,15 @@ I will reserve the word \textit{predicate} to refer to the syntactic component t
 
 In contrast to \textit{predicate} and \textit{participant}, which are syntactic concepts, I will use \textit{relation} and \textit{argument} to refer to their correlates in compositional semantics. The \textit{relation} is the atomic semantic unit that relates arguments to each other, typically represented with capital letters. For example, in (\ref{ex:dogbarks}), the English word \textit{barks} has the relation \textsc{bark}. Every semantically contentful morpheme has a relation, including syntactic participants (\textsc{dog}, \textsc{grass}, \textsc{green}).
 
-Relations have some number of semantic \textit{arguments}. For example, \textsc{bark} can be modeled with two arguments: the event of barking, and the barker. This could be represented in a Neodavidsonian manner as \textsc{bark}(\textit{e}, \textit{x}). Note that the relation itself \textsc{bark} is at least conceptually separate from the number and type of its arguments. When I find it important to highlight the separation between the semantic relation and the number of its arguments, I may also refer to the relation as a \textit{predicate symbol}.\footnote{From terminology used by the DELPH-IN consortium. \url{http://moin.delph-in.net/ErgSemantics/Basics}} This semantic scheme is a simplification of the fuller semantic model that I will use later, Minimal Recursion Semantics \citep{copestake2005}.
+Relations have some number of semantic \textit{arguments}. For this definition of an \textit{argument} I include every component of the relation. For example, \textsc{bark} can be modeled with two arguments: the event of barking itself, and the barker. This could be represented in a Davidsonian manner \citep{davidson1967} as \textsc{bark}(\textit{e}, \textit{x}). I distinguish relation itself \textsc{bark} at least formally\footnote{Conceptually, it is plausible that the argument number and relation are intertwined. I am here only } from the number and type of its arguments. When I find it important to highlight the separation between the semantic relation and the number of its arguments, I may also refer to the relation as a \textit{predicate symbol}.\footnote{From terminology used by the DELPH-IN consortium. \url{http://moin.delph-in.net/ErgSemantics/Basics}} This semantic scheme is a simplification of the fuller semantic framework that I will use later, Minimal Recursion Semantics \citep{copestake2005}.
 
-The number of arguments that a semantic relation has is separate from its syntactic properties. The English predicate \textit{barks} may be represented as a semantic relation with two arguments \textsc{bark}(\textit{e}, \textit{x}). However, the syntactic non-predicate \textit{green} can be modeled in the same way: \textsc{green}(\textit{e}, \textit{x}). The syntactic properties of \textit{barks} and \textit{green}---predicate vs participant, which in English is straightforwardly subsumed into the verb vs adjective distinction---is separable from their semantic properties.
+I have assumed here two types of arguments: events (abbreviated \textit{e}) and entities (abbreviated \textit{x}, \textit{y}, \textit{z}, $\ldots$). Events have properties like tense, aspect, mood, and evidentiality. Semantically, I will assume that adverbs modify events. Entities (which I will also call referential indices, or referents) have properties like person, number, and gender. I will assume that adjectives modify events. Another type of arguments will appear later when I turn to the specifics in the analytical framework I use, Minimal Recursion Semantics \citep{copestake2005}, a \textit{handle}, which I will abbreviate with \textit{h}. Handles keep track of which semantic units have equivalent scopal properties: If two elements in the semantics have identical scope (with relation to quantifiers, for instance) they will share the same handle. I will omit this component of the semantics here, and simply talk about events and entities.
 
-Though Nuuchahnulth has syntactic categories like verb, noun, and adjective, any of these may function as syntactic predicate or participant depending on where they fall in the sentence. The terms ``verb phrase," ``noun phrase," and ``adjective phrase" are valid insofar as they refer to a phrase headed by a verb, noun, or adjective, but they are not illuminating for determining syntactic roles, as any of these categories may be predicates.
+The English predicate \textit{barks} may be represented as a semantic relation with two arguments \textsc{bark}(\textit{e}, \textit{x}). The syntactic participant \textit{green} can be modeled in the same way: \textsc{green}(\textit{e}, \textit{x}). The syntactic properties of \textit{barks} and \textit{green}---predicate vs participant, which in English is straightforwardly subsumed into the verb vs adjective distinction---are separable from their semantic properties.
 
-In (\ref{ex:verbpred}), the verb \textit{n̓aacsiičiƛ} `see' is serving as the clausal predicate, while the clause \textit{hałmiiḥa quuʔas} `drowning person' is serving as the participant. In (\ref{ex:adjpred}), the adjective \textit{qʷac̓ał} `beautiful' is the predicate of the sentence, while the noun \textit{ḥaakʷaaƛ} `young girl' is the participant. In (\ref{ex:nounpred}) the noun \textit{pisatuwił} `gym' is the predicate and there are no participants. In this case, postposed \textit{ʔaanaḥi} `only' is a predicate-modifying adverb and not fulfilling any argument role of the relation \textsc{gym}.
+Though Nuuchahnulth has syntactic categories like verb, noun, and adjective (\citealt{jacobsen1979}, Inman and Werle \textit{m.s.}) any of these may function as syntactic predicate or participant depending on where they fall in the sentence. The terms ``verb phrase," ``noun phrase," and ``adjective phrase" are valid insofar as they refer to a phrase headed by a verb, noun, or adjective, but they are not illuminating for determining syntactic roles, as any of these categories may be predicates.
+
+In (\ref{ex:verbpred}), the verb \textit{n̓aacsiičiƛ} `see' is serving as the clausal predicate, while the clause \textit{hałmiiḥa quuʔas} `drowning person' is serving as a participant. In (\ref{ex:adjpred}), the adjective \textit{qʷac̓ał} `beautiful' is the predicate of the sentence, while the noun \textit{ḥaakʷaaƛ} `young girl' is a participant. In (\ref{ex:nounpred}) the noun \textit{pisatuwił} `gym' is the predicate and there are no participants. In this case, postposed \textit{ʔaanaḥi} `only' is a predicate-modifying adverb and not fulfilling any argument role of the relation \textsc{gym}.
 
 \begin{comment}
 While all three words have semantic relations (\textsc{see}, \textsc{drown}, \textsc{person}), only one is the syntactic predicate of the sentence.	
@@ -59,7 +61,7 @@ While all three words have semantic relations (\textsc{see}, \textsc{drown}, \te
 \endgl
 \xe
 
-Descriptively, it is sufficient to say that nouns, verbs, and adjectives may all be clausal predicates in Nuuchahnulth, in the same way that English requires clausal predicates to be verbs. I believe that this data, along with evidence from participant clauses (\S\ref{ch:clause:partp}), is sufficient to claim that nouns are events in Nuuchahnulth \citep{inman2018}. I will give my method for modeling this in (\S\ref{ch:clause:analysis:predpart}).
+Descriptively, it is sufficient to say that nouns, verbs, and adjectives may all be clausal predicates in Nuuchahnulth, in the same way that English requires clausal predicates to be verbs. I believe that this data, along with evidence from participant clauses (\S\ref{ch:clause:partp}), is sufficient to claim that common nouns semantically introduce events in Nuuchahnulth \citep{inman2018}. I will give my method for modeling this in (\S\ref{ch:clause:analysis:predpart}).
 
 \subsection{Syntactic Participants} \label{ch:clause:partp}
 
@@ -87,7 +89,7 @@ Just as verbs, nouns, and adjectives may all be predicates, they may also all be
 
 As detailed in \cite{jacobsen1979} and \cite{wojdak2001}, when an adjective or verb is used as a participant, as in (\ref{ex:verbpart}, \ref{ex:adjpart}), the article \textit{=ʔiˑ} is required to make the sentence grammatical. When the participant is headed by a common noun, as in (\ref{ex:verbpred}), the article is optional. Proper nouns differentiate themselves from common nouns in that they may never take the article \citep{inman2018}. They are also never in predicate position.
 
-My analysis of these facts is that the article \textit{=ʔiˑ} is in fact a relativizer that creates a participant from a notional predicate \cite{inman2018}.\footnote{This ultimately is original to Werle, \textit{p.c.}, who has also documented that \textit{=ʔiˑ} is morphologically in the same position as mood portmanteaus, and has supplanted the third person definite mood in some dialects.} Noun phrases may be relativized without the article, but other predicate phrases must be headed by the relativizing second position article \textit{=ʔiˑ}. That is, the semantics of the verb \textit{kamatquk} `run' and the noun \textit{pisatuwił} `gym' look like:
+My analysis of these facts is that the article \textit{=ʔiˑ} is in fact a relativizer like ``what" or ``who" in English that creates a participant from a notional predicate \cite{inman2018}.\footnote{This ultimately is original to Werle, \textit{p.c.}, who has also documented that \textit{=ʔiˑ} is morphologically in the same position as mood portmanteaus, and has supplanted the third person definite mood in some dialects.} Noun phrases may be relativized without the article, but other predicate phrases must be headed by the relativizing second position article \textit{=ʔiˑ}. That is, the semantics of the verb \textit{kamatquk} `run' and the noun \textit{pisatuwił} `gym' look like:
 
 \ex~
 \textsc{run}(\textit{e}, \textit{x})
@@ -99,9 +101,9 @@ The event variable \textit{e} allows for tense, aspect, mood, and evidentiality 
 
 %\section{Participant Ordering} \label{ch:clause:partorder}
 
-There is a strong tendency in Nuuchahnulth for each clause to have one overtly-expressed participant \citep[38]{rose1981} but if there are two participants expressed, they can come in any order. There is a preference in the southernmost dialects (Barkley sound and Central) for VSO ordering \citep[267]{jacobsen1993}, and a preference in the northern dialects (Northern and Kyuquot) for VOS ordering (Werle, \textit{p.c.}). This preference is not absolute, and to make the sentence unambiguous, speakers can use \textit{ʔuukʷił} to mark any non-highest argument \citep{woo2007b}.
+There is a strong tendency in Nuuchahnulth for each clause to have one overtly-expressed participant \citep[38]{rose1981} but if there are two participants expressed, they can come in any order. There is a preference in the southernmost dialects (Barkley sound and Central) for VSO ordering \citep[267]{jacobsen1993}, and a preference in the northern dialects (Northern and Kyuquot) for VOS ordering (Werle, \textit{p.c.}). This preference is not absolute, and to make the sentence unambiguous, speakers can use \textit{ʔuukʷił} to mark any non-highest argument, i.e.\ objects and indirect objects \citep{woo2007b}.
 
-\subsubsection{Participant Fronting}
+\subsubsection{Participant Fronting} \label{ch:clause:fronting}
 
 It is possible for speakers to move a participant in front of the predicate for focus, as in (\ref{ex:focus}). This left-dislocated participant is notably outside the calculation for second position inflection (\S\ref{ch:clause:cliticnormal}).
 
@@ -125,7 +127,7 @@ Wh-words and phrases also front, obligatorily, as in (\ref{ex:howmanydays}). In 
 \endgl
 \xe
 
-It is not only wh-words that front in this manner. Quantifiers tend to front as well. In the case where the fronted quantifier is part of a larger syntactic unit (for instance, as an participant of the non-highest-argument marker \textit{-L.(č)ił}), the entire phrase is fronted along with the quantifier (\ref{ex:uushilnofront}, \ref{ex:uushilfront}). In cases where a non-nominal phrase is fronted like this, it cannot appear outside the clausal clitics (\ref{*ex:uushilfront}).
+It is not only wh-words that front in this manner. Quantifiers tend to front as well. In the case where the fronted quantifier is part of a larger syntactic unit (for instance, as an participant of the non-highest-argument marker \textit{-L.(č)ił}), the entire phrase is fronted along with the quantifier (\ref{ex:uushilfront}, cf.\ \ref{ex:uushilnofront}). In cases where a non-nominal phrase is fronted like this, it cannot appear outside the clausal clitics (\ref{*ex:uushilfront}).
 
 \ex \label{ex:uushilnofront}
 \begingl
@@ -167,7 +169,7 @@ I have not done a deep investigation into the conditions that determine whether 
 \xe
 \end{comment}
 
-When the quantifier fronts without the enclitic complex, its interpretatio is as as a bare nominal (\ref{ex:uushfrontnoclitic}).
+When the quantifier fronts without the enclitic complex, its interpretation is as as a bare nominal, meaning `something' or `someone', and not quantifying anything in the sentence (\ref{ex:uushfrontnoclitic}).
 
 \ex \label{ex:uushfrontnoclitic}
 \begingl
@@ -252,9 +254,9 @@ meaning  & \textsc{fut} & \textsc{caus} & \textsc{now}  & \textsc{pass} & \texts
 \end{tabular}
 \end{table}
 
-The \textit{=$\emptyset$} morpheme, which indicates the third-person neutral mood, merits some special attention. While there is no phonological element associated with this inflection, all of the other enclitics appear in their typical order around where it would be. A predicate with no enclitic, or with one or more of the non-subject-mood enclitics (such as past, or habitual and plural) is always interpreted as being in the neutral mood with a third person subject. I do not put a \textit{=$\emptyset$} in my gloss lines, except below in (\ref{ex:2padjpart}) to show that it is notionally present. The syntactic information about neutral mood and 3rd person subject has to come from somewhere and this can be modeled as a phonologically empty morpheme providing it. I address this more in the implementation section (\S\ref{ch:clause:analysis:2pv}).
+The \textit{=$\emptyset$} morpheme, which indicates the third-person neutral mood, merits some special attention. While there is no phonological element associated with this inflection, all of the other enclitics appear in their typical order around where it would be. A predicate with no enclitic, or with one or more of the non-subject-mood enclitics (such as past, or habitual and plural) is always interpreted as being in the neutral mood with a third person subject. I do not put a \textit{=$\emptyset$} in my morpheme-segmented lines, except below in (\ref{ex:2padjpart}) to show that it is notionally present. The syntactic information about neutral mood and 3rd person subject has to come from somewhere and this can be modeled as a phonologically empty morpheme providing it. I address this more in the implementation section (\S\ref{ch:clause:analysis:2pv}).
 
-The examples I have given so far have all shown this clitic complex attaching directly to the clausal predicate. However, it may also attach to preceding adverbial modifiers (\ref{ex:2padvpred}), conjunctions (\ref{ex:2pconjpred}), and adpositions (\ref{ex:2padppred}).\footnote{The claim that (\ref{ex:2padppred}) is an adposition is somewhat controversial. \cite{woo2007b} analyzes these as little-\textit{v}, a category which does not exist in HPSG analyses. What this unit does is mark participants that fulfill a certain role with respect to the verb, similar to case-marking. An analysis that treats this particle as an adposition can generate the same set of sentences as a little-\textit{v} analysis, and is necessary within the HPSG framework. In this model, non-agentive arguments may be realized by a Participant Phrase or an Adposition Phrase headed by \textit{-L.(č)ił}. This means that in (\ref{ex:2padppred}), the word \textit{hiišił} is an adposition phrase modifying the following verb \textit{ʔiiqḥuk}.} Likewise, the relativizing enclitic article (\S\ref{ch:clause:partp}) may also attach to a preceding modifying adjective (\ref{ex:2padjpart}) and not directly to the head noun, as seen in (\ref{ex:adjpred}).
+The examples I have given so far have all shown this clitic complex attaching directly to the clausal predicate. However, it may also attach to preceding adverbial modifiers (\ref{ex:2padvpred}), conjunctions (\ref{ex:2pconjpred}), and adpositions (\ref{ex:2padppred}).\footnote{The claim that \textit{ʔuukʷił} in (\ref{ex:2padppred}) is an adposition is somewhat controversial. \cite{woo2007b} analyzes this word as little-\textit{v}, a category which does not exist in HPSG analyses. What this unit does is mark participants that fulfill a certain role with respect to the verb, similar to case-marking. An analysis that treats this particle as an adposition can generate the same set of sentences as a little-\textit{v} analysis, and is necessary within the HPSG framework. In this model, non-agentive arguments may be realized by a Participant Phrase or an Adposition Phrase headed by \textit{-L.(č)ił}. This means that in (\ref{ex:2padppred}), the word \textit{ʔuukʷił} is an adposition phrase modifying the following (non-contiguous with \textit{ʔuukʷił}) noun \textit{čims}. This adposition/little-\textit{v} has the same complement non-adjacency properties of serial verbs (see \S\ref{ch:sv:data}).} Likewise, the relativizing enclitic article (\S\ref{ch:clause:partp}) may also attach to a preceding modifying adjective (\ref{ex:2padjpart}) and not directly to the head noun, as seen in (\ref{ex:adjpred}).
 
 \ex \label{ex:2padvpred}
 \begingl
@@ -303,15 +305,15 @@ The examples I have given so far have all shown this clitic complex attaching di
 
 %[[TODO: Find a two-word analytic \textit{ʔuukʷił} version of (\ref{ex:2padppred}), which only has the suffix version \textit{-L.čił}.]].
 
-Every clause in Nuuchahnulth contains an enclitic, even if it is only the notional =$\emptyset$ third person neutral enclitic. With the exception of left extraction, the enclitic always appears on the first word of the clause, which is either the predicate or a preceding adverb. Together with the restrictions on syntactic predicates, I use this data to claim that the clitic complex is the syntactic head of the clause in Nuuchahnulth, and the clitic complex selects for a predicate complement. The second position enclitic complex is then the auxiliary head of the clause, and inherits its valence (number of complements) from the predicate, which also provides the main semantic relation of the clause. Because of its second position properties, the analysis of Nuuchahnulth clitics requires some special attention in HPSG (\S\ref{ch:clause:analysis:2p}), but descriptively I can stop at calling the enclitic complex the head of the Nuuchahnulth clause.
+Every clause in Nuuchahnulth contains an enclitic, even if it is only the notional =$\emptyset$ third person neutral enclitic. With the exception of participant fronting (\S\ref{ch:clause:fronting}), the enclitic always appears on the first word of the clause, which is either the predicate or a preceding adverb. I use this data to claim that the clitic complex is the syntactic head of the clause in Nuuchahnulth, and the clitic complex selects for a predicate complement. The second position enclitic complex is then the auxiliary head of the clause, and inherits its valence (number of complements) from the predicate, which also provides the main semantic relation of the clause. Because of its second position properties, the analysis of Nuuchahnulth clitics requires some special attention in HPSG (\S\ref{ch:clause:analysis:2p}), but descriptively I can stop at calling the enclitic complex the head of the Nuuchahnulth clause.
 
 One final fact about the clause worth mentioning is clitic spreading. The presence of a clitic \textit{in situ} within the second position complex is required. If the clause is passive, the passive morpheme must appear within the complex, and so on. However, some of these clitics may appear multiply within a clause: first in the second position enclitic complex, and then later on the predicate(s) of the sentence. This occurs in cases where there is a preposed adposition (\ref{ex:doubleatluyi}),\footnote{For the argument that \textit{ʔuyi} is an adposition, see \S\ref{ch:link:uyi}.} a preposed adverb (\ref{ex:doubleatlyuuqwaa}, \ref{ex:doubleap}), a preposed quantifier (\ref{ex:doubleatuush}),\footnote{In this instance the quantifier has a linker attached. The semantics of the linker will be addressed in \S\ref{ch:link}.} or a clefting construction (\ref{ex:doubleatuh}). In all these cases, there is a syntactic reason for the second position clitic complex to fall on something other than the main predicate of the clause, and some of the clitics then appear multiply: first within the second position complex (obligatorily) and then later on the main predicate (optionally). To my knowledge, the only clitics that ``spread" like this are \textit{=!aƛ} `now' (\ref{ex:doubleatluyi}, \ref{ex:doubleatlyuuqwaa}), \textit{=!at} \textsc{passive} (\ref{ex:doubleatuush}, \ref{ex:doubleatuh}), and \textit{=!ap} \textsc{causative} (\ref{ex:doubleap}). I will come back to how multiple instances of the valence-altering clitics \textit{=!at} and \textit{=!ap} function within serialization structures in \S\ref{ch:sv:valence}. %\footnote{There will be a significant discussion on multiple instances of the causative morpheme in \S\ref{ch:sv:valence}, which I treat differently. All instances of multiple causative morphemes appear to show the causative attaching to and modifying different predicates. This differs from \textit{=!aƛ} `now' and \textit{=!at} \textsc{passive}, where the morphemes are attaching to adpositions (\ref{ex:doubleatl}) or fronted quantifiers (\ref{ex:doubleatpass}).}
 
 \ex \label{ex:doubleatluyi}
 \begingl
-\glpreamble ʔuyiʔeƛna hawiiʔeƛ kaaƛḥšiʔeƛquu. //
-\gla ʔuyi=ʔaƛ=naˑ hawiiƛ=!aƛ kaƛḥ-šiƛ-LS=!aƛ=quu  //
-\glb at.a.time=\textsc{now}=\textsc{neut.1pl} finish=\textsc{now} be.light-\textsc{mo}-\textsc{grad}=\textsc{now}=\textsc{pssb.3} //
+\glpreamble ʔuyi\textbf{ʔeƛ}na hawii\textbf{ʔeƛ} kaaƛḥšiʔeƛquu. //
+\gla ʔuyi=\textbf{ʔaƛ}=naˑ hawiiƛ=\textbf{!aƛ} kaƛḥ-šiƛ-LS=!aƛ=quu  //
+\glb at.a.time=\textbf{\textsc{now}}=\textsc{neut.1pl} finish=\textbf{\textsc{now}} be.light-\textsc{mo}-\textsc{grad}=\textsc{now}=\textsc{pssb.3} //
 \glft `We stop when it starts getting light.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
 \endgl
 \xe
@@ -333,9 +335,9 @@ One final fact about the clause worth mentioning is clitic spreading. The presen
 
 \ex~ \label{ex:doubleatlyuuqwaa}
 \begingl
-\glpreamble y̓uuqʷaaʔaƛweʔin ƛ̓iḥmam̓it ʔunaak̓aƛ yaaqʷapakʔitq k̓ʷičiƛ. //
-\gla y̓uuqʷaa=!aƛ=weˑʔin ƛ̓iḥmam̓it ʔu-naˑk=!aƛ yaqʷ-L.apak=ʔiˑtq k̓ʷi-čiƛ  //
-\glb also=\textsc{now}=\textsc{hrsy.3} woodpecker \textsc{x}-have=\textsc{now} who-beyond=\textsc{defn.3} stick-\textsc{mo} //
+\glpreamble y̓uuqʷaa\textbf{ʔaƛ}weʔin ƛ̓iḥmam̓it ʔunaa\textbf{k̓aƛ} yaaqʷapakʔitq k̓ʷičiƛ. //
+\gla y̓uuqʷaa=\textbf{!aƛ}=weˑʔin ƛ̓iḥmam̓it ʔu-naˑk=!aƛ yaqʷ-L.apak=ʔiˑtq k̓ʷi-čiƛ  //
+\glb also=\textbf{\textsc{now}}=\textsc{hrsy.3} woodpecker \textsc{x}-have=\textbf{\textsc{now}} who-beyond=\textsc{defn.3} stick-\textsc{mo} //
 \glft `And also Woodpecker had his man who was best of all in marksmanship.' (\textbf{B}, \citealt[50]{sapir1939}) //
 \endgl
 \xe
@@ -357,18 +359,18 @@ One final fact about the clause worth mentioning is clitic spreading. The presen
 
 \ex~ \label{ex:doubleatuush}
 \begingl
-\glpreamble ʔuušḥʔatquus n̓aačuk̓ʷat, ʔiiqḥuk̓um ʔanis weʔič. //
-\gla ʔuuš-(q)ḥ=!at=quus n̓aačuk=!at ʔiiqḥuk=!um ʔani=s weʔič  //
-\glb some-\textsc{link}=\textsc{pass}=\textsc{pssb.1sg} look=\textsc{pass} tell.\textsc{dr}=\textsc{cmmd.go} \textsc{comp}=\textsc{1sg} sleep.\textsc{dr} //
+\glpreamble ʔuušḥ\textbf{ʔat}quus n̓aaču\textbf{k̓ʷat}, ʔiiqḥuk̓um ʔanis weʔič. //
+\gla ʔuuš-(q)ḥ=\textbf{!at}=quus n̓aačuk=\textbf{!at} ʔiiqḥuk=!um ʔani=s weʔič  //
+\glb some-\textsc{link}=\textbf{\textsc{pass}}=\textsc{pssb.1sg} look=\textbf{\textsc{pass}} tell.\textsc{dr}=\textsc{cmmd.go} \textsc{comp}=\textsc{1sg} sleep.\textsc{dr} //
 \glft `If anyone is looking for me, tell them I'm sleeping.' (\textbf{B}, Marjorie Touchie) //
 \endgl
 \xe
 
 \ex~ \label{ex:doubleatuh}
 \begingl
-\glpreamble ʔuḥʔatsʔał ʔumʔiiqsakqs m̓aw̓aaʔat ƛiisuwił. //
-\gla ʔuḥ=!at=s=ʔaˑł ʔumʔiiqsu=ʔak=qs m̓aw̓aa=!at ƛiisuwił  //
-\glb be=\textsc{pass}=\textsc{strg.1sg}=\textsc{habit} mother=\textsc{poss}=\textsc{defn.1sg} bring.\textsc{pf}=\textsc{pass} school //
+\glpreamble ʔuḥ\textbf{ʔat}sʔał ʔumʔiiqsakqs m̓aw̓aa\textbf{ʔat} ƛiisuwił. //
+\gla ʔuḥ=\textbf{!at}=s=ʔaˑł ʔumʔiiqsu=ʔak=qs m̓aw̓aa=\textbf{!at} ƛiisuwił  //
+\glb be=\textbf{\textsc{pass}}=\textsc{strg.1sg}=\textsc{habit} mother=\textsc{poss}=\textsc{defn.1sg} bring.\textsc{pf}=\textbf{\textsc{pass}} school //
 \glft `It's my mother who brings me to school.' (\textbf{N}, Fidelia Haiyupis) //
 \endgl
 \xe
@@ -389,9 +391,9 @@ One final fact about the clause worth mentioning is clitic spreading. The presen
 
 \ex~ \label{ex:doubleap}
 \begingl
-\glpreamble ʔiqsiłapƛaa hinʔatap ḥiin̓aakʔi.\footnotemark{} //
-\gla ʔiqsiła=!ap=ƛaa hinʔatap ḥiin̓a=ʔak=ʔiˑ  //
-\glb still=\textsc{caus}=also in.water.\textsc{caus} quartz=\textsc{poss}=\textsc{art} //
+\glpreamble ʔiqsił\textbf{ap}ƛaa hinʔ\textbf{atap} ḥiin̓aakʔi.\footnotemark{} //
+\gla ʔiqsiła=\textbf{!ap}=ƛaa hinʔ\textbf{atap} ḥiin̓a=ʔak=ʔiˑ  //
+\glb still=\textbf{\textsc{caus}}=also in.water.\textbf{\textsc{caus}} quartz=\textsc{poss}=\textsc{art} //
 \glft `Again they put the quartzes under water.' (\textbf{B}, \citealt[60]{sapir1955}) //
 \endgl
 \xe
@@ -412,25 +414,25 @@ It is significant that in all the above examples, this syntactic doubling does n
 
 \ex~ \label{ex:*decidetogo}
 \begingl
-\glpreamble *t̓apatšiʔaƛs ʔucačiʔaƛ c̓aʔakʔi. //
-\gla *t̓apat-šiƛ=!aƛ=s ʔu-ca-čiƛ=!aƛ c̓aʔak=ʔiˑ //
-\glb think-\textsc{mo}=\textsc{now}=\textsc{strg.1sg} \textsc{x}-go-\textsc{mo}=\textsc{now} river=\textsc{art} //
+\glpreamble *t̓apatšiʔaƛs ʔucači\textbf{ʔaƛ} c̓aʔakʔi. //
+\gla *t̓apat-šiƛ=!aƛ=s ʔu-ca-čiƛ=\textbf{!aƛ} c̓aʔak=ʔiˑ //
+\glb think-\textsc{mo}=\textsc{now}=\textsc{strg.1sg} \textsc{x}-go-\textsc{mo}=\textbf{\textsc{now}} river=\textsc{art} //
 \glft Intended: `I decided to go to the river.' (\textbf{N}, Fidelia Haiyupis) //
 \endgl
 \xe
 
 \subsection{Second position suffixes} \label{ch:clause:2pv}
 
-Another set of second position elements are verbal suffixes. Nuuchahnulth has a series of suffixing elements that attach to the leftmost item in their object. Although it is outside the scope of this dissertation, there is good independent reason to believe that these elements are suffix-like in the traditional sense, rather than clitic-like. Briefly, they are more tightly phonologically integrated into their root than the clausal clitics, they can attach to bound roots (the clausal clitics may not), and they occasionally produce unpredictable semantics. I will here simply assume their status as lexical suffixes with second position properties, rather than phrasal clitics.
+Another set of second position elements are suffix verbs. Nuuchahnulth has a series of suffixing elements that attach to the leftmost item of their object. Although it is outside the scope of this dissertation, there is good independent reason to believe that these elements are suffix-like in the traditional sense, rather than clitic-like. Briefly, they are more tightly phonologically integrated into their root than the clausal clitics, they can attach to bound roots (the clausal clitics may not), and they occasionally produce unpredictable semantics. I will here simply assume their status as lexical suffixes with second position properties, rather than phrasal clitics.
 
-The second position suffixes have been the locus of a fair amount of recent linguistic research in Nuuchahnulth, notably \cite{waldie2004}, \cite{wojdak2005}, and \cite{woo2007b}. \cite{wojdak2005} gives a detailed account of these suffixes under the Minimalist program. \citeauthor{wojdak2005} breaks these suffixes into two broad categories, affixal main predicates (in my terminology, verbs which take plain participant complements) and affixal auxiliary predicates (verbs which take a complement that is predicative). I think this split is correct (although I will add some more basic categories), but disagree with her overall account in at least one important way that is not attributable to our difference in framework. \citeauthor{wojdak2005} claims that these suffixes are insensitive to the category they attach to, but are ordered through linearity effects (p.\ 52--54) and that this is at root a syntactic and not morphological process. This claim captures a lot of good generalizations but I think it misses some complicating factors.
+The second position suffixes have been the locus of a fair amount of recent linguistic research in Nuuchahnulth, notably \cite{waldie2004}, \cite{wojdak2005}, and \cite{woo2007b}. \cite{wojdak2005} gives a detailed account of these suffixes under the Minimalist P	rogram. \citeauthor{wojdak2005} breaks these suffixes into two broad categories, affixal main predicates (in my terminology, verbs which take plain participant complements) and affixal auxiliary predicates (verbs which take a complement that is predicative). I think this split is correct (although I will add some more basic categories), but disagree with her overall account in at least one important way that is not attributable to our difference in framework. \citeauthor{wojdak2005} claims that these suffixes are insensitive to the category they attach to, but are ordered through linearity effects (p.\ 52--54) and that this is at root a syntactic and not morphological process. This claim captures a lot of good generalizations but I think it misses some complicating factors.
 
-For instance, \citeauthor{wojdak2005} claims (p.52--53) that the main predicate suffixes may attach to their nominal complement or a modifier of that complement (nouns, adjectives, quantifiers, wh- and relative pronouns). However, these suffixes also routinely attach to adverbs (see (\ref{ex:longtimedog}) below), in which case the adverb is clearly modifying the suffix verb itself. %She later splits main predicate suffixes into suffixes that take nominal and verbal complements (p.159). Her argument comes down to two main predicate suffixes, \textit{-ʕiƛ} `find' and \textit{-atuł} `dream of,' which can attach to verbs (p.159). While this may be the case for these particular verbs, it is not the general case for suffix verbs, which for the most part either strictly take referential semantic arguments (the ``main predicates") or eventive semantic arguments (the ``auxiliary predicates"). For the small number of suffixes, like \textit{-ʕiƛ} `find' and \textit{-atuł} `dream of', that can take both eventive and referential arguments can either be analyzed as a supertype of the two more specific lexical categories, or as lexically ambiguous. In either case, these are the minority. 
-She also claims that the auxiliary predicates do not take the root \textit{ʔu-} (p.150), but this is not universally true of this class of suffixes, which enjoy a lot of lexical diversity (\S\ref{ch:clause:2pv:auxiliary}).\footnote{Her account of syntactic incorporation also has difficulty with idiosyncratic meanings, which one occasionally encounters with these suffixes. This is perhaps an unfair critique, however, as idioms are difficult for most syntactic theories, and these idiosyncrasies could be understood as idiomatic.} \citeauthor{wojdak2005} attempts a full account for the incorporation properties of all these suffixes, and in particular gives an excellent account of their scopal properties. I have the luxury of only addressing this incredibly complex part of Nuuchahnulth grammar in passing to my main point. I will give the attachment properties of the main predicate suffixes (\ref{ch:clause:2pv:mainpredicate}) and auxiliary predicate suffixes (\ref{ch:clause:2pv:auxiliary}) as I understand them and have modeled them, without staking a claim to the exhaustiveness of this analysis. Despite some differences to my account, I would point the interested reader to \cite{wojdak2005} for a more complete accounting of these suffixes.
+For instance, \citeauthor{wojdak2005} claims (p.52--53) that the main predicate suffixes may attach to their nominal complement or a modifier of that complement (nouns, adjectives, quantifiers, wh- and relative pronouns). However, these suffixes also routinely attach to adverbs (see (\S\ref{ex:longtimedog}) below), in which case the adverb is clearly modifying the suffix verb itself. %She later splits main predicate suffixes into suffixes that take nominal and verbal complements (p.159). Her argument comes down to two main predicate suffixes, \textit{-ʕiƛ} `find' and \textit{-atuł} `dream of,' which can attach to verbs (p.159). While this may be the case for these particular verbs, it is not the general case for suffix verbs, which for the most part either strictly take referential semantic arguments (the ``main predicates") or eventive semantic arguments (the ``auxiliary predicates"). For the small number of suffixes, like \textit{-ʕiƛ} `find' and \textit{-atuł} `dream of', that can take both eventive and referential arguments can either be analyzed as a supertype of the two more specific lexical categories, or as lexically ambiguous. In either case, these are the minority. 
+She also claims that the auxiliary predicates do not take the root \textit{ʔu-} (p.150), but this is not universally true of this class of suffixes, which enjoy a lot of lexical diversity (\S\ref{ch:clause:2pv:auxiliary}).\footnote{Her account of syntactic incorporation also has difficulty with idiosyncratic meanings, which one occasionally encounters with these suffixes. This is perhaps an unfair critique, however, as idioms are difficult for most syntactic theories, and these idiosyncrasies could be understood as idiomatic.} \citeauthor{wojdak2005} attempts a full account for the incorporation properties of all these suffixes, and in particular gives an excellent account of their scopal properties. I have the luxury of only addressing this incredibly complex part of Nuuchahnulth grammar in passing to my main point. I will give the attachment properties of the main predicate suffixes (\S\ref{ch:clause:2pv:mainpredicate}) and auxiliary predicate suffixes (\S\ref{ch:clause:2pv:auxiliary}) as I understand them and have modeled them, without staking a claim to the exhaustiveness of this analysis. Despite some differences to my account, I would point the interested reader to \cite{wojdak2005} for a more complete accounting of these suffixes.
 
 %I believe the different classes of these suffixes each have different attachment properties. I will focus here on these distinctions, and not mention the scoping issues (especially with respect to the negator), which \citeauthor{wojdak2005} goes into in depth.
 
-I break the second position suffixes broadly into three categories: (i) main predicate suffixes (\S\ref{ch:clause:2pv:mainpredicate}), which are transitive (and ditransitive) verbs that take referential complements; (ii) auxiliary predicate suffixes (\S\ref{ch:clause:2pv:auxiliary}), which modify predicates which they subject control; and (iii) location suffixes (\S\ref{ch:clause:2pv:loc}), which \cite{wojdak2005} treats as a subtype of the main predicate suffixes, but I believe have some special properties. Finally, I note some suffixes which do not appear to fall under any of the above categories (\S\ref{ch:clause:2pv:additional}) and may represent further diversity among this class. I am only intending here to give an overview of these categories, only with sufficient detail will help illuminate later analyses.
+I break the second position suffixes broadly into three categories: (i) main predicate suffixes (\S\ref{ch:clause:2pv:mainpredicate}), which are transitive (and ditransitive) verbs that take referential complements; (ii) auxiliary predicate suffixes (\S\ref{ch:clause:2pv:auxiliary}), which modify predicates whose subject they control; and (iii) location suffixes (\S\ref{ch:clause:2pv:loc}), which \cite{wojdak2005} treats as a subtype of the main predicate suffixes, but I believe have some special properties. Finally, I note some suffixes which do not appear to fall under any of the above categories (\S\ref{ch:clause:2pv:additional}) and may represent further diversity among this class. I am only intending here to give an overview of these categories with sufficient detail to help illuminate later analyses.
 
 \subsubsection{Main predicate suffixes} \label{ch:clause:2pv:mainpredicate}
 
@@ -440,7 +442,7 @@ The main predicate suffixes semantically relate referents (not events) to one an
 \textsc{relation}(\textit{e}, \textit{x1}, \textit{x2}, (\textit{x3}))
 \xe
 
-This includes relations such as \textsc{have}, \textsc{take}, \textsc{find}, \textsc{gather/hunt}, \textsc{consume}, and so on (expressed with -\textit{naˑk}, \textit{-L.!iƛ}, \textit{-L.waƛ}, \textit{-R.!iiḥ}, and \textit{-iis} respectively). The only ditransitives in this group that I know of are the suffix \textit{-ayiˑ}, which expresses the relation \textsc{give}.
+\noindent This includes relations such as \textsc{have}, \textsc{take}, \textsc{find}, \textsc{gather/hunt}, \textsc{consume}, and so on (expressed with -\textit{naˑk}, \textit{-L.!iƛ}, \textit{-L.waƛ}, \textit{-R.!iiḥ}, and \textit{-iis} respectively). The only ditransitive in this group that I know of is the suffix \textit{-ayiˑ}, which expresses the relation \textsc{give}.
 
 I will use the suffix verb \textit{-naˑk} `have' to illustrate the syntactic attachment properties of these suffixes. Each sentence in (\ref{ex:havesong}--\ref{ex:havetwolongsongs}) shows a longer direct object of `have': song, two songs, two long songs. The suffix verb always attaches to the first element in the object.
 
@@ -471,7 +473,7 @@ I will use the suffix verb \textit{-naˑk} `have' to illustrate the syntactic at
 \endgl
 \xe
 
-Instead of attaching to a semantically contentful word, the suffix verb can attach to the empty root \textit{ʔu-}, which I gloss as \textsc{x}. In this construction, the object can either appear after the suffix verb (\ref{ex:havechant}) or be dropped (\ref{ex:haveit}). Syntactically, the second position effect persists, if the \textit{ʔu-} root is seen as part of the object, but carrying no semantic content.
+Instead of attaching to a semantically contentful word, the suffix verb can attach to the empty root \textit{ʔu-}, which I gloss as \textsc{x}. This morpheme does not add any semantics to the phrase, and \textit{ʔu-} attachment is always the citation form of suffix verbs. In this construction, the object can either appear after the suffix verb (\ref{ex:havechant}) or be dropped (\ref{ex:haveit}). Syntactically, the second position effect persists, if the \textit{ʔu-} root is seen as part of the object, but carrying no semantic content.
 
 \ex \label{ex:havechant}
 \begingl
@@ -502,7 +504,7 @@ It is also possible for these elements to attach to an adverb. In this case, the
 \endgl
 \xe
 
-This second position only scopes over the VP, and is separate from the clausal second position (\S\ref{ch:clause:cliticnormal}). As seen already in (\ref{ex:haveit}) and (\ref{ex:badnews}), the clausal second position occurs separately from the second position of the suffix verb. I give two more examples of this clear separation in with a negator (\ref{ex:badnews}) and a conjunction (\ref{ex:mightnotgive}).
+This second position only has domain over the VP, and is separate from the clausal second position (\S\ref{ch:clause:cliticnormal}). As seen already in (\ref{ex:haveit}) and (\ref{ex:badnews}), the clausal second position occurs separately from the second position of the suffix verb. I give two more examples of this clear separation in with a negator (\ref{ex:badnews}) and a conjunction (\ref{ex:mightnotgive}).
 
 %ʔaḥʔaaʔaƛna huʔacačiƛ ʔaḥkuu.
 %Then we came back here.
@@ -578,7 +580,7 @@ The reason I attempted the forms \textit{ciqnaak} and \textit{ƛiḥnaak} above 
 
 I believe that the \textit{-naˑk} form here has different lexical properties from the \textit{-naˑk} form discussed above that is in use in the modern language. The \textit{-naˑk} seen in (\ref{ex:speakhave},\ref{ex:rowhave}) has the meaning of \textit{subject have someone do X on subject's behalf}. It appears to be productive, as it also occurs on \textit{hinatimyis} `invite' in (\ref{ex:rowhave}), and a few other forms as well in the Nootka Texts. This is a very interesting form of suffix verb, but between the semantic difference and the fact that it is unrecognizable to contemporary speakers I've worked with, I believe that this is a case of two separate lexical meanings of a suffix. I think that the rest of my (and \citeauthor{wojdak2005})'s) analysis for main predicate verbs, where verbal roots are generally not seen, still holds.
 
-Despite the general rule in the modern language of forbidding lexical roots, some main predicate suffixes idiosyncratically attach to verbal roots, but the result yields unpredictable semantics. For instance, the suffix \textit{-L.!iƛ} `take' can idiosyncratically attach to the verb root \textit{n̓ikʷ-} `claw' to yield \textit{n̓iik̓ʷiƛ} `take by clawing.' This does not describe two actions: a clawing event, and then a taking event, but one event of seizing in talons or claws. This instrumentative reading is unpredictable and does not occur productively. Another example is the suffix \textit{-(y)uʔał} `see', which I have most commonly encountered attaching to the verb root \textit{n̓ač-} to form \textit{n̓ačuʔał} `see (esp.\ a person).'\footnote{Though less common, is possible for \textit{-uʔał} to attach in the ``normal" way of a suffix verb as well, as in (\ref{ex:sawabigman}).
+Despite the general rule in the modern language that main predicate suffixes do not attach to verbal roots, some in fact do, but this yields unpredictable semantics. For instance, the suffix \textit{-L.!iƛ} `take' can idiosyncratically attach to the verb root \textit{n̓ikʷ-} `claw' to yield \textit{n̓iik̓ʷiƛ} `take by clawing.' This does not describe two actions: a clawing event, and then a taking event, but one event of seizing in talons or claws. This instrumentative reading is unpredictable and does not occur productively. Another example is the suffix \textit{-(y)uʔał} `see', which I have most commonly encountered attaching to the verb root \textit{n̓ač-} `look' to form \textit{n̓ačuʔał} `see (esp.\ a person).'\footnote{Though less common, is possible for \textit{-uʔał} to attach in the ``normal" way of a suffix verb as well, as in (\ref{ex:sawabigman}).
 
 \ex \label{ex:sawabigman}
 \begingl
@@ -590,21 +592,21 @@ Despite the general rule in the modern language of forbidding lexical roots, som
 \xe
 } This lexical doubling `see-see' is again unpredictable. I treat all these cases of verb attachment as unanalyzable, single lexical items.
 
-This class of suffixes also attaches to root forms, when available. This can be seen in words like \textit{quuʔac-iic} `belonging to a Native person,' where the bound root form \textit{quuʔac} `person' is used instead of the free form \textit{quuʔas}. This also occurs with \textit{łuč-naak} `have a wife,' where the bound root form \textit{łuč} `woman' is used instead of the free form \textit{łuucsma}. If a word does not have a special bound form, the free form is used.
+This class of suffixes also attaches to bound root forms, when available. This can be seen in words like \textit{quuʔac-iic} `belonging to a Native person,' where the bound root form \textit{quuʔac} `person' is used instead of the free form \textit{quuʔas}. This also occurs with \textit{łuč-naak} `have a wife,' where the bound root form \textit{łuč} `woman' is used instead of the free form \textit{łuucsma}. If a word does not have a special bound form, the free form is used.
 
-The first class of second position suffixes, then, are transitive and ditransitive verbs that take referential arguments. They attach to the first element of their complement, either the noun itself or a modifying adjective, or they may attach to the semantically empty root \textit{ʔu-} and take complements in the normal manner. They may also attach to an adverb, in which case the adverb modifies the semantics of the suffix verb itself. They do not generally attach to verbs, but when they do it is lexically specific and the result is semantically unpredictable.
+The first class of second position suffixes, then, are transitive and ditransitive verbs that take referential (and not eventive) arguments. They attach to the first element of their complement, either the noun itself or a modifying adjective, or they may attach to the semantically empty root \textit{ʔu-} and take complements in the normal manner. They may also attach to an adverb, in which case the adverb modifies the semantics of the suffix verb itself. They do not generally attach to verbs, but when they do it is lexically specific and the result is semantically unpredictable.
 
 \subsubsection{Auxiliary predicate suffixes} \label{ch:clause:2pv:auxiliary}
 
-The second class is auxiliary predicate suffixes. These tend to have modal or modal-like semantics, and relate a referent to an event. That is, the basic semantics are as below.
+The second class is auxiliary predicate suffixes. These tend to have modal or modal-like semantics, and relate a referent to an event. That is, the basic semantics are given below.
 
 \ex
 \textsc{relation}(\textit{e}, \textit{x1}, \textit{e2})
 \xe
 
-They are also all subject control verbs \citep[p.\ 160]{wojdak2005}: the subject of the auxiliary predicate must match the subject of the predicate's complement. This means that the \textit{x1} of the relation above is always identified with the (possibly passivized) subject of whatever the \textit{e2} is.
+\noindent They are also all subject control verbs \citep[p.\ 160]{wojdak2005}: the subject of the auxiliary predicate must match the subject of the predicate's complement. This means that the \textit{x1} of the relation above is always identified with the (possibly passivized) subject of the verb introducing \textit{e2}.
 
-Syntactically, these suffixes behave in some similar ways to the transitive verb suffixes and exhibit second position syntax. As I used \textit{-naˑk} to exemplify the main predicate suffixes, I will use \textit{-maḥsa} `want to do' to exemplify the auxiliary predicate suffixes. The most straightforward way to use these suffixes is to attach them to a verbal predicate, as in (\ref{ex:wanttograb}). As a suffix subject control verb, the subject of the wanting event in (\ref{ex:wanttograb}) is the same as the subject of the grabbing event.
+Syntactically, these suffixes behave in some similar ways to the transitive verb suffixes and exhibit second position syntax with respect to their object. As I used \textit{-naˑk} to exemplify the main predicate suffixes, I will use \textit{-maḥsa} `want to do' to exemplify the auxiliary predicate suffixes. The most straightforward way to use these suffixes is to attach them to a verbal predicate, as in (\ref{ex:wanttograb}). This class of suffixes are subject control verb, and so the subject of the wanting event in (\ref{ex:wanttograb}) is the same as the subject of the grabbing event.
 
 \ex \label{ex:wanttograb}
 \begingl
@@ -619,18 +621,20 @@ Syntactically, these suffixes behave in some similar ways to the transitive verb
 
 %n̓aacsiičiƛmaḥsas. JL
 
-Like with the main predicate suffixes, this class of suffix can also attach to a preceding modifier of its argument. Since the normal argument of the auxiliary predicate suffixes is a verb, this means they can attach to a modifying adverb, as in (\ref{ex:onlywanttosay}).
+Like with the main predicate suffixes, this class of suffix can also attach to an adverb. It modifies the whole expression, as in (\ref{ex:onlywanttosay}).
 
 \ex \label{ex:onlywanttosay}
 \begingl
 \glpreamble ʔaanimaḥsas waa ʔin čamiḥtaʔaƛni ʔiiḥʔiiḥa ... //
 \gla ʔaani-maḥsa=s waa ʔin čamiḥta=!aƛ=niˑ ʔiiḥʔiiḥa ... //
-\glb only-want.to=\textsc{real.1sg} say \textsc{comp} proper=\textsc{now}=\textsc{neut.1pl} do.something.important ... //
+\glb only-want.to.do=\textsc{real.1sg} say \textsc{comp} proper=\textsc{now}=\textsc{neut.1pl} do.something.important ... //
 \glft `I only want to say that we are doing something important ...' (\textbf{N}, \textit{yuułnaak} Simon Lucas) //
 \endgl
 \xe
 
 It is much less common, but these suffixes can attach to adjectives and nouns. I only have one example of \textit{-maḥsa} attaching to an adjective in my corpus (\ref{ex:wanttomakestrong}), but I found an example of nominal attachment in the Nootka Texts (\ref{ex:wanttobechief}). In both of these cases, the non-verbal element is being treated predicatively and eventively: `be strong' in (\ref{ex:wanttomakestrong}) and not `a strong (something)', and `be a chief (i.e.\ wealthy)' in (\ref{ex:wanttobechief}), and not `a chief.' I take this as corroborating evidence of the inherent eventiveness of adjectives and nouns (\S\ref{ch:clause:predp}).
+
+TODO: EMB points out that below "want to" is attaching to causative
 
 \ex \label{ex:wanttomakestrong}
 \begingl
@@ -671,7 +675,7 @@ I believe there is a separate category of second position suffixes, which is loc
 
 \subsubsection{Other categories} \label{ch:clause:2pv:additional}
 
-With the possible exception of the location suffixes, all these categories so far are eventive. The main predicate suffixes relate two referents, but are themselves events that can be modified by an adverb, and behave as a predicate in the syntax (\S\ref{ch:clause:2pv:mainpredicate}). The auxiliary predicate suffixes relate a referent and an event, but again are events in their semantics\footnote{The argument for this is a little bit theory-dependent, but the auxiliary predicate suffixes may be the topmost predicate in a clause, and on the assumption that sentences are propositions, thus need to be events that can be evaluated for truth value.} and syntactic predicates (\S\ref{ch:clause:2pv:auxiliary}).
+With the possible exception of the location suffixes, all these categories so far are eventive. The main predicate suffixes relate two referential arguments, but are themselves events that can be modified by an adverb, and behave as a predicate in the syntax (\S\ref{ch:clause:2pv:mainpredicate}). The auxiliary predicate suffixes relate a referent and an event, but are events in their own semantic representation and are syntactic predicates (\S\ref{ch:clause:2pv:auxiliary}).
 
 There appear to be a few suffixes that are treated as non-predicative in the syntax, and are participants in the syntax, or ambiguously so, as with nouns. This category, if it exists, may only consist of \textit{-y̓ak/č̓ak} `for, used for' and \textit{-ʕaƛ} `the sound of.' These endings can be placed on verbal suffixes, such as \textit{pisat-} `play' to form a noun, \textit{pisaty̓ak} `manner of play', or complex roots to form a more complex noun, as in \textit{pikčas-c̓u} `pictures-inside' to form \textit{pikčasc̓uy̓ak} `television.' However they can also be used with the empty root \textit{ʔu-}, as in the following sentence, taken from a recording of the late Barbara Touchie by Henry Kammler:
 
@@ -692,21 +696,21 @@ I will make an argument later on that some of the main predicate suffixes are be
 
 \subsection{Verbal aspect} \label{ch:clause:aspect}
 
-Finally, I will sketch the aspectual system of Nuuchahnulth and my understanding of it. \cite[240--241]{sapir1939} analyze the aspect system as containing twelve forms. I will list them along with the examples given based on the verbal root \textit{mitxʷ-} `turn,' translated into the modern orthography.
+Finally, I will sketch the aspectual system of Nuuchahnulth and my understanding of it. \citealt[240--241]{sapir1939} analyze the aspect system as containing twelve forms. I will list examples based on the verbal root \textit{mitxʷ-} `turn' from \citeauthor{sapir1939},  transliterated into the modern orthography.
 
 \begin{enumerate}[noitemsep]
-\item Durative \textit{mitxʷaa}
-\item Inceptive \textit{mitxʷiičiƛ}
-\item Graduated Inceptive \textit{miitxʷičiƛ}
-\item Pre-inceptive \textit{miitxʷičiƛšiƛ}
-\item Inceptive iterative\footnote{This form is rare in the modern language and complex. I will not give it much attention, but it is discussed in detail as the ``Iterative II" in \cite[242--244]{davidson2002}, where he claims that it is not inceptive but merely a formal alternate to the typical iterative.} \textit{miitxmiitxʷičiił}
-\item Repetitive \textit{miitxmiitxʷa}
-\item Repetitive inceptive \textit{miitxmiitxšiƛ}
-\item Momentaneous \textit{mitxšiƛ}
-\item Graduative \textit{miitxšiƛ}
-\item Pre-graduative \textit{miitxšiƛšiƛ}
-\item Iterative \textit{mitxmitxš}
-\item Iterative inceptive \textit{mitxmitxššiƛ}
+\item Durative \textit{mitxʷaa} --- `turning about, circling'
+\item Inceptive \textit{mitxʷiičiƛ} --- `to start turning about'
+\item Graduated Inceptive \textit{miitxʷičiƛ} --- `starting to turn about'
+\item Pre-inceptive \textit{miitxʷičiƛšiƛ} --- `to start starting to turn about'
+\item Inceptive iterative\footnote{This form is rare in the modern language and complex. I will not give it much attention, but it is discussed in detail as the ``Iterative II" in \citealt[242--244]{davidson2002}, where he claims that it is not inceptive but merely a formal alternate to the typical iterative.} \textit{miitxmiitxʷičiił} --- `to start turning about at intervals'
+\item Repetitive \textit{miitxmiitxʷa} --- `turning round and round'
+\item Repetitive inceptive \textit{miitxmiitxšiƛ} --- `to start turning round and round'
+\item Momentaneous \textit{mitxšiƛ} --- `to make a circuit, turn'
+\item Graduative \textit{miitxšiƛ} --- `making a circuit, turn'
+\item Pre-graduative \textit{miitxšiƛšiƛ} --- `to start making a circuit, turn'
+\item Iterative \textit{mitxmitxš} --- `to make a circuit, turn at intervals'
+\item Iterative inceptive \textit{mitxmitxššiƛ} --- `to start in on a spaced series of circles, turns'
 \end{enumerate}
 
 Several of these aspects are composites. The only unitary aspects in this list are: durative, inceptive, repetitive, momentaneous, and iterative. The graduative (a long-short template, or LS) may be applied to inceptive and momentaneous forms, and the momentaneous may apply to any of the forms that do not terminate with a momentaneous or inceptive aspect.
@@ -717,7 +721,7 @@ In her dissertation, \citealt{rose1981} (p.263--269) splits \citeauthor{sapir193
 %\vspace{-20pt}
 %\xe
 \begin{figure}[H]
-\caption{Traditional verbal aspect flowchart}
+\caption{Traditional verbal aspect flowchart, based on \cite{sapir1939}}
 \label{figure:traditionalaspect}
 \begin{footnotesize}
 \begin{tikzpicture}[sibling distance=10em,
@@ -825,7 +829,7 @@ In this schema, which is the one I have implemented in my grammar (\S\ref{ch:cla
 
 Adam Werle has convinced me (\textit{p.c.}) that this view is inaccurate, and that the ``inceptive" is in fact the same as the momentaneous. The \textit{-iˑčiƛ} form is simply the form that the momentaneous takes under certain morphophonological conditions, namely: (1) after the continuative; (2) on monosyllabic roots that have a coda. In the limited tests I did with consultants, this appears to be correct. There are a small number of verb roots that can take both an inceptive and a momentaneous-graduative, but not a bare momentaneous, aspect. In the cases I tested, speakers were convinced that the momentaneous-graduative and inceptive forms had exactly the same meaning. One example is the root \textit{muł-} which refers to the tide coming up. The continuative \textit{mułaa} means `tide coming up' while speakers tend to translate \textit{muułšiƛ} as `tide is coming in,' insisting this is distinct from \textit{mułaa}. \textit{muułšiƛ} looks like a momentaneous-graduative (with a lengthened first vowel), but speakers said there was not a word \textit{*mułšiƛ}, which would be the bare perfective.\footnote{There exists a fairly large number of verb forms that have what looks like a graduative template (LS) but do not seem to have any graduative meaning, and the template cannot be removed. As far as I know this only happens with momentaneous (or perfective, as I will call it below) forms and durative forms. \textit{muułšiƛ} `tide coming in' belongs to this group of perfective forms that include a LS template. It is joined by \textit{yaacšiƛ} `walk' from the root \textit{yac-} `walk', and \textit{tuupšiƛ} `become dark' from \textit{tupk-} `black.' The durative forms with an LS template include the \textit{yaacuk} `walking' also from the root \textit{yac-} `walk,' \textit{šiiƛuk} `move house' from \textit{šiƛ} `move,' and \textit{ƛiiḥak} `paddling' from \textit{ƛiḥ} `paddle.' In my implementation, I simply treat these as irregular verb forms, but more work needs to be done to understand why this lengthening template applies to these particular roots.} I asked if there existed a word \textit{mułiičiƛ} and both speakers I asked (Fidelia Haiyupis, northern dialect, and Bob Mundy, Barkley sound dialect) said yes, and insisted it had the exact same meaning as \textit{muułšiƛ}. This follows from Werle's understanding of the \textit{-iˑčiƛ} form as the momentaneous applying after a continuative.
 
-There is also the fact that there are certain monosyllabic, closed syllable roots which always take the \textit{-iˑčiƛ} and never \textit{-šiƛ}. These forms are idiosyncratic and have to be learned. For instance, the perfective form of the negator \textit{wik} is \textit{wikiičiƛ} and never \textit{*wikšiƛ}. Likewise the adjective \textit{ƛ̓ac} `fat' becomes \textit{ƛ̓aciičiƛ} `become fat' and not \textit{*ƛ̓acšiƛ}, \textit{ƛaw} `be near' becomes \textit{ƛawiičiƛ} `come near' and not \textit{*ƛawčiƛ}, and \textit{ʔuḥ} `be' becomes \textit{ʔuḥiičiƛ} `become', not \textit{*ʔuḥšiƛ}. According to this analysis then, the ``inceptive" is not a unique aspect form but a morphophonologically conditioned alternate of the so-called momentaneous. This collapse makes the aspect system of Nuuchahnulth look a little more typical of languages around the world. There is a perfective aspect, marked with a large number of allophones but namely \textit{-šiƛ} and \textit{-iˑčiƛ}, and then a variety of imperfective aspects (repetitive, iterative, durative, continuative, and graduative). Verb stems that are perfective may take the graduative (once) to become imperfective, and imperfective verb stems may take the perfective \textit{-šiƛ}. The simplified flow chart is in (\ref{figure:revisedaspect}) below.
+There is also the fact that there are certain monosyllabic, closed syllable roots which always take the \textit{-iˑčiƛ} and never \textit{-šiƛ}. These forms are idiosyncratic and have to be learned. For instance, the perfective form of the negator \textit{wik} is \textit{wikiičiƛ} and never \textit{*wikšiƛ}. Likewise the adjective \textit{ƛ̓ac} `fat' becomes \textit{ƛ̓aciičiƛ} `become fat' and not \textit{*ƛ̓acšiƛ}, \textit{ƛaw} `be near' becomes \textit{ƛawiičiƛ} `come near' and not \textit{*ƛawčiƛ}, and \textit{ʔuḥ} `be' becomes \textit{ʔuḥiičiƛ} `become', not \textit{*ʔuḥšiƛ}.\footnote{It is tempting to assume \textit{ʔuḥ} `be' is the result of the empty root \textit{ʔu-} plus some following element yielding the \textit{-ḥ}. This may historically be the case but there's no evidence for any \textit{-ḥ} suffix in the contemporary language. The linker suffix \textit{-(q)ḥ} (see \cref{ch:link}) is the closest element phonologically and semantically. However, if this were the etymology of the word, we would expect unattested *\textit{ʔuqḥ}, not \textit{ʔuḥ}. If \textit{ʔuḥ} is derive from the empty root \textit{ʔu-} plus some suffix, its origins are obscured. In any case, in the modern language the word is monomorphemic.} According to this analysis then, the ``inceptive" is not a unique aspect form but a morphophonologically conditioned alternate of the so-called momentaneous. This collapse makes the aspect system of Nuuchahnulth look a little more typical of languages around the world. There is a perfective aspect, marked with a large number of allophones but chiefly \textit{-šiƛ} and \textit{-iˑčiƛ}, and then a variety of imperfective aspects (repetitive, iterative, durative, continuative, and graduative). Verb stems that are perfective may take the graduative (once) to become imperfective, and imperfective verb stems may take the perfective \textit{-šiƛ}. The simplified flow chart is in (\ref{figure:revisedaspect}) below.
 
 %\ex \label{aspect-mine}
 %\vspace{-20pt}
@@ -925,41 +929,44 @@ Despite this revised analysis, most of my work was done under the traditional un
 
 \section{HPSG Analysis and Implementation} \label{ch:clause:analysis}
 
-I will now go over how I have modeled the above syntactic facts about clauses in my HPSG implemented grammar. Though the framework is particular, much of this analysis should be intelligible to people working in other frameworks. For those more familiar with other syntactic formalisms, I will attempt to give some basic guidance to decoding the formalism.
+I will now go over how I have modeled the above syntactic facts about clauses in my implemented grammar within the Head-driven phrase structure grammar (HPSG) formalism \citep{pollardsag1994}. I tested this implementation through use of the DELPH-IN joint reference formalism \citep{copestake2002} and the Grammar Matrix typological database \citep{bender2002}. Though the framework I use is particular, much of this analysis should be intelligible to people working in other frameworks. For those more familiar with other syntactic formalisms, I will attempt to give some basic guidance to decoding the formalism.
 
 In HPSG, each node in a tree is a large attribute-value matrix defining the properties of the node (this includes leaf nodes or words). Attributes are things like \textsc{head} and a value may be something like \textit{noun}. This is written as [\textsc{head} \textit{noun}]. Values can be a simple atomic symbol or they can be another attribute-value matrix. For instance, \textit{noun}, which is a possible value for \textsc{head}, is itself a matrix with further information inside it, such as [\textsc{form} \textit{finite}]. HPSG is dedicated to fidelity to the surface string order, and there is no movement. Syntactic relations are described through valence lists present at each node in the tree. The two most common of these lists are \textsc{subj} (subject) and \textsc{comps} (complements). As the tree is constructed, information is added to (or more precisely, unified with) \textsc{subj} and \textsc{comps} values, which is how valence information is preserved. Long-distance dependencies which in other theories are modeled through movement are here modeled by moving a valence item from the \textsc{subj} or \textsc{comps} list into a \textsc{slash} list, which propagates up the tree until the extracted element is found.
 
-In addition to the matrices present at each point in the tree, the phrase structure rules (PSRs) have to be defined for each possible ordering. So there may be a \textsc{\textit{head-complement-rule}} which defines how a head node combines with a non-head node to its right. This is analogous to \textit{merge} in Minimalism, although in HPSG the rules about which merges are allowed are specified within each PSR. A PSR may specify that one of its daughters has to have a certain property: for instance, when discharging a long-distance dependency, the head daughter should have something on its \textsc{slash} list, and the non-head daughter needs to have properties consistent with what the head daughter says about the item on its \textsc{slash}. This unification is indicated through reentrencies (drawn as boxes with the same label) which specify that two items in the attribute-value matrix are in fact the same.
+In addition to the matrices defined for each lexical entry, phrase structure rules (PSRs) have to be defined for each possible ordering. So there may be a \textsc{\textit{head-complement-rule}} which defines how a head node combines with a non-head node to its right. This is analogous to \textit{merge} in Minimalism, although in HPSG the rules about which merges are allowed are specified within each PSR. A PSR may specify that one of its daughters has to have a certain property: for instance, when discharging a long-distance dependency, the head daughter should have something on its \textsc{slash} list, and the non-head daughter needs to have properties consistent with what the head daughter says about the item on its \textsc{slash}. This unification is indicated through reentrencies (drawn as boxes with the same label) which specify that two items in the attribute-value matrix are in fact the same.
 
-In another case, a PSR might say that its head daughter needs to be [\textsc{head.aux} +]. In this case, that rule cannot operate on a node that is defined as [\textsc{head.aux} --]. However, we allow for values to be underspecified. A node may not know if it is an auxiliary or not, in which case it is simply [\textsc{head.aux} \textit{bool}], our way of denoting underspecification. A node of this type can unify with PSRs that require [\textsc{aux} +] and [\textsc{aux} --]. However, once it goes through that kind of rule, its \textsc{aux} value is set. This is how the framework allows words and even phrases to be used in different ways in different tree structures. Complex forms of type hierarchies are important to unification in HPSG. While the type \textit{bool} only has two subtypes, + and --, the types available to \textit{aspect} may be far more complex, which then allows for more complex types of underspecification and unification.
+In another case, a PSR might say that its head daughter needs to be [\textsc{head.aux} +]. In this case, that rule cannot operate on a node that is defined as [\textsc{head.aux} --]. However, HPSG allows for values to be underspecified. A node may not know if it is an auxiliary or not, in which case it is simply [\textsc{head.aux} \textit{bool}\footnote{\textit{bool} is short for Boolean, and is defined as the underspecification of + and --.}], our way of denoting underspecification. A node of this type can unify with PSRs that require [\textsc{aux} +] and [\textsc{aux} --]. However, once it goes through that kind of rule, its \textsc{aux} value is set. This is how the framework allows words and even phrases to be used in different ways in different tree structures. Complex forms of type hierarchies are important to unification in HPSG. While the type \textit{bool} only has two subtypes, + and --, the types available to \textit{aspect} may be far more complex, which then allows for more complex types of underspecification and unification.
 
-My grammar is built on top of analyses present in the Grammar Matrix \citep{bender2002}, and where possible I reuse distinctions and analyses present there. In particular, I use some of the features defined in the Grammar Matrix (like \textsc{prd}, \textsc{aux}), and inherit from generic phrase structure types like \textit{\textsc{decl-head-subj-phrase}} and \textit{\textsc{basic-unary-phrase}}. I will not expect familiarity with all these pre-defined types, and will attempt to give all the relevant components of rules and type definitions, including those that are defined in the Grammar Matrix. However, most definitions given here are subsets of full definitions given in my implemented grammar, which can be found at \url{http://bitbucket.org/davinman/nuuchahnulth-grammar/}. I will not go over every analysis here, but only those I believe are the most significant for later discussion: the predicate and participant distinction (\ref{ch:clause:analysis:predpart}), the second position clausal elements (\ref{ch:clause:analysis:2p}), the second position suffixes (\ref{ch:clause:analysis:2pv}), and verbal aspect (\ref{ch:clause:analysis:aspect}).
+My grammar is built on top of analyses present in the Grammar Matrix \citep{bender2002}, and where possible I reuse distinctions and analyses present there. In particular, I use some of the features defined in the Grammar Matrix (like \textsc{prd}, \textsc{aux}), and inherit from generic phrase structure types like \textit{\textsc{decl-head-subj-phrase}} and \textit{\textsc{basic-unary-phrase}}. I will not expect familiarity with all these pre-defined types, and will attempt to give in my diagrams here all the relevant components of rules and type definitions, including those that are defined in the Grammar Matrix. However, most definitions given here are subsets of full definitions given in my implemented grammar, which can be found at \url{http://bitbucket.org/davinman/nuuchahnulth-grammar/}. I will not go over every analysis here, but only those I believe are the most significant for later discussion: the predicate and participant distinction (\ref{ch:clause:analysis:predpart}), the second position clausal elements (\ref{ch:clause:analysis:2p}), the second position suffixes (\ref{ch:clause:analysis:2pv}), and verbal aspect (\ref{ch:clause:analysis:aspect}).
 
 \subsection{Predicates and participants} \label{ch:clause:analysis:predpart}
 
-As argued in \S\ref{ch:clause:predp}, nouns, adjectives, and verbs are all events, and yet when used as participants, the grammar needs to distinguish nouns from adjectives and verbs (\S\ref{ch:clause:partp}). I use the value \textsc{prd} (predicative) on the \textsc{head} feature to model the predicate/participant distinction in Nuuchahnulth. I have a supertype, \textit{predicate-lex}, which states that its \textsc{head.prd} value is +. All the lexical types that are predicative---verbs, and adjectives, and common nouns---inherit from this supertype. So every lexical entry for a verb, adjective, or common noun inherits the property [\textsc{head.prd} +], and can be treated as a predicate where the grammar demands it.
+As argued in \S\ref{ch:clause:predp}, nouns, adjectives, and verbs all contain semantic events, and yet when used as participants, the grammar needs to distinguish nouns from adjectives and verbs (\S\ref{ch:clause:partp}). I use the value \textsc{prd} (predicative) inside the \textsc{head} feature to model the predicate/participant distinction in Nuuchahnulth. I have a supertype, \textit{predicate-lex}, which states that its \textsc{head.prd} value is +. All the lexical types that are predicative---verbs, and adjectives, and common nouns---inherit from this supertype. So every lexical entry for a verb, adjective, or common noun inherits the property [\textsc{head.prd} +], and can be treated as a predicate where the grammar demands it.
 
-Participants are simply defined as [\textsc{head.prd} --]. A word can be defined as [\textsc{head.prd} --] by its lexical inheritance (e.g., proper nouns are defined as non-predicative), or through the application of a rule. As detailed in \S\ref{ch:clause:partp}, all dependent clauses headed by the enclitic \textit{=ʔiˑ} are participants. I will address the analysis for this in \S\ref{ch:clause:analysis:2p}. However, common nouns also need to be treated as participants as well as predicates. I achieve this through a lexical rule (that is, something that must apply prior to syntactic rules) that alters the syntactic properties of the noun. Recall that as predicates, common nouns have an event variable and a subject. Part of my type definition for a common noun is given in (\ref{ex:commonnounlex}).
+Participants are simply specified as [\textsc{head.prd} --]. A word can be specified as [\textsc{head.prd} --] by its lexical inheritance (e.g., proper nouns are defined as non-predicative), or through the application of a rule. As detailed in \S\ref{ch:clause:partp}, all dependent clauses headed by the enclitic \textit{=ʔiˑ} are participants. I will address the analysis for this in \S\ref{ch:clause:analysis:2p}. However, common nouns also need to be treated as participants as well as predicates. I achieve this through a lexical rule (that is, something that must apply prior to syntactic rules) that alters the syntactic properties of the noun. Recall that as predicates, common nouns have an event variable and a subject. Part of my type definition for a common noun is given in (\ref{ex:commonnounlex}).
 
+\begin{singlespacing}
 \ex \label{ex:commonnounlex}
 \begin{avm}
 \[ \asort{common-noun-lex}
    synsem.local & \[ cat & \[ head.prd & +\\
                          val & \[ subj & \< \avmbox{1} \> \\
-                           comps & \< \> \] \] \\
+                           comps & \q< \q> \] \] \\
                    cont.hook & \[ index & \avmbox{3} \\
                                 xarg & \avmbox{2} \] \] \\
    arg-st & \< \avmbox{1} \[ local.cont.index & \avmbox{2} \[ person & 3rd \] \] \> \\
    rels & \< \[ pred & \textit{pred} \\
-                arg0 & \[ \avmbox{3} \textit{event} \] \\
-                arg1 & \[ \avmbox{2} \textit{ref-ind} \] \] \> \]
+                arg0 & \[ \avmbox{3} \rm{\textit{event}} \] \\
+                arg1 & \[ \avmbox{2} \rm{\textit{ref-ind}} \] \] \> \]
 \end{avm}
 \xe
+\end{singlespacing}
 
-This rule can most easily be read bottom-to-top. It states that common nouns are semantically a relation between two arguments: an event, and a referential index.\footnote{Note the underspecified \textsc{pred} value. Not to be confused with my use of ``syntactic predicate," the \textsc{pred}(ication) value in the DELPH-IN HPSG implementation is the name of the relation. So the Nuuchahnulth word \textit{ʕiniiƛ} `dog' has the meaning \textsc{ʕiniiƛ}, or for intelligibility for an English-language readership, \textsc{dog}.} The referent argument is identified with the \textsc{index} attribute of the only thing in the noun's syntactic \textsc{arg(ument)-st(ructure)}. \textsc{arg-st} is used in HPSG as a translation layer between the semantics (the \textsc{rels} list) and the syntax (in the \textsc{synsem} layer above). All items on a word's \textsc{arg-st} must correspond to items in its valence lists (most notably, \textsc{subj}(ect) and \textsc{comp}(lement)\textsc{s}). The lone item in the noun's \textsc{arg-st} is identified with its subject, and it has no complements. The semantic argument that is the available in the compositional syntax, at the path \textsc{synsem.local.cont.hook.index}, is that of the event variable in the relation, and so the noun is treated as eventive in the compositional semantics. The variable to the referent is kept on the \textsc{xarg}, a sort of semantic scratch paper that is typically used for subjects. Finally, the \textsc{head.prd} attribute is set to +, indicating that common nouns, and all subtrees headed by a common noun, are predicative. This is a syntactic reflex indicating that the \textsc{index} is pointing to an event.
+This rule can most easily be read bottom-to-top. It states that common nouns are semantically a relation between two arguments: an event, and a referential index.\footnote{Note the underspecified \textsc{pred} value. Not to be confused with my use of ``syntactic predicate," the \textsc{pred}(ication) value in the DELPH-IN HPSG implementation is the name of the relation. So the Nuuchahnulth word \textit{ʕiniiƛ} `dog' has the meaning \textsc{ʕiniiƛ}, or for intelligibility for an English-language readership, \textsc{dog}.} The referent argument is identified with the \textsc{index} attribute of the only thing in the noun's syntactic \textsc{arg(ument)-st(ructure)}. \textsc{arg-st} is used in HPSG as a translation layer between the semantics (the \textsc{rels} list) and the syntax (in the \textsc{synsem} layer above). All items on a word's \textsc{arg-st} correspond to items in its valence lists (most notably, \textsc{subj}(ect) and \textsc{comp}(lement)\textsc{s}) or on the long-distance dependency \textsc{slash} list. The lone item in the noun's \textsc{arg-st} is identified with its subject, and it has no complements. The semantic argument that is the available in the syntax, at the path \textsc{synsem.local.cont.hook.index}, is that of the event variable in the relation, and so the noun is treated as eventive in the compositional semantics. A pointer to the referent is kept on the \textsc{xarg}, a part of the reentrency set for manipulating values in the semantic representation. Finally, the \textsc{head.prd} attribute is set to +, indicating that common nouns, and all subtrees headed by a common noun, are predicative. This is a syntactic reflex indicating that the \textsc{index} is pointing to an event.
 
-The above \textit{\textsc{common-noun-lex}} type functions when nouns are acting as predicates. To treat nouns as participants, they must go through a lexical rule first. The major parts of the lexical rule are in (\ref{ex:nounrelativizerlexrule}).
+The above {\textit{common-noun-lex}} type functions when nouns are acting as predicates. To treat nouns as participants, they must go through a lexical rule first. The major parts of the lexical rule are in (\ref{ex:nounrelativizerlexrule}).
 
+\begin{singlespacing}
 \ex \label{ex:nounrelativizerlexrule}
 \begin{avm}
 \[\asort{noun-relativizer-lex-rule}
@@ -973,15 +980,17 @@ synsem.local & \[ cat.head & \[\asort{noun}
                              cont.hook.xarg & \avmbox{1} \] \] \]
 \end{avm}
 \xe
+\end{singlespacing}
 
-This rule takes a daughter that is headed by a noun. It creates a new lexical item that has no subject or complements, and is not predicative, making it a participant. It moves the noun's \textsc{xarg} value into its \textsc{index}, so that in the compositional semantics, it is being treated a referent and not an event. The article will do something similar to this, but as part of the second position inflection, I will address it with other second position elements below.
+This rule takes a daughter whose \textsc{head} value is \textit{noun}. It creates a new lexical item that has no subject or complements, and is not predicative, making it a participant. It moves the noun's \textsc{xarg} value into its \textsc{index}, so that in the compositional semantics, it combines denoting an referential entity and not an event. The article will do something similar to this, but as it is part of the second position inflection complex, I will address it with other second position elements below.
 
 \subsection{Second position inflection} \label{ch:clause:analysis:2p}
 
-As detailed in \S\ref{ch:clause:cliticnormal}, Nuuchahnulth clauses are headed by their second-position inflection. I define the second position elements as selecting for a complement that is [\textsc{head.pred} +]. I call this complex of a second position element and its predicate a \textit{predicate phrase} (abbreviated PredP). By design, within a PredP there is no differentiation between `verb,' `adjective,' and `noun,' as the distinction is irrelevant in this context. 
+As detailed in \S\ref{ch:clause:cliticnormal}, Nuuchahnulth clauses are headed by their second-position inflection. I define the second position elements as auxiliary verbs that select for a complement that is [\textsc{head.pred} +]. I call this complex of a second position element and its predicate a \textit{predicate phrase} (abbreviated PredP).
 
-Second position elements take a predicate to their left and inherit all their predicate's syntactic participants. The basic type definition for a second position clitic is given in (\ref{ex:2p-lex-item}).
+The second position elements take a predicative complement which is required to appear to their left, and they inherit all their predicate's syntactic participants. Once the second position element picks up this complement, it is (by design) irrelevant to the syntax what part of speech that complement was. The basic type definition for a second position clitic is given in (\ref{ex:2p-lex-item}).
 
+\begin{singlespacing}
 \ex \label{ex:2p-lex-item}
 \adjustbox{max width=\textwidth - 0.4in}{
 \begin{avm}
@@ -995,11 +1004,13 @@ synsem.local.cat & \[ head.mod & \< \> \\
 \end{avm}
 }
 \xe
+\end{singlespacing}
 
-This lexical definition states that second position clitics are non-modifying words which have both a subject and a complements list. Its first complement is a non-optional predicate, which has a subject and some number of complements (possibly zero). Its first complement's subject is identified as its own subject, and its first complement's complements list is appended to its own complements list. So if this lexical item finds an intransitive predicate complement, it becomes a transitive item: Its subject is its complement's subject, and its only complement is the intransitive predicate it picked up. If this lexical item finds a transitive predicate, it becomes ditransitive. Once again, it will have a subject identified with that transitive predicate, and then its complements list will include two items: first the transitive predicate itself, and then the transitive predicate's own complement. And so on.
+This lexical type states that second position clitics are non-modifying words which have both a subject and a complements list. The clitic's first complement is a non-optional predicate, which has a subject and some number of complements (possibly zero). Its first complement's subject is identified as its own subject, and its first complement's complements list is appended to its own complements list. So if this lexical item finds a predicate with an empty complements list (whether that predicate is noun, verb, or adjective), it becomes a transitive item (an item with one complement): Its subject is its complement's subject, and its only complement is the intransitive predicate it picked up. If this lexical item finds a predicate with a single item on its complements list, it becomes ditransitive (that is, two complements). Once again, it will have a subject identified with that transitive predicate, and then its complements list will include two items: first the transitive predicate itself, and then the transitive predicate's own complement. And so on.
 
-As indicated in \S\ref{ch:clause:cliticnormal}, there are two major types of clausal second position lexemes: the auxiliary predicate head, and the article. The predicative versions are part of the mood complex, and belong to the type \textsc{\textit{mood-2p-verb-lex}} (\ref{ex:mood-2p-verb-lex}), which inherits from (is a subtype of) \textsc{\textit{2p-lex-item}} above. This rule needs to state that this lexical item makes a predicate and inherits its complement's semantic event. Then the lexical entry for each morpheme further specifies the clitic's particular properties: the mood of the complement, and the person and number properties of the subject.
+As indicated in \S\ref{ch:clause:cliticnormal}, there are two major types of clausal second position lexemes: the auxiliary predicate head, and the article. The predicative versions are part of the mood complex, and belong to the type {\textit{mood-2p-verb-lex}} (\ref{ex:mood-2p-verb-lex}), which inherits from (is a subtype of) {\textit{2p-lex-item}} above. This rule needs to state that this lexical item makes a predicate and inherits its complement's semantic event. Then the lexical entry for each morpheme further specifies the clitic's particular properties: the mood of the complement, and the person and number properties of the subject.
 
+\begin{singlespacing}
 \ex \label{ex:mood-2p-verb-lex}
 \begin{avm}
 \[\asort{mood-2p-verb-lex}
@@ -1008,9 +1019,11 @@ synsem.local & \[ cat & \[ head.prd & + \\
                   cont.hook.index & \avmbox{1} \] \]
 \end{avm}
 \xe
+\end{singlespacing}
 
-The article lexeme also inherits from \textsc{\textit{2p-lex-item}}, but adds different constraints (\ref{ex:article-lex}). The article needs to state that it creates a participant (that is, a non-predicate), that it is picking up its complement's subject's semantics (that is, the referent and not the event), and that that referent is in the third person.
+The article lexeme also inherits from {\textit{2p-lex-item}}, but adds different constraints, as in (\ref{ex:article-lex}). The article needs to state that it creates a participant (that is, a non-predicate), that it is picking up its complement's subject's semantics (that is, the referent and not the event), and that that referent is in the third person.
 
+\begin{singlespacing}
 \ex \label{ex:article-lex}
 \begin{avm}
 \[\asort{article-lex}
@@ -1019,9 +1032,11 @@ synsem.local & \[ cat & \[ head.prd & -- \\
                 cont.hook.index & \avmbox{1} \[ png.per & 3rd \] \] \]
 \end{avm}
 \xe
+\end{singlespacing}
 
-The above definitions for second position elements license trees that have simple second position elements. I will give sample trees for the three types of predicates introduced in \S\ref{ch:clause:predp}: verbs (\ref{ex:verbpred}), adjectives (\ref{ex:adjpred}), and nouns (\ref{ex:nounpred}). Trees for each of the sentences are given in (\ref{ex:verbpredtree}), (\ref{ex:adjpredtree}), and (\ref{ex:nounpredtree}) respectively. The attribute-value matrices have been somewhat simplified to fit on the page, and identifying semantic features (through \textsc{hook.index} and \textsc{hook.xarg}) have been elided. Identification of semantic features is shown simply by identifying a slot (e.g., the \textit{x} the relation \textsc{see}(\textit{x}, \textit{y})) with an entire feature structure. In the implemented grammar, this is done through the identification of values with the \textsc{hook} features. Finally, there are some phrase structure rules that have not yet been introduced. They are present to complete the trees. The main points I am illustrating are second position argument composition and the predicate-participant distinction, which is created by the \textsc{head.prd} value at each level of the tree. %\footnote{Note that here I have used the symbol \textsc{rel} to refer to what I have defined as a semantic \textit{relation}. In the implemented grammar, this is labeled \textsc{pred} for `predicate symbol'. This does not cause a problem with the \textsc{pred} value on \textsc{head}, because the two attributes lie on different paths.} Participant phrases (PartP) appear in these trees, but will be addressed in \S\ref{ch:clause:partp}. 
+The above definitions for second position elements license trees that have simple second position elements. I will give sample trees for the three types of predicates introduced in \S\ref{ch:clause:predp}: verbs (\ref{ex:verbpred}), adjectives (\ref{ex:adjpred}), and nouns (\ref{ex:nounpred}). Trees for each of the sentences are given in (\ref{ex:verbpredtree}), (\ref{ex:adjpredtree}), and (\ref{ex:nounpredtree}) respectively. The attribute-value matrices have been somewhat simplified to fit on the page, and semantic features (through \textsc{hook.index} and \textsc{hook.xarg}) have been elided. Identification of semantic features is shown simply by identifying a slot (e.g., the \textit{x} the relation \textsc{see}(\textit{x}, \textit{y})) with an entire feature structure. In the implemented grammar, this is done through the identification of values with the \textsc{hook} features. Finally, there are some phrase structure rules that have not yet been introduced. They are present to complete the trees. The main points I am illustrating are second position argument composition and the predicate-participant distinction, which is created by the \textsc{head.prd} value at each level of the tree. %\footnote{Note that here I have used the symbol \textsc{rel} to refer to what I have defined as a semantic \textit{relation}. In the implemented grammar, this is labeled \textsc{pred} for `predicate symbol'. This does not cause a problem with the \textsc{pred} value on \textsc{head}, because the two attributes lie on different paths.} Participant phrases (PartP) appear in these trees, but will be addressed in \S\ref{ch:clause:partp}. 
 
+\begin{singlespacing}
 \ex \label{ex:verbpredtree}
 \adjustbox{max width=\textwidth - 0.2in}{
 \begin{forest}
@@ -1038,20 +1053,20 @@ The above definitions for second position elements license trees that have simpl
  	              comps & \avmbox{2} \\
  	              rel & {\textsc{see}(\avmbox{1}, \avmbox{2})} \]
              \end{avm}
-      [n̓aacsiičiƛ]]
-    [Inflection \\ \begin{avm}
+      [n̓aacsiičiƛ \\ see.\textsc{mo}]]
+    [Infl \\ \begin{avm}
  	               \[\asort{2p-mood-lex} head.prd & + \\
  	                  subj & \avmbox{1} \[pernum & 3sg \] \\
  	                  comps & \< {\avmbox{3}\[ head.prd & + \\
  	                             subj & \avmbox{1} \\
  	                             comps & \avmbox{2} \], \avmbox{2}} \>  \]
                    \end{avm}
-      [{=ʔiˑš}]]
+      [{=ʔiˑš} \\ \textsc{strg.3}]]
   ]
   [NounP \\ \begin{avm}
  \avmbox{2} \[ \asort{adj-head} head & \[\asort{noun} prd & -- \] \]
             \end{avm}
-    [Adjective \\ \begin{avm}
+    [Adj \\ \begin{avm}
  	 \[\asort{intransitive-verb-to-adj-rule} head.mod & \< \avmbox{4} \> \\
  	    subj & \< \> \]
      \end{avm}
@@ -1060,7 +1075,7 @@ The above definitions for second position elements license trees that have simpl
  	     subj & \< \avmbox{4} \> \\
  	     rel & \textsc{drown}(\avmbox{4}) \]
        \end{avm}
-      [hałmiiḥa]
+      [hałmiiḥa \\ drown]
      ]
     ] 
     [NounP \\ \begin{avm}
@@ -1072,14 +1087,16 @@ The above definitions for second position elements license trees that have simpl
  	      subj & \< \avmbox{4} \> \\
  	      rel & \textsc{person}(\avmbox{4}) \]
         \end{avm}
-        [quuʔas]
+        [quuʔas \\ person]
       ]
     ]
   ]
 ]	
 \end{forest}}
 \xe
+\end{singlespacing}
 
+\begin{singlespacing}
 \ex \label{ex:adjpredtree}
 \adjustbox{max width=\textwidth - 0.2in}{
 \begin{forest}
@@ -1096,7 +1113,7 @@ The above definitions for second position elements license trees that have simpl
  	              comps & \< \> \\
  	              rel & {\textsc{beautiful}(\avmbox{1})} \]
              \end{avm}
-      [qʷac̓ał]
+      [qʷac̓ał \\ beautiful]
     ]
     [Inflection \\ \begin{avm}
  	               \[\asort{2p-mood-lex} head.prd & + \\
@@ -1104,7 +1121,7 @@ The above definitions for second position elements license trees that have simpl
  	                  comps & \< \avmbox{2}\[ head.prd & + \\
  	                             subj & \avmbox{1} \] \> \]
                    \end{avm}
-      [{=ʔiˑš}]]
+      [{=ʔiˑš} \\ \textsc{strg.3}]]
   ]
   [PartP \\ \begin{avm}
  \avmbox{1} \[\asort{comp-head-phrase} head & \[\asort{noun} prd & -- \] \]
@@ -1114,24 +1131,28 @@ The above definitions for second position elements license trees that have simpl
  	      subj & \< \avmbox{3} \> \\
  	      rel & \textsc{young-woman}(\avmbox{3}) \]
         \end{avm}
-      [ḥaakʷaaƛ] ]
+      [ḥaakʷaaƛ \\ young.girl] ]
     [Article \\ \begin{avm}
  	               \[\asort{article-lex} head.prd & -- \\
  	                  subj & \avmbox{3} \\
  	                  comps & \< \avmbox{4}\[ head.prd & + \\
  	                             subj & \avmbox{3} \[pernum & 3sg \] \] \> \]
                    \end{avm}
-      [{=ʔiˑ}]
+      [{=ʔiˑ} \\ \textsc{art}]
     ]
   ]
 ]	
 \end{forest}}
 \xe
+\end{singlespacing}
 
+\vspace{-20pt}
+
+\begin{singlespacing}
 \ex \label{ex:nounpredtree}
 \adjustbox{max width=\textwidth -0.2in}{
 \begin{forest}
-[PredP \\ \textsc{\textit{head-scopal-phrase}}
+[PredP \\ {\textit{head-adj-scop}}
   [PredP \\ \begin{avm}
             \avmbox{1} \[ \asort{comp-head-phrase} head.prd & + \\
                subj & \avmbox{1} \\
@@ -1143,23 +1164,24 @@ The above definitions for second position elements license trees that have simpl
  	              subj & \avmbox{1} \\
  	              rel & {\textsc{gym}(\avmbox{1})} \]
              \end{avm}
-      [pisatuwił]]
-    [Inflection \\ \begin{avm}
+      [pisatuwił \\ gym]]
+    [Infl \\ \begin{avm}
  	               \[\asort{2p-mood-lex} head.prd & + \\
  	                  subj & \avmbox{1} \[pernum & 3sg \] \\
  	                  comps & \< \avmbox{2}\[ head.prd & + \\
  	                             subj & \avmbox{1} \] \> \]
                    \end{avm}
-       [{=maˑ}]]
+       [{=maˑ} \\ \textsc{real}.3]]
   ]
-  [Adverb \\ \begin{avm}
-            \[ head.mod & \< \avmbox{1} \> \\
+  [Adv \\ \begin{avm}
+            \[\asort{adverb-lex} head.mod & \< \avmbox{1} \> \\
                rel & \textsc{only}(\avmbox{1}) \]
             \end{avm}
-    [ʔaanaḥi] ]
+    [ʔaanaḥi \\ only] ]
 ]	
 \end{forest}}
 \xe
+\end{singlespacing}
 
 %Syntactic predicates are modeled by placing a \textsc{pred} value within the \textsc{head} features of parts of speech. Any part of speech that is [\textsc{pred} +] may behave as a predicate. The predicate phrase in Nuuchahnulth is analogous to a verb phrase in English. Just as a clause in English HPSG analyses is defined as a VP that has empty \textsc{subj} and \textsc{comp} lists, a clause in Nuuchahnulth is a PredP that has empty \textsc{subj} and \textsc{comp} lists. A significant difference between predicates and a PredP in Nuuchahnulth and verbs and a VP in English is that, because of the second position clitics, the PredP is headed by inflectional material while the predicate is its first complement. This is unlike English VPs, where the verbal element is itself the head of the clause. The nature of this second position will be discussed in more detail in \S\ref{ch:clause:cliticnormal} and \S\ref{ch:clause:cliticmodifier}. With the nature of the syntactic predicate sketched out, I now turn to participant phrases (PartP).
 
@@ -1169,6 +1191,7 @@ The above definitions for second position elements license trees that have simpl
 
 (\ref{ex:verbpredtree}--\ref{ex:nounpredtree}) show predicates of different lexical categories. This is straightforward because all these lexical categories are [\textsc{prd} +], and thus can be the complement of the inflecting second position element. In the same way, predicative elements like verbs (\ref{ex:verbparttree}) and adjectives (\ref{ex:adjparttree}) can become participants through composition with the article \textit{=ʔiˑ}, as shown below.
 
+\begin{singlespacing}
 \ex \label{ex:verbparttree}
 \begin{adjustbox}{max width=\textwidth}
 \begin{forest}
@@ -1192,7 +1215,7 @@ The above definitions for second position elements license trees that have simpl
  	                                     subj & \avmbox{1} \] \> \\
  	            rel & {\textsc{be}(\avmbox{1}, \avmbox{3})} \]
              \end{avm}
-        [ʔuḥ]
+        [ʔuḥ \\ bex]
       ]
       [Inflection \\ \begin{avm}
  	               \[ \asort{2p-mood-lex}
@@ -1200,7 +1223,7 @@ The above definitions for second position elements license trees that have simpl
  	                  comps & \< \avmbox{2} \[ head.prd & + \\
  	               subj & \avmbox{1} 3sg \] \> \]
                    \end{avm}
-        [{=ʔiˑš}]
+        [{=ʔiˑš} \\ \textsc{strg}.3]
       ]
     ]
     [VP \\  \begin{avm}
@@ -1209,7 +1232,7 @@ The above definitions for second position elements license trees that have simpl
  	            comps & \< \> \\
  	            rel & {\textsc{cry}(\avmbox{1})} \]
              \end{avm}
-      [ʕiḥak]
+      [ʕiḥak \\ cry.\textsc{dr}]
     ]
   ]
   [PartP \\ \begin{avm}
@@ -1222,7 +1245,7 @@ The above definitions for second position elements license trees that have simpl
  	            comps & \< \> \\
  	            rel & {\textsc{run}(\avmbox{4})} \]
              \end{avm}
-      [kamatquk]
+      [kamatquk \\ run.\textsc{dr}]
     ]
     [Inflection \\ \begin{avm}
  	            \[ \asort{article-lex}
@@ -1231,14 +1254,16 @@ The above definitions for second position elements license trees that have simpl
  	               comps & \< \avmbox{5} \[ head.prd & + \\
  	                                        subj & \avmbox{4} \] \> \]
                    \end{avm}
-      [{=ʔiˑ}]  
+      [{=ʔiˑ} \\ \textsc{art}]  
     ]
   ]
 ]
 \end{forest}
 \end{adjustbox}
 \xe
+\end{singlespacing}
 
+\begin{singlespacing}
 \ex \label{ex:adjparttree}
 \begin{adjustbox}{max width=\textwidth}
 \begin{forest}
@@ -1255,7 +1280,7 @@ The above definitions for second position elements license trees that have simpl
  	            comps & \< \avmbox{3} \[head & verb \\
  	                                    subj & \avmbox{1} \] \> \]
              \end{avm}
-      [wik]
+      [wik \\ \textsc{neg}]
     ]
     [Inflection \\ \begin{avm}
  	               \[ \asort{2p-mood-lex}
@@ -1264,7 +1289,7 @@ The above definitions for second position elements license trees that have simpl
  	                  comps & \< \avmbox{2} \[ head.prd & + \\
  	               subj & \avmbox{1} \] \> \]
                    \end{avm}
-      [{=!iˑč}]
+      [{=!iˑč} \\ \textsc{cmmd.2pl}]
     ]
   ]
   [VP \\ \begin{avm}
@@ -1279,7 +1304,7 @@ The above definitions for second position elements license trees that have simpl
  	            comps & \< \avmbox{6} \> \\
  	            rel & {\textsc{laugh-at}(\avmbox{1}, \avmbox{6})} \]
              \end{avm}
-      [ƛ̓iixc̓us]
+      [ƛ̓iixc̓us \\ laugh.at ]
     ]
     [PartP \\ \begin{avm}
  \avmbox{6} \[ \asort{comp-head-phrase}
@@ -1291,7 +1316,7 @@ The above definitions for second position elements license trees that have simpl
  	            comps & \< \> \\
  	            rel & {\textsc{other}(\avmbox{4})} \]
              \end{avm}
-        [ƛaƛuu]
+        [ƛaƛuu \\ other.\textsc{pl}]
       ]
       [Inflection \\ \begin{avm}
  	            \[ \asort{article-lex}
@@ -1300,7 +1325,7 @@ The above definitions for second position elements license trees that have simpl
  	               comps & \< \avmbox{5} \[ head.prd & + \\
  	                                        subj & \avmbox{4} \] \> \]
                    \end{avm}
-        [{=ʔiˑ}]
+        [{=ʔiˑ} \\ \textsc{art}]
       ]
     ]
   ]
@@ -1308,6 +1333,7 @@ The above definitions for second position elements license trees that have simpl
 \end{forest}
 \end{adjustbox}
 \xe
+\end{singlespacing}
 
 
 %It is worth pointing out to the reader that the main distinction\footnote{I am, for the moment, glossing over the semantics of relativization. The details of this, which are not the purpose of this dissertation, can be found in the implemented grammar} between article \textit{=ʔiˑ} and other second-position inflection is that the \textit{=ʔiˑ} creates a [\textsc{pred} --] parent while other inflection creates a [\textsc{pred} +] parent. This binary distinction succinctly captures the distributional difference.
@@ -1390,14 +1416,15 @@ I assert that the clitics are the syntactic heads of the clause. This analysis r
 
 %The inflection unifies its complement's subject with its own, and adds its complement's complements list to its own complements list. Particular lexical items in the class of clausal inflection inherit from the rule type above and add their own semantic information (second person subject and hearsay evidentiality, for example).
 
-This analysis depends on viewing the second position enclitic complex as its own syntactic word. Since my implementation currently lacks a morphophonological component, I have whitespace-separated the second position enclitic complex. It also requires that only one of the enclitics inherit from (\ref{ex:2p-lex-item}): one of the enclitics must be the head of the syntactic word. Every enclitic is optional, with the exception of the subject-mood portmanteaus. Given this, I have modeled the subject-mood portmanteau as the root, with preceding enclitics attaching to the subject-mood portmanteau as ``prefixes" and following morphemes attaching as ``suffixes" that modify the appropriate syntactico-semantic properties.
+This analysis depends on viewing the second position enclitic complex as its own syntactic word. Since my implementation currently lacks a morphophonological component, I have whitespace-separated the second position enclitic complex. It also requires that only one of the enclitics inherit from (\ref{ex:2p-lex-item}): one of the enclitics must be the stem of the syntactic word. Every enclitic is optional, with the exception of the subject-mood portmanteaus. Given this, I have modeled the subject-mood portmanteau as the root, with preceding enclitics attaching to the subject-mood portmanteau as ``prefixes" and following morphemes attaching as ``suffixes" that modify the appropriate syntactico-semantic properties.
 
-This creates an analytical issue for the third person neutral mood, which is null-marked. Notionally, there is an invisible ``=0" in the string, but to avoid it being written in the output, I use some work-arounds in the DELPH-IN architecture. There are two cases where the null third person element is introduced: (1) when there are other enclitics (the habitual or causative, for example) but no subject-mood portmanteau; (2) when there are no enclitics at all, only the understood null third person neutral mood. My grammar handles the two cases differently.
+This creates an analytical issue for the third person neutral mood, which is null-marked. Notionally, there is an invisible ``=$\phi$" in the string, but to avoid it being written in the output, I use some work-arounds in the DELPH-IN architecture. There are two cases where the null third person element may be formally introduced: (1) when there are other enclitics (the habitual or causative, for example) but no subject-mood portmanteau; (2) when there are no enclitics at all, only the understood null third person neutral mood. My grammar handles the two cases differently.
 
-In case 1, the string ``=0" is generated just like any other enclitic. I define a special inflectional flag \textsc{some-inflection} and set its value to -- just for the third person neutral. This means that a string consisting only of ``=0" is not fully inflected and not allowed to be a word. For all of the prefixes and suffixes, I allow them to overwrite the string ``=0" with themselves, and these inflectional rules set the \textsc{some-inflection} flag to +. This means that the first prefixing or suffixing element to be added to the enclitic makes it a fully inflected word, and removes the ``=0" from the output. So the string ``=ʔaała" (habitual) is underlyingly ``=0=ʔaała", and the subject and mood information is generated by the ``=0".
+In case 1, the string ``=$\phi$" is generated just like any other enclitic. I introduce a special inflectional flag \citep{goodman2013} \textsc{some-inflection} and set its value to -- just for the third person neutral. This means that a string consisting only of ``=$\phi$" is not fully inflected and not allowed to combine directly with other words in the syntax.\footnote{The reason for this is that all phrase structure rules require that their daughters be \textit{infl-satisfied}, which includes \textsc{some-inflection} \textit{na-or-+}. So effectively, all syntactic rules forbid \textsc{some-inflection} -- on their daughters.} For all of the prefixes and suffixes, I allow them to overwrite the string ``=$\phi$" with themselves, and these inflectional rules set the \textsc{some-inflection} flag to +. This means that the first prefixing or suffixing element to be added to the enclitic makes it a fully inflected word, and removes the ``=$\phi$" from the output. So the string ``=ʔaała" (habitual) is underlyingly ``=$\phi$=ʔaała", and the subject and mood information is generated by the ``=$\phi$".
 
-In case 2, there is no additional enclitic to overwrite the ``=0" string, so this approach does not work. In this case, I create a lexical rule which takes any fully-inflected predicative word and creates a second position auxiliary out of it with the information of the third person neutral mood embedded in its semantics. I do not believe this analysis is notionally different from a null morpheme. It has the vice of being a little more complicated, but the virtue of not outputting any unpronounced elements in the string. The predicate-to-third-person-neutral rule looks like this:
+In case 2, there is no additional enclitic to overwrite the ``=$\phi$" string, so this approach does not work. In this case, I create a lexical rule which takes any fully-inflected predicative word and creates a second position auxiliary out of it with the information of the third person neutral mood embedded in its semantics. I do not believe this analysis is notionally different from a null morpheme. It has the vice of being a little more complicated, but the virtue of not outputting any unpronounced elements in the string. The predicate-to-third-person-neutral rule looks like this:
 
+\begin{singlespacing}
 \ex \label{neutral-3rd-pred-lex-rule}
 \begin{avm}
 \[ \asort{neutral-3rd-pred-lex-rule}
@@ -1414,13 +1441,15 @@ In case 2, there is no additional enclitic to overwrite the ``=0" string, so thi
                                         comps & \avmbox{2} \] \] \] \]
 \end{avm}
 \xe	
+\end{singlespacing}
 
-Finally, the second-position clausal clitics need to be able to attach to a preceding modifier of the predicate. In the case of the main clause predicates, they may attach to preceding adverbs, and for the article it may attach to preceding adjectives. Because there is no movement in HPSG, my analysis cannot simply say that clitics ``move" into position of the leftmost item in the phrase. There are benefits to this design decision (faster computation, fidelity to the ordering of the surface string, bidirectionality of parsing and generation), but second position phenomena is one of the areas that requires extra analytical work in HPSG.
+As indicated earlier, the second-position clausal clitics can also attach to a preceding modifier of the predicate. In the case of the main clause predicates, they may attach to preceding adverbs, and for the article it may attach to preceding adjectives. Because there is no movement in HPSG, my analysis cannot simply say that clitics ``move" into position of the leftmost item in the phrase. There are benefits to this design decision (faster computation, fidelity to the ordering of the surface string, bidirectionality of parsing and generation), but second position phenomena is one of the areas that requires extra analytical work in HPSG.
 
-In both the cases where the mood clitic attaches to a preceding adverb (\ref{ex:2padvpred}) and when the article attaches to a preceding adjective (\ref{ex:2padjpart}), the second position enclitic containing the subject information is attaching to a modifier of a later predicate. In the version of the lexical entry seen in (\ref{ex:2p-lex-item}), these clitics are selecting for predicate complements, to which they assign semantic information (such as tense), and taking on their subject and complements. However, in the case where the clitics attach to a modifier, I cannot model the clitics as selecting for a predicate. I must have the clitic select for a modifier, and assign its semantic information to the modifier's modified value.
+In both the cases where the mood clitic attaches to a preceding adverb (\ref{ex:2padvpred}) and when the article attaches to a preceding adjective (\ref{ex:2padjpart}), the second position enclitic containing the subject information is attaching to a modifier of a later predicate. In the version of the lexical entry seen in (\ref{ex:2p-lex-item}), these clitics are selecting for predicate complements, to which they assign semantic information (such as tense), and taking on their subject and complements. However, in the case where the clitics attach to a modifier, I cannot model the clitics as selecting for a predicate. I have the clitic select for a modifier, and assign its semantic information to the modifier's modified value.
 
-I define a lexical rule which creates the appropriate modifier-selecting structure from lexical entries of the type (\ref{ex:2p-lex-item}). Because the mood enclitics are creating a structure that is a semantic event and the article enclitic is creating a structure that is a semantic referent, the manipulations done to these two categories need to be somewhat different. I have two types for this: \textsc{\textit{auxiliary-unary-type-raise-clause}} and \textsc{\textit{auxiliary-unary-type-raise-article}}. Each of these inherit common properties from a common supertype, \textsc{\textit{auxiliary-unary-type-raise-super}}, the key parts of which are replicated below.\footnote{For brevity, I have pretended in (\ref{auxiliary-unary-type-raise-super}) that I can modify the \textsc{posthead} value from + to --. In fact, in my implementation I have to copy up every other value, changing only \textsc{posthead}.}
+I define a lexical rule which creates the appropriate modifier-selecting structure from lexical entries of the type (\ref{ex:2p-lex-item}). Because the mood enclitics are creating a structure that is a semantic event and the article enclitic is creating a structure that is a semantic referent, the manipulations done to these two categories need to be somewhat different. I have two types for this: {\textit{auxiliary-unary-type-raise-clause}} and {\textit{auxiliary-unary-type-raise-article}}. Each of these inherit common properties from a common supertype, {\textit{auxiliary-unary-type-raise-super}}, the key parts of which are replicated below.\footnote{For brevity, I have pretended in (\ref{auxiliary-unary-type-raise-super}) that I can modify the \textsc{posthead} value from + to --. In fact, in my implementation I have to copy up every other value, changing only \textsc{posthead}.}
 
+\begin{singlespacing}
 \ex \label{auxiliary-unary-type-raise-super}
 \adjustbox{max width=\textwidth -0.2in}{
 \begin{avm}
@@ -1435,9 +1464,11 @@ I define a lexical rule which creates the appropriate modifier-selecting structu
                                   val.comps & \< \avmbox{1} \[ synsem$\ldots$posthead & -- \] \> $\oplus$ \avmbox{2} \] \] \> \]
 \end{avm}}
 \xe
+\end{singlespacing}
 
-This supertype states that type auxiliary type raising is a unary operation that takes some auxiliary which has not been type raised, marks it as type raised, and adds one item to its complements list. The item that was previously the first complement and was [\textsc{posthead} --] (that is, had to be realized to the left) is now the second complement and is [\textsc{posthead} +] (that is, realized to the right). The supertype does not say much about the added complement, as that is left for its two daughter rules, in (\ref{auxiliary-unary-type-raise-clause}) and (\ref{auxiliary-unary-type-raise-article}) below.
+This supertype states that type auxiliary type raising is a unary operation that takes some auxiliary which has not been type raised, marks it as type raised, and adds one item to its complements list. The item that was previously the first complement and was [\textsc{posthead} --] (that is, had to be realized to the left) is now the second complement and is [\textsc{posthead} +] (that is, realized to the right).\footnote{Though this feature exists in the Grammar Matrix \citep{bender2002}, this is a novel use of it. In the Grammar Matrix, this feature is used to constrain the ordering of modifiers with respect to their head. Here I use it constrain the ordering of complements.} The supertype does not say much about the added complement, as that is left for its two daughter rules, in (\ref{auxiliary-unary-type-raise-clause}) and (\ref{auxiliary-unary-type-raise-article}) below.
 
+\begin{singlespacing}
 \ex \label{auxiliary-unary-type-raise-clause}
 \adjustbox{max width=\textwidth -0.2in}{
 \begin{avm}
@@ -1451,16 +1482,20 @@ This supertype states that type auxiliary type raising is a unary operation that
                               cont.hook & \avmbox{3} \] \] \> \]
 \end{avm}}
 \xe
+\end{singlespacing}
 
-This rule specifies that the old subject is the same as the new subject, and the semantic value and type of the construction (the \textsc{hook}) is the same as the old one. That is to say, it is still an event, and has the same subject. The new complement introduced has a \textsc{mod} value which is identical to the second complement (what was previously the first complement). So the \textsc{\textit{auxiliary-unary-type-raise-clause}} appends a new element to the beginning of the complements list which is a modifier of the old first complement. The article type raising rule is in (\ref{auxiliary-unary-type-raise-article}). It contains a few differences to account for the difference in semantic type.
+This rule specifies that the old subject is the same as the new subject, and the semantic value and type of the construction (the \textsc{hook}) is the same as the old one. That is to say, it is still an event, and has the same subject. The new complement introduced has a \textsc{mod} value which is identical to the second complement (what was previously the first complement). So the {\textit{auxiliary-unary-type-raise-clause}} appends a new element to the beginning of the complements list which is a modifier of the old first complement. The article type raising rule is in (\ref{auxiliary-unary-type-raise-article}). It contains a few differences to account for the difference in semantic type.
 
+There is a possible competing analysis for this phenomenon, where adverbs can simply directly modify the second position enclitics. The reason I do not take this approach is I need to constrain the relative ordering of complements. The predicate complement of second position enclitics typically occurs to their left, which I define by constraining their complement to be [\textsc{posthead} --]. With a modifier, however, the predicate appears to the right (along with any additional adverbs). So in this analysis I would still need to alter the enclitic complex to change its complement to [\textsc{posthead} +], and require it to have a preceding modifying adverb. However, this type-raising analysis allows the syntactic structure of the auxiliary enclitics to remain similar regardless of whether they are attaching directly to their predicate or to a preceding modifier.
+
+\begin{singlespacing}
 \ex \label{auxiliary-unary-type-raise-article}
 \adjustbox{max width=\textwidth -0.2in}{
 \begin{avm}
 \[ \asort{auxiliary-unary-type-raise-article} 
  synsem.local & \[ cat & \[ head & \textit{noun} \\
                        val & \[ subj & \< \> \\
-                                comps & \< \[ local$\ldots$mod & \< \avmbox{1} \[ local.cat.hook & \avmbox{2} \] \> \], \[ local.cat.val & \[ subj & \< \avmbox{1} \> \\
+                                comps & \< \[ local$\ldots$mod & \< \avmbox{1} \[ local.cat.hook & \avmbox{2} \] \> \], \\ \[ local.cat.val & \[ subj & \< \avmbox{1} \> \\
                                                                              comps & \avmbox{3} \] \], $\ldots$ \> \] \\
                    cont.hook & \avmbox{2} \] \\
                     cont.hook & \avmbox{3} \] \\
@@ -1469,8 +1504,9 @@ This rule specifies that the old subject is the same as the new subject, and the
                                         comps & \avmbox{3} \] \] \> \]
 \end{avm}}
 \xe
+\end{singlespacing}
 
-This rule creates a noun instead of a verb. Like its sister rule, the first item on the complements list is a modifier. However, instead of that modified value being identified with the second complement, it is identified with the second complement's subject. This is because that complement can be any predicate: noun, verb, or adjective. Since predicates are events that have their referential index associated with their subject, the modifying adjective needs to grab a hold of the subject value. Related to this, the rule's semantic content (its \textsc{hook}) is identified with that modified element's hook, rather than the \textsc{hook} of the original \textit{article-lex}. With these rules in place, I can now parse sentences with a leading adverb, and participant phrases with a leading adjective. The enclitic will simply go through the appropriate type-raising lexical rule first.
+Like its sister rule, the first item on the complements list is a modifier. However, instead of that modified value being identified with the second complement, it is identified with the second complement's subject. This is because that complement can be any predicate: noun, verb, or adjective. Since predicates are events that have their referential index associated with their subject, the modifying adjective needs to grab a hold of the subject value. Related to this, the rule's semantic content (its \textsc{hook}) is identified with that modified element's hook, rather than the \textsc{hook} of the original \textit{article-lex}. With these rules in place, I can now parse sentences with a leading adverb, and participant phrases with a leading adjective. The enclitic will simply go through the appropriate type-raising lexical rule first.
 
 \begin{comment}
 That is, the attribute-value matrix (AVM) for the full predicate complex \textit{=ʔaqƛ=s} in (\ref{ex:2padvpred}) should look something like this:
@@ -1506,18 +1542,40 @@ That is, the attribute-value matrix (AVM) for the full predicate complex \textit
 
 \subsection{Second position suffixes} \label{ch:clause:analysis:2pv}
 
-In \S\ref{ch:clause:2pv} I give some examples of second position suffixes. The two classes that I have implemented are the ``main predicate" suffixes and the ``auxiliary predicate" suffixes. I will first show my implemented analysis of the main predicate suffixes. As a reminder, all these types are partial representations of the full type, which is present in the implemented grammar. Certain features---such as well-formedness for inflection and restricting daughter types by morphological class---are omitted in the interest of space and clarity.
+In \S\ref{ch:clause:2pv} I give some examples of second position suffixes (as opposed to the auxiliary enclitics). The two classes that I have implemented are the ``main predicate" suffixes and the ``auxiliary predicate" suffixes. As a reminder, main predicate suffixes are verbs that take nominal complements and attach to the first element of their complement (\ref{ex:havesong2}--\ref{ex:havetwosongs2}, repeated from \ref{ex:havesong}--\ref{ex:havetwosongs}). Auxiliary predicate suffixes are suffix verbs that behave in the same way, except that they take a predicate (and eventive) complement rather than a nominal (and non-eventive) one.
 
-I will here point out that an analysis of second position suffixes in Nuuchahnulth in HPSG has been done in \cite{waldie2004}. However, \citeauthor{waldie2004}'s analysis uses linearization: an augmentation to basic HPSG theory that allows for word scrambling. My analysis, grounded in the DELPH-IN formalism, does not have linearization. In my analysis, I am constrained by the surface order of suffixation and incorporation.
+\ex \label{ex:havesong2}
+\begingl
+\glpreamble nuuknaaks. //
+\gla nuuk-naˑk=s //
+\glb song-have=\textsc{strg.1sg} //
+\glft `I have a song/songs.' (\textbf{N}, \textit{yuułnaak} Simon Lucas) //
+\endgl
+\xe
+
+\ex~ \label{ex:havetwosongs2}
+\begingl
+\glpreamble ʔaƛanaks nuuk. //
+\gla ʔaƛa-naˑk=s nuuk //
+\glb two-have=\textsc{strg.1sg} song //
+\glft `I have two songs.' (\textbf{N}, \textit{yuułnaak} Simon Lucas) //
+\endgl
+\xe
+
+
+I will first show my implemented analysis of the main predicate suffixes. As a reminder, all these type definitions are partial representations of the full description, which is present in the implemented grammar. Certain features---such as well-formedness for inflection and restricting daughter types by morphological class---are omitted in the interest of space and clarity.
+
+I will here point out that an analysis of second position suffixes in Nuuchahnulth in HPSG has been done in \cite{waldie2004}. However, \citeauthor{waldie2004}'s analysis uses linearization: an augmentation to basic HPSG theory that allows for word scrambling using an additional feature called the word-order domain \textsc{dom} \citep{reape1993}. My analysis, grounded in the DELPH-IN formalism, does not have linearization. In my analysis, I am constrained by the surface order of suffixation and incorporation.
 
 \subsubsection{Main predicate suffixes}
 
-Main predicate suffixes are the class of verbal suffixes that may attach to a noun, in which case the noun satisfies the verb's complement, an adjective, in which case the adjective modifies the verb's (possibly dropped) complement, or an adverb, in which case the adverb modifies the verb itself.
+Main predicate suffixes are the class of verbal suffixes that may attach to a noun, in which case the noun satisfies the verb's complement, an adjective, in which case the adjective modifies the verb's (possibly dropped) complement, or an adverb, in which case the adverb modifies the verb itself (\S\ref{ch:clause:2pv:mainpredicate}).
 
-All incorporating suffixes are modeled through the application of two successive lexical rules. The first lexical rule applies to the incorporated element (the noun, adjective, adverb, or, in the case of auxiliary predicate suffixes, verb) and modifies its properties. Then the rule that attaches the suffix applies, and relates its syntactico-semantic features to the type that prepared the root for incorporation.
+All incorporating suffixes are modeled through the application of two successive lexical rules. The first lexical rule applies to the incorporated element (the noun, adjective, adverb, or, in the case of auxiliary predicate suffixes, verb) and modifies its properties. Then the rule that attaches the suffix applies, and relates its syntactico-semantic features to the type that prepared the root for incorporation. The reason for this two-step process is to avoid having lexical duplication for suffix verbs. Since the behavior of the suffixes changes based on the syntactic category of what it attaches to, that difference must be captured somewhere. It can be captured by having different versions of each suffix based on what it is attaching to, or in this two-step manner which first prepares lexical items for incorporation.
 
-All of these rules share some similarities, which I abstract into a higher type, \textsc{\textit{incorporating-lex-rule}} (\ref{incorporating-lex-rule}). This rule states that all incorporation rules apply to non-auxiliaries, and create verbs that are predicative, non-root, non-finite forms. The parent node will have some non-predicative subject and no modifiers.
+All of the first-stage, preparatory rules share some similarities, which I abstract into a higher type, {\textit{incorporating-lex-rule}} (\ref{incorporating-lex-rule}). This rule states that all incorporation rules apply to non-auxiliaries, and create verbs that are predicative, non-root, non-finite forms. The parent node will have some non-predicative subject and no modifiers.
 
+\begin{singlespacing}
 \ex \label{incorporating-lex-rule}
 \begin{avm}
 \[\asort{incorporating-lex-rule}
@@ -1526,27 +1584,30 @@ All of these rules share some similarities, which I abstract into a higher type,
                                   prd & + \\
                                   aux & -- \\
                                   form & non-root-nonfinite \\
-                                  mod & \< \> \] \] \\
- daughter & \[ synsem.local.cat.head.aux - \]
+                                  mod & \q< \q> \] \] \\
+ daughter & \[ synsem.local.cat.head.aux & -- \]
  \]
 \end{avm}
 \xe
+\end{singlespacing}
 
-The subtypes of \textsc{\textit{incorporating-lex-rule}} that prepare nouns, adjectives, and adverbs for incorporation are given in (\ref{noun-incorporation-lex-rule}, \ref{adj-incorporation-lex-rule}, \ref{adv-incorporation-lex-rule}) below.
+The subtypes of {\textit{incorporating-lex-rule}} that prepare nouns, adjectives, and adverbs for incorporation are given in (\ref{noun-incorporation-lex-rule}, \ref{adj-incorporation-lex-rule}, \ref{adv-incorporation-lex-rule}) below. The noun incorporation rule (\ref{noun-incorporation-lex-rule}) simply states that it needs a root form noun daughter and will not have any complements.
 
+\begin{singlespacing}
 \ex \label{noun-incorporation-lex-rule}
 \begin{avm}
 \[\asort{noun-incorporation-lex-rule}
  synsem & \[ local.cat.val.comps & \< \> \] \\
  daughter & \[ synsem.local.cat.head & \[\asort{noun}
-                                          form & root \\
-                                          mod & \< \> \] \]
+                                          form & root \] \]
  \]
 \end{avm}
 \xe
+\end{singlespacing}
 
-The noun incorporation rule simply states that it needs a root form noun daughter with nothing in its modifying list, and will not have any complements.
+The adjective incorporation rule (\ref{adj-incorporation-lex-rule}) states that it needs an adjective daughter, also in root form, and goes on to identify the adjective's subject's index with its own complement's index.
 
+\begin{singlespacing}
 \ex \label{adj-incorporation-lex-rule}
 \begin{avm}
 \[\asort{adj-incorporation-lex-rule}
@@ -1556,9 +1617,13 @@ The noun incorporation rule simply states that it needs a root form noun daughte
                                      val.subj & \< \[ local$\ldots$index & \avmbox{1} \] \> \] \] \]
 \end{avm}
 \xe
+\end{singlespacing}
 
-The adjective incorporation rule states that it needs an adjective daughter, also in root form, and goes on to identify the adjective's subject's index with its own complement's index.
+The adverb rule (\ref{adv-incorporation-lex-rule}) is the most complex. Parallel to the other rules, it takes a daughter that is in root form and an adverb. It inserts a value into its complements list which is not an auxiliary and not type-raised.\footnote{This is important so that certain rules, for instance intransitive-verb-to-adjective, cannot be the complement of an incorporated adverb.} It identifies the \textsc{xarg} of its complement---that is, the complement's subject---with its own \textsc{xarg}. Since the syntactic structure of incorporated adverbs is \textit{Adverb-SuffixVerb\ \ Object}, this \textsc{xarg} identification will, down the line, have the effect of tying the suffix verb's subject to the (yet-to-be-added) complement's subject.
 
+Finally, there is the identification of the daughter's modified element's \textsc{ltop} with the parent's \textsc{gtop}. I will admit this is a bit of a hack. Non-scopal adverbs in MRS are ``quantificationally equivalent" with what they modify. This is to allow quantifiers to float in the semantic interpretation, and it is modeled with a special kind of semantic relation called a qeq (or quantificational equivalency) and a type called a ``handle" which relates things quantifications \citep{copestake2005}. A simple semantic expression for `I only sing' then looks like (\ref{mrsising}).
+
+\begin{singlespacing}
 \ex \label{adv-incorporation-lex-rule}
 \begin{avm}
 \[\asort{adv-incorporation-lex-rule}
@@ -1572,19 +1637,17 @@ The adjective incorporation rule states that it needs an adjective daughter, als
                                          mod & \< \[ local$\ldots$ltop & \avmbox{2} \] \> \] \] \]
 \end{avm}
 \xe
+\end{singlespacing}
 
-The adverb rule is the most complex. Parallel to the other rules, it takes a daughter that is in root form and an adverb. It inserts a value into its complements list which is not an auxiliary and not type-raised.\footnote{This is important so that certain rules not mentioned, for instance intransitive-verb-to-adjective, cannot be the complement of an incorporated adverb.} It identifies the \textsc{xarg} of its complement---that is, the complement's subject---with its own \textsc{xarg}. Since the syntactic structure of incorporated adverbs is \textit{Adverb-SuffixVerb\ \ Object}, this \textsc{xarg} identification will, down the line, have the effect of tying the suffix verb's subject to the (yet-to-be-added) complement's subject.
-
-Finally, there is the identification of the daughter's modified element's \textsc{ltop} with the parent's \textsc{gtop}. I will admit this is a bit of a hack. Adverbs are, in MRS, ``quantificationally equivalent" with what they modify. This is to allow adverbs to float in the semantic interpretation, and it is modeled with a special kind of semantic relation called a qeq (or quantificational equivalency) and a type called a ``handle" which relates things quantifications. A simple semantic expression for `I only sing' then looks like (\ref{mrsising}).
-
+\begin{singlespacing}
 \ex \label{mrsising}
 \begin{avm}
 \< \[\asort{only}
      lbl & \textit{h} \\
      arg0 & \textit{e} \\
-     arg1 & \textit{h}\avmbox{1} \], 
+     arg1 & \avmbox{1} \textit{h} \], 
      \[\asort{sing} 
-       lbl & \textit{h}\avmbox{2} \\
+       lbl & \avmbox{2} \textit{h} \\
        arg0 & \textit{e}\[tense & present\] \\
        arg1 & \textit{x}\[pernum & 1sg \] \],
      \[\asort{qeq}
@@ -1592,11 +1655,18 @@ Finally, there is the identification of the daughter's modified element's \texts
        lower & \avmbox{2} \] \>
 \end{avm}
 \xe
+\end{singlespacing}
 
-In the \textsc{\textit{adv-incorporation-lex-rule}} (\ref{adv-incorporation-lex-rule}), I need to preserve the adverb's semantic \textsc{lbl} value (stored in \textsc{ltop} in the syntax) so that, when the suffix verb is attached, that \textsc{lbl} from its \textsc{qeq} relation is around for me to associate with the verb. This is not what the \textsc{gtop} value is intended for, but it works, and that \textsc{gtop} is not associated with anything else once the suffix verb is applied, so no harm done.\footnote{The reader may have noticed that all my rules so far are treating the suffix verbs as though they are transitive only---there is only at most one item in the \textsc{comps} list. However, in \S\ref{ch:clause:2pv:mainpredicate} I noted one ditransitive suffix verb. I do in fact parse ditransitives in my implemented grammar, but it requires parallel copies of all these incorporating rules, in order to account for a longer \textsc{comps} list. I pull a similar trick to the \textsc{gtop} trick here in those rules, where I temporarily store the second complement in the intermediate rule's \textsc{spec}. This is not what this list is intended for, but once again, after the suffix verb applies, that list is hidden. As with all these rules, the full versions can be seen in my implemented grammar at \url{https://bitbucket.org/davinman/nuuchahnulth-grammar}.}
+In the \textit{adv-incorporation-lex-rule} (\ref{adv-incorporation-lex-rule}), I need to preserve the adverb's semantic \textsc{lbl} value (stored in \textsc{ltop} in the syntax) so that, when the suffix verb is attached, that \textsc{lbl} from its \textsc{qeq} relation is around for me to associate with the verb. This is not what the \textsc{gtop} value is intended for, but it works, and that \textsc{gtop} is not associated with anything else once the suffix verb is applied, so no harm done.\footnote{The reader may have noticed that all my rules so far are treating the suffix verbs as though they are transitive only---there is only at most one item in the \textsc{comps} list. However, in \S\ref{ch:clause:2pv:mainpredicate} I noted one ditransitive suffix verb. I do in fact parse ditransitives in my implemented grammar, but it requires parallel copies of all these incorporating rules, in order to account for a longer \textsc{comps} list. I pull a similar trick to the \textsc{gtop} trick here in those rules, where I temporarily store the second complement in the intermediate rule's \textsc{spec}. This is not what this list is intended for, but once again, after the suffix verb applies, that list is hidden. As with all these rules, the full versions can be seen in my implemented grammar at \url{https://bitbucket.org/davinman/nuuchahnulth-grammar}.}
 
-Once one of the above rules has applied, the main predicate suffix can be added. There is one rule for preparing each of the lexical categories (noun, adjective, and adverb), but there is one rule for adding suffixes, given in (\ref{2p-suffix-transitive-verb-lex-rule}), which I will explain in detail.
+Once one of the above rules has applied, the main predicate suffix can be added. There is one rule for preparing each of the lexical categories (noun, adjective, and adverb), but there is one rule for adding suffixes, given in (\ref{2p-suffix-transitive-verb-lex-rule}).
 
+This rule introduces a new semantic relation (\textsc{c-cont.rels}) that has not yet been assigned a semantic predication value. All this rule states is that it is an event (\textsc{arg0} \textit{e}) that relates two referents. The parent also will have an event index, since its \textsc{index} is the same as the introduced relation's \textsc{arg0}. It will also inherit the relation's \textsc{arg1} as its \textsc{xarg} and its \textsc{lbl} as its \textsc{ltop} (these are standard relationships for verbs).
+
+The rule passes up its daughter's subject and complements. All of its possible daughters will minimally have a subject, defined in the parent type (\ref{incorporating-lex-rule}). The noun incorporation rule does not add any complements, while the adjective and adverb incorporation rules do, so a main predicate suffix applied to an incorporated noun will only have a subject, while incorporated adjectives and adverbs will have a complement. Finally, the new relation's \textsc{lbl} is identified with the daughter's \textsc{gtop}. This was only defined for incorporating adverbs, and this will have the effect of allowing the adverb to scope over the verb in the semantics.
+
+
+\begin{singlespacing}
 \ex \label{2p-suffix-transitive-verb-lex-rule}
 \begin{avm}
 \[\asort{2p-suffix-transitive-verb-lex-rule}
@@ -1607,7 +1677,7 @@ Once one of the above rules has applied, the main predicate suffix can be added.
                    cont.hook & \[ index & \avmbox{0} \\
                                   xarg & \avmbox{1} \\
                                   ltop & \avmbox{3} \] \] \\
- c-cont & \< \[ arg0 & \textit{e}\avmbox{0} \\
+ c-cont.rels & \< \[ arg0 & \textit{e}\avmbox{0} \\
                 arg1 & \textit{x}\avmbox{1} \\
                 arg2 & \textit{x}\avmbox{2} \\
                 lbl & \avmbox{3} \] \> \\
@@ -1617,23 +1687,23 @@ Once one of the above rules has applied, the main predicate suffix can be added.
                                                 gtop & \avmbox{3} \] \] \] \]
 \end{avm}
 \xe
+\end{singlespacing}
 
-This rule introduces a new semantic relation (\textsc{c-cont}) that has not yet been assigned a semantic predication value. All this rule states is that it is an event (\textsc{arg0} \textit{e}) that relates two referents. The parent also will be an event, with its \textsc{index} being the same as the introduced relation's \textsc{arg0}. It will also inherit the relation's \textsc{arg1} as its \textsc{xarg} and its \textsc{lbl} as its \textsc{ltop} (these are standard relationships for verbs).
+All that is missing is the new relation's predication value, the small-caps symbol that indicates what meaning is. For instance, the suffix \textit{-naˑk} inherits from the type {\textit{2p-suffix-transitive-verb-lex-rule}} and adds only the following:
 
-The rule passes up its daughter's subject and complements. All of its possible daughters will minimally have a subject, defined in the parent type (\ref{incorporating-lex-rule}). The noun incorporation rule does not add any complements, while the adjective and adverb incorporation rules do, so a main predicate suffix applied to an incorporated noun will only have a subject, while incorporated adjectives and adverbs will have an object. Finally, the new relation's \textsc{lbl} is identified with the daughter's \textsc{gtop}. This was only defined for incorporating adverbs, and this will have the effect of allowing the adverb to scope over the verb in the semantics.
-
-All that is missing is the new relation's predication value, the small-caps symbol that indicates what meaning is. For instance, the suffix \textit{-naˑk} inherits from the type \textsc{\textit{2p-suffix-transitive-verb-lex-rule}} and adds only the following:
-
+\begin{singlespacing}
 \ex \label{naakavm}
 \begin{avm}
 \[\asort{naˑk} phon & ``-naˑk" \\
   c-cont & \< \[ pred & \textsc{have} \] \> \]
 \end{avm}
 \xe
+\end{singlespacing}
 
 %It has already inherited the argument structure, and all the machinery tying those semantic arguments to syntactic positions in the structure. The entry for \textit{-naˑk}, as well as all the other main predicate suffix verbs, only needs to give the value of its relation.
 To make this more concrete, I give a derivation of the word \textit{nuuknaak} `have a song' in (\ref{nuuknaakhpsg}) below, somewhat condensed and abbreviated for space.
 
+\begin{singlespacing}
 \ex \label{nuuknaakhpsg}
 \footnotesize
 \begin{forest}
@@ -1646,7 +1716,8 @@ To make this more concrete, I give a derivation of the word \textit{nuuknaak} `h
                       head & \avmbox{5} \] \\
                    cont.hook & \[ index & \avmbox{0} \\
                                   xarg & \avmbox{1} \] \] \\
- c-cont & \< {\textsc{have}(\textit{e}\avmbox{0}, \textit{x}\avmbox{1}, \textit{x}\avmbox{2})} \> \\
+ c-cont & \< {\textsc{have}(\avmbox{0} \rm{\textit{e}}, \avmbox{1} \rm{\textit{x}}, \avmbox{2} \rm{\textit{x}})} \> \\
+ rels & \< {\textsc{song}(\avmbox{7}, \avmbox{2})} \> \\
  daughter & \avmbox{A} \]
 \end{avm} 
 [
@@ -1669,22 +1740,24 @@ To make this more concrete, I give a derivation of the word \textit{nuuknaak} `h
                               head.form & root \] \\
                      cont & \avmbox{6} \[ index & \avmbox{7} \\
                                xarg & \avmbox{2} \] \] \\
-   rels & \< {\textsc{song}(\textit{e}\avmbox{7}, \textit{x}\avmbox{2})} \> \]
+   rels & \< {\textsc{song}(\avmbox{7} \rm{\textit{e}}, \avmbox{2} \rm{\textit{x}})} \> \]
 \end{avm}
 ]
 ]
 ]
 \end{forest}
 \xe
+\end{singlespacing}
 
 The \textit{ʔu-} root is modeled as a special lexeme that has properties that allow it to go through the incorporation rules in such a way that it obtains the right subject and complement(s) once the suffix applies. This means going through the adverb and adjective incorporation rules, since those are the rules that pass up the complements list of the suffix verb. The rule for \textit{ʔu-} is given in (\ref{uu-lex}).
 
+\begin{singlespacing}
 \ex \label{uu-lex}
 \adjustbox{max width=\textwidth -0.2in}{
 \begin{avm}
 \[\asort{ʔu-lex}
  phon & ``ʔu" \\
- synsem.local & \[ cat & \[ val & \[ subj & \< \[ local.cat.head.prd -- \] \> \\
+ synsem.local & \[ cat \[ val & \[ subj & \< \[ local.cat.head.prd -- \] \> \\
                                 comps & \< \avmbox{2} \[ local & \[ cat.head.prd -- \\
                                                          cont.hook.index & \avmbox{1} \] \]  \> \] \\
                        head & \[\asort{adjective-or-adverb}
@@ -1696,14 +1769,36 @@ The \textit{ʔu-} root is modeled as a special lexeme that has properties that a
 \end{avm}
 }
 \xe
+\end{singlespacing}
 
-The lexical entry shares many properties with \textit{\textsc{incorporating-lex-rule}} (\ref{incorporating-lex-rule}), since this lexeme will go directly through the \textsc{\textit{-incorporation-}} rules. It associates its complement's index with its own \textsc{xarg}, so that the semantics of the suffix verb's \textsc{arg2} get associated with it. I also have identified it as a supertype of adjectives and adverbs and placed its complement on its modifying list, since I want this lexeme only to go through the adverb and adjective incorporating rules. \textit{ʔu-} forms always have a full list of the suffix verb's complements, which is the identical to what happens with adjectives and adverbs. The difference between adjectives and adverbs and \textit{ʔu} is that \textit{ʔu} has no semantics. Finally, the morpheme \textit{ʔu-} itself, despite being a root form, is defined as the union of a root and a non root. This is a bit strange, but it is so the main predicate incorporating lex rules here (\ref{incorporating-lex-rule}), which require a root form, can accept \textit{ʔu}, but so can the auxiliary predicate incorporation rules below (\ref{pred-incorporation-lex-rule}), which require a non-root form.
+The lexical entry shares many properties with \textit{incorporating-lex-rule} (\ref{incorporating-lex-rule}), since this lexeme will not undergo one of the preparatory incorporation rules, and the suffix verb will directly attach to it. The lexical entry associates its complement's index with its own \textsc{xarg}, so that the semantics of the suffix verb's \textsc{arg2} get associated with it. I also have identified its head value as a supertype of adjectives and adverbs and placed its complement on its modifying list, since I want this lexeme only to go through the adverb and adjective incorporating rules. \textit{ʔu-} forms always have a full list of the suffix verb's complements, which is the identical to what happens with adjectives and adverbs. The difference between adjectives and adverbs and \textit{ʔu} is that \textit{ʔu} has no semantics. Finally, the morpheme \textit{ʔu-} itself, despite being a root form, is defined as the supertype of root and non-root. I cannot leave its \textsc{form} value completely underspecified, because I do not want it to be considered \textit{(non)finite} by other rules. This definition of a type as root-and-non-root is conceptually strange, but it is so that the main predicate incorporating lex rules here (\ref{incorporating-lex-rule}), which require a root form, can accept \textit{ʔu}, but so can the auxiliary predicate incorporation rules below (\ref{pred-incorporation-lex-rule}), which require a non-root form.
 
 
 \subsubsection{Auxiliary predicate suffixes} \label{ch:clause:analysis:auxpred}
 
-The strategy I apply to auxiliary predicate suffixes is extremely similar to that for main predicate suffixes. Like main predicate suffixes, incorporation proceeds in two steps: first a lexical rule that moves the needed syntactic properties into place, and then a final inflecting lexical rule that supplies the suffix itself. Because auxiliary predicate suffixes handle all predicates in the same way (\S\ref{ch:clause:2pv:auxiliary}), I only need two ``preparatory" lexical rules: one for predicates (\ref{pred-incorporation-lex-rule}), and one for adverbs (\ref{adv-incorporation-pred-lex-rule}). As with the main predicate suffixes, these lexical types inherit from \textsc{\textit{incorporating-lex-rule}} (\ref{incorporating-lex-rule}).
+Auxiliary predicate suffixes are suffix verbs that take a predicate complement, rather than a nominal predicate (\S\ref{ch:clause:2pv:auxiliary}). This attachment property can be seen in the suffix -\textit{maḥsa} `want to do' in (\ref{ex:wanttograb2}--\ref{ex:onlywanttosay2}) below, repeated from (\ref{ex:wanttograb}--\ref{ex:onlywanttosay}).
 
+\ex \label{ex:wanttograb2}
+\begingl
+\glpreamble hišuk̓aƛ čaakupiiḥ sukʷiƛ\textbf{maḥsa} ḥaa p̓aacsac̓umʔi //
+\gla hišuk=!aƛ čaakupiiḥ su-kʷiƛ-\textbf{maḥsa} ḥaa p̓aacsac̓um=ʔiˑ //
+\glb all=\textsc{now} man.\textsc{pl} hold-\textsc{mo}-\textbf{want.to.do} \textsc{d3} football\footnotemark=\textsc{art} //
+\glft `All the men want to get that \textit{p̓aacsac̓um}.' (\textbf{C}, \textit{tupaat} Julia Lucas) //
+\endgl
+\xe
+
+\ex~ \label{ex:onlywanttosay2}
+\begingl
+\glpreamble ʔaani\textbf{maḥsa}s waa ʔin čamiḥtaʔaƛni ʔiiḥʔiiḥa ... //
+\gla ʔaani-\textbf{maḥsa}=s waa ʔin čamiḥta=!aƛ=niˑ ʔiiḥʔiiḥa ... //
+\glb only-\textbf{want.to.do}=\textsc{real.1sg} say \textsc{comp} proper=\textsc{now}=\textsc{neut.1pl} do.something.important ... //
+\glft `I only want to say that we are doing something important ...' (\textbf{N}, \textit{yuułnaak} Simon Lucas) //
+\endgl
+\xe
+
+The strategy I apply to auxiliary predicate suffixes is extremely similar to that for main predicate suffixes. Like main predicate suffixes, incorporation proceeds in two steps: first a lexical rule that moves the needed syntactic properties into place, and then a final inflecting lexical rule that supplies the suffix itself. Because auxiliary predicate suffixes handle all predicates in the same way (\S\ref{ch:clause:2pv:auxiliary}), I only need two ``preparatory" lexical rules: one for predicates (\ref{pred-incorporation-lex-rule}), and one for adverbs (\ref{adv-incorporation-pred-lex-rule}). As with the main predicate suffixes, these lexical types inherit from {\textit{incorporating-lex-rule}} (\ref{incorporating-lex-rule}).
+
+\begin{singlespacing}
 \ex \label{pred-incorporation-lex-rule}
 \begin{avm}
 \[\asort{pred-incorporation-lex-rule}
@@ -1715,9 +1810,11 @@ The strategy I apply to auxiliary predicate suffixes is extremely similar to tha
                                             comps & \avmbox{2} \] \] \] \]
 \end{avm}
 \xe
+\end{singlespacing}
 
 This lexical rule asserts that its daughter is a predicate (a noun, adjective, or verb) and not a root form. It then passes up that word's subject and complements.
 
+\begin{singlespacing}
 \ex \label{adv-incorporation-pred-lex-rule}
 \begin{avm}
 \[\asort{adv-incorporation-pred-lex-rule}
@@ -1733,21 +1830,25 @@ This lexical rule asserts that its daughter is a predicate (a noun, adjective, o
                                  cont.hook.index & \avmbox{2} \] \] \]
 \end{avm}
 \xe
+\end{singlespacing}
 
 This rule does much of the same work that the previous adverb incorporation rule does. The modifications are that, rather than identifying the complment's \textsc{index} with the mother's \textsc{xarg} as in (\ref{adv-incorporation-lex-rule}), the complement's \textsc{index} is identified with the mother's \textsc{index}. This will have the effect of allowing the adverb to modify the complement. The complement's \textsc{xarg} is also identified with the subject. This has the effect of generating the subject-control properties of the suffix. The rest of the structure is the same as in (\ref{adv-incorporation-lex-rule}), and in fact in my implementation, the commonalities are stored in an abstract type that both daughters inherit from.
 
-Once again, a final type applies the actual suffix verb itself, this time called \textsc{\textit{2p-suffix-pred-verb-lex-rule}}. This type is once again highly similar to the version seen for main predicate suffixes in (\ref{2p-suffix-transitive-verb-lex-rule}). In fact, there is only one difference: the \textsc{arg2} of the \textsc{c-cont} is an event type rather than a referent and is identified with the daughter's \textsc{index} rather than its \textsc{xarg}. Other than that, the rules are identical. Again, I put the common restrictions in a supertype from which both subtypes inherit. The daughter subtype \textsc{\textit{2p-suffix-pred-verb-lex-rule}} with the relevant changes is given in (\ref{2p-suffix-pred-verb-lex-rule}).
+Once again, a final type applies the actual suffix verb itself, this time called {\textit{2p-suffix-pred-verb-lex-rule}}. This type is once again highly similar to the version seen for main predicate suffixes in (\ref{2p-suffix-transitive-verb-lex-rule}). In fact, there is only one difference: the \textsc{arg2} of the \textsc{c-cont} is an event type rather than a referent and is identified with the daughter's \textsc{index} rather than its \textsc{xarg}. Other than that, the rules are identical. Again, I put the common restrictions in a supertype from which both subtypes inherit. The daughter subtype {\textit{2p-suffix-pred-verb-lex-rule}} is given in (\ref{2p-suffix-pred-verb-lex-rule}).
 
+\begin{singlespacing}
 \ex \label{2p-suffix-pred-verb-lex-rule}
 \begin{avm}
 \[\asort{2p-suffix-pred-verb-lex-rule}
-  c-cont & \< \[ arg2 & \textit{e}\avmbox{2} \] \> \\
+  c-cont & \< \[ arg2 & \avmbox{2} \textit{e} \] \> \\
  daughter & \[ synsem.local.cont.hook.xarg & \avmbox{2} \] \]
 \end{avm}
 \xe
+\end{singlespacing}
 
-I give a sample derivation of the word \textit{ʔaanimaḥsa} `only want to' in (\ref{aanimahsahpsg}).
+I give a sample derivation of the word \textit{ʔaanimaḥsa} `only want to' in (\ref{aanimahsahpsg}).\footnote{I will here and throughout suppress the \textsc{hcons} list, which is the list that introduces \textit{qeq} elements. I will fold it into the \textsc{rels} list. This is only a convenience to save space.}
 
+\begin{singlespacing}
 \ex \label{aanimahsahpsg}
 \footnotesize
 \begin{forest}
@@ -1760,9 +1861,10 @@ I give a sample derivation of the word \textit{ʔaanimaḥsa} `only want to' in 
                    cont.hook & \[ index & \avmbox{0} \\
                                   xarg & \avmbox{1} \\
                                   ltop & \avmbox{3} \] \] \\
- c-cont & \< \[ arg0 & \textit{e}\avmbox{0} \\
-                arg1 & \textit{x}\avmbox{1} \\
-                arg2 & \textit{e}\avmbox{2} \\
+ c-cont & \< \[ pred & \textsc{want-to} \\
+                arg0 & \avmbox{0} \textit{e} \\
+                arg1 & \avmbox{1} \textit{x} \\
+                arg2 & \avmbox{2} \textit{e} \\
                 lbl & \avmbox{3} \] \> \\
  daughter & \avmbox{A} \]
 \end{avm} 
@@ -1780,10 +1882,10 @@ I give a sample derivation of the word \textit{ʔaanimaḥsa} `only want to' in 
 \begin{avm}
 \avmbox{B}\[ \asort{ʔaani-adv-lex}
    phon & ``ʔaani" \\
-   synsem.local.cat.head & \[ mod & \< $\ldots$ltop \avmbox{3} \> \] \\
-   rels & \< \[\asort{only}
+   synsem.local.cat.head & \[ mod & \< \[ $\ldots$ltop & \avmbox{3} \] \> \] \\
+   rels & \< \[pred & only
                arg0 & \textit{e} \\
-               arg1 & \textit{h} \avmbox{2} \] {,}
+               arg1 & \avmbox{2}  \textit{h}\] {,}
              \[\asort{qeq}
                higher & \avmbox{2} \\
                lower & \avmbox{3} \] \> \]
@@ -1793,12 +1895,13 @@ I give a sample derivation of the word \textit{ʔaanimaḥsa} `only want to' in 
 ]
 \end{forest}
 \xe
+\end{singlespacing}
 
-The only special care that has to be taken with \textit{ʔu} attachment is blocking certain auxiliary suffixes from taking it, while allowing it for others. I do this by defining morphological hierarchies. Some suffixes, like \textit{-maḥsa}, inherit from a type which underspecifies its daughter as either a predicate lexeme or \textit{ʔu}. Others, like \textit{-w̓it̓as}, inherit from a type which forbids its daughter to be \textit{ʔu-}.
+The only special care that has to be taken with \textit{ʔu} attachment is blocking certain auxiliary suffixes from taking it, while allowing it for others. I do this by defining morphological hierarchies. Some suffixes, like \textit{-maḥsa}, inherit from a type which underspecifies its daughter as either a predicate lexeme or \textit{ʔu}. Others, like \textit{-w̓it̓as}, inherit from a morphologically-defined type which forbids its daughter to be of the lexical type \textit{ʔu-}.
 
 \subsection{Verbal aspect} \label{ch:clause:analysis:aspect}
 
-As indicated in (\S\ref{ch:clause:aspect}), I have implemented the traditional aspect system in my analysis. This is implemented in two parts. The first is a hierarchy of aspectual forms. For each final form present in \cref{figure:traditionalaspect}, there is a node corresponding to it. Aspect is broken into two components: Meaning (which encompasses categories like momentaneous, inceptive, repetitive, and so on), and xperf (which defines whether something is perfective or imperfective). I have added an additional type to the meaning hierarchy labeled ``start," which is meant to represent a final perfective form (in momentaneous graduative perfective and inceptive graduative perfective). This hierarchy is shown in \cref{figure:traditionalaspecthierarchy}, where all possible aspect forms (less the Iterative 2) are leaf nodes that inherit from at least one meaning subtype and one perfective subtype. Perfective types (the second from last row) inherit from Perf, and imperfective types (the last row) inherit from Impf. This will allow later parts of the grammar to refer to perfective and imperfective aspects, without having to worry about which aspect a word specifically is (\ref{ch:sv:analysis}).
+As indicated in (\S\ref{ch:clause:aspect}), I have implemented the traditional aspect system in my analysis. This is implemented in two parts. The first is a hierarchy of aspectual values for meaning. For each final form in the morphological diagram given in \cref{figure:traditionalaspect}, there is a node in the meaning graph corresponding to it. This meaning graph which encompasses categories like momentaneous, inceptive, repetitive, and so on, and has a separate category xperf, which defines whether something is perfective or imperfective. I have added an additional type to the meaning hierarchy labeled ``start," which is meant to represent a final perfective form in the morphology (momentaneous-graduative-perfective, inceptive-graduative-perfective). These perfective forms are always inceptive or at the beginning of an action, thus ``start." This hierarchy is shown in \cref{figure:traditionalaspecthierarchy}, where all possible aspect values (less the Iterative 2) are leaf nodes that inherit from at least one meaning subtype and one perfective subtype. Perfective types (the second from last row) inherit from Perf, and imperfective types (the last row) inherit from Impf. This will allow later parts of the grammar to refer to perfective and imperfective aspects, without having to worry about which aspect a word specifically is (\ref{ch:sv:analysis}).
 
 
 \begin{figure}[H]
@@ -1807,31 +1910,31 @@ As indicated in (\S\ref{ch:clause:aspect}), I have implemented the traditional a
 \begin{footnotesize}
 \begin{tikzpicture}[sibling distance=5em,
   every node/.style = {anchor=mid,shape=rectangle,align=center,fill=white}]
-\node (aspect) at (7,10) {ASPECT};
-\node (meaning) at (3,9) {Meaning};
-\node (xperf) at (13,9) {xperf};
-\node (momentaneous) at (0,8) {Momentaneous};
-\node (inceptive) at (2,8) {Inceptive};
-\node (continuative) at (3.8,8) {Continuative};
-\node (durative) at (5.5,8) {Durative};
-\node (repetitive) at (7,8) {Repetitive};
-\node (iterative) at (8.5,8) {Iterative};
-\node (start) at (9.8,8) {Start};
-\node (perf) at (12,7.8) {Perf \\ PERF +};
-\node (impf) at (14,7.8) {Impf \\ PERF --};
-\node (mo) at (0,6) {\textsc{mo}};
-\node (in) at (1,6) {\textsc{in}};
-\node (dr-perf) at (2.5,6) {\textsc{dr-perf}};
-\node (rp-perf) at (4.3,6) {\textsc{rp-perf}};
-\node (it-perf) at (6,6) {\textsc{it-perf}};
-\node (mo-grad-perf) at (8.3,6) {\textsc{mo-grad-perf}};
-\node (in-grad-perf) at (10.8,6) {\textsc{in-grad-perf}};
-\node (mo-grad) at (4,4) {\textsc{mo-grad}};
-\node (in-grad) at (6.5,4) {\textsc{in-grad}};
-\node (ct) at (8.5,4) {\textsc{cv}};
-\node (dr) at (10,4) {\textsc{dr}};
-\node (rp) at (11.5,4) {\textsc{rp}};
-\node (it) at (13,4) {\textsc{it}};
+\node (aspect) at (7,10) {\textsc{aspect}};
+\node (meaning) at (3,9) {\textit{Meaning}};
+\node (xperf) at (13,9) {\textit{xperf}};
+\node (momentaneous) at (0,8) {\textit{Momentaneous}};
+\node (inceptive) at (2,8) {\textit{Inceptive}};
+\node (continuative) at (3.8,8) {\textit{Continuative}};
+\node (durative) at (5.5,8) {\textit{Durative}};
+\node (repetitive) at (7,8) {\textit{Repetitive}};
+\node (iterative) at (8.5,8) {\textit{Iterative}};
+\node (start) at (9.8,8) {\textit{Start}};
+\node (perf) at (12,7.8) {\textit{Perf} \\ {[}PERF +{]}};
+\node (impf) at (14,7.8) {\textit{Impf} \\ {[}PERF --{]}};
+\node (mo) at (0,6) {\textit{mo}};
+\node (in) at (1,6) {\textit{in}};
+\node (dr-perf) at (2.5,6) {\textit{dr-perf}};
+\node (rp-perf) at (4.3,6) {\textit{rp-perf}};
+\node (it-perf) at (6,6) {\textit{it-perf}};
+\node (mo-grad-perf) at (8.3,6) {\textit{mo-grad-perf}};
+\node (in-grad-perf) at (10.8,6) {\textit{in-grad-perf}};
+\node (mo-grad) at (4,4) {\textit{mo-grad}};
+\node (in-grad) at (6.5,4) {\textit{in-grad}};
+\node (ct) at (8.5,4) {\textit{cv}};
+\node (dr) at (10,4) {\textit{dr}};
+\node (rp) at (11.5,4) {\textit{rp}};
+\node (it) at (13,4) {\textit{it}};
 \begin{scope}[on background layer]
 \draw[-] (aspect.south) -- (meaning.north);
 \draw[-] (aspect.south) -- (xperf.north);
@@ -1878,7 +1981,9 @@ As indicated in (\S\ref{ch:clause:aspect}), I have implemented the traditional a
 \end{figure}
 
 
-While this describes the aspectual forms and their properties, this is not yet a way of morphologically applying them to a root. In fact, this hierarchical description makes straightforward application impossible. The momentaneous form \textsc{mo} is defined as being \textsc{perf} +, and the momentaneous graduative \textsc{mo-grad} is defined as being \textsc{perf} --. So the aspect value \textsc{mo-grad} cannot, in this schema, apply to a lexeme that has the aspectual type \textsc{mo}, because a thing cannot be both \textsc{perf} + and \textsc{perf} --. The way I handle this is to apply suffixes and aspectual meaning in separate rules. \cref{figure:momentaneousapplication} below shows the pathway for lexical rule applications for momentaneous-derived forms. A root can takes the morphology for momentaneous and graduative forms separately from the application of the aspectual values to the verb. This prevents \textsc{perf} values from clashing.
+While this describes the aspectual values and their meanings, this is not yet a way of morphologically applying them to a root. In fact, this hierarchical description makes straightforward application impossible. The momentaneous value \textsc{mo} is defined as [\textsc{perf} +], and the momentaneous graduative \textsc{mo-grad} is [\textsc{perf} --]. So the aspect value \textsc{mo-grad} cannot, in this schema, apply to a lexeme that has the aspectual value \textsc{mo}, because a thing cannot be both [\textsc{perf} +] and [\textsc{perf} --]. So I cannot apply the aspectual morpheme form and the corresponding aspectual value at the same time.
+
+As indicated at the start of this section, I handle this by separating form from value. Separate morphological rules apply the aspectual form via suffixation and others apply aspectual meaning (the values in \cref{figure:traditionalaspecthierarchy}).\cref{figure:momentaneousapplication} below shows the pathway of lexical rule applications for momentaneous-derived forms. A root first takes the morphology for momentaneous morphology (-šiƛ, -čiƛ), without adding any aspectual meaning. If this is the only suffix on the lexical form, in order to be fully formed the lexeme must go through a rule that applies the aspectual value \textit{mo} (momentaneous and perfective). A further graduative form (-LS) template applied to the stem immediately following the initial momentaneous form, after which a rule can add the aspectual value \textit{mo-grad} (momentaneous and imperfective). Alternatively, a final rule can add the final perfective morphology (-šiƛ) and also the complex aspectual value \textit{mo-grad-perf} (momentaneous, ``start", and perfective). The full pipeline is shown below.
 
 \begin{figure}[H]
 \begin{center}
@@ -1888,10 +1993,10 @@ While this describes the aspectual forms and their properties, this is not yet a
   every node/.style = {anchor=mid,shape=rectangle,align=center,fill=white}]
 \node (root) at (0,6) {(root)};
 \node (perf-morphology) at (3,4.5) {-šiƛ/čiƛ};
-\node (perf-meaning) at (0,3) {-{$\emptyset$} \\ {[}\textsc{aspect} \textsc{mo}{]} };
+\node (perf-meaning) at (0,3) {-{$\emptyset$} \\ {[}\textsc{aspect} \textit{mo}{]} };
 \node (grad-morphology) at (6,3) {-LS};
-\node (grad-meaning) at (3,1) {-{$\emptyset$} \\ {[}\textsc{aspect} \textsc{mo-grad}{]}};
-\node (mo-grad-perf) at (9,1) {-šiƛ \\ {[}\textsc{aspect} \textsc{mo-grad-perf}{]}};
+\node (grad-meaning) at (3,1) {-{$\emptyset$} \\ {[}\textsc{aspect} \textit{mo-grad}{]}};
+\node (mo-grad-perf) at (9,1) {-šiƛ \\ {[}\textsc{aspect} \textit{mo-grad-perf}{]}};
 \begin{scope}[on background layer]
 \draw[->] (root) -- (perf-morphology);
 \draw[->] (perf-morphology) -- (perf-meaning);
@@ -1907,11 +2012,11 @@ While this describes the aspectual forms and their properties, this is not yet a
 
 Because of predicate flexibility in Nuuchahnulth, I have defined special terminology to distinguish between semantic and syntactic phenomenon. I use \textit{relation} to refer to atomic semantic units and \textit{argument} to refer to the variables that those semantic units relate. I refer to syntactic \textit{predicates}, which are the position in the clause where semantic arguments may be filled. \textit{Participants} are the syntactic units that fulfill a predicate's semantic arguments, and thus correlate with semantic \textit{arguments}.
 
-Verbs, adjectives, and common nouns may all be used predicatively, but proper nouns cannot be. All of these lexical categories can be used as participants, but verbs and adjectives require an ``article," which I argue is a relativizer. Each clause is headed by a second-position inflectional element which provides, among other things, subject agreement. Adverbs may precede the clausal predicate, in which case the second position inflection appears after the adverb.
+Verbs, adjectives, and common nouns may all be used predicatively, but proper nouns cannot be. All of these lexical categories can be used as participants, but verbs and adjectives require an ``article," which I argue is a relativizer. Each clause is headed by a second-position element which provides, among other things, subject agreement. Adverbs may precede the clausal predicate, in which case the second position enclitics appear after the adverb.
 
-A series of suffixes may also occur in second position, but with respect to their complement and not the clause as a whole. The only two types of second position suffixes I model are main predicate suffixes, which relate two or three referents to each other (with meanings like `have,' `take,' and `give,') and auxiliary predicate suffixes, which are subject-controlling predicates that relate a referent to an event (with meanings like `going to' and `want to').
+A series of suffixes may also occur in a second position, but not with respect to the clause as a whole but with respect to their complement. The only two types of second position suffixes I model are main predicate suffixes, which relate two or three referents to each other (with meanings like `have,' `take,' and `give,') and auxiliary predicate suffixes, which are subject-controlling predicates that relate a referent to an event (with meanings like `going to' and `want to'). In my modeling, I treat these differently from the clausal second position element.
 
 Finally, I describe the complex aspect system in Nuuchahnulth, and its traditional interpretation and a proposed revised interpretation. In either interpretation, the system has a few perfective forms and a large number of imperfective forms.
 
-All of these facts are modeled in an implemented grammar based in the HPSG formalism. The predicate/participant distinction, which is modeled through a boolean-valued feature [\textsc{pred} +|--], which keeps track of the eventiveness or referentiality of the element's semantic index. Nouns, adjectives, and verbs are all modeled as events minimally with syntactic subjects, which must go through a lexical or syntactic rule in order to be used as participants, and expose a referential index instead of an event. Second position clausal elements are modeled as syntactic words that attach to the leftmost element in the phrase, while second position suffixes are modeled as lexical incorporation. The aspectual system is modeled as a type hierarchy which separates notional meaning from perfectiveness. This requires the morphology to be added separately from the semantics of aspect. With this basic sketch of the clause and my HPSG analysis of it, I will be able to describe my understanding of serial verbs (\S\ref{ch:sv}) and the predicate linker (\S\ref{ch:link}), and how I model these phenomena.
+All of these facts are modeled in an implemented grammar based in the HPSG formalism. The predicate/participant distinction is modeled through a boolean-valued feature [\textsc{pred} +|--], which keeps track of the eventiveness or referentiality of the element's semantic index. Nouns, adjectives, and verbs are all words that introduce events and contain a syntactic subject, they must go through a lexical or syntactic rule in order to be used as participants, and they expose a referential index instead of an event. Second position clausal elements are modeled as syntactic words that attach to the leftmost element in the phrase, while second position suffixes are modeled as lexically incorporating suffixes which attach to the first word in their syntactic object. The aspectual system is modeled as a type hierarchy which separates notional meaning from perfectiveness. This requires the morphology to be added separately from the semantics of aspect. With this basic sketch of the clause and my HPSG analysis of it, I will be able to describe my understanding of serial verbs (\S\ref{ch:sv}) and the predicate linker (\S\ref{ch:link}), and how I model these phenomena.
 \
