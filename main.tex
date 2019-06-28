@@ -35,17 +35,21 @@
 \input{config}  % package imports and configuration
 %\input{\basedir/macros}  % document-specific macros
 %\defaultfontfeatures{Ligatures=TeX}
-\setcitestyle{aysep={},notesep={:}}
+%\setcitestyle{aysep={},notesep={:}}
 
 %\avmfont{\sc}
 %\avmsortfont{\scriptsize\normal\it}
 \begin{document}
 
 \lingset{belowglpreambleskip=0ex, aboveglftskip=0ex, everygla={\upshape}}
+\setlength{\intextsep}{10pt}
+\makeatletter
+\preto{\@verbatim}{\topsep=0pt \partopsep=0pt }
+\makeatother
 
-\avmfont{\sc}
+\avmfont{\rm\sc}
 \avmsortfont{\rm\it}
-\avmvalfont{\rm}
+\avmvalfont{\rm\it}
 
 \setmainfont{Brill}
 
@@ -68,14 +72,14 @@
 \input{results}
 \input{conclusion}
 
-\bibliographystyle{apalike2}
+\bibliographystyle{linquiry2}
 \bibliography{../bib/ncnbib}
 
 \appendix
 
 \input{orthography}
 \input{glossing}
-\input{additionaldata}
+%\input{additionaldata}
 %\input{trees}
 
 \end{document}
