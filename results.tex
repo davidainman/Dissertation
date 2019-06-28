@@ -2,7 +2,7 @@
 
 To test my grammatical analyses and implementation, I created three test suites against which I ran my grammar using the \texttt{[incr tsdb()]} framework \citep{oepen2001} and the LKB parser \citep{copestake2002}. The test databases were broken into three groups, following the three data chapters of this dissertation: One for the basic clause (\cref{ch:clause}), one for serial verb constructions (\cref{ch:sv}), and one for linker constructions (\cref{ch:link}).
 
-All of the test sentences are pre-segmented. I did not create a morphophonemic analyzer as part of this work, so the parser assumes strings are segmented correctly. A finite state transducer that segments Nuuchahnulth strings remains an area for future work.
+All of the test sentences were pre-segmented. I did not create a morphophonemic analyzer as part of this work, so the parser assumes strings are segmented correctly. A finite state transducer that segments Nuuchahnulth strings remains an area for future work.
 
 Parses produced by this grammar are always associated with a semantic representation in Minimal Recursion Semantics \citep{copestake2005}. I validated semantic representations manually, which means that each parse is not simply grammatical but is associated with a precise and correct semantic representation which can be of use in downstream tasks.
 
@@ -28,7 +28,7 @@ I composed this test suite by hand to illustrate basic features of the Nuuchahnu
 \endgl
 \xe
 
-This test suite overall has 246 sentences, 167 of which are grammatical examples and 79 of which are ungrammatical. Coverage of the grammatical sentences at the time of this publication was at 84.4\%, and overgeneration (parsing of ungrammatical sentences) at 1.3\%. The results are summarized in \cref{table:clause-coverage}.
+This test suite overall has 246 sentences, 167 of which are grammatical examples and 79 of which are ungrammatical. Coverage of the grammatical sentences at the time of this publication was at 84.4\%, and overgeneration (parsing of ungrammatical sentences) at 1.3\%. The results are summarized in Table 6.1.
 
 \begin{table}[H]
 \centering
@@ -41,7 +41,7 @@ Ungrammatical sentences & 79 & 1 & 78 & 2
 \end{tabular}
 \end{table}
 
-The unparsed grammatical sentences represent grammatical phenomena I have not covered. The two largest categories are: perfective morphology on non-verbs,\footnote{I believe this turns nouns and adjectives into verbs (e.g.\ ``become a person"), and there may be yet another example of second-position phenomena with perfective morphology optionally moving to a preceding adverb.} and variants of morphemes that I did not model (the generic interpretation of the passive, the bare plural marker indicating the plurality of an object). The lone ungrammatical sentence I parsed was intended to be an example of a sentence with an incorrectly positioned verb, and parsed as a serial verb construction. On reflection, I believe the sentence is possibly grammatical, but has extremely odd semantics.
+The unparsed grammatical sentences represent grammatical phenomena I have not covered. The two largest categories are: perfective morphology on non-verbs,\footnote{I believe this turns nouns and adjectives into verbs (e.g.\ ``become a person"), and there may be yet another example of second-position phenomena with perfective morphology optionally moving to a preceding adverb.} and variants of morphemes that I did not model (the generic interpretation of the passive, the bare plural marker indicating the plurality of an object). The lone ungrammatical sentence I parsed was intended to be an example of a sentence with an incorrectly positioned verb, but was parsed as a serial verb construction. On reflection, I believe the sentence is grammatical, but has extremely odd semantics.
 
 \section{Serial verb construction test suite} \label{ch:results:sv}
 
@@ -71,9 +71,9 @@ The last case of overgeneration is (\ref{ex:listendancesswatchsong}) below, whic
 \endgl
 \xe
 
-My grammar happily parses this but not with the cross-serial branching structure. This yields the nonsense meaning ``One listens to the dancing and watches the singing." This parse is dispreferred on semantic grounds, which I am not modeling. I believe it is a legitimate syntactic sentence, just with unintelligible semantics. My ``overgeneration" problem then comes down to not modeling semantic strangeness, and not modeling a change in progress in the language's grammar.
+My grammar happily parses this but not with the cross-serial branching structure. This yields the nonsense meaning ``One listens to the dancing and watches the singing." This parse is dispreferred on semantic grounds, which I am not modeling. I believe it is a legitimate syntactic sentence, just with unintelligible semantics. My ``overgeneration" problem then comes down to not ruling out semantic anomalies, and not modeling a change in progress in the language's grammar.
 
-The average number of parses for these sentences is relatively high because they tend to be long (which increases parse ambiguity), and in many cases there is no way to distinguish between Type I ``meanwhile" SVCs and Type IV ``and then" SVCs. In such cases, my grammar generates both possible parses.
+The average number of parses for these sentences is relatively high because they tend to be long (which increases parse ambiguity), and in many cases there is no way to distinguish between Type I SVCs with the meaning ``meanwhile" and Type IV ``sequential/separable" SVCs. In such cases, my grammar generates both possible parses.
 
 \section{Linker test suite} \label{ch:results:link}
 
