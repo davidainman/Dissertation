@@ -85,7 +85,7 @@ Just as verbs, nouns, and adjectives may all be predicates, they may also all be
 \endgl
 \xe
 
-%\noindent TODO: confirm that (\ref{ex:adjpart}) is okay for sharing permissions, from a version of the Only Teachings.
+%\noindent confirm that (\ref{ex:adjpart}) is okay for sharing permissions, from a version of the Only Teachings.
 
 As detailed in \citet{jacobsen1979} and \citet{wojdak2001}, when an adjective or verb is used as a participant, as in (\ref{ex:verbpart}, \ref{ex:adjpart}), the article \textit{=ʔiˑ} is required to make the sentence grammatical. When the participant is headed by a common noun, as in (\ref{ex:verbpred}), the article is optional. Proper nouns differentiate themselves from common nouns in that they may never take the article \citep{inman2018}. They are also never in predicate position.
 
@@ -237,7 +237,7 @@ This discussion should not be considered definitive with respect to fronting and
 
 %In addition to the special focus construction above, dependent clauses may realize their participants to the left without any special focus.
 
-%TODO: Adam believes that participant-predicate ordering is possible in dependent clauses, citing ʔuyi. I believe that ʔuyi is an incipient adposition, and this is a postposition structure in these cases. It is extremely hard (impossible?) to find clear dependent clause participant-predicate ordering outside of ʔuyi. Ask Adam if he knows of non-ʔuyi examples.
+%Adam believes that participant-predicate ordering is possible in dependent clauses, citing ʔuyi. I believe that ʔuyi is an incipient adposition, and this is a postposition structure in these cases. It is extremely hard (impossible?) to find clear dependent clause participant-predicate ordering outside of ʔuyi. Ask Adam if he knows of non-ʔuyi examples.
 
 \subsection{Second-position clitics} \label{ch:clause:cliticnormal}
 
@@ -303,7 +303,7 @@ The examples I have given so far have all shown this clitic complex attaching di
 \endgl
 \xe
 
-%[[TODO: Find a two-word analytic \textit{ʔuukʷił} version of (\ref{ex:2padppred}), which only has the suffix version \textit{-L.čił}.]].
+%[[Find a two-word analytic \textit{ʔuukʷił} version of (\ref{ex:2padppred}), which only has the suffix version \textit{-L.čił}.]].
 
 Every clause in Nuuchahnulth contains an enclitic, even if it is only the notional =$\emptyset$ third person neutral enclitic. With the exception of participant fronting (\S\ref{ch:clause:fronting}), the enclitic always appears on the first word of the matrix clause, which is either the predicate or a preceding adverb or coordinator. I use this data to claim that the clitic complex is the syntactic head of the clause in Nuuchahnulth, and the clitic complex selects for a predicate complement. The second-position enclitic complex is then an auxiliary that inherits its valence (number of complements) from its predicate complement, and this predicate complement also provides the main semantic relation of the clause. Because of its second-position properties, the analysis of Nuuchahnulth clitics requires some special attention in HPSG (\S\ref{ch:clause:analysis:2p}), but descriptively I can simply call the enclitic complex the head of the Nuuchahnulth clause.
 
@@ -641,7 +641,7 @@ Like with the main predicate suffixes, this class of suffix can also attach to a
 It is much less common, but these suffixes can attach to a non-verbal predicate. I found one example of \textit{-maḥsa} attaching to a noun in the Sapir-Thomas texts (\ref{ex:wanttobechief}). In this case, the non-verbal element \textit{ḥaw̓ił} `chief' is being treated predicatively and eventively: `be a chief (i.e.\ wealthy)' and not `a chief.' I take this as corroborating evidence of the inherent eventiveness of common nouns (\S\ref{ch:clause:predp}).
 
 \begin{comment}
-TODO: EMB points out that below "want to" is attaching to causative
+EMB points out that below "want to" is attaching to causative
 
 \ex \label{ex:wanttomakestrong}
 \begingl
@@ -934,7 +934,7 @@ There is also the fact that there are certain monosyllabic, closed syllable root
 
 %\section{Clitics attaching to modifiers} \label{ch:clause:cliticmodifier}
 
-%\noindent (TODO: Actually implement this and give a summary of the lexical rule type. There's going to be some complications with list modifications and quantification.)
+%\noindent (Actually implement this and give a summary of the lexical rule type. There's going to be some complications with list modifications and quantification.)
 
 Despite this revised analysis, most of my work was done under the traditional understanding of the aspect system (\cref{figure:traditionalaspect}), and I will continue to use the inceptive marking \textsc{in} in this document. When I turn to the implementation, I will describe the implementation of an aspect system that includes the inceptive (\S\ref{ch:clause:analysis:aspect}).
 
@@ -1366,7 +1366,7 @@ The above definitions for second-position elements license trees that have simpl
 %That is, common nouns are neither specified for [\textsc{pred} +] nor [\textsc{pred} --], so they may happily unify in a predicative position without an article (taking on a -- value) or with the predicative clitics, including the article (taking on a + value). This means that in sentences like (\ref{ex:verbpred}), the participant phrase \textit{hałmiiḥa quuʔas} `drowning person' is in fact an NP. Since it is [\textsc{head} noun], and noun is [\textsc{pred} ?], the NP happily unifies through the head-complement rule that is expecting a [\textsc{pred} --] complement. In the same way, NPs may be selected for by the article \textsc{=ʔiˑ}, and so the PartP \textit{ḥaakʷaaƛ=ʔiˑ} `the young woman' in (\ref{ex:adjpred}) may be built up in the same way as in (\ref{ex:verbparttree}, \ref{ex:adjparttree}) above. Common nouns are unique in this way.
 
 \begin{comment}
-[[TODO: revise below on fronting]]
+[[revise below on fronting]]
 
 The way I model this phenomenon is via a gap-filler construction \citep[Chapter 4]{pollardsag1994}, which avoids the problem of having to recalculate how the clitics behave in a sentence like (\ref{ex:focus}). A sketch of the tree is given below.
 
@@ -1427,7 +1427,7 @@ I assert that the clitics are the syntactic heads of the clause. This analysis r
 \end{avm}
 \xe
 
-%TODO: Further flesh out the above with full rule extraction from the (not buggy) implementation.
+%Further flesh out the above with full rule extraction from the (not buggy) implementation.
 \end{comment}
 
 %The inflection unifies its complement's subject with its own, and adds its complement's complements list to its own complements list. Particular lexical items in the class of clausal inflection inherit from the rule type above and add their own semantic information (second person subject and hearsay evidentiality, for example).

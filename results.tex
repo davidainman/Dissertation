@@ -1,0 +1,110 @@
+\chapter{Implemented Grammar Results} \label{ch:results}
+
+To test my grammatical analyses and implementation, I created three test suites against which I ran my grammar using the \texttt{[incr tsdb()]} framework \citep{oepen2001} and the LKB parser \citep{copestake2002}. The test databases were broken into three groups, following the three data chapters of this dissertation: One for the basic clause (\cref{ch:clause}), one for serial verb constructions (\cref{ch:sv}), and one for linker constructions (\cref{ch:link}).
+
+All of the test sentences are pre-segmented. I did not create a morphophonemic analyzer as part of this work, so the parser assumes strings are segmented correctly. A finite state transducer that segments Nuuchahnulth strings remains an area for future work.
+
+Parses produced by this grammar are always associated with a semantic representation in Minimal Recursion Semantics \citep{copestake2005}. I validated semantic representations manually, which means that each parse is not simply grammatical but is associated with a precise and correct semantic representation which can be of use in downstream tasks.
+
+\section{Basic clause test suite} \label{ch:results:clause}
+
+I composed this test suite by hand to illustrate basic features of the Nuuchahnulth clause structure, as described in \cref{ch:clause}. This set of sentences was mostly created by me and not vetted by native speakers. These are all simple sentences and I have a high degree of certainty that my judgments about their grammaticality are correct because they conform to patterns I have observed in my data and are described in the literature. The point of test suites with simple sentences is to illustrate grammatical phenomena in isolation, so that the grammar engineer can focus on one or a few specific phenomena at a time. For instance, (\ref{ex:alsohavedog}) tests that the grammar correctly separates the second-position enclitic location from the second-position suffix verb location. (\ref{ex:*twohavesong}) on the other hand is a test asserting that adjectives that modify the objects of suffix verbs can't appear as a word to the left of the suffix verb.
+
+\ex \label{ex:alsohavedog}
+\begingl
+\glpreamble y̓uuqʷaamaḥ ʔunaak ʕiniiƛ. //
+\gla y̓uuqʷaa=(m)aˑḥ ʔu-naˑk ʕiniiƛ //
+\glb also=\textsc{real.1sg} \textsc{x}-have.\textsc{dr} dog //
+\glft `I also have a dog.' //
+\endgl
+\xe
+
+\ex~ \label{ex:*twohavesong}
+\begingl
+\glpreamble *ʔaƛas nuuknaak. //
+\gla ʔaƛa=s nuuk-naˑk //
+\glb two=\textsc{strg.1sg} song-have //
+\glft Intended: `I have two songs.' //
+\endgl
+\xe
+
+This test suite overall has 246 sentences, 167 of which are grammatical examples and 79 of which are ungrammatical. Coverage of the grammatical sentences at the time of this publication was at 84.4\%, and overgeneration (parsing of ungrammatical sentences) at 1.3\%. The results are summarized in \cref{table:clause-coverage}.
+
+\begin{table}[H]
+\centering
+\label{table:clause-coverage}
+\caption{Performance on basic clause structure}
+\begin{tabular}{l|llll}
+ & Total & Parsed & Unparsed & Avg parses per sentence\\ \hline
+Grammatical sentences & 167 & 141 & 26 & 1.12 \\ \hline
+Ungrammatical sentences & 79 & 1 & 78 & 2
+\end{tabular}
+\end{table}
+
+The unparsed grammatical sentences represent grammatical phenomena I have not covered. The two largest categories are: perfective morphology on non-verbs,\footnote{I believe this turns nouns and adjectives into verbs (e.g.\ ``become a person"), and there may be yet another example of second-position phenomena with perfective morphology optionally moving to a preceding adverb.} and variants of morphemes that I did not model (the generic interpretation of the passive, the bare plural marker indicating the plurality of an object). The lone ungrammatical sentence I parsed was intended to be an example of a sentence with an incorrectly positioned verb, and parsed as a serial verb construction. On reflection, I believe the sentence is possibly grammatical, but has extremely odd semantics.
+
+\section{Serial verb construction test suite} \label{ch:results:sv}
+
+Unlike the test suite for the basic clause, all sentences in this test suite came from native speakers, either from interview sessions or from running texts. This test suite had 309 sentences, the vast majority of them grammatical examples. Coverage is 11.3\% as of the publication of this document. The majority of cases I did not cover are due to grammatical phenomena I have not implemented: wh-words (especially wh-word incorporation), certain deictic demonstratives, cleft constructions, and so on. Overgeneration is at 16\%, which I will address below. A summary of the results is given in \cref{table:svc-coverage}.
+
+\begin{table}[H]
+\centering
+\caption{Performance on serial verb constructions}
+\label{table:svc-coverage}
+\begin{tabular}{l|llll}
+ & Total & Parsed & Unparsed & Avg parses per sentence \\ \hline
+Grammatical sentences & 284 & 32 & 252 & 5.78 \\ \hline
+Ungrammatical sentences & 25 & 4 & 21 & 2.75
+\end{tabular}
+\end{table}
+
+The 4 cases of overgeneration break into two categories. As I detail in \S\ref{ch:sv:data:type1}, there is an historic preference for perfectivity matching in Type I SVCs, which speakers inconsistently apply when giving grammaticality judgments. I have two types of rules to model this: one set of which requires perfectivity matching for Type I SVCs, and models Type III SVCs as separate (\S\ref{ch:sv:analysis:type1}), and one of which collapses this distinction between Types I and III and does not require perfectivity matching (\S\ref{ch:sv:analysis:type3}). When I run broad-coverage parsing, I use the latter rule, since it parses more sentences, including sentences that speakers use. But this necessarily means that those examples of perfectivity mismatching that speakers did not like are happily parsed. This covers 3 of the overgeneration cases.
+
+The last case of overgeneration is (\ref{ex:listendancesswatchsong}) below, which is an example showing the ungrammaticality of cross-serial dependencies (mentioned in \S\ref{ch:sv:data:summary}).
+
+\ex \label{ex:listendancesswatchsong}
+\begingl
+\glpreamble *naʔaataḥʔatmaʔaała n̓aacsa nunuukʔi huyaałʔi. //
+\gla naʔaataḥ=!at=maˑ=ʔaała n̓aacsa nunuuk=ʔiˑ huyaał=ʔiˑ //
+\glb listen=\textsc{pass}=\textsc{real.3}=\textsc{habit} see.\textsc{cv} sing=\textsc{art} dance.\textsc{dr}=\textsc{art} //
+\glft Intended: `One listens to the singing and watches the dancing.' (\textbf{B}, Marjorie Touchie) //
+\endgl
+\xe
+
+My grammar happily parses this but not with the cross-serial branching structure. This yields the nonsense meaning ``One listens to the dancing and watches the singing." This parse is dispreferred on semantic grounds, which I am not modeling. I believe it is a legitimate syntactic sentence, just with unintelligible semantics. My ``overgeneration" problem then comes down to not modeling semantic strangeness, and not modeling a change in progress in the language's grammar.
+
+The average number of parses for these sentences is relatively high because they tend to be long (which increases parse ambiguity), and in many cases there is no way to distinguish between Type I ``meanwhile" SVCs and Type IV ``and then" SVCs. In such cases, my grammar generates both possible parses.
+
+\section{Linker test suite} \label{ch:results:link}
+
+Like the SVC test suite, the linker test suite only includes sentences from native speakers or vetted by native speakers. For the same reasons as before, coverage is relatively low, as speakers use grammatical constructions I have not yet modeled. This test suite consisted of 205 sentences, 177 grammatical and 28 ungrammatical. Coverage as of this publication is 12.4\% and overgeneration is 7.1\%. Results are summarized in \cref{table:link-coverage}.
+
+\vspace{-10pt}
+
+\begin{table}[H]
+\centering
+\caption{Performance on linker constructions}
+\label{table:link-coverage}
+\begin{tabular}{l|llll}
+ & Total & Parsed & Unparsed & Avg parses per sentence \\ \hline
+Grammatical sentences & 177 & 22 & 155 & 2 \\ \hline
+Ungrammatical sentences & 28 & 2 & 26 & 2
+\end{tabular}
+\end{table}
+
+\vspace{-10pt}
+
+One of the two cases of overgeneration is example (\ref{ex:readrain2}), which is intended to show that the linker requires subject matching, so that ``I read rain-link" has an anomalous semantics of ``I read and am raining." My grammar however happily parses the sentence and applies this anomalous semantics to it. This is another case of a legitimate syntactic construction, but one that is semantically strange. The other case is shown in (\ref{ex:workfixhouse}). I cannot explain why this example was judged as ungrammatical, and only noticed the oddness of it upon running my grammar against this test suite. Perhaps \textit{ʔuutaq} does not permit linker attachment.
+
+\ex~ \label{ex:workfixhouse}
+\begingl
+\glpreamble *mamuuk̓aƛniš ʔuutaqḥ maʔasukqs. //
+\gla mamuuk=!aƛ=niˑš ʔuutaq-(q)ḥ maʔas=uk=qs //
+\glb work.\textsc{dr}=\textsc{now}=\textsc{strg.1pl} fix-\textsc{link} house=\textsc{poss}=\textsc{defn.1sg} //
+\glft Intended: `We are working to fix my house.' (\textbf{T}, Fidelia Haiyupis) //
+\endgl
+\xe
+
+\section{Value of implementation and testing} \label{ch:results:summary}
+
+The test suites I used to evaluate my grammar both drove grammar development and validated the formal adequacy of my analyses for describing the multi-predicate constructions I investigated. I attained high coverage over my simple examples for the basic clause, and precise syntactic and semantic analyses for the sentences my grammar parsed in my SVC and linker test suites. The latter two test suites show that my grammar is able to correctly parse and generate the appropriate semantics for naturally occurring Nuuchahnulth sentences that contain multi-predicate constructions. Sentences in these test suites my grammar did not parse represent linguistic phenomena beyond the scope of this work, and opportunities for future investigation and modeling of other components of Nuuchahnulth grammar.
